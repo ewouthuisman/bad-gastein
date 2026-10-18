@@ -1,0 +1,6 @@
+{
+  "note": "Local dev accounts (only exist in the local Supabase stack)",
+  "password": "testtest1",
+  "accounts": ["ewout.dev@test.nl (admin)", "sjoerd.dev@test.nl (admin)", "anna.dev@test.nl"],
+  "groupCode": "SOIPEN"
+}
