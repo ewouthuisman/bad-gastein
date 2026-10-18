@@ -51,9 +51,9 @@ npm run dev
 
 Een push naar `main` deployt automatisch naar GitHub Pages.
 
-## Online zetten (checklist)
+## Online zetten (checklist — alleen nodig bij een nieuw Supabase-project; voor de huidige versie is dit al gedaan)
 
-1. Supabase-project: alle migraties toepassen (`npx supabase db push` of via de Supabase-connector).
+1. Supabase-project: alle migraties toepassen (eerst `npx supabase link --project-ref <ref>`, dan `npx supabase db push`).
 2. In Supabase → Authentication → Sign In / Providers → Email: **Confirm email uit**.
 3. Edge functions deployen (send-push, ping-user, notify-decision, vote-reminder, lift-status, soipen-comment, soipie);
    de interne functies (alle behalve ping-user en soipie) zonder JWT-check.
