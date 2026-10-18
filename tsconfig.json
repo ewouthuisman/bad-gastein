@@ -8,6 +8,7 @@
     "strict": true,
     "noEmit": true,
     "allowImportingTsExtensions": true,
+    "paths": { "npm:@supabase/supabase-js@2": ["./node_modules/@supabase/supabase-js"] },
     "skipLibCheck": true,
     "resolveJsonModule": true,
     "isolatedModules": true,
