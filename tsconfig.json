@@ -10,7 +10,7 @@
     "skipLibCheck": true,
     "resolveJsonModule": true,
     "isolatedModules": true,
-    "types": ["vite/client", "vite-plugin-pwa/client", "@testing-library/jest-dom"]
+    "types": ["vite/client", "vite-plugin-pwa/client", "@testing-library/jest-dom", "geojson", "node"]
   },
   "include": ["src", "tests", "vite.config.ts", "scripts"]
 }

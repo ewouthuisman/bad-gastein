@@ -13,7 +13,7 @@ export default defineConfig({
       filename: 'sw.ts',
       registerType: 'autoUpdate',
       injectManifest: {
-        globPatterns: ['**/*.{js,css,html,png,svg,json,pdf,webp}'],
+        globPatterns: ['**/*.{js,mjs,css,html,png,svg,json,pdf,webp}'],
         maximumFileSizeToCacheInBytes: 15 * 1024 * 1024,
       },
       manifest: {

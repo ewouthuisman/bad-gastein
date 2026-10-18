@@ -1,3 +1,4 @@
+import { useState } from 'react';
 import { HashRouter, Navigate, Outlet, Route, Routes } from 'react-router-dom';
 import { TabBar } from './tabs/TabBar';
 import { KaartTab } from './tabs/KaartTab';
@@ -8,18 +9,33 @@ import { PlanningTab } from './tabs/PlanningTab';
 import { AuthProvider, useAuth } from './auth/AuthProvider';
 import { LoginPage } from './auth/LoginPage';
 import { RegisterPage } from './auth/RegisterPage';
+import { ProfileSheet } from './auth/ProfileSheet';
+import { LocationProvider } from './features/location/LocationProvider';
+import { initials } from './features/map/layers';
 
 function SignedInShell() {
-  const { session, loading } = useAuth();
+  const { session, profile, loading } = useAuth();
+  const [showProfile, setShowProfile] = useState(false);
   if (loading) return <div className="page muted">Laden…</div>;
   if (!session) return <Navigate to="/login" replace />;
   return (
-    <div className="shell">
-      <main className="content">
-        <Outlet />
-      </main>
-      <TabBar />
-    </div>
+    <LocationProvider>
+      <div className="shell">
+        <main className="content">
+          <Outlet />
+        </main>
+        <TabBar />
+        <button type="button" className="profile-btn" aria-label="Profiel" style={{ background: profile?.color ?? '#fff' }}
+          onClick={() => setShowProfile(true)}>
+          {initials(profile?.display_name ?? '?')}
+        </button>
+        {showProfile && (
+          <div className="overlay" onClick={(e) => e.target === e.currentTarget && setShowProfile(false)}>
+            <ProfileSheet onClose={() => setShowProfile(false)} />
+          </div>
+        )}
+      </div>
+    </LocationProvider>
   );
 }
 
