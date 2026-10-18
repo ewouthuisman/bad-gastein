@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react';
-import { supabase } from '../../lib/supabase';
+import { supabase, uniqueChannel } from '../../lib/supabase';
 import type { MapPerson } from '../map/layers';
 
 interface Row {
@@ -29,8 +29,7 @@ export function usePeople(): MapPerson[] {
       );
     }
     void load();
-    const ch = supabase
-      .channel('people')
+    const ch = uniqueChannel('people')
       .on('postgres_changes', { event: '*', schema: 'public', table: 'locations' }, () => void load())
       .on('postgres_changes', { event: '*', schema: 'public', table: 'profiles' }, () => void load())
       .subscribe();

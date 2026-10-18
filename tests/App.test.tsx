@@ -5,7 +5,7 @@ vi.mock('../src/lib/staticData', () => ({ loadGraph: () => new Promise(() => {})
 vi.mock('../src/lib/supabase', () => {
   const query = { select: () => query, order: () => Promise.resolve({ data: [] }), then: (r: (v: unknown) => void) => r({ data: [] }) };
   const channel = { on: () => channel, subscribe: () => channel };
-  return { supabase: { from: () => query, channel: () => channel, removeChannel: () => Promise.resolve(), auth: {}, functions: { invoke: vi.fn() } } };
+  return { uniqueChannel: () => channel, supabase: { from: () => query, channel: () => channel, removeChannel: () => Promise.resolve(), auth: {}, functions: { invoke: vi.fn() } } };
 });
 import { MemoryRouter } from 'react-router-dom';
 import { AppRoutes } from '../src/App';

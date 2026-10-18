@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react';
-import { supabase } from '../../lib/supabase';
+import { supabase, uniqueChannel } from '../../lib/supabase';
 import { loadPlaces } from '../../lib/staticData';
 import type { Place, PlaceKind } from '../nav/types';
 
@@ -61,7 +61,7 @@ export function usePlaces(): AppPlace[] {
       if (!cancelled) setPlaces(mergePlaces(osm, (data as DbPlace[]) ?? []));
     }
     void load();
-    const ch = supabase.channel('places').on('postgres_changes', { event: '*', schema: 'public', table: 'places' }, () => void load()).subscribe();
+    const ch = uniqueChannel('places').on('postgres_changes', { event: '*', schema: 'public', table: 'places' }, () => void load()).subscribe();
     return () => {
       cancelled = true;
       void supabase.removeChannel(ch);

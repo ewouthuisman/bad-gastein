@@ -6,3 +6,7 @@ const anonKey = import.meta.env.VITE_SUPABASE_ANON_KEY || 'missing-anon-key';
 export const supabase = createClient(url, anonKey, {
   auth: { persistSession: true, autoRefreshToken: true, detectSessionInUrl: false },
 });
+
+let channelSeq = 0;
+/** supabase.channel() reuses channels by name; every hook instance needs its own. */
+export const uniqueChannel = (name: string) => supabase.channel(`${name}-${++channelSeq}`);

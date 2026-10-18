@@ -13,6 +13,7 @@ import { ProfileSheet } from './auth/ProfileSheet';
 import { LocationProvider } from './features/location/LocationProvider';
 import { initials } from './features/map/layers';
 import { InstallBanner } from './features/push/InstallBanner';
+import { BarDwellTracker } from './features/soipen/BarDwellTracker';
 
 function SignedInShell() {
   const { session, profile, loading } = useAuth();
@@ -31,6 +32,7 @@ function SignedInShell() {
           {initials(profile?.display_name ?? '?')}
         </button>
         <InstallBanner />
+        <BarDwellTracker />
         {showProfile && (
           <div className="overlay" onClick={(e) => e.target === e.currentTarget && setShowProfile(false)}>
             <ProfileSheet onClose={() => setShowProfile(false)} />

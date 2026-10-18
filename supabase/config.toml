@@ -422,3 +422,6 @@ verify_jwt = false
 
 [functions.vote-reminder]
 verify_jwt = false
+
+[functions.soipen-comment]
+verify_jwt = false

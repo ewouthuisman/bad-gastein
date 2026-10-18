@@ -1,5 +1,5 @@
 import { useCallback, useEffect, useState } from 'react';
-import { supabase } from '../../lib/supabase';
+import { supabase, uniqueChannel } from '../../lib/supabase';
 import type { Poll, PollOption, Proposal } from './PollCard';
 import type { TallyVote } from './tally';
 import type { PlaceKind } from '../nav/types';
@@ -36,8 +36,7 @@ export function usePlanning(day: string) {
 
   useEffect(() => {
     void load();
-    const ch = supabase
-      .channel(`planning-${day}`)
+    const ch = uniqueChannel(`planning-${day}`)
       .on('postgres_changes', { event: '*', schema: 'public', table: 'votes' }, () => void load())
       .on('postgres_changes', { event: '*', schema: 'public', table: 'poll_options' }, () => void load())
       .on('postgres_changes', { event: '*', schema: 'public', table: 'polls' }, () => void load())
