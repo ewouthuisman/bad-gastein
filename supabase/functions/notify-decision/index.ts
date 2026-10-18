@@ -13,7 +13,7 @@ const KIND_LABEL: Record<string, string> = {
 };
 
 Deno.serve(async (req) => {
-  if (!isInternal(req)) return json({ error: 'forbidden' }, 403);
+  if (!(await isInternal(req))) return json({ error: 'forbidden' }, 403);
   const { pollId } = (await req.json()) as { pollId: string };
   const db = adminClient();
   const { data: poll } = await db.from('polls').select('id, day, kind, decided_option_id').eq('id', pollId).single();

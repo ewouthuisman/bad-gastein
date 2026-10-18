@@ -11,7 +11,7 @@ const MIN_INTERVAL_MS = 10 * 60_000;
 
 Deno.serve(async (req) => {
   if (req.method === 'OPTIONS') return new Response('ok', { headers: corsHeaders });
-  const internal = isInternal(req);
+  const internal = await isInternal(req);
   if (!internal && !(await callerId(req))) return json({ error: 'unauthorized' }, 401);
 
   const now = new Date();

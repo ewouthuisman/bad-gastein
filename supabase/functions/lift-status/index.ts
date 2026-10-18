@@ -23,7 +23,7 @@ async function reportHtml(): Promise<{ url: string; html: string } | null> {
 }
 
 Deno.serve(async (req) => {
-  if (!isInternal(req)) return json({ error: 'forbidden' }, 403);
+  if (!(await isInternal(req))) return json({ error: 'forbidden' }, 403);
   const force = new URL(req.url).searchParams.get('force') === '1';
   const { h, m } = viennaTime(new Date());
   const minutes = h * 60 + m;

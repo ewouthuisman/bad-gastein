@@ -6,3 +6,4 @@ supabase/.temp
 supabase/functions/.env
 .superpowers
 public/maplibre
+*.tsbuildinfo

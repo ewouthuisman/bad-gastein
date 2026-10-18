@@ -1,4 +1,5 @@
 // Free-tier LLM access: Google Gemini first, an OpenRouter ":free" model as fallback.
+import { setting } from './supabase.ts';
 
 export interface ChatMessage {
   role: 'system' | 'user' | 'assistant';
@@ -6,9 +7,9 @@ export interface ChatMessage {
 }
 
 async function gemini(messages: ChatMessage[], maxTokens: number): Promise<string> {
-  const key = Deno.env.get('GEMINI_API_KEY');
+  const key = await setting('GEMINI_API_KEY');
   if (!key) throw new Error('no gemini key');
-  const model = Deno.env.get('GEMINI_MODEL') ?? 'gemini-2.5-flash';
+  const model = (await setting('GEMINI_MODEL')) ?? 'gemini-2.5-flash';
   const system = messages.filter((m) => m.role === 'system').map((m) => m.content).join('\n\n');
   const res = await fetch(`https://generativelanguage.googleapis.com/v1beta/models/${model}:generateContent`, {
     method: 'POST',
@@ -29,12 +30,12 @@ async function gemini(messages: ChatMessage[], maxTokens: number): Promise<strin
 }
 
 async function openRouter(messages: ChatMessage[], maxTokens: number): Promise<string> {
-  const key = Deno.env.get('OPENROUTER_API_KEY');
+  const key = await setting('OPENROUTER_API_KEY');
   if (!key) throw new Error('no openrouter key');
   const res = await fetch('https://openrouter.ai/api/v1/chat/completions', {
     method: 'POST',
     headers: { 'Content-Type': 'application/json', Authorization: `Bearer ${key}` },
-    body: JSON.stringify({ model: Deno.env.get('OPENROUTER_MODEL') ?? 'openrouter/free', messages, max_tokens: maxTokens }),
+    body: JSON.stringify({ model: (await setting('OPENROUTER_MODEL')) ?? 'openrouter/free', messages, max_tokens: maxTokens }),
   });
   if (!res.ok) throw new Error(`openrouter ${res.status}`);
   const data = await res.json();

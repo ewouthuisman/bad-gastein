@@ -5,7 +5,7 @@ import { reminderDue, tripDays, viennaDate } from '../_shared/time.ts';
 import { nextDay, reminderRecipients } from '../_shared/reminder.ts';
 
 Deno.serve(async (req) => {
-  if (!isInternal(req)) return json({ error: 'forbidden' }, 403);
+  if (!(await isInternal(req))) return json({ error: 'forbidden' }, 403);
   const now = new Date();
   const force = new URL(req.url).searchParams.get('force') === '1';
   if (!force && !reminderDue(now)) return json({ skipped: 'not due' });

@@ -1,5 +1,6 @@
 import webpush from 'npm:web-push@3.6.7';
 import type { SupabaseClient } from 'npm:@supabase/supabase-js@2';
+import { setting } from './supabase.ts';
 
 export interface PushPayload {
   title: string;
@@ -8,19 +9,19 @@ export interface PushPayload {
 }
 
 let configured = false;
-function configure() {
+async function configure() {
   if (configured) return;
   webpush.setVapidDetails(
-    Deno.env.get('VAPID_SUBJECT') ?? 'mailto:admin@example.com',
-    Deno.env.get('VAPID_PUBLIC_KEY')!,
-    Deno.env.get('VAPID_PRIVATE_KEY')!,
+    (await setting('VAPID_SUBJECT')) ?? 'mailto:admin@example.com',
+    (await setting('VAPID_PUBLIC_KEY'))!,
+    (await setting('VAPID_PRIVATE_KEY'))!,
   );
   configured = true;
 }
 
 /** Sends a notification to every device of the given users; prunes expired subscriptions. */
 export async function sendPush(db: SupabaseClient, userIds: string[] | 'all', payload: PushPayload): Promise<{ sent: number; failed: number }> {
-  configure();
+  await configure();
   let q = db.from('push_subscriptions').select('endpoint, p256dh, auth, user_id');
   if (userIds !== 'all') {
     if (!userIds.length) return { sent: 0, failed: 0 };
