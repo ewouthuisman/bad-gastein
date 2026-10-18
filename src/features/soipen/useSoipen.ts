@@ -1,4 +1,5 @@
 import { useCallback, useEffect, useState } from 'react';
+import { useOnResume } from '../../lib/useOnResume';
 import { supabase, uniqueChannel } from '../../lib/supabase';
 import { viennaDate } from '../../lib/time';
 import { computeSnapshot, type SoipenRows, type SoipenSnapshot } from '../../../supabase/functions/_shared/soipenCompute.ts';
@@ -44,6 +45,10 @@ export function useSoipen(): SoipenState {
     });
   }, []);
 
+  // Re-run (reload + resubscribe) when the app comes back to the foreground.
+  const [resume, setResume] = useState(0);
+  useOnResume(() => setResume((n) => n + 1));
+
   useEffect(() => {
     void load();
     // Ask for fresh commentary; the function itself limits this to once per 10 minutes.
@@ -58,7 +63,7 @@ export function useSoipen(): SoipenState {
       clearInterval(timer);
       void supabase.removeChannel(ch);
     };
-  }, [load]);
+  }, [load, resume]);
 
   return state;
 }

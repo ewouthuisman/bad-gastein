@@ -1,4 +1,5 @@
 import { useCallback, useEffect, useState } from 'react';
+import { useOnResume } from '../../lib/useOnResume';
 import { supabase, uniqueChannel } from '../../lib/supabase';
 import type { Poll, PollOption, Proposal } from './PollCard';
 import type { TallyVote } from './tally';
@@ -34,6 +35,10 @@ export function usePlanning(day: string) {
     });
   }, [day]);
 
+  // Re-run (reload + resubscribe) when the app comes back to the foreground.
+  const [resume, setResume] = useState(0);
+  useOnResume(() => setResume((n) => n + 1));
+
   useEffect(() => {
     void load();
     const ch = uniqueChannel(`planning-${day}`)
@@ -42,7 +47,7 @@ export function usePlanning(day: string) {
       .on('postgres_changes', { event: '*', schema: 'public', table: 'polls' }, () => void load())
       .subscribe();
     return () => void supabase.removeChannel(ch);
-  }, [day, load]);
+  }, [day, load, resume]);
 
   const run = async (p: PromiseLike<{ error: { message: string } | null }>) => {
     const { error: err } = await p;

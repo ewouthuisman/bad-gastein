@@ -3,6 +3,7 @@ import { precacheAndRoute, cleanupOutdatedCaches } from 'workbox-precaching';
 import { registerRoute } from 'workbox-routing';
 import { CacheFirst, StaleWhileRevalidate } from 'workbox-strategies';
 import { ExpirationPlugin } from 'workbox-expiration';
+import { focusOrOpen } from './features/push/notificationClick';
 
 declare const self: ServiceWorkerGlobalScope & { __WB_MANIFEST: Array<{ url: string; revision: string | null }> };
 
@@ -49,15 +50,8 @@ self.addEventListener('notificationclick', (event) => {
   event.notification.close();
   const target = new URL((event.notification.data as { url?: string })?.url ?? './', self.registration.scope).href;
   event.waitUntil(
-    (async () => {
-      const windows = await self.clients.matchAll({ type: 'window', includeUncontrolled: true });
-      for (const w of windows) {
-        if ('focus' in w) {
-          await w.navigate(target);
-          return w.focus();
-        }
-      }
-      return self.clients.openWindow(target);
-    })(),
+    self.clients
+      .matchAll({ type: 'window', includeUncontrolled: true })
+      .then((windows) => focusOrOpen(windows as WindowClient[], target, (u) => self.clients.openWindow(u))),
   );
 });

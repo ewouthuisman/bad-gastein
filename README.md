@@ -50,3 +50,16 @@ npm run dev
   `npx tsx scripts/build-ski-graph.ts`, daarna `npx tsx scripts/check-routes.ts`.
 
 Een push naar `main` deployt automatisch naar GitHub Pages.
+
+## Online zetten (checklist)
+
+1. Supabase-project: alle migraties toepassen (`npx supabase db push` of via de Supabase-connector).
+2. In Supabase → Authentication → Sign In / Providers → Email: **Confirm email uit**.
+3. Edge functions deployen (send-push, ping-user, notify-decision, vote-reminder, lift-status, soipen-comment, soipie);
+   de interne functies (alle behalve ping-user en soipie) zonder JWT-check.
+4. Edge function secrets: `VAPID_PUBLIC_KEY`, `VAPID_PRIVATE_KEY`, `VAPID_SUBJECT`, `HOOK_SECRET`, `GEMINI_API_KEY`.
+5. In de database `private.settings` vullen: `functions_url` = `https://<project>.supabase.co/functions/v1` en
+   `hook_secret` = dezelfde waarde als `HOOK_SECRET`. Zonder deze twee gaan er stilletjes geen meldingen,
+   herinneringen, liftstatus of Soipen-commentaar uit.
+6. Groepscode instellen: `update app_config set value = '<code>' where key = 'group_code';` (of via Beheer).
+7. GitHub: repo-variabelen `VITE_SUPABASE_URL`, `VITE_SUPABASE_ANON_KEY`, `VITE_VAPID_PUBLIC_KEY`; Pages-bron = GitHub Actions.

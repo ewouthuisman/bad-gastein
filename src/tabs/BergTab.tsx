@@ -1,4 +1,5 @@
-import { useCallback, useEffect, useState } from 'react';
+import { useCallback, useEffect, useMemo, useState } from 'react';
+import { closedStatus } from '../features/nav/closedStatus';
 import { useSearchParams } from 'react-router-dom';
 import { MapView } from '../features/map/MapView';
 import { usePlaces } from '../features/map/places';
@@ -20,7 +21,7 @@ export function BergTab() {
   const { position } = useMyLocation();
   const places = usePlaces();
   const people = usePeople();
-  const { graph, notes, status, closed } = useNavData();
+  const { graph, notes, status } = useNavData();
   const [route, setRoute] = useState<GEdge[]>([]);
   const [now, setNow] = useState(() => new Date());
   const [difficulty, setDifficulty] = useState<Profile['max_difficulty']>(profile?.max_difficulty ?? 'intermediate');
@@ -33,6 +34,7 @@ export function BergTab() {
     return () => clearInterval(t);
   }, []);
 
+  const { closed, stale } = useMemo(() => closedStatus(status, now), [status, now]);
   const onRoute = useCallback((edges: GEdge[]) => setRoute(edges), []);
   const to = params.get('to') ?? (params.get('toPerson') ? `person:${params.get('toPerson')}` : undefined);
 
@@ -62,6 +64,7 @@ export function BergTab() {
           onDifficultyChange={(d) => void changeDifficulty(d)}
           onRoute={onRoute}
           initialTo={to}
+          statusNote={stale ? 'Liftstatus is verouderd; de route houdt geen rekening met dichte liften.' : undefined}
         />
       ) : (
         <div className="card muted">Pistenetwerk laden…</div>

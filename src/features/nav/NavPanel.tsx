@@ -20,6 +20,7 @@ export interface NavPanelProps {
   onRoute: (edges: GEdge[]) => void;
   initialFrom?: string;
   initialTo?: string;
+  statusNote?: string;
 }
 
 const FAR_FROM_PISTE_M = 400;
@@ -113,6 +114,7 @@ export function NavPanel(props: NavPanelProps) {
           {Object.entries(DIFFICULTY_LABELS).map(([k, v]) => <option key={k} value={k}>{v}</option>)}
         </select>
       </label>
+      {props.statusNote && <p className="muted">{props.statusNote}</p>}
       {result && 'error' in result && result.error && <p className="error">{result.error}</p>}
       {result && 'route' in result && result.route && (
         <>

@@ -1,4 +1,5 @@
 import { useEffect, useMemo, useState } from 'react';
+import { useOnResume } from '../../lib/useOnResume';
 import { supabase, uniqueChannel } from '../../lib/supabase';
 import { loadGraph } from '../../lib/staticData';
 import { applyOverrides, overrideNotes, type NavOverride } from './overrides';
@@ -20,6 +21,10 @@ export function useNavData() {
   const [base, setBase] = useState<SkiGraph | null>(null);
   const [overrides, setOverrides] = useState<NavOverride[]>(cachedOverrides);
   const [status, setStatus] = useState<LiftStatusRow[]>([]);
+
+  // Re-run (reload + resubscribe) when the app comes back to the foreground.
+  const [resume, setResume] = useState(0);
+  useOnResume(() => setResume((n) => n + 1));
 
   useEffect(() => {
     void loadGraph().then(setBase);
@@ -45,11 +50,9 @@ export function useNavData() {
       .on('postgres_changes', { event: '*', schema: 'public', table: 'nav_overrides' }, () => void load())
       .subscribe();
     return () => void supabase.removeChannel(ch);
-  }, []);
+  }, [resume]);
 
   const graph = useMemo(() => (base ? applyOverrides(base, overrides) : null), [base, overrides]);
   const notes = useMemo(() => overrideNotes(overrides), [overrides]);
-  // lift_status ids look like 'lift:graukogel i' / 'piste:27'; graph statusIds omit the prefix.
-  const closed = useMemo(() => new Set(status.filter((s) => !s.is_open).map((s) => s.id.replace(/^(lift|piste):/, ''))), [status]);
-  return { graph, base, overrides, notes, status, closed };
+  return { graph, base, overrides, notes, status };
 }

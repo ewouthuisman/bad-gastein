@@ -1,4 +1,5 @@
 import { useEffect, useState } from 'react';
+import { useOnResume } from '../../lib/useOnResume';
 import { supabase, uniqueChannel } from '../../lib/supabase';
 import { loadPlaces } from '../../lib/staticData';
 import type { Place, PlaceKind } from '../nav/types';
@@ -56,6 +57,10 @@ const CACHE_KEY = 'places-db';
 
 export function usePlaces(): AppPlace[] {
   const [places, setPlaces] = useState<AppPlace[]>([]);
+  // Re-run (reload + resubscribe) when the app comes back to the foreground.
+  const [resume, setResume] = useState(0);
+  useOnResume(() => setResume((n) => n + 1));
+
   useEffect(() => {
     let cancelled = false;
     async function load() {
@@ -76,6 +81,6 @@ export function usePlaces(): AppPlace[] {
       cancelled = true;
       void supabase.removeChannel(ch);
     };
-  }, []);
+  }, [resume]);
   return places;
 }

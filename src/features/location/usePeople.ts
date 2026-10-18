@@ -1,4 +1,5 @@
 import { useEffect, useState } from 'react';
+import { useOnResume } from '../../lib/useOnResume';
 import { supabase, uniqueChannel } from '../../lib/supabase';
 import type { MapPerson } from '../map/layers';
 
@@ -12,6 +13,10 @@ interface Row {
 /** Everyone in the group with their last known location, kept live via Realtime. */
 export function usePeople(): MapPerson[] {
   const [people, setPeople] = useState<MapPerson[]>([]);
+  // Re-run (reload + resubscribe) when the app comes back to the foreground.
+  const [resume, setResume] = useState(0);
+  useOnResume(() => setResume((n) => n + 1));
+
   useEffect(() => {
     let cancelled = false;
     async function load() {
@@ -37,6 +42,6 @@ export function usePeople(): MapPerson[] {
       cancelled = true;
       void supabase.removeChannel(ch);
     };
-  }, []);
+  }, [resume]);
   return people;
 }
