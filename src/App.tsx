@@ -12,6 +12,7 @@ import { RegisterPage } from './auth/RegisterPage';
 import { ProfileSheet } from './auth/ProfileSheet';
 import { LocationProvider } from './features/location/LocationProvider';
 import { initials } from './features/map/layers';
+import { InstallBanner } from './features/push/InstallBanner';
 
 function SignedInShell() {
   const { session, profile, loading } = useAuth();
@@ -29,6 +30,7 @@ function SignedInShell() {
           onClick={() => setShowProfile(true)}>
           {initials(profile?.display_name ?? '?')}
         </button>
+        <InstallBanner />
         {showProfile && (
           <div className="overlay" onClick={(e) => e.target === e.currentTarget && setShowProfile(false)}>
             <ProfileSheet onClose={() => setShowProfile(false)} />

@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import { supabase } from '../lib/supabase';
 import { useAuth } from './AuthProvider';
 import type { Profile } from '../lib/types';
+import { NotificationsCard } from '../features/push/InstallGuide';
 
 export const PALETTE = ['#ff6b6b', '#4dabf7', '#51cf66', '#fcc419', '#cc5de8', '#ff922b', '#20c997', '#f06595', '#94d82d', '#845ef7'];
 
@@ -53,6 +54,7 @@ export function ProfileSheet({ onClose }: { onClose: () => void }) {
           {Object.entries(DIFFICULTY_LABELS).map(([k, v]) => <option key={k} value={k}>{v}</option>)}
         </select>
       </label>
+      <NotificationsCard />
       {error && <p className="error">{error}</p>}
       <div className="row">
         <button className="btn primary" type="button" onClick={save}>Opslaan</button>

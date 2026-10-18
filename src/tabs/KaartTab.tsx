@@ -52,8 +52,10 @@ export function KaartTab() {
 
   async function ping(targetUserId: string) {
     setPingState('Versturen…');
-    const { error: err } = await supabase.functions.invoke('ping-user', { body: { targetUserId } });
-    setPingState(err ? 'Kon geen melding sturen' : 'Gevraagd! Je ziet het zodra die persoon de app opent.');
+    const { data, error: err } = await supabase.functions.invoke('ping-user', { body: { targetUserId } });
+    if (err) setPingState('Kon geen melding sturen (misschien vroeg je het net al).');
+    else if (!data?.sent) setPingState('Die persoon heeft meldingen nog niet aangezet.');
+    else setPingState('Gevraagd! Je ziet de locatie zodra die persoon de app opent.');
   }
 
   return (
