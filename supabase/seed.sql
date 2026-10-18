@@ -3,9 +3,9 @@
 insert into public.app_config (key, value) values ('group_code', '[PLACEHOLDER]')
 on conflict (key) do nothing;
 
--- Coordinates approximate (just below the Graukogel valley station); corrected from OSM in the graph build.
+-- Coordinates from OSM (Schillerhof).
 insert into public.places (name, kind, lat, lng, website)
-values ('Panorama Spa Lodges (Das Schiller)', 'house', 47.1133, 13.1381, null);
+values ('Panorama Spa Lodges (Das Schiller)', 'house', 47.1159159, 13.1388841, null);
 
 -- Standard polls for Mon 1 Mar – Fri 5 Mar 2027.
 insert into public.polls (day, kind)

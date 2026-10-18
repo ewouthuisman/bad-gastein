@@ -1,0 +1,21 @@
+{
+  "elements": [
+    { "type": "way", "id": 100, "nodes": [1, 2], "geometry": [{"lat": 47.0, "lon": 13.0}, {"lat": 47.01, "lon": 13.0}],
+      "tags": { "aerialway": "chair_lift", "name": "Testbahn" } },
+    { "type": "way", "id": 200, "nodes": [3, 4, 5], "geometry": [{"lat": 47.01002, "lon": 13.0}, {"lat": 47.005, "lon": 13.002}, {"lat": 47.00005, "lon": 13.0}],
+      "tags": { "piste:type": "downhill", "piste:difficulty": "easy", "piste:ref": "27" } },
+    { "type": "way", "id": 201, "nodes": [4, 6], "geometry": [{"lat": 47.005, "lon": 13.002}, {"lat": 47.003, "lon": 13.006}],
+      "tags": { "piste:type": "downhill", "piste:difficulty": "intermediate" } },
+    { "type": "way", "id": 202, "nodes": [6, 7], "geometry": [{"lat": 47.003, "lon": 13.006}, {"lat": 47.0025, "lon": 13.008}],
+      "tags": { "piste:type": "downhill", "piste:difficulty": "novice", "piste:oneway": "no", "name": "Verbindungsweg" } },
+    { "type": "way", "id": 203, "nodes": [2, 8], "geometry": [{"lat": 47.01, "lon": 13.0}, {"lat": 47.006, "lon": 12.996}],
+      "tags": { "piste:type": "downhill", "piste:difficulty": "freeride" } },
+    { "type": "way", "id": 300, "nodes": [1, 9], "geometry": [{"lat": 47.0, "lon": 13.0}, {"lat": 47.02, "lon": 13.01}],
+      "tags": { "aerialway": "goods" } },
+    { "type": "relation", "id": 900, "members": [{ "type": "way", "ref": 201, "role": "" }],
+      "tags": { "route": "piste", "piste:type": "downhill", "ref": "5", "name": "Talabfahrt" } },
+    { "type": "node", "id": 50, "lat": 47.0051, "lon": 13.0025, "tags": { "amenity": "restaurant", "name": "Testhütte", "website": "https://example.at" } },
+    { "type": "node", "id": 51, "lat": 47.1, "lon": 13.1, "tags": { "amenity": "bar", "name": "Silver Bullet" } },
+    { "type": "node", "id": 52, "lat": 47.0001, "lon": 13.0001, "tags": { "tourism": "apartment", "name": "Das Schiller" } }
+  ]
+}
