@@ -62,3 +62,32 @@ describe('buildPlaces', () => {
     expect(byName('Das Schiller')?.kind).toBe('house');
   });
 });
+
+describe('places halfway down a piste', () => {
+  it('split the piste at the vertex nearest to the hut', () => {
+    const g2 = buildGraph(osm as never, { anchors: [{ lat: 47.0451, lng: 13.0505 }] });
+    expect(g2.edges.find((e) => e.from === '30' && e.to === '31')).toBeDefined();
+    expect(g2.edges.find((e) => e.from === '31' && e.to === '32')).toBeDefined();
+    const hut = buildPlaces(osm as never, g2).find((p) => p.name === 'Mittelhütte');
+    expect(hut?.nodeId).toBe('31');
+  });
+});
+
+describe('places near several pistes', () => {
+  it('can be reached from the nearest point of every piste within range', () => {
+    // Testhütte sits beside piste 200 (node 4) and close to piste 201 which starts at node 4 as well.
+    const g3 = buildGraph(osm as never, { anchors: [{ lat: 47.0051, lng: 13.0025 }] });
+    const hut = buildPlaces(osm as never, g3).find((p) => p.name === 'Testhütte')!;
+    expect(hut.nodeIds![0]).toBe('4');
+    expect(hut.nodeIds!.length).toBeGreaterThan(0);
+    expect(new Set(hut.nodeIds).size).toBe(hut.nodeIds!.length);
+  });
+
+  it('adds one anchor vertex per nearby piste', () => {
+    // Anchor between piste 200 (x=13.0..13.002) and the freeride piste 203 (towards 12.996).
+    const g4 = buildGraph(osm as never, { anchors: [{ lat: 47.0062, lng: 12.9985 }], anchorM: 400 });
+    const nodeIds = new Set(g4.nodes.map((n) => n.id));
+    expect(nodeIds.has('4')).toBe(true);
+    expect(nodeIds.has('8')).toBe(true);
+  });
+});

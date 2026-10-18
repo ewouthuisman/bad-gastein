@@ -425,3 +425,6 @@ verify_jwt = false
 
 [functions.soipen-comment]
 verify_jwt = false
+
+[functions.lift-status]
+verify_jwt = false

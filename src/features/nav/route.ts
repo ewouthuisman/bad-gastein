@@ -49,15 +49,19 @@ class MinHeap {
   }
 }
 
-function dijkstra(g: SkiGraph, from: string, to: string, allowed: (e: GEdge) => boolean): GEdge[] | null {
+function dijkstra(g: SkiGraph, from: string, targets: Set<string>, allowed: (e: GEdge) => boolean): GEdge[] | null {
   const adj = outgoing(g);
   const dist = new Map<string, number>([[from, 0]]);
   const via = new Map<string, GEdge>();
   const heap = new MinHeap();
   heap.push([0, from]);
-  while (heap.size) {
+  let reached: string | null = targets.has(from) ? from : null;
+  while (heap.size && !reached) {
     const [d, node] = heap.pop();
-    if (node === to) break;
+    if (targets.has(node)) {
+      reached = node;
+      break;
+    }
     if (d > (dist.get(node) ?? Infinity)) continue;
     for (const e of adj.get(node) ?? []) {
       if (!allowed(e)) continue;
@@ -69,9 +73,9 @@ function dijkstra(g: SkiGraph, from: string, to: string, allowed: (e: GEdge) => 
       }
     }
   }
-  if (from !== to && !via.has(to)) return null;
+  if (!reached) return null;
   const path: GEdge[] = [];
-  for (let n = to; n !== from; ) {
+  for (let n = reached; n !== from; ) {
     const e = via.get(n)!;
     path.unshift(e);
     n = e.from;
@@ -79,14 +83,16 @@ function dijkstra(g: SkiGraph, from: string, to: string, allowed: (e: GEdge) => 
   return path;
 }
 
-export function findRoute(g: SkiGraph, from: string, to: string, opts: RouteOpts): RouteResult {
+/** Route to one end point, or to the nearest reachable of several end points (e.g. all piste points beside a hut). */
+export function findRoute(g: SkiGraph, from: string, to: string | string[], opts: RouteOpts): RouteResult {
+  const targets = new Set(Array.isArray(to) ? to : [to]);
   const cap = DIFFICULTY_RANK[opts.maxDifficulty];
   const withinCap = (e: GEdge) => edgeRank(e) <= cap;
   const isOpen = (e: GEdge) => !(e.statusId && opts.closedStatusIds.has(e.statusId));
   // Expert and freeride terrain is never routed, whatever the cap.
   const notOffPiste = (e: GEdge) => edgeRank(e) <= DIFFICULTY_RANK.advanced;
 
-  const path = dijkstra(g, from, to, (e) => withinCap(e) && isOpen(e));
+  const path = dijkstra(g, from, targets, (e) => withinCap(e) && isOpen(e));
   if (path) {
     const seconds = path.reduce((s, e) => s + edgeSeconds(e), 0);
     return {
@@ -96,8 +102,8 @@ export function findRoute(g: SkiGraph, from: string, to: string, opts: RouteOpts
       minutes: Math.round(seconds / 60),
     };
   }
-  if (dijkstra(g, from, to, withinCap)) return { ok: false, reason: 'closed' };
-  if (dijkstra(g, from, to, (e) => notOffPiste(e) && isOpen(e)) || dijkstra(g, from, to, () => true)) {
+  if (dijkstra(g, from, targets, withinCap)) return { ok: false, reason: 'closed' };
+  if (dijkstra(g, from, targets, (e) => notOffPiste(e) && isOpen(e)) || dijkstra(g, from, targets, () => true)) {
     return { ok: false, reason: 'difficulty' };
   }
   return { ok: false, reason: 'no-route' };

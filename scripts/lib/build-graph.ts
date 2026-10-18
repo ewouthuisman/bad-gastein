@@ -1,5 +1,6 @@
 // Turns an Overpass JSON snapshot of the Gastein valley into a routable ski graph and a place list.
 import { haversineM, polylineLengthM } from '../../src/lib/geo';
+import { normaliseLiftName } from '../../supabase/functions/_shared/names.ts';
 import type { Difficulty, GEdge, GNode, Place, PlaceKind, SkiGraph } from '../../src/features/nav/types';
 
 type Tags = Record<string, string>;
@@ -29,7 +30,13 @@ const DIFFICULTIES = new Set<Difficulty>(['novice', 'easy', 'intermediate', 'adv
 export const APRES_NAMES =
   /hirschen|weitmoser|aeroplan|salettl|feuer|gastein alm|silver bullet|haeggblom|lederhosen|schirmbar|après|apres/i;
 
-interface BuildOpts { snapM?: number; liftSnapM?: number }
+interface BuildOpts {
+  snapM?: number;
+  liftSnapM?: number;
+  /** Points of interest (huts, bars): the nearest piste vertex within anchorM becomes a graph node. */
+  anchors?: { lat: number; lng: number }[];
+  anchorM?: number;
+}
 
 interface WayInfo {
   way: OsmWay;
@@ -76,16 +83,6 @@ function collectWays(elements: OsmElement[]): WayInfo[] {
 
 const key = (id: number) => String(id);
 
-export function normaliseLiftName(name: string): string {
-  return name
-    .toLowerCase()
-    .normalize('NFD')
-    .replace(/[̀-ͯ]/g, '')
-    .replace(/bahn/g, '')
-    .replace(/[^a-z0-9 ]/g, ' ')
-    .replace(/\s+/g, ' ')
-    .trim();
-}
 
 export function buildGraph(osm: OverpassJson, opts: BuildOpts = {}): SkiGraph {
   const snapM = opts.snapM ?? 40;
@@ -108,6 +105,24 @@ export function buildGraph(osm: OverpassJson, opts: BuildOpts = {}): SkiGraph {
     graphNodes.add(ids[0]);
     graphNodes.add(ids[ids.length - 1]);
     if (w.kind === 'piste') for (const id of ids) if ((usage.get(id) ?? 0) > 1) graphNodes.add(id);
+  }
+
+  // Anchors: split pistes where a hut or bar sits beside them, so routes can end there.
+  const anchorM = opts.anchorM ?? 150;
+  for (const a of opts.anchors ?? []) {
+    for (const w of ways) {
+      if (w.kind !== 'piste') continue;
+      let best: string | null = null;
+      let bestD = Infinity;
+      for (const n of w.way.nodes) {
+        const d = haversineM(a, coords.get(key(n))!);
+        if (d < bestD) {
+          bestD = d;
+          best = key(n);
+        }
+      }
+      if (best && bestD <= anchorM) graphNodes.add(best);
+    }
   }
 
   // Snap: each way endpoint links to the nearest vertex of every other way within range,
@@ -215,16 +230,13 @@ export function buildPlaces(osm: OverpassJson, graph: SkiGraph, maxSnapM = 150):
     const pos =
       el.type === 'node' ? { lat: el.lat, lng: el.lon } : el.center ? { lat: el.center.lat, lng: el.center.lon } : null;
     if (!pos) continue;
-    let nearest: GNode | null = null;
-    let nearestD = Infinity;
-    for (const n of graph.nodes) {
-      const d = haversineM(pos, n);
-      if (d < nearestD) {
-        nearestD = d;
-        nearest = n;
-      }
-    }
-    const near = nearestD <= maxSnapM;
+    const within = graph.nodes
+      .map((n) => ({ n, d: haversineM(pos, n) }))
+      .filter((x) => x.d <= maxSnapM)
+      .sort((x, y) => x.d - y.d)
+      .slice(0, 8);
+    const nearest: GNode | null = within[0]?.n ?? null;
+    const near = !!nearest;
     const kind = placeKind(t, near);
     if (!kind) continue;
     places.push({
@@ -234,6 +246,7 @@ export function buildPlaces(osm: OverpassJson, graph: SkiGraph, maxSnapM = 150):
       lat: pos.lat,
       lng: pos.lng,
       nodeId: near && nearest ? nearest.id : null,
+      nodeIds: within.map((x) => x.n.id),
       osmId: `${el.type}/${el.id}`,
       website: t.website ?? t['contact:website'],
       menuUrl: t['website:menu'] ?? t.menu,

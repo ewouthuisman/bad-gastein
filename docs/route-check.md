@@ -1,6 +1,6 @@
 # Route-check
 
-Graaf 2026-10-18: 750 knopen, 2101 verbindingen.
+Graaf 2026-10-18: 833 knopen, 2184 verbindingen.
 
 ## Skigebieden (losse delen van het netwerk)
 
@@ -9,8 +9,8 @@ Graaf 2026-10-18: 750 knopen, 2101 verbindingen.
 - 12 liften: 268099979, Gipfelbahn, Gratlift, Hochalmbahn, Jackalmlift I, Jackalmlift II, Kreuzboden Tellerlift, Kreuzbodenbahn, Schwazerlift 1, Schwazerlift 2, Waldalmbahn, ÜL Tal (2519246573)
 - 5 liften: Alteck, Eisseebahn, Gletscher Jet, Panoramabahn Klühspies, Sesselbahn 3000 (4380285332)
 - 3 liften: Goldbergbahn I, Goldbergbahn II, Kreuzkogellift (4458350258)
-- 3 liften: Graukogel I, Graukogel II, Reichebenlift (14226661703)
-- 3 liften: Ankogelbahn 1, Ankogelbahn 2, Ankogelschlepplift (11272686196)
+- 3 liften: Graukogel I, Graukogel II, Reichebenlift (4411337690)
+- 3 liften: Ankogelbahn 1, Ankogelbahn 2, Ankogelschlepplift (1175971438)
 - 3 liften: Alm Express (Förderband Fischbacherwiese), Tellerlift Fischbacherwiese (8480104850)
 - 1 liften: ESL Bellevuealm (4591821600)
 
@@ -20,14 +20,33 @@ Graaf 2026-10-18: 750 knopen, 2101 verbindingen.
 - Graukogel II (dal): 5 min
 - Graukogel I (dal): 0 min
 
-## Lift → plek (rood als maximum): 1197 ok, 110 mislukt
+## Lift → plek (rood als maximum): 1330 ok, 175 mislukt
 
+- Sendleitenbahn (berg) → Hirschenhütte: difficulty
+- Sendleitenbahn (berg) → Waldgasthof Angertal: difficulty
+- Weitmoser (berg) → Hirschenhütte: difficulty
+- Weitmoser (berg) → Waldgasthof Angertal: difficulty
+- Hohe Scharte (berg) → Hirschenhütte: difficulty
+- Hohe Scharte (berg) → Waldgasthof Angertal: difficulty
+- Angertalbahn (berg) → Hirschenhütte: difficulty
+- Angertalbahn (berg) → Waldgasthof Angertal: difficulty
+- Gletscher Jet (berg) → Duisburger Hütte: difficulty
+- Panoramabahn Klühspies (berg) → Duisburger Hütte: difficulty
+- Eisseebahn (berg) → Duisburger Hütte: difficulty
+- Kaserebenbahn (berg) → Hirschenhütte: difficulty
+- Kaserebenbahn (berg) → Waldgasthof Angertal: difficulty
 - Reichebenlift (berg) → Graukogelhütte: difficulty
+- Senderbahn I (berg) → Hirschenhütte: difficulty
+- Senderbahn I (berg) → Waldgasthof Angertal: difficulty
 - Hochalmbahn (berg) → Maislau Alm: no-route
 - Hochalmbahn (berg) → Das Albert: difficulty
 - Hochalmbahn (berg) → Après-Ski Schirm: difficulty
 - Hochalmbahn (berg) → Gasthof Maislau: no-route
 - Hochalmbahn (berg) → Wischtl-Hittn: no-route
+- Jungeralmbahn (berg) → Hirschenhütte: difficulty
+- Jungeralmbahn (berg) → Waldgasthof Angertal: difficulty
+- Schlosshochalmlift (berg) → Hirschenhütte: difficulty
+- Schlosshochalmlift (berg) → Waldgasthof Angertal: difficulty
 - Kreuzbodenbahn (berg) → Maislau Alm: no-route
 - Kreuzbodenbahn (berg) → Das Albert: difficulty
 - Kreuzbodenbahn (berg) → Après-Ski Schirm: difficulty
@@ -48,7 +67,22 @@ Graaf 2026-10-18: 750 knopen, 2101 verbindingen.
 - Gratlift (berg) → Après-Ski Schirm: no-route
 - Gratlift (berg) → Gasthof Maislau: no-route
 - Gratlift (berg) → Wischtl-Hittn: no-route
+- Burgstalllift (berg) → Hirschenhütte: difficulty
+- Burgstalllift (berg) → Waldgasthof Angertal: difficulty
+- Alteck (berg) → Duisburger Hütte: difficulty
+- Übungslift Judau (berg) → Hirschenhütte: difficulty
+- Übungslift Judau (berg) → Waldgasthof Angertal: difficulty
+- Stubnerkogelbahn I (berg) → Hirschenhütte: difficulty
+- Stubnerkogelbahn I (berg) → Waldgasthof Angertal: difficulty
 - Graukogel II (berg) → Graukogelhütte: difficulty
+- Förderbänder Angertal (berg) → Hirschenhütte: difficulty
+- Förderbänder Angertal (berg) → Waldgasthof Angertal: difficulty
+- Förderbänder Angertal (berg) → Hirschenhütte: difficulty
+- Förderbänder Angertal (berg) → Waldgasthof Angertal: difficulty
+- Förderbänder Angertal (berg) → Hirschenhütte: difficulty
+- Förderbänder Angertal (berg) → Waldgasthof Angertal: difficulty
+- Förderbänder Angertal (berg) → Hirschenhütte: difficulty
+- Förderbänder Angertal (berg) → Waldgasthof Angertal: difficulty
 - Jackalmlift II (berg) → Maislau Alm: no-route
 - Jackalmlift II (berg) → Das Albert: difficulty
 - Jackalmlift II (berg) → Après-Ski Schirm: difficulty
@@ -76,15 +110,29 @@ Graaf 2026-10-18: 750 knopen, 2101 verbindingen.
 - ÜL Tal (berg) → Maislau Alm: no-route
 - ÜL Tal (berg) → Gasthof Maislau: no-route
 - ÜL Tal (berg) → Wischtl-Hittn: no-route
+- Sesselbahn 3000 (berg) → Duisburger Hütte: difficulty
 - Waldalmbahn (berg) → Maislau Alm: no-route
 - Waldalmbahn (berg) → Das Albert: difficulty
 - Waldalmbahn (berg) → Après-Ski Schirm: difficulty
 - Waldalmbahn (berg) → Gasthof Maislau: no-route
 - Waldalmbahn (berg) → Wischtl-Hittn: no-route
 - Graukogel I (berg) → Graukogelhütte: difficulty
+- Senderbahn II (berg) → Hirschenhütte: difficulty
+- Senderbahn II (berg) → Waldgasthof Angertal: difficulty
+- Bucheben (berg) → Hirschenhütte: difficulty
+- Bucheben (berg) → Waldgasthof Angertal: difficulty
+- Stubnerkogelbahn II (berg) → Hirschenhütte: difficulty
+- Stubnerkogelbahn II (berg) → Waldgasthof Angertal: difficulty
+- Übungslift Rossalm (berg) → Hirschenhütte: difficulty
+- Übungslift Rossalm (berg) → Waldgasthof Angertal: difficulty
+- Schlossalmbahn II (berg) → Hirschenhütte: difficulty
+- Schlossalmbahn II (berg) → Waldgasthof Angertal: difficulty
+- Schlossalmbahn I (berg) → Hirschenhütte: difficulty
+- Schlossalmbahn I (berg) → Waldgasthof Angertal: difficulty
 - 566436432 (berg) → Gipfelrestaurant Stubnerkogel: no-route
 - 566436432 (berg) → Restaurant im Skizentrum Angertal: no-route
 - 566436432 (berg) → Landgasthof Klapotetz: no-route
+- 566436432 (berg) → Bergstadl: no-route
 - 566436432 (berg) → Skibar: no-route
 - 566436432 (berg) → Hamburger Schihütte: no-route
 - 566436432 (berg) → Junger Stube: no-route
@@ -93,23 +141,31 @@ Graaf 2026-10-18: 750 knopen, 2101 verbindingen.
 - 566436432 (berg) → Das Goldberg: no-route
 - 566436432 (berg) → Jungeralm - Kresseben: no-route
 - 566436432 (berg) → Silberkrug: no-route
+- 566436432 (berg) → Ahornhütte: no-route
 - 566436432 (berg) → Gastein Alm: no-route
 - 566436432 (berg) → Hamburger Schihütte: no-route
 - 566436432 (berg) → Weitmoser Schlossalm: no-route
+- 566436432 (berg) → Haitzingalm: no-route
 - 566436432 (berg) → Aeroplanstadl: no-route
 - 566436432 (berg) → Bärsteinalm: no-route
 - 566436432 (berg) → Angerblick: no-route
+- 566436432 (berg) → Hirschenhütte: no-route
 - 566436432 (berg) → Waldgasthof Angertal: no-route
 - 566436432 (berg) → Felding Stubn: no-route
+- 566436432 (berg) → Maurachalmhütte: no-route
 - 566436432 (berg) → Stubneralm: no-route
+- 566436432 (berg) → Bellevue Alm: no-route
 - 566436432 (berg) → Rossalm: no-route
+- 566436432 (berg) → Schirmbar: no-route
 - 566436432 (berg) → Jungeralm - Kresseben: no-route
 - 566436432 (berg) → Stubneralm: no-route
 - 566436432 (berg) → Gastein Alm (Fest ALm): no-route
+- 566436432 (berg) → Bergstadl: no-route
 - 566436432 (berg) → Hirsch und Maus: no-route
 - 566727398 (berg) → Gipfelrestaurant Stubnerkogel: no-route
 - 566727398 (berg) → Restaurant im Skizentrum Angertal: no-route
 - 566727398 (berg) → Landgasthof Klapotetz: no-route
+- 566727398 (berg) → Bergstadl: no-route
 - 566727398 (berg) → Skibar: no-route
 - 566727398 (berg) → Hamburger Schihütte: no-route
 - 566727398 (berg) → Junger Stube: no-route
@@ -118,20 +174,29 @@ Graaf 2026-10-18: 750 knopen, 2101 verbindingen.
 - 566727398 (berg) → Das Goldberg: no-route
 - 566727398 (berg) → Jungeralm - Kresseben: no-route
 - 566727398 (berg) → Silberkrug: no-route
+- 566727398 (berg) → Ahornhütte: no-route
 - 566727398 (berg) → Gastein Alm: no-route
 - 566727398 (berg) → Hamburger Schihütte: no-route
 - 566727398 (berg) → Weitmoser Schlossalm: no-route
+- 566727398 (berg) → Haitzingalm: no-route
 - 566727398 (berg) → Aeroplanstadl: no-route
 - 566727398 (berg) → Bärsteinalm: no-route
 - 566727398 (berg) → Angerblick: no-route
+- 566727398 (berg) → Hirschenhütte: no-route
 - 566727398 (berg) → Waldgasthof Angertal: no-route
 - 566727398 (berg) → Felding Stubn: no-route
+- 566727398 (berg) → Maurachalmhütte: no-route
 - 566727398 (berg) → Stubneralm: no-route
+- 566727398 (berg) → Bellevue Alm: no-route
 - 566727398 (berg) → Rossalm: no-route
+- 566727398 (berg) → Schirmbar: no-route
 - 566727398 (berg) → Jungeralm - Kresseben: no-route
 - 566727398 (berg) → Stubneralm: no-route
 - 566727398 (berg) → Gastein Alm (Fest ALm): no-route
+- 566727398 (berg) → Bergstadl: no-route
 - 566727398 (berg) → Hirsch und Maus: no-route
+- Förderbänder Angertal (berg) → Hirschenhütte: difficulty
+- Förderbänder Angertal (berg) → Waldgasthof Angertal: difficulty
 
 ## Verdacht: lange loopstukken (0)
 

@@ -17,7 +17,10 @@ interface DescribeOpts {
   notes?: Map<string, string>;
 }
 
-type Group = { edges: GEdge[]; kind: GEdge['kind'] };
+type Group = { edges: GEdge[]; kind: GEdge['kind']; absorbed: GEdge[] };
+
+const SHORT_HOP_M = 150;
+const RANK: Record<Difficulty, number> = { novice: 0, easy: 1, intermediate: 2, advanced: 3, expert: 4, freeride: 5 };
 
 function samePiste(a: GEdge, b: GEdge): boolean {
   if (a.kind !== 'piste' || b.kind !== 'piste') return false;
@@ -31,12 +34,43 @@ function group(edges: GEdge[]): Group[] {
   for (const e of edges) {
     const last = groups[groups.length - 1];
     if (last && last.kind === 'piste' && samePiste(last.edges[last.edges.length - 1], e)) last.edges.push(e);
-    else groups.push({ edges: [e], kind: e.kind });
+    else groups.push({ edges: [e], kind: e.kind, absorbed: [] });
   }
-  return groups;
+  return absorbShortHops(groups);
 }
 
-const colour = (e: GEdge) => (e.difficulty ? ` (${COLOUR[e.difficulty]})` : '');
+const groupLength = (g: Group) => g.edges.reduce((s, e) => s + e.lengthM, 0);
+
+/** OSM often has parallel or overlapping pistes; a short hop onto another one is not a separate step. */
+function absorbShortHops(groups: Group[]): Group[] {
+  const out: Group[] = [];
+  for (let i = 0; i < groups.length; i++) {
+    const g = groups[i];
+    const prev = out[out.length - 1];
+    const next = groups[i + 1];
+    if (g.kind === 'piste' && prev?.kind === 'piste' && next?.kind === 'piste' && groupLength(g) < SHORT_HOP_M) {
+      prev.absorbed.push(...g.edges);
+      continue;
+    }
+    if (prev?.kind === 'piste' && g.kind === 'piste' && samePiste(prev.edges[0], g.edges[0])) {
+      prev.edges.push(...g.edges);
+      prev.absorbed.push(...g.absorbed);
+      continue;
+    }
+    out.push(g);
+  }
+  return out;
+}
+
+/** "(blauw)", or "(blauw, kort stuk rood)" when an absorbed hop is harder than the main piste. */
+function colour(e: GEdge, absorbed: GEdge[] = []): string {
+  const base = RANK[e.difficulty ?? 'intermediate'];
+  const harder = absorbed
+    .filter((a) => a.difficulty && RANK[a.difficulty] > base)
+    .sort((a, b) => RANK[b.difficulty!] - RANK[a.difficulty!])[0];
+  const parts = [e.difficulty && COLOUR[e.difficulty], harder && `kort stuk ${COLOUR[harder.difficulty!]}`].filter(Boolean);
+  return parts.length ? ` (${parts.join(', ')})` : '';
+}
 const pisteLabel = (e: GEdge) => (e.ref ? `piste ${e.ref}` : e.name ? `de ${e.name}` : 'de piste');
 
 function nextTarget(groups: Group[], i: number, destination?: Place): string | undefined {
@@ -91,10 +125,10 @@ export function describeRoute(edges: GEdge[], opts: DescribeOpts = {}): string[]
         const target = nextTarget(groups, i, opts.destination);
         text = `Loop ongeveer ${Math.round(m / 10) * 10} m${target ? ` naar ${target}` : ''}`;
       }
-    } else if (first.ref || first.name) text = `Neem ${pisteLabel(first)}${colour(first)}`;
+    } else if (first.ref || first.name) text = `Neem ${pisteLabel(first)}${colour(first, gr.absorbed)}`;
     else {
       const target = nextTarget(groups, i, opts.destination);
-      text = `Volg de piste${colour(first)}${target ? ` richting ${target}` : ' naar beneden'}`;
+      text = `Volg de piste${colour(first, gr.absorbed)}${target ? ` richting ${target}` : ' naar beneden'}`;
     }
     if (!text) return;
     const note = gr.edges.map((e) => opts.notes?.get(e.id)).find(Boolean);

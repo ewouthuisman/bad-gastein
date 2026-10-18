@@ -40,6 +40,7 @@ export interface Place {
   lat: number;
   lng: number;
   nodeId: string | null; // null when not within reach of the piste network
+  nodeIds?: string[]; // every piste point within reach, nearest first
   osmId?: string;
   website?: string;
   menuUrl?: string;

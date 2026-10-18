@@ -6,6 +6,13 @@
   "lat": 47.1115814,
   "lng": 13.0990487,
   "nodeId": "3570757518",
+  "nodeIds": [
+   "3570757518",
+   "12457243911",
+   "10161611971",
+   "287405067",
+   "2398698692"
+  ],
   "osmId": "node/287405207"
  },
  {
@@ -15,6 +22,7 @@
   "lat": 47.1941955,
   "lng": 13.1012727,
   "nodeId": null,
+  "nodeIds": [],
   "osmId": "node/309593680"
  },
  {
@@ -23,7 +31,17 @@
   "kind": "restaurant",
   "lat": 47.2202754,
   "lng": 12.9570983,
-  "nodeId": "476680926",
+  "nodeId": "9680925526",
+  "nodeIds": [
+   "9680925526",
+   "476680926",
+   "4005965972",
+   "9680925528",
+   "4665353465",
+   "4005971994",
+   "4005965973",
+   "9680925534"
+  ],
   "osmId": "node/476680904",
   "website": "https://www.der-baron.at/filialen/hochalm-rauris/"
  },
@@ -34,6 +52,16 @@
   "lat": 47.1330394,
   "lng": 13.0817058,
   "nodeId": "9851463129",
+  "nodeIds": [
+   "9851463129",
+   "9851463122",
+   "2414360626",
+   "9851463124",
+   "9851463125",
+   "9721127695",
+   "9851436516",
+   "9851463127"
+  ],
   "osmId": "node/667338964"
  },
  {
@@ -43,6 +71,7 @@
   "lat": 47.077307,
   "lng": 13.0052815,
   "nodeId": null,
+  "nodeIds": [],
   "osmId": "node/801934572"
  },
  {
@@ -52,6 +81,7 @@
   "lat": 47.105593,
   "lng": 12.9908837,
   "nodeId": null,
+  "nodeIds": [],
   "osmId": "node/801935540",
   "website": "https://www.bodenhaus.at/"
  },
@@ -62,6 +92,16 @@
   "lat": 47.2284681,
   "lng": 13.1690687,
   "nodeId": "1893297458",
+  "nodeIds": [
+   "1893297458",
+   "365179446",
+   "4463412753",
+   "365179445",
+   "1077195660",
+   "365179443",
+   "3570691298",
+   "365179447"
+  ],
   "osmId": "node/861750788"
  },
  {
@@ -70,7 +110,17 @@
   "kind": "restaurant",
   "lat": 47.2298796,
   "lng": 12.9812634,
-  "nodeId": "1654351259",
+  "nodeId": "917729243",
+  "nodeIds": [
+   "917729243",
+   "1654351259",
+   "9680925521",
+   "4005948152",
+   "9680925522",
+   "4395945819",
+   "4005948149",
+   "4005948210"
+  ],
   "osmId": "node/917753307",
   "website": "https://www.kreuzbodenhuette.at/"
  },
@@ -81,6 +131,7 @@
   "lat": 47.1569553,
   "lng": 12.9727165,
   "nodeId": null,
+  "nodeIds": [],
   "osmId": "node/918482352",
   "website": "https://www.reiterhof-nigglgut.com/"
  },
@@ -91,6 +142,7 @@
   "lat": 47.2282858,
   "lng": 12.994479,
   "nodeId": null,
+  "nodeIds": [],
   "osmId": "node/919476922",
   "website": "https://www.braeu-rauris.at/"
  },
@@ -101,6 +153,7 @@
   "lat": 47.2374676,
   "lng": 13.2000237,
   "nodeId": null,
+  "nodeIds": [],
   "osmId": "node/1140978354"
  },
  {
@@ -110,6 +163,7 @@
   "lat": 47.237332,
   "lng": 13.2015502,
   "nodeId": null,
+  "nodeIds": [],
   "osmId": "node/1140978355"
  },
  {
@@ -119,6 +173,7 @@
   "lat": 47.2376689,
   "lng": 13.2011561,
   "nodeId": null,
+  "nodeIds": [],
   "osmId": "node/1147931044"
  },
  {
@@ -127,7 +182,17 @@
   "kind": "restaurant",
   "lat": 47.2227018,
   "lng": 12.9756538,
-  "nodeId": "9680925560",
+  "nodeId": "1654351377",
+  "nodeIds": [
+   "1654351377",
+   "9680925560",
+   "9680925561",
+   "9680925557",
+   "9680925551",
+   "9680925559",
+   "4588329688",
+   "4588329687"
+  ],
   "osmId": "node/1154378824",
   "website": "http://www.heimalm-rauris.at"
  },
@@ -138,6 +203,7 @@
   "lat": 47.24673,
   "lng": 13.1093069,
   "nodeId": null,
+  "nodeIds": [],
   "osmId": "node/1168387589",
   "website": "https://www.dorfkraemerei.com"
  },
@@ -148,6 +214,7 @@
   "lat": 47.2427514,
   "lng": 13.1052173,
   "nodeId": null,
+  "nodeIds": [],
   "osmId": "node/1168398014"
  },
  {
@@ -157,6 +224,7 @@
   "lat": 47.1706684,
   "lng": 13.1062612,
   "nodeId": null,
+  "nodeIds": [],
   "osmId": "node/1573837020"
  },
  {
@@ -166,6 +234,7 @@
   "lat": 47.1994405,
   "lng": 12.9720349,
   "nodeId": null,
+  "nodeIds": [],
   "osmId": "node/1650650503"
  },
  {
@@ -175,6 +244,7 @@
   "lat": 47.2272812,
   "lng": 12.9941276,
   "nodeId": null,
+  "nodeIds": [],
   "osmId": "node/1650810296",
   "website": "https://sonnblick.members.cablelink.at"
  },
@@ -185,6 +255,7 @@
   "lat": 47.2281482,
   "lng": 12.9939924,
   "nodeId": null,
+  "nodeIds": [],
   "osmId": "node/1650810394"
  },
  {
@@ -194,6 +265,7 @@
   "lat": 47.2293862,
   "lng": 12.9941506,
   "nodeId": null,
+  "nodeIds": [],
   "osmId": "node/1650810402",
   "website": "https://www.platzwirt.at/"
  },
@@ -204,6 +276,7 @@
   "lat": 47.2281354,
   "lng": 12.994131,
   "nodeId": null,
+  "nodeIds": [],
   "osmId": "node/1650810403"
  },
  {
@@ -213,6 +286,15 @@
   "lat": 47.2237969,
   "lng": 12.9930872,
   "nodeId": "2734597965",
+  "nodeIds": [
+   "2734597965",
+   "2734597966",
+   "7125935931",
+   "2734597963",
+   "2519557352",
+   "9680925567",
+   "488156908"
+  ],
   "osmId": "node/1740263928"
  },
  {
@@ -222,6 +304,7 @@
   "lat": 47.2327453,
   "lng": 12.9930977,
   "nodeId": null,
+  "nodeIds": [],
   "osmId": "node/1740457029"
  },
  {
@@ -231,6 +314,7 @@
   "lat": 47.1835413,
   "lng": 13.0920577,
   "nodeId": null,
+  "nodeIds": [],
   "osmId": "node/1804976355"
  },
  {
@@ -240,6 +324,7 @@
   "lat": 47.0736195,
   "lng": 12.9931574,
   "nodeId": null,
+  "nodeIds": [],
   "osmId": "node/1818302634",
   "website": "https://www.gainschniggalm.at/"
  },
@@ -250,6 +335,15 @@
   "lat": 47.2412579,
   "lng": 13.1956976,
   "nodeId": "248452489",
+  "nodeIds": [
+   "248452489",
+   "5743386005",
+   "7328312056",
+   "4463412769",
+   "7328312053",
+   "4463412774",
+   "253396469"
+  ],
   "osmId": "node/1846515591"
  },
  {
@@ -259,6 +353,7 @@
   "lat": 47.2370099,
   "lng": 13.2010288,
   "nodeId": null,
+  "nodeIds": [],
   "osmId": "node/1848381786"
  },
  {
@@ -268,6 +363,7 @@
   "lat": 47.1774155,
   "lng": 13.1030707,
   "nodeId": null,
+  "nodeIds": [],
   "osmId": "node/1881051634",
   "website": "https://www.goldbergstueberl.com/"
  },
@@ -278,6 +374,7 @@
   "lat": 47.1702498,
   "lng": 13.1083332,
   "nodeId": null,
+  "nodeIds": [],
   "osmId": "node/1883886400"
  },
  {
@@ -287,15 +384,27 @@
   "lat": 47.1087925,
   "lng": 13.1314563,
   "nodeId": "253404702",
+  "nodeIds": [
+   "253404702",
+   "9721456662",
+   "9721456661",
+   "1684004678",
+   "2053572123"
+  ],
   "osmId": "node/2053572136"
  },
  {
   "id": "osm:node/2073355200",
   "name": "Bergstadl",
-  "kind": "dinner",
+  "kind": "restaurant",
   "lat": 47.1097348,
   "lng": 13.1105851,
-  "nodeId": null,
+  "nodeId": "2056431617",
+  "nodeIds": [
+   "2056431617",
+   "1107473474",
+   "253403043"
+  ],
   "osmId": "node/2073355200",
   "website": "https://bergstadl-badgastein.at/"
  },
@@ -306,6 +415,7 @@
   "lat": 47.1141643,
   "lng": 13.1328399,
   "nodeId": null,
+  "nodeIds": [],
   "osmId": "node/2078675155"
  },
  {
@@ -315,6 +425,7 @@
   "lat": 47.1130997,
   "lng": 13.1321649,
   "nodeId": null,
+  "nodeIds": [],
   "osmId": "node/2078697750"
  },
  {
@@ -324,6 +435,7 @@
   "lat": 47.1138565,
   "lng": 13.1328728,
   "nodeId": null,
+  "nodeIds": [],
   "osmId": "node/2078786721",
   "website": "https://www.salzburgerhof.com/restaurant-bars-bad-gastein/silver-bullet-bar.html"
  },
@@ -334,6 +446,7 @@
   "lat": 47.1142172,
   "lng": 13.1328455,
   "nodeId": null,
+  "nodeIds": [],
   "osmId": "node/2080070509",
   "website": "https://www.salzburgerhof.com/eden-pub-bad-gastein.html"
  },
@@ -344,6 +457,7 @@
   "lat": 47.1140687,
   "lng": 13.1331039,
   "nodeId": null,
+  "nodeIds": [],
   "osmId": "node/2080070519"
  },
  {
@@ -353,6 +467,16 @@
   "lat": 47.1328505,
   "lng": 13.0816267,
   "nodeId": "9851463129",
+  "nodeIds": [
+   "9851463129",
+   "9851463124",
+   "9851463122",
+   "2414360626",
+   "9851463125",
+   "9851436516",
+   "9851463127",
+   "9721127710"
+  ],
   "osmId": "node/2146446701"
  },
  {
@@ -362,6 +486,7 @@
   "lat": 47.1049734,
   "lng": 13.1322645,
   "nodeId": null,
+  "nodeIds": [],
   "osmId": "node/3287306520",
   "website": "http://www.evas-fischerstueberl.at/"
  },
@@ -372,6 +497,7 @@
   "lat": 47.2378681,
   "lng": 13.2011327,
   "nodeId": null,
+  "nodeIds": [],
   "osmId": "node/3687101834"
  },
  {
@@ -381,6 +507,7 @@
   "lat": 47.2433585,
   "lng": 13.1996316,
   "nodeId": null,
+  "nodeIds": [],
   "osmId": "node/3691745425"
  },
  {
@@ -389,7 +516,16 @@
   "kind": "apres",
   "lat": 47.242312,
   "lng": 13.1957194,
-  "nodeId": "5743386005",
+  "nodeId": "7328312056",
+  "nodeIds": [
+   "7328312056",
+   "5743386005",
+   "248452489",
+   "4463412769",
+   "7328312053",
+   "4463412774",
+   "253396469"
+  ],
   "osmId": "node/3693783125"
  },
  {
@@ -399,6 +535,7 @@
   "lat": 47.2422594,
   "lng": 13.1064038,
   "nodeId": null,
+  "nodeIds": [],
   "osmId": "node/3720777678"
  },
  {
@@ -408,6 +545,7 @@
   "lat": 47.1510069,
   "lng": 13.1127403,
   "nodeId": null,
+  "nodeIds": [],
   "osmId": "node/3781207318",
   "website": "http://www.pizzeriaramazotti.at"
  },
@@ -418,6 +556,7 @@
   "lat": 47.170728,
   "lng": 13.1065486,
   "nodeId": null,
+  "nodeIds": [],
   "osmId": "node/3866977526",
   "website": "http://panevino.at/"
  },
@@ -428,6 +567,7 @@
   "lat": 47.1707407,
   "lng": 13.1064964,
   "nodeId": null,
+  "nodeIds": [],
   "osmId": "node/3866977538"
  },
  {
@@ -437,6 +577,7 @@
   "lat": 47.1692786,
   "lng": 13.1126181,
   "nodeId": null,
+  "nodeIds": [],
   "osmId": "node/3866977540"
  },
  {
@@ -446,6 +587,7 @@
   "lat": 47.1708775,
   "lng": 13.1074499,
   "nodeId": null,
+  "nodeIds": [],
   "osmId": "node/3866977541",
   "website": "http://www.altepost-gastein.at/"
  },
@@ -456,6 +598,7 @@
   "lat": 47.1575823,
   "lng": 13.107983,
   "nodeId": null,
+  "nodeIds": [],
   "osmId": "node/3866977548"
  },
  {
@@ -465,6 +608,15 @@
   "lat": 47.1685198,
   "lng": 13.0971502,
   "nodeId": "9721127882",
+  "nodeIds": [
+   "9721127882",
+   "4997981865",
+   "5456924368",
+   "5456924367",
+   "10147026972",
+   "5455060549",
+   "5455060547"
+  ],
   "osmId": "node/3866977657"
  },
  {
@@ -474,6 +626,11 @@
   "lat": 47.2408578,
   "lng": 13.1966024,
   "nodeId": "248452489",
+  "nodeIds": [
+   "248452489",
+   "5743386005",
+   "7328312056"
+  ],
   "osmId": "node/4239865040"
  },
  {
@@ -483,6 +640,7 @@
   "lat": 47.1151081,
   "lng": 13.1370738,
   "nodeId": null,
+  "nodeIds": [],
   "osmId": "node/4346405485",
   "website": "http://www.kraftwerk-badgastein.com/"
  },
@@ -493,6 +651,7 @@
   "lat": 47.2429195,
   "lng": 13.1048072,
   "nodeId": null,
+  "nodeIds": [],
   "osmId": "node/4448379507"
  },
  {
@@ -502,6 +661,7 @@
   "lat": 47.2423962,
   "lng": 13.1052037,
   "nodeId": null,
+  "nodeIds": [],
   "osmId": "node/4448379994"
  },
  {
@@ -511,6 +671,7 @@
   "lat": 47.1695895,
   "lng": 13.1075667,
   "nodeId": null,
+  "nodeIds": [],
   "osmId": "node/4603327389",
   "website": "https://auszeit-dinnerbar.business.site/"
  },
@@ -521,6 +682,7 @@
   "lat": 47.1980373,
   "lng": 12.9753599,
   "nodeId": null,
+  "nodeIds": [],
   "osmId": "node/4959952689",
   "website": "https://www.restaurant-gusto.at/"
  },
@@ -530,7 +692,14 @@
   "kind": "restaurant",
   "lat": 47.1481291,
   "lng": 13.0602993,
-  "nodeId": "9721127587",
+  "nodeId": "9721127603",
+  "nodeIds": [
+   "9721127603",
+   "9721127585",
+   "9721127587",
+   "9721127570",
+   "9721127572"
+  ],
   "osmId": "node/5199731689"
  },
  {
@@ -540,6 +709,7 @@
   "lat": 47.1625501,
   "lng": 13.0996202,
   "nodeId": null,
+  "nodeIds": [],
   "osmId": "node/5236925077",
   "website": "http://www.weitmoserschloss.at/"
  },
@@ -550,6 +720,7 @@
   "lat": 47.1519493,
   "lng": 13.108793,
   "nodeId": null,
+  "nodeIds": [],
   "osmId": "node/5372179479"
  },
  {
@@ -559,6 +730,7 @@
   "lat": 47.1432574,
   "lng": 13.0902408,
   "nodeId": null,
+  "nodeIds": [],
   "osmId": "node/5382551870"
  },
  {
@@ -568,6 +740,7 @@
   "lat": 47.1583883,
   "lng": 13.1005257,
   "nodeId": null,
+  "nodeIds": [],
   "osmId": "node/5407692067"
  },
  {
@@ -577,6 +750,7 @@
   "lat": 47.1713737,
   "lng": 13.098679,
   "nodeId": null,
+  "nodeIds": [],
   "osmId": "node/5416341235",
   "website": "https://www.dadino-pizzeria.at/"
  },
@@ -587,6 +761,13 @@
   "lat": 47.1699711,
   "lng": 13.098728,
   "nodeId": "5455060549",
+  "nodeIds": [
+   "5455060549",
+   "5456924368",
+   "5455060547",
+   "5456924367",
+   "9721127882"
+  ],
   "osmId": "node/5416341245"
  },
  {
@@ -596,6 +777,7 @@
   "lat": 47.1361274,
   "lng": 13.1200911,
   "nodeId": null,
+  "nodeIds": [],
   "osmId": "node/5422159881"
  },
  {
@@ -605,6 +787,7 @@
   "lat": 47.1776645,
   "lng": 13.0924362,
   "nodeId": null,
+  "nodeIds": [],
   "osmId": "node/5440313784"
  },
  {
@@ -614,6 +797,7 @@
   "lat": 47.1790328,
   "lng": 13.0927071,
   "nodeId": null,
+  "nodeIds": [],
   "osmId": "node/5440313785"
  },
  {
@@ -623,6 +807,7 @@
   "lat": 47.1718361,
   "lng": 13.1050611,
   "nodeId": null,
+  "nodeIds": [],
   "osmId": "node/5459740713",
   "website": "http://www.restaurant-austria.com/"
  },
@@ -633,6 +818,7 @@
   "lat": 47.2192917,
   "lng": 13.1072058,
   "nodeId": null,
+  "nodeIds": [],
   "osmId": "node/5467720109"
  },
  {
@@ -642,6 +828,7 @@
   "lat": 47.1717311,
   "lng": 13.1038956,
   "nodeId": null,
+  "nodeIds": [],
   "osmId": "node/5524757038",
   "website": "https://www.aiche.at/"
  },
@@ -652,6 +839,7 @@
   "lat": 47.1707852,
   "lng": 13.1066358,
   "nodeId": null,
+  "nodeIds": [],
   "osmId": "node/5524983797",
   "website": "https://www.gasteinertal.com/cafe-zeit/"
  },
@@ -662,6 +850,7 @@
   "lat": 47.1729295,
   "lng": 13.1154985,
   "nodeId": null,
+  "nodeIds": [],
   "osmId": "node/5525720939"
  },
  {
@@ -671,6 +860,7 @@
   "lat": 47.1708249,
   "lng": 13.1078837,
   "nodeId": null,
+  "nodeIds": [],
   "osmId": "node/5525778383",
   "website": "https://kraut-und-rüben.at/"
  },
@@ -681,6 +871,7 @@
   "lat": 47.1667002,
   "lng": 13.1114691,
   "nodeId": null,
+  "nodeIds": [],
   "osmId": "node/5532637815"
  },
  {
@@ -690,6 +881,7 @@
   "lat": 47.1550886,
   "lng": 13.1152081,
   "nodeId": null,
+  "nodeIds": [],
   "osmId": "node/5538201995"
  },
  {
@@ -699,6 +891,7 @@
   "lat": 47.151424,
   "lng": 13.1222208,
   "nodeId": null,
+  "nodeIds": [],
   "osmId": "node/5538273430"
  },
  {
@@ -708,6 +901,7 @@
   "lat": 47.1610163,
   "lng": 13.1584159,
   "nodeId": null,
+  "nodeIds": [],
   "osmId": "node/5643719069",
   "website": "http://www.gamskarkogelhuette.at/"
  },
@@ -718,6 +912,7 @@
   "lat": 47.1203321,
   "lng": 13.1408707,
   "nodeId": null,
+  "nodeIds": [],
   "osmId": "node/5646355406",
   "website": "https://www.hapimag.com/de/wo/oesterreich/bad-gastein-salzburger-land/angebote/gastronomie.html"
  },
@@ -728,6 +923,15 @@
   "lat": 47.117609,
   "lng": 13.0831597,
   "nodeId": "1562617102",
+  "nodeIds": [
+   "1562617102",
+   "1567020943",
+   "1684038125",
+   "5815502827",
+   "1567020851",
+   "1562617100",
+   "4663756119"
+  ],
   "osmId": "node/5650462056",
   "website": "https://www.jungerstube.com/"
  },
@@ -738,6 +942,7 @@
   "lat": 47.1708992,
   "lng": 13.1043935,
   "nodeId": null,
+  "nodeIds": [],
   "osmId": "node/5654093402"
  },
  {
@@ -746,7 +951,17 @@
   "kind": "restaurant",
   "lat": 47.1116627,
   "lng": 13.1508652,
-  "nodeId": "1167945151",
+  "nodeId": "1799964428",
+  "nodeIds": [
+   "1799964428",
+   "1168456720",
+   "1167945151",
+   "1167952901",
+   "1985590200",
+   "4411343766",
+   "1484620657",
+   "1168457162"
+  ],
   "osmId": "node/5739058952",
   "website": "https://graukogelalm.at/"
  },
@@ -757,6 +972,7 @@
   "lat": 47.248038,
   "lng": 13.1989422,
   "nodeId": null,
+  "nodeIds": [],
   "osmId": "node/5831934232"
  },
  {
@@ -766,6 +982,7 @@
   "lat": 47.2480441,
   "lng": 13.1989146,
   "nodeId": null,
+  "nodeIds": [],
   "osmId": "node/5852093793"
  },
  {
@@ -775,6 +992,7 @@
   "lat": 47.2433542,
   "lng": 13.1996308,
   "nodeId": null,
+  "nodeIds": [],
   "osmId": "node/5852120454"
  },
  {
@@ -784,6 +1002,15 @@
   "lat": 47.2419442,
   "lng": 13.1955863,
   "nodeId": "5743386005",
+  "nodeIds": [
+   "5743386005",
+   "7328312056",
+   "248452489",
+   "4463412769",
+   "7328312053",
+   "4463412774",
+   "253396469"
+  ],
   "osmId": "node/5852120455"
  },
  {
@@ -792,7 +1019,16 @@
   "kind": "apres",
   "lat": 47.2418884,
   "lng": 13.1952846,
-  "nodeId": "5743386005",
+  "nodeId": "7328312056",
+  "nodeIds": [
+   "7328312056",
+   "5743386005",
+   "248452489",
+   "4463412769",
+   "7328312053",
+   "4463412774",
+   "253396469"
+  ],
   "osmId": "node/5852120456"
  },
  {
@@ -802,6 +1038,7 @@
   "lat": 47.1686248,
   "lng": 13.2498129,
   "nodeId": null,
+  "nodeIds": [],
   "osmId": "node/5852120780"
  },
  {
@@ -811,6 +1048,7 @@
   "lat": 47.2373977,
   "lng": 13.2012306,
   "nodeId": null,
+  "nodeIds": [],
   "osmId": "node/5852124822"
  },
  {
@@ -820,6 +1058,7 @@
   "lat": 47.1781675,
   "lng": 13.2301081,
   "nodeId": null,
+  "nodeIds": [],
   "osmId": "node/5852126628"
  },
  {
@@ -829,6 +1068,7 @@
   "lat": 47.2439336,
   "lng": 13.1028418,
   "nodeId": null,
+  "nodeIds": [],
   "osmId": "node/6061645389"
  },
  {
@@ -838,6 +1078,7 @@
   "lat": 47.1187151,
   "lng": 13.1343091,
   "nodeId": null,
+  "nodeIds": [],
   "osmId": "node/6088569747"
  },
  {
@@ -847,6 +1088,7 @@
   "lat": 47.2558646,
   "lng": 13.0851882,
   "nodeId": null,
+  "nodeIds": [],
   "osmId": "node/6109603481"
  },
  {
@@ -856,6 +1098,7 @@
   "lat": 47.2419898,
   "lng": 13.1064152,
   "nodeId": null,
+  "nodeIds": [],
   "osmId": "node/6110581254",
   "website": "https://www.schmankerl-huette.com/"
  },
@@ -866,6 +1109,7 @@
   "lat": 47.2517247,
   "lng": 13.1176302,
   "nodeId": null,
+  "nodeIds": [],
   "osmId": "node/6110706497"
  },
  {
@@ -874,7 +1118,15 @@
   "kind": "restaurant",
   "lat": 47.245871,
   "lng": 13.1096211,
-  "nodeId": "253392139",
+  "nodeId": "9677421045",
+  "nodeIds": [
+   "9677421045",
+   "253392139",
+   "9677421046",
+   "9677421056",
+   "9677421047",
+   "248450654"
+  ],
   "osmId": "node/6110706499"
  },
  {
@@ -884,6 +1136,16 @@
   "lat": 47.2452975,
   "lng": 13.1099296,
   "nodeId": "253392139",
+  "nodeIds": [
+   "253392139",
+   "9677421045",
+   "9677421046",
+   "9677421047",
+   "9677421056",
+   "248450654",
+   "9677421053",
+   "9677421054"
+  ],
   "osmId": "node/6110706513"
  },
  {
@@ -892,7 +1154,17 @@
   "kind": "restaurant",
   "lat": 47.2444945,
   "lng": 13.1100905,
-  "nodeId": "9677421055",
+  "nodeId": "9677421054",
+  "nodeIds": [
+   "9677421054",
+   "4504672586",
+   "9677421055",
+   "9677421053",
+   "248450654",
+   "4504672587",
+   "9677421047",
+   "253392139"
+  ],
   "osmId": "node/6110706514"
  },
  {
@@ -902,6 +1174,7 @@
   "lat": 47.1279877,
   "lng": 13.1574375,
   "nodeId": null,
+  "nodeIds": [],
   "osmId": "node/6128663226"
  },
  {
@@ -911,6 +1184,7 @@
   "lat": 47.1145937,
   "lng": 13.1337778,
   "nodeId": null,
+  "nodeIds": [],
   "osmId": "node/6140833204"
  },
  {
@@ -920,6 +1194,7 @@
   "lat": 47.1277454,
   "lng": 13.1422327,
   "nodeId": null,
+  "nodeIds": [],
   "osmId": "node/6183343502"
  },
  {
@@ -929,6 +1204,7 @@
   "lat": 47.0879682,
   "lng": 13.1198779,
   "nodeId": null,
+  "nodeIds": [],
   "osmId": "node/6184446939"
  },
  {
@@ -938,6 +1214,7 @@
   "lat": 47.1133132,
   "lng": 13.1320296,
   "nodeId": null,
+  "nodeIds": [],
   "osmId": "node/6184446942"
  },
  {
@@ -947,6 +1224,7 @@
   "lat": 47.110555,
   "lng": 13.1400977,
   "nodeId": null,
+  "nodeIds": [],
   "osmId": "node/6185501613",
   "website": "https://www.wigrae.at/"
  },
@@ -957,6 +1235,7 @@
   "lat": 47.1014022,
   "lng": 13.1287426,
   "nodeId": null,
+  "nodeIds": [],
   "osmId": "node/6185821768"
  },
  {
@@ -966,6 +1245,7 @@
   "lat": 47.1122125,
   "lng": 13.1326814,
   "nodeId": null,
+  "nodeIds": [],
   "osmId": "node/6185821773"
  },
  {
@@ -975,6 +1255,7 @@
   "lat": 47.1054525,
   "lng": 13.1296787,
   "nodeId": null,
+  "nodeIds": [],
   "osmId": "node/6186091163"
  },
  {
@@ -984,6 +1265,7 @@
   "lat": 47.1137495,
   "lng": 13.1332822,
   "nodeId": null,
+  "nodeIds": [],
   "osmId": "node/6186274015",
   "website": "https://www.salzburgerhof.com/angelinas-pizza-piazza-bellinibar.html"
  },
@@ -994,6 +1276,7 @@
   "lat": 47.1132329,
   "lng": 13.1331561,
   "nodeId": null,
+  "nodeIds": [],
   "osmId": "node/6186274017"
  },
  {
@@ -1003,6 +1286,7 @@
   "lat": 47.1132886,
   "lng": 13.1334499,
   "nodeId": null,
+  "nodeIds": [],
   "osmId": "node/6186274018"
  },
  {
@@ -1012,6 +1296,7 @@
   "lat": 47.1126305,
   "lng": 13.1327626,
   "nodeId": null,
+  "nodeIds": [],
   "osmId": "node/6186274020"
  },
  {
@@ -1021,6 +1306,9 @@
   "lat": 47.1152545,
   "lng": 13.1326613,
   "nodeId": "4591821599",
+  "nodeIds": [
+   "4591821599"
+  ],
   "osmId": "node/6186274021"
  },
  {
@@ -1030,6 +1318,7 @@
   "lat": 47.1116448,
   "lng": 13.1329107,
   "nodeId": null,
+  "nodeIds": [],
   "osmId": "node/6186274022",
   "website": "https://www.thedropinnbg.com/"
  },
@@ -1040,6 +1329,9 @@
   "lat": 47.111402,
   "lng": 13.1327511,
   "nodeId": "1983453314",
+  "nodeIds": [
+   "1983453314"
+  ],
   "osmId": "node/6186274023",
   "website": "https://www.facebook.com/theblondebeans/"
  },
@@ -1050,6 +1342,7 @@
   "lat": 47.1145617,
   "lng": 13.1329858,
   "nodeId": null,
+  "nodeIds": [],
   "osmId": "node/6191886664"
  },
  {
@@ -1059,6 +1352,7 @@
   "lat": 47.1129481,
   "lng": 13.1330824,
   "nodeId": null,
+  "nodeIds": [],
   "osmId": "node/6191886665"
  },
  {
@@ -1068,6 +1362,7 @@
   "lat": 47.1161151,
   "lng": 13.134791,
   "nodeId": null,
+  "nodeIds": [],
   "osmId": "node/6192063572"
  },
  {
@@ -1077,6 +1372,7 @@
   "lat": 47.1160256,
   "lng": 13.1342713,
   "nodeId": null,
+  "nodeIds": [],
   "osmId": "node/6192063574"
  },
  {
@@ -1086,6 +1382,7 @@
   "lat": 47.1161411,
   "lng": 13.1343631,
   "nodeId": null,
+  "nodeIds": [],
   "osmId": "node/6192063575",
   "website": "https://bettys-bar.business.site/"
  },
@@ -1096,6 +1393,7 @@
   "lat": 47.1143984,
   "lng": 13.1346233,
   "nodeId": null,
+  "nodeIds": [],
   "osmId": "node/6198895466"
  },
  {
@@ -1105,6 +1403,7 @@
   "lat": 47.2379465,
   "lng": 13.2009564,
   "nodeId": null,
+  "nodeIds": [],
   "osmId": "node/6452911947"
  },
  {
@@ -1114,6 +1413,7 @@
   "lat": 47.1156758,
   "lng": 13.1345456,
   "nodeId": null,
+  "nodeIds": [],
   "osmId": "node/6475109958",
   "website": "https://www.europe-gastein.at/de/"
  },
@@ -1124,6 +1424,7 @@
   "lat": 47.199397,
   "lng": 13.1049085,
   "nodeId": null,
+  "nodeIds": [],
   "osmId": "node/6634185026"
  },
  {
@@ -1133,6 +1434,7 @@
   "lat": 47.1135517,
   "lng": 13.1328225,
   "nodeId": null,
+  "nodeIds": [],
   "osmId": "node/6731730218",
   "website": "https://www.gatz-club.com/"
  },
@@ -1143,6 +1445,7 @@
   "lat": 47.1127984,
   "lng": 13.1361106,
   "nodeId": null,
+  "nodeIds": [],
   "osmId": "node/6779341100",
   "website": "https://www.gasteiner-wirtshaus.at/"
  },
@@ -1153,6 +1456,11 @@
   "lat": 47.16803,
   "lng": 13.0979374,
   "nodeId": "4997981865",
+  "nodeIds": [
+   "4997981865",
+   "10147026972",
+   "9721127882"
+  ],
   "osmId": "node/6788797963"
  },
  {
@@ -1162,6 +1470,7 @@
   "lat": 47.0940275,
   "lng": 13.0151458,
   "nodeId": null,
+  "nodeIds": [],
   "osmId": "node/7528796675"
  },
  {
@@ -1171,6 +1480,7 @@
   "lat": 47.1003272,
   "lng": 13.1267559,
   "nodeId": null,
+  "nodeIds": [],
   "osmId": "node/7727209685"
  },
  {
@@ -1180,6 +1490,7 @@
   "lat": 47.1656448,
   "lng": 12.9586815,
   "nodeId": null,
+  "nodeIds": [],
   "osmId": "node/7727955226"
  },
  {
@@ -1189,6 +1500,7 @@
   "lat": 47.160011,
   "lng": 12.9642479,
   "nodeId": null,
+  "nodeIds": [],
   "osmId": "node/7727955232"
  },
  {
@@ -1198,6 +1510,7 @@
   "lat": 47.1489772,
   "lng": 12.9547532,
   "nodeId": null,
+  "nodeIds": [],
   "osmId": "node/7727968137"
  },
  {
@@ -1207,6 +1520,7 @@
   "lat": 47.2418037,
   "lng": 12.9708148,
   "nodeId": null,
+  "nodeIds": [],
   "osmId": "node/7729132992"
  },
  {
@@ -1215,7 +1529,14 @@
   "kind": "restaurant",
   "lat": 47.2281492,
   "lng": 12.9615646,
-  "nodeId": "4005948111",
+  "nodeId": "4005948199",
+  "nodeIds": [
+   "4005948199",
+   "4005948109",
+   "4005948112",
+   "4005948111",
+   "4005948198"
+  ],
   "osmId": "node/7731531071",
   "website": "https://www.waldalm.at/"
  },
@@ -1226,6 +1547,7 @@
   "lat": 47.2262356,
   "lng": 12.9897419,
   "nodeId": null,
+  "nodeIds": [],
   "osmId": "node/7817403708"
  },
  {
@@ -1235,6 +1557,7 @@
   "lat": 47.2378688,
   "lng": 13.2007603,
   "nodeId": null,
+  "nodeIds": [],
   "osmId": "node/9180657461"
  },
  {
@@ -1244,6 +1567,7 @@
   "lat": 47.2443555,
   "lng": 13.1967677,
   "nodeId": null,
+  "nodeIds": [],
   "osmId": "node/9180665193",
   "website": "https://www.tauernhof.com/de/"
  },
@@ -1254,6 +1578,7 @@
   "lat": 47.2449192,
   "lng": 13.1976031,
   "nodeId": null,
+  "nodeIds": [],
   "osmId": "node/9180671478"
  },
  {
@@ -1262,7 +1587,12 @@
   "kind": "apres",
   "lat": 47.1682909,
   "lng": 13.0934411,
-  "nodeId": "10147026990",
+  "nodeId": "9721127875",
+  "nodeIds": [
+   "9721127875",
+   "9721127876",
+   "10147026990"
+  ],
   "osmId": "node/9534809417"
  },
  {
@@ -1272,6 +1602,7 @@
   "lat": 47.1687656,
   "lng": 13.1103758,
   "nodeId": null,
+  "nodeIds": [],
   "osmId": "node/9547395264",
   "website": "https://www.alpenparks.at/de/residence-apartment-bad-hofgastein/ferienapartments/kulinarik/"
  },
@@ -1281,7 +1612,12 @@
   "kind": "restaurant",
   "lat": 47.114987,
   "lng": 13.085229,
-  "nodeId": "1562617098",
+  "nodeId": "1562617095",
+  "nodeIds": [
+   "1562617095",
+   "1842626690",
+   "1562617098"
+  ],
   "osmId": "node/9705895146",
   "website": "https://www.gasteinertal.com/jungeralm/"
  },
@@ -1292,6 +1628,7 @@
   "lat": 47.1709754,
   "lng": 13.1061647,
   "nodeId": null,
+  "nodeIds": [],
   "osmId": "node/9995673031"
  },
  {
@@ -1301,6 +1638,7 @@
   "lat": 47.171565,
   "lng": 13.106155,
   "nodeId": null,
+  "nodeIds": [],
   "osmId": "node/9997840162",
   "website": "https://thermenhotels-gastein.com/de/2/wirtshaus-goldener-adler-gastein",
   "menuUrl": "https://thermenhotels-gastein.com/de/download/67"
@@ -1312,6 +1650,7 @@
   "lat": 47.1334039,
   "lng": 13.0076598,
   "nodeId": null,
+  "nodeIds": [],
   "osmId": "node/10086745842"
  },
  {
@@ -1321,6 +1660,16 @@
   "lat": 47.2233815,
   "lng": 12.9909196,
   "nodeId": "488156908",
+  "nodeIds": [
+   "488156908",
+   "9680925567",
+   "2734597967",
+   "9680925563",
+   "2734597966",
+   "2734597968",
+   "7125935930",
+   "2734597965"
+  ],
   "osmId": "node/10142266373",
   "website": "https://www.das-albert.at/"
  },
@@ -1331,6 +1680,7 @@
   "lat": 47.170631,
   "lng": 13.1038389,
   "nodeId": null,
+  "nodeIds": [],
   "osmId": "node/10170868605",
   "website": "https://www.ungxund.at/"
  },
@@ -1341,6 +1691,7 @@
   "lat": 47.229527,
   "lng": 12.9948289,
   "nodeId": null,
+  "nodeIds": [],
   "osmId": "node/10601729431",
   "website": "https://www.gasthof-raurisertal.com/"
  },
@@ -1351,6 +1702,7 @@
   "lat": 47.169682,
   "lng": 13.1081,
   "nodeId": null,
+  "nodeIds": [],
   "osmId": "node/10726120068"
  },
  {
@@ -1360,6 +1712,7 @@
   "lat": 47.1713306,
   "lng": 13.1065485,
   "nodeId": null,
+  "nodeIds": [],
   "osmId": "node/10726120074"
  },
  {
@@ -1369,6 +1722,7 @@
   "lat": 47.1725327,
   "lng": 13.1045758,
   "nodeId": null,
+  "nodeIds": [],
   "osmId": "node/10727766887"
  },
  {
@@ -1378,6 +1732,7 @@
   "lat": 47.1724481,
   "lng": 13.104624,
   "nodeId": null,
+  "nodeIds": [],
   "osmId": "node/10727766889"
  },
  {
@@ -1387,6 +1742,7 @@
   "lat": 47.172106,
   "lng": 13.105176,
   "nodeId": null,
+  "nodeIds": [],
   "osmId": "node/10727766890",
   "website": "https://www.restaurant-sirtaki.at/"
  },
@@ -1397,6 +1753,7 @@
   "lat": 47.0867014,
   "lng": 13.11964,
   "nodeId": null,
+  "nodeIds": [],
   "osmId": "node/11133358272",
   "website": "https://www.irishcoffee.at/"
  },
@@ -1407,6 +1764,7 @@
   "lat": 47.114607,
   "lng": 13.1358357,
   "nodeId": null,
+  "nodeIds": [],
   "osmId": "node/11232452209",
   "website": "https://www.good-gastein-pizza.com/"
  },
@@ -1417,6 +1775,12 @@
   "lat": 47.2432879,
   "lng": 13.1538375,
   "nodeId": "9861894454",
+  "nodeIds": [
+   "9861894454",
+   "11245510583",
+   "9861894448",
+   "1893382034"
+  ],
   "osmId": "node/11247683687"
  },
  {
@@ -1426,6 +1790,9 @@
   "lat": 47.1113134,
   "lng": 13.1330743,
   "nodeId": "1983453314",
+  "nodeIds": [
+   "1983453314"
+  ],
   "osmId": "node/11335557718",
   "website": "https://www.restaurant-silberkrug.at/"
  },
@@ -1436,6 +1803,7 @@
   "lat": 47.1679375,
   "lng": 13.1104055,
   "nodeId": null,
+  "nodeIds": [],
   "osmId": "node/11407437669"
  },
  {
@@ -1445,6 +1813,7 @@
   "lat": 47.1719875,
   "lng": 13.1049609,
   "nodeId": null,
+  "nodeIds": [],
   "osmId": "node/11407448470"
  },
  {
@@ -1454,6 +1823,7 @@
   "lat": 47.1718752,
   "lng": 13.1057691,
   "nodeId": null,
+  "nodeIds": [],
   "osmId": "node/11407474569",
   "website": "https://www.hotelblue.at/restaurant/bad-hofgastein-gastein.html"
  },
@@ -1464,6 +1834,7 @@
   "lat": 47.2370583,
   "lng": 13.2010442,
   "nodeId": null,
+  "nodeIds": [],
   "osmId": "node/11443126317"
  },
  {
@@ -1473,6 +1844,7 @@
   "lat": 47.2415544,
   "lng": 13.1065351,
   "nodeId": null,
+  "nodeIds": [],
   "osmId": "node/11708775624",
   "website": "https://www.gastein.com/service/gastein-von-a-z/detail/infrastruktur/dorfstubn-dorfgastein-dorfgastein/"
  },
@@ -1483,6 +1855,7 @@
   "lat": 47.1144324,
   "lng": 13.1349514,
   "nodeId": null,
+  "nodeIds": [],
   "osmId": "node/11992874493"
  },
  {
@@ -1492,6 +1865,7 @@
   "lat": 47.1161795,
   "lng": 13.1343996,
   "nodeId": null,
+  "nodeIds": [],
   "osmId": "node/12031693860"
  },
  {
@@ -1501,6 +1875,7 @@
   "lat": 47.1715826,
   "lng": 13.1055762,
   "nodeId": null,
+  "nodeIds": [],
   "osmId": "node/12039353428"
  },
  {
@@ -1510,6 +1885,7 @@
   "lat": 47.1439212,
   "lng": 13.1233202,
   "nodeId": null,
+  "nodeIds": [],
   "osmId": "node/12128351817",
   "website": "https://www.gasteiner-badesee.at/"
  },
@@ -1519,7 +1895,16 @@
   "kind": "restaurant",
   "lat": 47.2388252,
   "lng": 13.1294755,
-  "nodeId": "9677420986",
+  "nodeId": "9677420985",
+  "nodeIds": [
+   "9677420985",
+   "9677420986",
+   "9680884004",
+   "10295322393",
+   "9677420984",
+   "9677420966",
+   "9677420988"
+  ],
   "osmId": "node/12144378199"
  },
  {
@@ -1529,15 +1914,19 @@
   "lat": 47.2242512,
   "lng": 12.995242,
   "nodeId": null,
+  "nodeIds": [],
   "osmId": "node/12554657688"
  },
  {
   "id": "osm:node/12925327349",
   "name": "Ahornhütte",
-  "kind": "dinner",
+  "kind": "restaurant",
   "lat": 47.1132704,
   "lng": 13.1130813,
-  "nodeId": null,
+  "nodeId": "9721456582",
+  "nodeIds": [
+   "9721456582"
+  ],
   "osmId": "node/12925327349"
  },
  {
@@ -1547,6 +1936,7 @@
   "lat": 47.116022,
   "lng": 13.1372326,
   "nodeId": null,
+  "nodeIds": [],
   "osmId": "node/13011517703"
  },
  {
@@ -1556,6 +1946,16 @@
   "lat": 47.2449781,
   "lng": 13.1949993,
   "nodeId": "10199890689",
+  "nodeIds": [
+   "10199890689",
+   "344901707",
+   "13674656978",
+   "11245510594",
+   "253396479",
+   "11245510578",
+   "11832608273",
+   "253396478"
+  ],
   "osmId": "node/13674656986",
   "website": "https://www.infernogrossarl.com/de"
  },
@@ -1566,6 +1966,16 @@
   "lat": 47.2235316,
   "lng": 12.9907125,
   "nodeId": "488156908",
+  "nodeIds": [
+   "488156908",
+   "2734597967",
+   "9680925563",
+   "9680925567",
+   "7125935930",
+   "2734597968",
+   "2734597966",
+   "7125935929"
+  ],
   "osmId": "node/13914732702"
  },
  {
@@ -1575,6 +1985,9 @@
   "lat": 47.1686365,
   "lng": 13.0996025,
   "nodeId": "4997981865",
+  "nodeIds": [
+   "4997981865"
+  ],
   "osmId": "way/30514349",
   "website": "https://www.gasteinalm.at/"
  },
@@ -1584,7 +1997,17 @@
   "kind": "restaurant",
   "lat": 47.1069304,
   "lng": 13.1661047,
-  "nodeId": "6080928018",
+  "nodeId": "1484620675",
+  "nodeIds": [
+   "1484620675",
+   "6080928018",
+   "14226661704",
+   "14226661702",
+   "1985590198",
+   "359089418",
+   "14226661703",
+   "4411337690"
+  ],
   "osmId": "way/34609773"
  },
  {
@@ -1594,6 +2017,14 @@
   "lat": 47.0619182,
   "lng": 13.0586864,
   "nodeId": "87016710",
+  "nodeIds": [
+   "87016710",
+   "1107617695",
+   "1107617700",
+   "1566977250",
+   "1566977239",
+   "1107617704"
+  ],
   "osmId": "way/35336186"
  },
  {
@@ -1603,6 +2034,7 @@
   "lat": 47.1727212,
   "lng": 13.1468309,
   "nodeId": null,
+  "nodeIds": [],
   "osmId": "way/81366091"
  },
  {
@@ -1612,6 +2044,7 @@
   "lat": 47.1724303,
   "lng": 13.1473696,
   "nodeId": null,
+  "nodeIds": [],
   "osmId": "way/81366118"
  },
  {
@@ -1621,6 +2054,7 @@
   "lat": 47.1724442,
   "lng": 13.1467407,
   "nodeId": null,
+  "nodeIds": [],
   "osmId": "way/81366290"
  },
  {
@@ -1629,7 +2063,15 @@
   "kind": "restaurant",
   "lat": 47.1480883,
   "lng": 13.0602696,
-  "nodeId": "9721127587",
+  "nodeId": "9721127603",
+  "nodeIds": [
+   "9721127603",
+   "9721127585",
+   "9721127570",
+   "9721127587",
+   "9721127572",
+   "9721100556"
+  ],
   "osmId": "way/82169182",
   "website": "https://www.hamburger-skihuette.at/"
  },
@@ -1639,17 +2081,26 @@
   "kind": "apres",
   "lat": 47.1468273,
   "lng": 13.0615809,
-  "nodeId": "9721100557",
+  "nodeId": "9721100556",
+  "nodeIds": [
+   "9721100556",
+   "9721100557",
+   "1862102673",
+   "9721127603"
+  ],
   "osmId": "way/82169191",
   "website": "http://www.weitmoserschloss.at/de/schlossalm.html"
  },
  {
   "id": "osm:way/82169298",
   "name": "Haitzingalm",
-  "kind": "dinner",
+  "kind": "restaurant",
   "lat": 47.156954,
   "lng": 13.0721257,
-  "nodeId": null,
+  "nodeId": "9721456421",
+  "nodeIds": [
+   "9721456421"
+  ],
   "osmId": "way/82169298"
  },
  {
@@ -1658,7 +2109,15 @@
   "kind": "apres",
   "lat": 47.1665654,
   "lng": 13.0784854,
-  "nodeId": "13413783329",
+  "nodeId": "10579315931",
+  "nodeIds": [
+   "10579315931",
+   "13413783329",
+   "9721127849",
+   "243686434",
+   "1684074590",
+   "9721127848"
+  ],
   "osmId": "way/82169370",
   "website": "https://aeroplan.at/"
  },
@@ -1668,7 +2127,11 @@
   "kind": "restaurant",
   "lat": 47.1618673,
   "lng": 13.0856266,
-  "nodeId": "9721456444",
+  "nodeId": "9721456456",
+  "nodeIds": [
+   "9721456456",
+   "9721456444"
+  ],
   "osmId": "way/82169419",
   "website": "https://www.baersteinalm.at/"
  },
@@ -1678,7 +2141,14 @@
   "kind": "restaurant",
   "lat": 47.1334124,
   "lng": 13.0792157,
-  "nodeId": "9721127695",
+  "nodeId": "9721127703",
+  "nodeIds": [
+   "9721127703",
+   "9721127704",
+   "9721127694",
+   "6011944577",
+   "9721127695"
+  ],
   "osmId": "way/83080023",
   "website": "https://www.angerblick.at/"
  },
@@ -1689,6 +2159,7 @@
   "lat": 47.0605517,
   "lng": 13.0481059,
   "nodeId": null,
+  "nodeIds": [],
   "osmId": "way/83896174"
  },
  {
@@ -1698,6 +2169,7 @@
   "lat": 47.0696246,
   "lng": 13.0584629,
   "nodeId": null,
+  "nodeIds": [],
   "osmId": "way/83896183"
  },
  {
@@ -1707,6 +2179,7 @@
   "lat": 47.060508,
   "lng": 13.0101624,
   "nodeId": null,
+  "nodeIds": [],
   "osmId": "way/83896191",
   "website": "https://www.niedersachsenhaus.at/"
  },
@@ -1717,6 +2190,7 @@
   "lat": 47.0540434,
   "lng": 12.9573612,
   "nodeId": null,
+  "nodeIds": [],
   "osmId": "way/85718959",
   "website": "https://www.zittelhaus.at"
  },
@@ -1727,6 +2201,15 @@
   "lat": 47.0595957,
   "lng": 13.0682393,
   "nodeId": "1024005255",
+  "nodeIds": [
+   "1024005255",
+   "4504580030",
+   "4504580029",
+   "951522977",
+   "951523138",
+   "1566977233",
+   "1879655841"
+  ],
   "osmId": "way/88124316"
  },
  {
@@ -1736,6 +2219,7 @@
   "lat": 47.0911174,
   "lng": 13.1054382,
   "nodeId": null,
+  "nodeIds": [],
   "osmId": "way/88844742"
  },
  {
@@ -1745,6 +2229,16 @@
   "lat": 47.0312731,
   "lng": 13.0106933,
   "nodeId": "11042446851",
+  "nodeIds": [
+   "11042446851",
+   "322571741",
+   "1032842308",
+   "4564235424",
+   "4564235425",
+   "322571739",
+   "2199250741",
+   "4564235472"
+  ],
   "osmId": "way/89000931"
  },
  {
@@ -1754,6 +2248,7 @@
   "lat": 47.1460134,
   "lng": 13.242453,
   "nodeId": null,
+  "nodeIds": [],
   "osmId": "way/96945733"
  },
  {
@@ -1763,6 +2258,7 @@
   "lat": 47.1491968,
   "lng": 13.2297528,
   "nodeId": null,
+  "nodeIds": [],
   "osmId": "way/96945743",
   "website": "https://www.grossarltal.info/de/almen/vorderkaseralm.html"
  },
@@ -1773,6 +2269,7 @@
   "lat": 47.048057,
   "lng": 13.062035,
   "nodeId": null,
+  "nodeIds": [],
   "osmId": "way/97011839"
  },
  {
@@ -1782,6 +2279,7 @@
   "lat": 47.0519602,
   "lng": 13.0577,
   "nodeId": null,
+  "nodeIds": [],
   "osmId": "way/97011843",
   "website": "https://www.nassfeldalm.com/"
  },
@@ -1792,6 +2290,7 @@
   "lat": 47.256965,
   "lng": 13.2284163,
   "nodeId": null,
+  "nodeIds": [],
   "osmId": "way/97796200"
  },
  {
@@ -1801,6 +2300,7 @@
   "lat": 47.1390773,
   "lng": 13.0436886,
   "nodeId": null,
+  "nodeIds": [],
   "osmId": "way/98181068"
  },
  {
@@ -1809,7 +2309,17 @@
   "kind": "restaurant",
   "lat": 47.2311353,
   "lng": 13.169828,
-  "nodeId": "253394889",
+  "nodeId": "4467424993",
+  "nodeIds": [
+   "4467424993",
+   "253394890",
+   "253394889",
+   "4467458356",
+   "253394900",
+   "3903341115",
+   "253395923",
+   "253395924"
+  ],
   "osmId": "way/98497719"
  },
  {
@@ -1819,6 +2329,7 @@
   "lat": 47.1043021,
   "lng": 13.2142355,
   "nodeId": null,
+  "nodeIds": [],
   "osmId": "way/101352796"
  },
  {
@@ -1827,7 +2338,11 @@
   "kind": "apres",
   "lat": 47.1294575,
   "lng": 13.0785025,
-  "nodeId": null,
+  "nodeId": "9721456677",
+  "nodeIds": [
+   "9721456677",
+   "9721456678"
+  ],
   "osmId": "way/101525391",
   "website": "https://www.angertal.at/de/hirschenhuette/"
  },
@@ -1837,7 +2352,12 @@
   "kind": "restaurant",
   "lat": 47.1292883,
   "lng": 13.0790483,
-  "nodeId": "9721456679",
+  "nodeId": "9721456678",
+  "nodeIds": [
+   "9721456678",
+   "9721456677",
+   "9721456679"
+  ],
   "osmId": "way/101525468",
   "website": "https://www.angertal.at/de/waldgasthof/index.htm"
  },
@@ -1847,7 +2367,14 @@
   "kind": "restaurant",
   "lat": 47.1335088,
   "lng": 13.0796228,
-  "nodeId": "9721127695",
+  "nodeId": "9721127704",
+  "nodeIds": [
+   "9721127704",
+   "9721127703",
+   "6011944577",
+   "9721127694",
+   "9721127695"
+  ],
   "osmId": "way/101525471",
   "website": "https://herzwies.at/felding-stubn/"
  },
@@ -1858,6 +2385,7 @@
   "lat": 47.1073081,
   "lng": 13.0718109,
   "nodeId": null,
+  "nodeIds": [],
   "osmId": "way/102142343"
  },
  {
@@ -1867,6 +2395,7 @@
   "lat": 47.1344143,
   "lng": 13.1541221,
   "nodeId": null,
+  "nodeIds": [],
   "osmId": "way/102437231",
   "website": "https://www.poserhoehe.at/"
  },
@@ -1877,6 +2406,7 @@
   "lat": 47.1343722,
   "lng": 13.1434291,
   "nodeId": null,
+  "nodeIds": [],
   "osmId": "way/102662637",
   "website": "https://www.fuchsundgal.at/"
  },
@@ -1887,6 +2417,7 @@
   "lat": 47.1757856,
   "lng": 13.2313436,
   "nodeId": null,
+  "nodeIds": [],
   "osmId": "way/118913935"
  },
  {
@@ -1896,6 +2427,7 @@
   "lat": 47.1474975,
   "lng": 13.2083323,
   "nodeId": null,
+  "nodeIds": [],
   "osmId": "way/118914045"
  },
  {
@@ -1905,6 +2437,7 @@
   "lat": 47.1762983,
   "lng": 13.230793,
   "nodeId": null,
+  "nodeIds": [],
   "osmId": "way/118914100",
   "website": "https://www.almroesl.at/"
  },
@@ -1915,6 +2448,7 @@
   "lat": 47.1686115,
   "lng": 13.2498087,
   "nodeId": null,
+  "nodeIds": [],
   "osmId": "way/118923379"
  },
  {
@@ -1924,6 +2458,7 @@
   "lat": 47.2448867,
   "lng": 13.0570611,
   "nodeId": null,
+  "nodeIds": [],
   "osmId": "way/121120110"
  },
  {
@@ -1933,6 +2468,7 @@
   "lat": 47.2459405,
   "lng": 13.0870863,
   "nodeId": null,
+  "nodeIds": [],
   "osmId": "way/121122717"
  },
  {
@@ -1942,6 +2478,7 @@
   "lat": 47.1910596,
   "lng": 13.0662645,
   "nodeId": null,
+  "nodeIds": [],
   "osmId": "way/125738586"
  },
  {
@@ -1951,6 +2488,7 @@
   "lat": 47.067776,
   "lng": 12.9839993,
   "nodeId": null,
+  "nodeIds": [],
   "osmId": "way/126213398",
   "website": "https://www.sonnblickbasis.at"
  },
@@ -1961,6 +2499,7 @@
   "lat": 47.0692061,
   "lng": 12.985479,
   "nodeId": null,
+  "nodeIds": [],
   "osmId": "way/126213423",
   "website": "https://www.ammererhof.at/"
  },
@@ -1971,6 +2510,7 @@
   "lat": 47.056159,
   "lng": 12.9877539,
   "nodeId": null,
+  "nodeIds": [],
   "osmId": "way/126233467",
   "website": "https://www.schutzhaus-neubau.at/"
  },
@@ -1981,6 +2521,7 @@
   "lat": 47.0747925,
   "lng": 12.9980609,
   "nodeId": null,
+  "nodeIds": [],
   "osmId": "way/126233479"
  },
  {
@@ -1990,6 +2531,7 @@
   "lat": 47.1850532,
   "lng": 13.0915352,
   "nodeId": null,
+  "nodeIds": [],
   "osmId": "way/131399496"
  },
  {
@@ -1999,6 +2541,7 @@
   "lat": 47.1735262,
   "lng": 13.065188,
   "nodeId": null,
+  "nodeIds": [],
   "osmId": "way/131671264"
  },
  {
@@ -2008,15 +2551,19 @@
   "lat": 47.1750525,
   "lng": 13.0695778,
   "nodeId": null,
+  "nodeIds": [],
   "osmId": "way/131671275"
  },
  {
   "id": "osm:way/132522841",
   "name": "Maurachalmhütte",
-  "kind": "dinner",
+  "kind": "restaurant",
   "lat": 47.1678369,
   "lng": 13.0656215,
-  "nodeId": null,
+  "nodeId": "9721127832",
+  "nodeIds": [
+   "9721127832"
+  ],
   "osmId": "way/132522841"
  },
  {
@@ -2026,6 +2573,7 @@
   "lat": 47.168796,
   "lng": 13.0494207,
   "nodeId": null,
+  "nodeIds": [],
   "osmId": "way/132522866"
  },
  {
@@ -2035,6 +2583,7 @@
   "lat": 47.0610717,
   "lng": 13.0563133,
   "nodeId": null,
+  "nodeIds": [],
   "osmId": "way/132691093"
  },
  {
@@ -2044,6 +2593,7 @@
   "lat": 47.0548354,
   "lng": 13.0523865,
   "nodeId": null,
+  "nodeIds": [],
   "osmId": "way/132691095"
  },
  {
@@ -2053,6 +2603,7 @@
   "lat": 47.0554561,
   "lng": 13.0526104,
   "nodeId": null,
+  "nodeIds": [],
   "osmId": "way/132691098"
  },
  {
@@ -2062,6 +2613,7 @@
   "lat": 47.0576356,
   "lng": 13.0552813,
   "nodeId": null,
+  "nodeIds": [],
   "osmId": "way/132691102"
  },
  {
@@ -2071,6 +2623,7 @@
   "lat": 47.0397698,
   "lng": 13.0654682,
   "nodeId": null,
+  "nodeIds": [],
   "osmId": "way/132691318"
  },
  {
@@ -2080,6 +2633,7 @@
   "lat": 47.2459856,
   "lng": 13.2261132,
   "nodeId": null,
+  "nodeIds": [],
   "osmId": "way/133485830"
  },
  {
@@ -2089,6 +2643,7 @@
   "lat": 47.1428366,
   "lng": 13.1210701,
   "nodeId": null,
+  "nodeIds": [],
   "osmId": "way/136579793",
   "website": "https://www.bertahof.at/"
  },
@@ -2099,6 +2654,16 @@
   "lat": 47.1239212,
   "lng": 13.1004716,
   "nodeId": "1684004737",
+  "nodeIds": [
+   "1684004737",
+   "1684004734",
+   "11587641685",
+   "11587641679",
+   "1107473817",
+   "11587641693",
+   "1684004740",
+   "11587641692"
+  ],
   "osmId": "way/142967094"
  },
  {
@@ -2108,6 +2673,7 @@
   "lat": 47.1238954,
   "lng": 13.1755261,
   "nodeId": null,
+  "nodeIds": [],
   "osmId": "way/143468610",
   "website": "https://www.gasteinertal.com/himmelwandhuette/"
  },
@@ -2117,7 +2683,12 @@
   "kind": "restaurant",
   "lat": 47.1151816,
   "lng": 13.1272323,
-  "nodeId": "4591821600",
+  "nodeId": "9721456629",
+  "nodeIds": [
+   "9721456629",
+   "9721456628",
+   "4591821600"
+  ],
   "osmId": "way/143828134",
   "website": "http://www.bellevue-alm.com/"
  },
@@ -2128,6 +2699,7 @@
   "lat": 47.2120381,
   "lng": 13.2247608,
   "nodeId": null,
+  "nodeIds": [],
   "osmId": "way/144893290",
   "website": "https://www.grossarltal.info/de/almen/bichlalm.html"
  },
@@ -2138,6 +2710,7 @@
   "lat": 47.1969713,
   "lng": 12.9752032,
   "nodeId": null,
+  "nodeIds": [],
   "osmId": "way/151856364",
   "website": "https://www.hotel-rauris.com/"
  },
@@ -2148,6 +2721,7 @@
   "lat": 47.1355878,
   "lng": 13.0450543,
   "nodeId": null,
+  "nodeIds": [],
   "osmId": "way/158100094"
  },
  {
@@ -2157,6 +2731,7 @@
   "lat": 47.2011818,
   "lng": 13.0798938,
   "nodeId": null,
+  "nodeIds": [],
   "osmId": "way/158181739"
  },
  {
@@ -2166,6 +2741,15 @@
   "lat": 47.2235345,
   "lng": 12.9930041,
   "nodeId": "2734597965",
+  "nodeIds": [
+   "2734597965",
+   "2734597966",
+   "7125935931",
+   "9680925567",
+   "2734597963",
+   "488156908",
+   "2519557352"
+  ],
   "osmId": "way/162091211",
   "website": "https://www.maislau.com/gasthof/"
  },
@@ -2176,6 +2760,7 @@
   "lat": 47.0481699,
   "lng": 12.9689015,
   "nodeId": null,
+  "nodeIds": [],
   "osmId": "way/165758926",
   "website": "https://www.alpenverein.at/rojacherhuette/"
  },
@@ -2186,6 +2771,10 @@
   "lat": 47.1159159,
   "lng": 13.1388841,
   "nodeId": "359089419",
+  "nodeIds": [
+   "359089419",
+   "401891972"
+  ],
   "osmId": "way/170929640",
   "website": "http://www.hotelschillerhof.com"
  },
@@ -2196,6 +2785,7 @@
   "lat": 47.1251857,
   "lng": 12.9778974,
   "nodeId": null,
+  "nodeIds": [],
   "osmId": "way/171801624",
   "website": "https://lechner-haeusl.stadtausstellung.at/"
  },
@@ -2206,6 +2796,7 @@
   "lat": 47.1280798,
   "lng": 13.0444151,
   "nodeId": null,
+  "nodeIds": [],
   "osmId": "way/177387830"
  },
  {
@@ -2215,6 +2806,16 @@
   "lat": 47.2414548,
   "lng": 13.1805268,
   "nodeId": "1893300281",
+  "nodeIds": [
+   "1893300281",
+   "253394025",
+   "4463412760",
+   "6098764513",
+   "4463412759",
+   "11245510590",
+   "863257480",
+   "863257212"
+  ],
   "osmId": "way/178987912"
  },
  {
@@ -2224,6 +2825,16 @@
   "lat": 47.2281282,
   "lng": 13.1683514,
   "nodeId": "3570691298",
+  "nodeIds": [
+   "3570691298",
+   "4463412753",
+   "1077195660",
+   "1893297458",
+   "365179443",
+   "1621387523",
+   "365179446",
+   "365179445"
+  ],
   "osmId": "way/178987914"
  },
  {
@@ -2232,7 +2843,17 @@
   "kind": "restaurant",
   "lat": 47.2318791,
   "lng": 13.1592368,
-  "nodeId": "253395041",
+  "nodeId": "253393984",
+  "nodeIds": [
+   "253393984",
+   "253393983",
+   "253395041",
+   "2620222895",
+   "863256852",
+   "863257593",
+   "1893298285",
+   "863257356"
+  ],
   "osmId": "way/178987941"
  },
  {
@@ -2241,7 +2862,17 @@
   "kind": "restaurant",
   "lat": 47.2314383,
   "lng": 13.1589581,
-  "nodeId": "863257593",
+  "nodeId": "863257356",
+  "nodeIds": [
+   "863257356",
+   "1893298285",
+   "863256852",
+   "863257593",
+   "253393983",
+   "253393984",
+   "253395040",
+   "253395041"
+  ],
   "osmId": "way/178987946"
  },
  {
@@ -2251,6 +2882,14 @@
   "lat": 47.2345715,
   "lng": 13.1478835,
   "nodeId": "1606913761",
+  "nodeIds": [
+   "1606913761",
+   "1893380029",
+   "1893379951",
+   "1893379878",
+   "1893380084",
+   "9680884007"
+  ],
   "osmId": "way/178996826"
  },
  {
@@ -2260,6 +2899,9 @@
   "lat": 47.2329115,
   "lng": 13.1792084,
   "nodeId": "253394015",
+  "nodeIds": [
+   "253394015"
+  ],
   "osmId": "way/179396282"
  },
  {
@@ -2269,6 +2911,7 @@
   "lat": 47.2301545,
   "lng": 12.9918015,
   "nodeId": null,
+  "nodeIds": [],
   "osmId": "way/180186763"
  },
  {
@@ -2278,6 +2921,16 @@
   "lat": 47.1088826,
   "lng": 13.1302706,
   "nodeId": "9721456660",
+  "nodeIds": [
+   "9721456660",
+   "9721456661",
+   "9721456659",
+   "9721456643",
+   "4591847443",
+   "9721456662",
+   "253404702",
+   "6210950997"
+  ],
   "osmId": "way/194848502",
   "website": "http://www.rossalm.cc/"
  },
@@ -2287,7 +2940,12 @@
   "kind": "apres",
   "lat": 47.1149542,
   "lng": 13.1271378,
-  "nodeId": "4591821600",
+  "nodeId": "9721456628",
+  "nodeIds": [
+   "9721456628",
+   "9721456629",
+   "4591821600"
+  ],
   "osmId": "way/195158700"
  },
  {
@@ -2296,7 +2954,16 @@
   "kind": "restaurant",
   "lat": 47.0279613,
   "lng": 13.1948154,
-  "nodeId": "1175971449",
+  "nodeId": "1175971440",
+  "nodeIds": [
+   "1175971440",
+   "1175971449",
+   "1175971438",
+   "1175971377",
+   "372783459",
+   "1175971465",
+   "11272668248"
+  ],
   "osmId": "way/196838273"
  },
  {
@@ -2306,6 +2973,7 @@
   "lat": 47.0236327,
   "lng": 13.2317822,
   "nodeId": null,
+  "nodeIds": [],
   "osmId": "way/198650097"
  },
  {
@@ -2315,6 +2983,7 @@
   "lat": 47.1921205,
   "lng": 13.1259598,
   "nodeId": null,
+  "nodeIds": [],
   "osmId": "way/207434936"
  },
  {
@@ -2324,6 +2993,7 @@
   "lat": 47.2099549,
   "lng": 13.1388425,
   "nodeId": null,
+  "nodeIds": [],
   "osmId": "way/207446742"
  },
  {
@@ -2333,6 +3003,7 @@
   "lat": 47.2166141,
   "lng": 13.1458586,
   "nodeId": null,
+  "nodeIds": [],
   "osmId": "way/207451046"
  },
  {
@@ -2341,7 +3012,16 @@
   "kind": "restaurant",
   "lat": 47.2388846,
   "lng": 13.1293715,
-  "nodeId": "9677420986",
+  "nodeId": "9677420985",
+  "nodeIds": [
+   "9677420985",
+   "9677420986",
+   "9680884004",
+   "10295322393",
+   "9677420984",
+   "9677420988",
+   "9677420966"
+  ],
   "osmId": "way/207704212",
   "website": "https://www.wengeralm.at/de/bergrestaurant-gastein.html"
  },
@@ -2352,6 +3032,7 @@
   "lat": 47.0236254,
   "lng": 13.1551111,
   "nodeId": null,
+  "nodeIds": [],
   "osmId": "way/208708270",
   "website": "https://www.dav-minden.de/mindener-huette"
  },
@@ -2362,15 +3043,19 @@
   "lat": 47.0274654,
   "lng": 13.0895836,
   "nodeId": null,
+  "nodeIds": [],
   "osmId": "way/209723442"
  },
  {
   "id": "osm:way/209732086",
   "name": "Duisburger Hütte",
-  "kind": "dinner",
+  "kind": "restaurant",
   "lat": 47.0240805,
   "lng": 13.0115554,
-  "nodeId": null,
+  "nodeId": "4564235484",
+  "nodeIds": [
+   "4564235484"
+  ],
   "osmId": "way/209732086",
   "website": "https://www.dav-duisburg.de/H%C3%BCtten/Duisburger%20H%C3%BCtte%20%28Tauern%29"
  },
@@ -2380,7 +3065,12 @@
   "kind": "restaurant",
   "lat": 47.1149159,
   "lng": 13.0850597,
-  "nodeId": "1562617098",
+  "nodeId": "1562617095",
+  "nodeIds": [
+   "1562617095",
+   "1842626690",
+   "1562617098"
+  ],
   "osmId": "way/209749219",
   "website": "https://huetten.wanderdoerfer.at/huette/kressebenalm/"
  },
@@ -2391,6 +3081,7 @@
   "lat": 47.1301773,
   "lng": 13.0443634,
   "nodeId": null,
+  "nodeIds": [],
   "osmId": "way/210720589"
  },
  {
@@ -2400,6 +3091,7 @@
   "lat": 47.1275907,
   "lng": 13.0462115,
   "nodeId": null,
+  "nodeIds": [],
   "osmId": "way/210720594"
  },
  {
@@ -2409,6 +3101,7 @@
   "lat": 47.1315225,
   "lng": 13.0375579,
   "nodeId": null,
+  "nodeIds": [],
   "osmId": "way/210722240"
  },
  {
@@ -2418,6 +3111,7 @@
   "lat": 47.1114852,
   "lng": 13.0117577,
   "nodeId": null,
+  "nodeIds": [],
   "osmId": "way/210729346",
   "website": "https://www.mitterastenalm.at/"
  },
@@ -2428,6 +3122,7 @@
   "lat": 47.2277839,
   "lng": 13.0581624,
   "nodeId": null,
+  "nodeIds": [],
   "osmId": "way/212677357"
  },
  {
@@ -2437,6 +3132,7 @@
   "lat": 47.1270078,
   "lng": 13.1414804,
   "nodeId": null,
+  "nodeIds": [],
   "osmId": "way/216710896",
   "website": "https://www.bäckerwirtsgut.com/"
  },
@@ -2447,6 +3143,7 @@
   "lat": 47.1293847,
   "lng": 13.1337961,
   "nodeId": null,
+  "nodeIds": [],
   "osmId": "way/216763753"
  },
  {
@@ -2456,6 +3153,7 @@
   "lat": 47.0882824,
   "lng": 13.1130138,
   "nodeId": null,
+  "nodeIds": [],
   "osmId": "way/223169291",
   "website": "https://www.gasteinertal.com/gasthaus-radhausberg/"
  },
@@ -2466,6 +3164,7 @@
   "lat": 47.2118332,
   "lng": 12.9881918,
   "nodeId": null,
+  "nodeIds": [],
   "osmId": "way/225586567"
  },
  {
@@ -2475,6 +3174,7 @@
   "lat": 47.0800251,
   "lng": 13.0904041,
   "nodeId": null,
+  "nodeIds": [],
   "osmId": "way/227906746"
  },
  {
@@ -2483,7 +3183,15 @@
   "kind": "restaurant",
   "lat": 47.1255153,
   "lng": 13.1012329,
-  "nodeId": "672836475",
+  "nodeId": "11587641690",
+  "nodeIds": [
+   "11587641690",
+   "672836475",
+   "1684004740",
+   "2466717221",
+   "11587641693",
+   "11587641692"
+  ],
   "osmId": "way/231499535",
   "website": "https://www.stubneralm.at/"
  },
@@ -2494,6 +3202,7 @@
   "lat": 47.2101608,
   "lng": 13.1637421,
   "nodeId": null,
+  "nodeIds": [],
   "osmId": "way/233911921",
   "website": "https://www.grossarltal.info/de/almen/aigenalm-paulhuette.html"
  },
@@ -2504,6 +3213,7 @@
   "lat": 47.2052542,
   "lng": 13.1628175,
   "nodeId": null,
+  "nodeIds": [],
   "osmId": "way/233913409",
   "website": "https://www.grossarltal.info/de/almen/aigenalm-mandlhuette.html"
  },
@@ -2514,6 +3224,7 @@
   "lat": 47.141906,
   "lng": 13.0053531,
   "nodeId": null,
+  "nodeIds": [],
   "osmId": "way/234458339"
  },
  {
@@ -2523,6 +3234,12 @@
   "lat": 47.2489829,
   "lng": 13.1270282,
   "nodeId": "253392117",
+  "nodeIds": [
+   "253392117",
+   "9677421026",
+   "9677420948",
+   "9677421037"
+  ],
   "osmId": "way/235370075"
  },
  {
@@ -2532,6 +3249,10 @@
   "lat": 47.2468965,
   "lng": 13.1132289,
   "nodeId": "1399720649",
+  "nodeIds": [
+   "1399720649",
+   "12261086622"
+  ],
   "osmId": "way/235370120"
  },
  {
@@ -2541,6 +3262,15 @@
   "lat": 47.2412956,
   "lng": 13.1240838,
   "nodeId": "9677420974",
+  "nodeIds": [
+   "9677420974",
+   "9677420973",
+   "9677420975",
+   "3570719923",
+   "9677421006",
+   "248452481",
+   "9677420999"
+  ],
   "osmId": "way/235508790"
  },
  {
@@ -2550,6 +3280,10 @@
   "lat": 47.2416612,
   "lng": 13.1433011,
   "nodeId": "9677420913",
+  "nodeIds": [
+   "9677420913",
+   "9677420929"
+  ],
   "osmId": "way/235508794"
  },
  {
@@ -2559,6 +3293,7 @@
   "lat": 47.2460976,
   "lng": 13.1463097,
   "nodeId": null,
+  "nodeIds": [],
   "osmId": "way/235508795"
  },
  {
@@ -2568,6 +3303,15 @@
   "lat": 47.2419608,
   "lng": 13.1265995,
   "nodeId": "1465077398",
+  "nodeIds": [
+   "1465077398",
+   "9677420997",
+   "9677420999",
+   "248452481",
+   "9677420941",
+   "9677420939",
+   "9677420973"
+  ],
   "osmId": "way/235508796",
   "website": "https://www.gasteinertal.com/reiterhuette/"
  },
@@ -2578,6 +3322,7 @@
   "lat": 47.1016446,
   "lng": 13.1254996,
   "nodeId": null,
+  "nodeIds": [],
   "osmId": "way/237574980"
  },
  {
@@ -2587,6 +3332,7 @@
   "lat": 47.1189354,
   "lng": 13.1397819,
   "nodeId": null,
+  "nodeIds": [],
   "osmId": "way/238063649"
  },
  {
@@ -2596,6 +3342,7 @@
   "lat": 47.0876088,
   "lng": 13.1179474,
   "nodeId": null,
+  "nodeIds": [],
   "osmId": "way/238247715"
  },
  {
@@ -2605,6 +3352,16 @@
   "lat": 47.2239554,
   "lng": 12.9922865,
   "nodeId": "2734597965",
+  "nodeIds": [
+   "2734597965",
+   "2734597966",
+   "7125935931",
+   "9680925567",
+   "2734597963",
+   "2519557352",
+   "488156908",
+   "7125935930"
+  ],
   "osmId": "way/244614157"
  },
  {
@@ -2614,6 +3371,7 @@
   "lat": 47.1781914,
   "lng": 13.2301253,
   "nodeId": null,
+  "nodeIds": [],
   "osmId": "way/253632245",
   "website": "http://www.kaminstadl.at/"
  },
@@ -2624,6 +3382,7 @@
   "lat": 47.1640923,
   "lng": 13.1825803,
   "nodeId": null,
+  "nodeIds": [],
   "osmId": "way/253843700"
  },
  {
@@ -2633,6 +3392,7 @@
   "lat": 47.1364084,
   "lng": 13.249866,
   "nodeId": null,
+  "nodeIds": [],
   "osmId": "way/254024662"
  },
  {
@@ -2642,6 +3402,7 @@
   "lat": 47.1917323,
   "lng": 13.1770425,
   "nodeId": null,
+  "nodeIds": [],
   "osmId": "way/256214938",
   "website": "https://www.grossarltal.info/de/almen/bachalm.html"
  },
@@ -2651,7 +3412,11 @@
   "kind": "restaurant",
   "lat": 47.2385116,
   "lng": 13.1933393,
-  "nodeId": "253396466",
+  "nodeId": "11012716220",
+  "nodeIds": [
+   "11012716220",
+   "253396466"
+  ],
   "osmId": "way/256722336",
   "website": "https://www.schuetzenhof.at/"
  },
@@ -2661,7 +3426,11 @@
   "kind": "restaurant",
   "lat": 47.2349715,
   "lng": 13.1807054,
-  "nodeId": "365179462",
+  "nodeId": "325908195",
+  "nodeIds": [
+   "325908195",
+   "365179462"
+  ],
   "osmId": "way/256722337"
  },
  {
@@ -2671,6 +3440,7 @@
   "lat": 47.0709435,
   "lng": 12.9947067,
   "nodeId": null,
+  "nodeIds": [],
   "osmId": "way/266354640",
   "website": "https://www.naturfreunde-huetten.at/salzburg/maerchenkarhuette/"
  },
@@ -2681,6 +3451,7 @@
   "lat": 47.2317907,
   "lng": 13.0269366,
   "nodeId": null,
+  "nodeIds": [],
   "osmId": "way/325025172",
   "website": "https://www.heustadlhof.at/karalm"
  },
@@ -2690,7 +3461,17 @@
   "kind": "restaurant",
   "lat": 47.2415757,
   "lng": 13.1810555,
-  "nodeId": "11245510590",
+  "nodeId": "253394025",
+  "nodeIds": [
+   "253394025",
+   "6098764513",
+   "4463412759",
+   "4463412760",
+   "11245510590",
+   "1893300281",
+   "863257212",
+   "5832937587"
+  ],
   "osmId": "way/361066585"
  },
  {
@@ -2700,6 +3481,7 @@
   "lat": 47.1187864,
   "lng": 13.1343588,
   "nodeId": null,
+  "nodeIds": [],
   "osmId": "way/367867939"
  },
  {
@@ -2709,16 +3491,21 @@
   "lat": 47.2398043,
   "lng": 12.9842997,
   "nodeId": null,
+  "nodeIds": [],
   "osmId": "way/437971125",
   "website": "https://www.zenzi-cafe.at/"
  },
  {
   "id": "osm:way/453515563",
   "name": "Hannoverhaus",
-  "kind": "dinner",
+  "kind": "restaurant",
   "lat": 47.0406053,
   "lng": 13.2155358,
-  "nodeId": null,
+  "nodeId": "1175773587",
+  "nodeIds": [
+   "1175773587",
+   "1175885202"
+  ],
   "osmId": "way/453515563",
   "website": "https://www.alpenverein.de/verband/huetten-und-wege/huetten-des-bundesverbands/hannoverhaus"
  },
@@ -2729,6 +3516,7 @@
   "lat": 47.1582028,
   "lng": 13.0012174,
   "nodeId": null,
+  "nodeIds": [],
   "osmId": "way/506261333"
  },
  {
@@ -2738,6 +3526,15 @@
   "lat": 47.168405,
   "lng": 13.0970097,
   "nodeId": "9721127882",
+  "nodeIds": [
+   "9721127882",
+   "10147026972",
+   "4997981865",
+   "5456924367",
+   "5456924368",
+   "5455060547",
+   "5455060549"
+  ],
   "osmId": "way/558305895"
  },
  {
@@ -2747,6 +3544,9 @@
   "lat": 47.1683372,
   "lng": 13.0995558,
   "nodeId": "4997981865",
+  "nodeIds": [
+   "4997981865"
+  ],
   "osmId": "way/561746486",
   "website": "https://www.gasteinalm.at/"
  },
@@ -2757,6 +3557,7 @@
   "lat": 47.1849773,
   "lng": 13.0554713,
   "nodeId": null,
+  "nodeIds": [],
   "osmId": "way/569401208"
  },
  {
@@ -2766,6 +3567,7 @@
   "lat": 47.1203898,
   "lng": 13.1410395,
   "nodeId": null,
+  "nodeIds": [],
   "osmId": "way/591630211",
   "website": "https://www.hapimag.com/de/wo/oesterreich/bad-gastein-salzburger-land/angebote/gastronomie.html"
  },
@@ -2776,6 +3578,7 @@
   "lat": 47.1188803,
   "lng": 13.1343115,
   "nodeId": null,
+  "nodeIds": [],
   "osmId": "way/655427106",
   "website": "https://mamaspapas-cafe.business.site/"
  },
@@ -2786,6 +3589,7 @@
   "lat": 47.0794142,
   "lng": 13.0911527,
   "nodeId": null,
+  "nodeIds": [],
   "osmId": "way/660188006"
  },
  {
@@ -2794,7 +3598,12 @@
   "kind": "apres",
   "lat": 47.1095859,
   "lng": 13.1105406,
-  "nodeId": null,
+  "nodeId": "2056431617",
+  "nodeIds": [
+   "2056431617",
+   "1107473474",
+   "253403043"
+  ],
   "osmId": "way/663246774"
  },
  {
@@ -2804,6 +3613,7 @@
   "lat": 47.1706921,
   "lng": 13.1068558,
   "nodeId": null,
+  "nodeIds": [],
   "osmId": "way/806962898",
   "website": "https://www.gastein.com/service/gastein-von-a-z/detail/infrastruktur/cafe-zeit-bad-hofgastein/"
  },
@@ -2814,6 +3624,7 @@
   "lat": 47.151544,
   "lng": 13.0653481,
   "nodeId": null,
+  "nodeIds": [],
   "osmId": "way/1030893872",
   "website": "https://hofgasteinerhaus.naturfreunde.at/"
  },
@@ -2824,6 +3635,13 @@
   "lat": 47.1551233,
   "lng": 13.060063,
   "nodeId": "6638583714",
+  "nodeIds": [
+   "6638583714",
+   "10031583311",
+   "4997981862",
+   "243685636",
+   "9721456503"
+  ],
   "osmId": "way/1460786610",
   "website": "https://hirschundmaus.at/"
  }

@@ -114,3 +114,10 @@ a { color: var(--accent); }
 .suggestions .chip { border: 0; cursor: pointer; color: var(--text); }
 .chat-form { display: flex; gap: 8px; }
 .chat-form input { flex: 1; min-width: 0; background: var(--surface-2); color: var(--text); border: 1px solid #ffffff22; border-radius: 12px; padding: 10px 12px; }
+
+.berg-map { position: relative; height: 42dvh; min-height: 260px; border-radius: var(--radius); overflow: hidden; margin-bottom: 12px; }
+.steps { padding-left: 22px; margin: 8px 0 0; }
+.steps li { padding: 6px 0; line-height: 1.35; }
+.status-grid { list-style: none; padding: 0; margin: 0; display: flex; flex-wrap: wrap; gap: 6px; }
+.weather { width: 100%; border-collapse: collapse; font-size: 0.9rem; }
+.weather th, .weather td { text-align: left; padding: 6px 4px; border-bottom: 1px solid #ffffff10; vertical-align: top; }

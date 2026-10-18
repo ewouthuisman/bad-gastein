@@ -39,7 +39,9 @@ export function ChatPanel() {
       .then(({ data }) => setMessages(((data as Msg[]) ?? []).reverse()));
   }, []);
 
-  useEffect(() => end.current?.scrollIntoView?.({ block: 'end' }), [messages, pending]);
+  useEffect(() => {
+    end.current?.scrollIntoView?.({ block: 'end' });
+  }, [messages, pending]);
 
   async function send(text: string) {
     const message = text.trim();

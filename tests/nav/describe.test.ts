@@ -56,3 +56,23 @@ describe('describeRoute', () => {
     expect(describeRoute([p27a, p27b], { graph, notes })[0]).toBe('Neem piste 27 (blauw) — let op: hier stuk schaatsen');
   });
 });
+
+describe('describeRoute on overlapping pistes', () => {
+  const seg = (id: string, ref: string | undefined, lengthM: number, difficulty: GEdge['difficulty'] = 'easy') =>
+    e(id, id + 'a', id + 'b', [[47.0, 13.0], [46.99, 13.0]], { ref, lengthM, difficulty });
+
+  it('absorbs short hops onto parallel pistes into the main piste', () => {
+    const route = [seg('a', 'H3', 500), seg('b', 'H3a', 80, 'intermediate'), seg('c', 'H3', 400), seg('d', 'H4', 60, 'intermediate'), seg('e', 'H3', 300)];
+    expect(describeRoute(route, {})).toEqual(['Neem piste H3 (blauw, kort stuk rood)']);
+  });
+
+  it('keeps a long switch to another piste', () => {
+    const route = [seg('a', 'H3', 500), seg('b', 'H4', 600, 'intermediate')];
+    expect(describeRoute(route, {})).toEqual(['Neem piste H3 (blauw)', 'Neem piste H4 (rood)']);
+  });
+
+  it('mentions the hardest colour when a short hop is harder', () => {
+    const route = [seg('a', 'H3', 500), seg('b', 'H3a', 80, 'advanced'), seg('c', 'H3', 400)];
+    expect(describeRoute(route, {})).toEqual(['Neem piste H3 (blauw, kort stuk zwart)']);
+  });
+});

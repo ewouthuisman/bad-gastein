@@ -87,3 +87,13 @@ describe('nearestNode', () => {
     expect(Math.round(n.distM)).toBe(11);
   });
 });
+
+describe('findRoute to several possible end points', () => {
+  it('ends at whichever reachable target is allowed for the level', () => {
+    const r = findRoute(graph, 'A', ['D', 'C'], open);
+    expect(r.ok && r.edges.map((x) => x.id)).toEqual(['red']);
+  });
+  it('reports difficulty only when no target is reachable at this level', () => {
+    expect(findRoute(graph, 'A', ['D'], open)).toEqual({ ok: false, reason: 'difficulty' });
+  });
+});

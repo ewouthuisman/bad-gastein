@@ -3,7 +3,14 @@ import { mkdirSync, readFileSync, writeFileSync } from 'node:fs';
 import { buildGraph, buildPlaces, type OverpassJson } from './lib/build-graph';
 
 const osm = JSON.parse(readFileSync('data/osm-snapshot.json', 'utf8')) as OverpassJson;
-const graph = buildGraph(osm);
+// Huts and bars become anchor points so routes can end halfway down a piste.
+const anchors = osm.elements.flatMap((el) => {
+  const e = el as { type: string; lat?: number; lon?: number; center?: { lat: number; lon: number }; tags?: Record<string, string> };
+  if (!e.tags?.amenity && !e.tags?.tourism) return [];
+  const pos = e.type === 'node' ? { lat: e.lat!, lng: e.lon! } : e.center ? { lat: e.center.lat, lng: e.center.lon } : null;
+  return pos ? [pos] : [];
+});
+const graph = buildGraph(osm, { anchors });
 const places = buildPlaces(osm, graph);
 
 mkdirSync('public/data', { recursive: true });
