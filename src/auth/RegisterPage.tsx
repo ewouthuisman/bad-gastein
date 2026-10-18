@@ -15,7 +15,7 @@ export function RegisterPage() {
     e.preventDefault();
     setPending(true);
     setError(null);
-    const { error: err } = await supabase.auth.signUp({
+    const { data, error: err } = await supabase.auth.signUp({
       email: email.trim(),
       password,
       options: { data: { display_name: name.trim(), group_code: code.trim() } },
@@ -23,6 +23,10 @@ export function RegisterPage() {
     setPending(false);
     if (err) {
       setError(/invalid group code|Database error saving new user/i.test(err.message) ? 'Ongeldige groepscode' : err.message);
+      return;
+    }
+    if (!data?.session) {
+      setError('Bevestig je e-mailadres via de link in je mail en log daarna in.');
       return;
     }
     navigate('/kaart');
@@ -36,7 +40,7 @@ export function RegisterPage() {
         <label className="field">Naam<input value={name} onChange={(e) => setName(e.target.value)} required autoComplete="nickname" /></label>
         <label className="field">E-mail<input type="email" value={email} onChange={(e) => setEmail(e.target.value)} required autoComplete="email" /></label>
         <label className="field">Wachtwoord<input type="password" value={password} onChange={(e) => setPassword(e.target.value)} required minLength={6} autoComplete="new-password" /></label>
-        <label className="field">Groepscode<input value={code} onChange={(e) => setCode(e.target.value)} required autoCapitalize="characters" /></label>
+        <label className="field">Groepscode<input value={code} onChange={(e) => setCode(e.target.value)} required autoCapitalize="off" /></label>
         {error && <p className="error">{error}</p>}
         <button className="btn primary" type="submit" disabled={pending}>Account maken</button>
       </form>

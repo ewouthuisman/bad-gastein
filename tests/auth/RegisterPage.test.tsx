@@ -46,6 +46,18 @@ describe('RegisterPage', () => {
     expect(await screen.findByText('Ongeldige groepscode')).toBeInTheDocument();
   });
 
+  it('explains e-mail confirmation when no session comes back', async () => {
+    signUp.mockResolvedValue({ data: { session: null, user: { id: 'u' } }, error: null });
+    const u = await fill();
+    await u.click(screen.getByRole('button', { name: 'Account maken' }));
+    expect(await screen.findByText(/Bevestig je e-mailadres/)).toBeInTheDocument();
+  });
+
+  it('does not force capitals in the group code field', async () => {
+    render(<MemoryRouter><RegisterPage /></MemoryRouter>);
+    expect(screen.getByLabelText('Groepscode')).not.toHaveAttribute('autocapitalize', 'characters');
+  });
+
   it('disables submit while pending', async () => {
     let resolve!: (v: unknown) => void;
     signUp.mockReturnValue(new Promise((r) => (resolve = r)));

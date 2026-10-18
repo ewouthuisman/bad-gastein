@@ -1,11 +1,23 @@
 begin;
-select plan(21);
+select plan(23);
 
 create function pg_temp.affected(q text) returns int language plpgsql as $f$
 declare n int; begin execute q; get diagnostics n = row_count; return n; end $f$;
 
 -- Fixtures (as postgres) -------------------------------------------------------
+-- Before a real group code is set, nobody can sign up, not even with the placeholder text.
+update public.app_config set value = '[PLACEHOLDER]' where key = 'group_code';
+select throws_ok(
+  $$insert into auth.users (id, email, raw_user_meta_data)
+    values ('00000000-0000-0000-0000-0000000000fe', 'p@test.nl', '{"group_code":"[PLACEHOLDER]","display_name":"P"}')$$,
+  'P0001', 'invalid group code', 'signup is closed while the group code is a placeholder');
+
 update public.app_config set value = 'TESTCODE' where key = 'group_code';
+
+insert into auth.users (id, email, raw_user_meta_data)
+  values ('00000000-0000-0000-0000-0000000000d4', 'case@test.nl', '{"group_code":" testcode ","display_name":"Case"}');
+select is((select display_name from public.profiles where id = '00000000-0000-0000-0000-0000000000d4'), 'Case',
+  'group code ignores case and spaces');
 
 select throws_ok(
   $$insert into auth.users (id, email, raw_user_meta_data)
