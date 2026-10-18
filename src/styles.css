@@ -121,3 +121,11 @@ a { color: var(--accent); }
 .status-grid { list-style: none; padding: 0; margin: 0; display: flex; flex-wrap: wrap; gap: 6px; }
 .weather { width: 100%; border-collapse: collapse; font-size: 0.9rem; }
 .weather th, .weather td { text-align: left; padding: 6px 4px; border-bottom: 1px solid #ffffff10; vertical-align: top; }
+
+.md p { margin: 8px 0; line-height: 1.45; }
+.md ul { padding-left: 20px; }
+.md-editor { width: 100%; background: var(--surface-2); color: var(--text); border: 1px solid #ffffff22; border-radius: 10px; padding: 10px; font: inherit; margin: 8px 0; }
+.override-group { border-top: 1px solid #ffffff14; padding: 10px 0; display: flex; flex-direction: column; gap: 6px; }
+.override-group select, .override-group input { background: var(--surface-2); color: var(--text); border: 1px solid #ffffff22; border-radius: 8px; padding: 6px 8px; }
+.override-list { list-style: none; padding: 0; margin: 0; }
+.override-list li { justify-content: space-between; padding: 6px 0; border-bottom: 1px solid #ffffff10; }

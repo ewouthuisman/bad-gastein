@@ -14,6 +14,7 @@ import { LocationProvider } from './features/location/LocationProvider';
 import { initials } from './features/map/layers';
 import { InstallBanner } from './features/push/InstallBanner';
 import { BarDwellTracker } from './features/soipen/BarDwellTracker';
+import { AdminPage } from './features/admin/AdminPage';
 
 function SignedInShell() {
   const { session, profile, loading } = useAuth();
@@ -67,6 +68,7 @@ export function AppRoutes() {
         <Route path="/ai" element={<AiTab />} />
         <Route path="/huis" element={<HuisTab />} />
         <Route path="/planning" element={<PlanningTab />} />
+        <Route path="/admin" element={<AdminPage />} />
         <Route path="*" element={<Navigate to="/kaart" replace />} />
       </Route>
     </Routes>

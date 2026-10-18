@@ -90,7 +90,7 @@ select throws_ok(
 set local request.jwt.claims = '{"sub":"00000000-0000-0000-0000-0000000000a1","role":"authenticated"}';
 select is(
   pg_temp.affected($q$delete from public.drinks$q$), 1, 'member can delete own drink');
-select is((select count(*)::int from public.app_config), 1, 'member can read app config');
+select is((select count(*)::int from public.app_config), 2, 'member can read app config');
 
 -- Anonymous ----------------------------------------------------------------------------
 set local role anon;
