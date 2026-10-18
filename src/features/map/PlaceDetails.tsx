@@ -1,4 +1,5 @@
 import type { AppPlace } from './places';
+import { safeUrl } from '../../lib/safeUrl';
 
 const KIND_LABEL = {
   restaurant: 'Restaurant op de berg',
@@ -10,6 +11,8 @@ const KIND_LABEL = {
 
 /** Name, type and menu (text in the app, or a link) for a place. */
 export function PlaceDetails({ place }: { place: AppPlace }) {
+  const menuUrl = safeUrl(place.menuUrl);
+  const website = safeUrl(place.website);
   return (
     <div>
       <h2 style={{ marginTop: 0 }}>{place.name}</h2>
@@ -21,9 +24,9 @@ export function PlaceDetails({ place }: { place: AppPlace }) {
         </details>
       )}
       <div className="row">
-        {place.menuUrl && <a className="btn small" href={place.menuUrl} target="_blank" rel="noreferrer">Menukaart openen</a>}
-        {place.website && <a className="btn small" href={place.website} target="_blank" rel="noreferrer">Website</a>}
-        {!place.menuUrl && !place.menuText && <span className="muted">Nog geen menukaart</span>}
+        {menuUrl && <a className="btn small" href={menuUrl} target="_blank" rel="noreferrer">Menukaart openen</a>}
+        {website && <a className="btn small" href={website} target="_blank" rel="noreferrer">Website</a>}
+        {!menuUrl && !place.menuText && <span className="muted">Nog geen menukaart</span>}
       </div>
     </div>
   );

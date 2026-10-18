@@ -24,6 +24,7 @@ const base: PollCardProps = {
   onUndecide: vi.fn(),
   onPropose: vi.fn(),
   onRoute: vi.fn(),
+  onRemoveOption: vi.fn(),
 };
 
 describe('PollCard', () => {
@@ -75,6 +76,20 @@ describe('PollCard', () => {
     await userEvent.type(screen.getByLabelText('Nieuwe plek'), 'Hütte X');
     await userEvent.click(screen.getByRole('button', { name: 'Toevoegen' }));
     expect(onPropose).toHaveBeenCalledWith({ newName: 'Hütte X', link: '' });
+  });
+
+  it('lets admins remove an option', async () => {
+    const onRemoveOption = vi.fn();
+    const { rerender } = render(<PollCard {...base} onRemoveOption={onRemoveOption} />);
+    expect(screen.queryByRole('button', { name: 'Verwijder Bergstadl' })).not.toBeInTheDocument();
+    rerender(<PollCard {...base} isAdmin onRemoveOption={onRemoveOption} />);
+    await userEvent.click(screen.getByRole('button', { name: 'Verwijder Bergstadl' }));
+    expect(onRemoveOption).toHaveBeenCalledWith('o2');
+  });
+
+  it('lets people remove their own proposal before the decision', () => {
+    render(<PollCard {...base} myUserId="u2" />);
+    expect(screen.getByRole('button', { name: 'Verwijder Bergstadl' })).toBeInTheDocument();
   });
 
   it('time polls have no proposing or route', () => {

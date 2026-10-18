@@ -51,3 +51,31 @@ describe('useBarDwell', () => {
     expect(insert).toHaveBeenCalledWith(expect.objectContaining({ osm_id: 'node/1' }));
   });
 });
+
+describe('useBarDwell with the phone in a pocket', () => {
+  beforeEach(() => {
+    insert.mockClear();
+    update.mockClear();
+    try { localStorage.clear(); } catch { /* ignore */ }
+  });
+
+  it('keeps a provisional end time while at the bar', async () => {
+    const { rerender } = renderHook(({ p }) => useBarDwell(p, [bar], 'u1'), { initialProps: { p: pos(true, 0) } });
+    await flush();
+    rerender({ p: pos(true, 20) });
+    await flush();
+    expect(update).toHaveBeenCalledWith({ ended_at: new Date(t0 + 20 * 60_000).toISOString() });
+  });
+
+  it('after a long gap ends the visit shortly after last seen, not halfway', async () => {
+    const { rerender } = renderHook(({ p }) => useBarDwell(p, [bar], 'u1'), { initialProps: { p: pos(true, 0) } });
+    await flush();
+    rerender({ p: pos(true, 20) });
+    await flush();
+    update.mockClear();
+    rerender({ p: pos(false, 180) });
+    rerender({ p: pos(false, 186) });
+    await flush();
+    expect(update).toHaveBeenLastCalledWith({ ended_at: new Date(t0 + 25 * 60_000).toISOString() });
+  });
+});

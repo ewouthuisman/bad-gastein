@@ -129,3 +129,5 @@ a { color: var(--accent); }
 .override-group select, .override-group input { background: var(--surface-2); color: var(--text); border: 1px solid #ffffff22; border-radius: 8px; padding: 6px 8px; }
 .override-list { list-style: none; padding: 0; margin: 0; }
 .override-list li { justify-content: space-between; padding: 6px 0; border-bottom: 1px solid #ffffff10; }
+.option { position: relative; }
+.remove-option { position: absolute; right: -6px; top: -6px; width: 24px; height: 24px; border-radius: 12px; border: 0; background: var(--surface); color: var(--muted); cursor: pointer; font-size: 12px; }

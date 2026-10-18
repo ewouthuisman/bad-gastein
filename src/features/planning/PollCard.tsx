@@ -2,6 +2,7 @@ import { useState } from 'react';
 import { tally, type TallyVote } from './tally';
 import type { AppPlace } from '../map/places';
 import type { PlaceKind } from '../nav/types';
+import { safeUrl } from '../../lib/safeUrl';
 
 export type PollKind = 'lunch_place' | 'apres_place' | 'dinner_place' | 'early_ski' | 'lunch_time' | 'apres_or_spa';
 
@@ -34,6 +35,7 @@ export interface PollCardProps {
   onUndecide: () => void;
   onPropose: (p: Proposal) => void;
   onRoute: (placeId: string) => void;
+  onRemoveOption: (optionId: string) => void;
 }
 
 export const POLL_TITLE: Record<PollKind, string> = {
@@ -82,7 +84,7 @@ export function PollCard(props: PollCardProps) {
           <details>
             <summary>Menukaart</summary>
             {place.menuText && <pre className="menu-text">{place.menuText}</pre>}
-            {place.menuUrl && <a href={place.menuUrl} target="_blank" rel="noreferrer">Menukaart openen</a>}
+            {safeUrl(place.menuUrl) && <a href={safeUrl(place.menuUrl)} target="_blank" rel="noreferrer">Menukaart openen</a>}
           </details>
         )}
         <div className="row">
@@ -104,6 +106,9 @@ export function PollCard(props: PollCardProps) {
               <button type="button" className={`btn option-btn ${mine === o.id ? 'primary' : ''}`} onClick={() => props.onVote(o.id)}>
                 {o.label} <span className="count">{r.count}</span>
               </button>
+              {(isAdmin || o.created_by === myUserId) && (
+                <button type="button" className="remove-option" aria-label={`Verwijder ${o.label}`} onClick={() => props.onRemoveOption(o.id)}>✕</button>
+              )}
               {r.voters.length > 0 && <div className="voters muted">{r.voters.join(', ')}</div>}
             </div>
           );
@@ -133,7 +138,7 @@ export function PollCard(props: PollCardProps) {
             <label className="field">Link (optioneel)<input value={link} onChange={(e) => setLink(e.target.value)} inputMode="url" /></label>
             <div className="row">
               <button type="button" className="btn primary" disabled={!newName.trim()}
-                onClick={() => { props.onPropose({ newName: newName.trim(), link: link.trim() }); setPicking(false); }}>
+                onClick={() => { props.onPropose({ newName: newName.trim(), link: safeUrl(link) ?? '' }); setPicking(false); }}>
                 Toevoegen
               </button>
               <button type="button" className="btn" onClick={() => setPicking(false)}>Annuleren</button>

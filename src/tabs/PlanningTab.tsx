@@ -45,6 +45,7 @@ export function PlanningTab() {
         onDecide={(o) => void planning.decide(poll.id, o)}
         onUndecide={() => void planning.undecide(poll.id)}
         onPropose={(p) => void planning.propose(userId, poll, p)}
+        onRemoveOption={(o) => void planning.removeOption(o)}
         onRoute={(placeId) => {
           const p = places.find((x) => x.dbId === placeId || x.id === placeId);
           navigate(`/berg?to=${encodeURIComponent(p?.id ?? placeId)}`);

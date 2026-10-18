@@ -52,13 +52,23 @@ export function mergePlaces(osm: Place[], db: DbPlace[]): AppPlace[] {
   return merged;
 }
 
+const CACHE_KEY = 'places-db';
+
 export function usePlaces(): AppPlace[] {
   const [places, setPlaces] = useState<AppPlace[]>([]);
   useEffect(() => {
     let cancelled = false;
     async function load() {
       const [osm, { data }] = await Promise.all([loadPlaces(), supabase.from('places').select('*')]);
-      if (!cancelled) setPlaces(mergePlaces(osm, (data as DbPlace[]) ?? []));
+      // Keep the last copy so menus and added places still show without signal on the mountain.
+      let db = data as DbPlace[] | null;
+      try {
+        if (db) localStorage.setItem(CACHE_KEY, JSON.stringify(db));
+        else db = JSON.parse(localStorage.getItem(CACHE_KEY) ?? '[]') as DbPlace[];
+      } catch {
+        db ??= [];
+      }
+      if (!cancelled) setPlaces(mergePlaces(osm, db ?? []));
     }
     void load();
     const ch = uniqueChannel('places').on('postgres_changes', { event: '*', schema: 'public', table: 'places' }, () => void load()).subscribe();

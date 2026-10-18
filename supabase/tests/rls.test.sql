@@ -1,5 +1,5 @@
 begin;
-select plan(20);
+select plan(21);
 
 create function pg_temp.affected(q text) returns int language plpgsql as $f$
 declare n int; begin execute q; get diagnostics n = row_count; return n; end $f$;
@@ -91,6 +91,10 @@ set local request.jwt.claims = '{"sub":"00000000-0000-0000-0000-0000000000a1","r
 select is(
   pg_temp.affected($q$delete from public.drinks$q$), 1, 'member can delete own drink');
 select is((select count(*)::int from public.app_config), 2, 'member can read app config');
+
+select throws_ok(
+  $$insert into public.places (name, kind, website, created_by) values ('Evil', 'dinner', 'javascript:alert(1)', '00000000-0000-0000-0000-0000000000a1')$$,
+  '23514', null, 'links must be http(s)');
 
 -- Anonymous ----------------------------------------------------------------------------
 set local role anon;

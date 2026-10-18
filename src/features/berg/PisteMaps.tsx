@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react';
 import { supabase } from '../../lib/supabase';
+import { safeUrl } from '../../lib/safeUrl';
 
 const DOWNLOADS = 'https://www.skigastein.com/en/press-portal/downloads/';
 const SKI_AMADE = 'https://www.skiamade.com/en/winter/piste-map';
@@ -13,7 +14,7 @@ export function PisteMaps() {
       .select('value')
       .eq('key', 'piste_map_url')
       .maybeSingle()
-      .then(({ data }) => setPdf((data?.value as string) ?? null));
+      .then(({ data }) => setPdf(safeUrl(data?.value as string | undefined) ?? null));
   }, []);
   return (
     <div className="card">
