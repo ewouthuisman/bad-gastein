@@ -56,9 +56,18 @@ function resolve(value: string, p: NavPanelProps): Resolved {
       : { points };
   }
   if (value.startsWith('node:')) {
-    const id = value.slice(5);
-    // Standing at a stop you can board there, or walk off from it.
-    return { points: id.startsWith(stopNode('')) ? [{ nodeId: id, walkM: 0 }, { nodeId: `off:${id.slice(4)}`, walkM: 0 }] : [{ nodeId: id, walkM: 0 }] };
+    // Several ids when one lift is drawn as more than one node (e.g. the conveyor belts).
+    const points = value.slice(5).split('|').flatMap((id) =>
+      // Standing at a stop you can board there, or walk off from it.
+      id.startsWith(stopNode('')) ? [{ nodeId: id, walkM: 0 }, { nodeId: `off:${id.slice(4)}`, walkM: 0 }] : [{ nodeId: id, walkM: 0 }],
+    );
+    return { points };
+  }
+  if (value.startsWith('area:')) {
+    // A whole mountain: its valley station.
+    const area = AREAS.find((a) => a.key === value.slice(5));
+    const station = p.graph.nodes.filter((n) => area && n.area === area.key && n.label === `${area.anchorLift} (dal)`);
+    return station.length ? { points: station.map((n) => ({ nodeId: n.id, walkM: 0 })) } : { error: 'Van die berg is geen dalstation bekend.' };
   }
   if (value.startsWith('person:')) {
     const person = p.people.find((x) => x.id === value.slice(7));
@@ -100,7 +109,15 @@ export function NavPanel(props: NavPanelProps) {
   }, [props.initialArea]);
 
   const stops = useMemo(() => graph.nodes.filter((n) => n.stop).sort((a, b) => a.label!.localeCompare(b.label!, 'nl')), [graph]);
-  const lifts = useMemo(() => graph.nodes.filter((n) => n.label && !n.stop && (!area || n.area === area)).sort((a, b) => a.label!.localeCompare(b.label!, 'nl')), [graph, area]);
+  // One entry per name: a lift drawn as several nodes (the Angertal conveyor belts) is listed once.
+  const lifts = useMemo(() => {
+    const byLabel = new Map<string, string[]>();
+    for (const n of graph.nodes) {
+      if (!n.label || n.stop || (area && n.area !== area)) continue;
+      byLabel.set(n.label, [...(byLabel.get(n.label) ?? []), n.id]);
+    }
+    return [...byLabel].map(([label, ids]) => ({ label, value: `node:${ids.join('|')}` })).sort((a, b) => a.label.localeCompare(b.label, 'nl'));
+  }, [graph, area]);
   const mountainPlaces = places
     .filter((p) => p.kind === 'restaurant' || p.kind === 'apres')
     .filter((p) => !area || !p.area || p.area === area || p.id === to).sort((a, b) => a.name.localeCompare(b.name, 'nl'));
@@ -135,8 +152,11 @@ export function NavPanel(props: NavPanelProps) {
       {includeHere && <option value="here">📍 Hier</option>}
       {!includeHere && <option value="">Kies een bestemming…</option>}
       {house && <option value={house.id}>🏠 Huis</option>}
+      <optgroup label="Bergen">
+        {AREAS.map((a) => <option key={a.key} value={`area:${a.key}`}>{a.label}</option>)}
+      </optgroup>
       <optgroup label="Liften">
-        {lifts.map((n) => <option key={n.id} value={`node:${n.id}`}>{n.label}</option>)}
+        {lifts.map((l) => <option key={l.value} value={l.value}>{l.label}</option>)}
       </optgroup>
       {stops.length > 0 && (
         <optgroup label="Bushaltes">

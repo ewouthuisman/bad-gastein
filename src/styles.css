@@ -70,6 +70,11 @@ a { color: var(--accent); }
 .placeholder { background: #ffb54733; color: var(--accent); padding: 0 4px; border-radius: 4px; }
 .sheet { position: absolute; left: 8px; right: 8px; bottom: 8px; z-index: 5; background: var(--surface);
   border-radius: var(--radius); padding: 14px; box-shadow: 0 8px 30px #0008; max-height: 60%; overflow: auto; }
+.sheet h2 { padding-right: 36px; }
+.sheet-close { position: absolute; top: 6px; right: 6px; width: 36px; height: 36px; border: 0; border-radius: 50%;
+  background: var(--surface-2); color: var(--text); font-size: 1.4rem; line-height: 1; cursor: pointer; }
+.place-links { margin-top: 12px; }
+.sheet-actions { margin-top: 20px; padding-top: 14px; border-top: 1px solid #ffffff14; }
 
 .visually-hidden { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
 .map { position: absolute; inset: 0; }

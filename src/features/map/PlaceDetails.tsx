@@ -11,12 +11,17 @@ const KIND_LABEL = {
 
 const stars = (n: number) => n.toFixed(1).replace('.', ',');
 
+/** Tags that say nothing useful here (nearly every place has them). */
+const HIDDEN_TAGS = new Set(['bier', 'kindermenu', 'honden welkom']);
+const visibleTags = (tags: string[]) => tags.filter((t) => !HIDDEN_TAGS.has(t.toLowerCase()));
+
 /** Name, type and menu (text in the app, or a link) for a place. */
 export function PlaceDetails({ place }: { place: AppPlace }) {
   const menuUrl = safeUrl(place.menuUrl);
   const website = safeUrl(place.website);
   const g = place.google;
   const mapsUrl = safeUrl(g?.mapsUri);
+  const tags = visibleTags(g?.tags ?? []);
   return (
     <div>
       <h2 style={{ marginTop: 0 }}>{place.name}</h2>
@@ -32,7 +37,7 @@ export function PlaceDetails({ place }: { place: AppPlace }) {
             </p>
           )}
           {g.summary && <p className="muted">{g.summary}</p>}
-          {g.tags.length > 0 && <p className="row">{g.tags.map((t) => <span key={t} className="chip">{t}</span>)}</p>}
+          {tags.length > 0 && <p className="row">{tags.map((t) => <span key={t} className="chip">{t}</span>)}</p>}
           {g.hours && g.hours.length > 0 && (
             <details>
               <summary>Openingstijden</summary>
@@ -47,7 +52,7 @@ export function PlaceDetails({ place }: { place: AppPlace }) {
           <pre className="menu-text">{place.menuText}</pre>
         </details>
       )}
-      <div className="row">
+      <div className="row place-links">
         {menuUrl && <a className="btn small" href={menuUrl} target="_blank" rel="noreferrer">Menukaart openen</a>}
         {mapsUrl && <a className="btn small" href={mapsUrl} target="_blank" rel="noreferrer">Google Maps</a>}
         {g?.phone && <a className="btn small" href={`tel:${g.phone.replace(/[^+\d]/g, '')}`}>Bel</a>}

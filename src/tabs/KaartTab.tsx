@@ -90,6 +90,7 @@ export function KaartTab() {
 
       {person && (
         <div className="sheet" role="dialog" aria-label={person.name}>
+          <button type="button" className="sheet-close" aria-label="Sluiten" onClick={() => setPersonId(null)}>×</button>
           <h2 style={{ marginTop: 0 }}><span className="dot" style={{ background: person.color }} /> {person.name}</h2>
           <p className="muted">
             {person.updatedAt ? `Laatst gezien ${formatAgo(person.updatedAt, now)}` : 'Nog geen locatie gedeeld'}
@@ -99,7 +100,6 @@ export function KaartTab() {
             {person.lat != null && (
               <button type="button" className="btn" onClick={() => navigate(`/berg?toPerson=${person.id}`)}>Route naar {person.name}</button>
             )}
-            <button type="button" className="btn" onClick={() => setPersonId(null)}>Sluiten</button>
           </div>
           {pingState && <p className="muted">{pingState}</p>}
         </div>
@@ -107,11 +107,13 @@ export function KaartTab() {
 
       {place && (
         <div className="sheet" role="dialog" aria-label={place.name}>
+          <button type="button" className="sheet-close" aria-label="Sluiten" onClick={() => setPlaceId(null)}>×</button>
           <PlaceDetails place={place} />
-          <div className="row">
-            {place.nodeId && <button type="button" className="btn primary" onClick={() => navigate(`/berg?to=${encodeURIComponent(place.id)}`)}>Route hierheen</button>}
-            <button type="button" className="btn" onClick={() => setPlaceId(null)}>Sluiten</button>
-          </div>
+          {place.nodeId && (
+            <div className="row sheet-actions">
+              <button type="button" className="btn primary" onClick={() => navigate(`/berg?to=${encodeURIComponent(place.id)}`)}>Route hierheen</button>
+            </div>
+          )}
         </div>
       )}
     </section>

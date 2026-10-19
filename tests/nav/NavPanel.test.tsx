@@ -139,4 +139,15 @@ describe('NavPanel', () => {
       expect(screen.getByText('Geen route over de piste of met de bus.')).toBeInTheDocument();
     });
   });
+
+  it('lists a lift drawn as several nodes once', () => {
+    const g: SkiGraph = { ...graph, nodes: [...graph.nodes, { id: 'B2', lat: 47.1, lng: 13.1005, label: 'Testbahn (dal)' }] };
+    render(<NavPanel {...base} graph={g} />);
+    expect(screen.getAllByRole('option', { name: 'Testbahn (dal)' })).toHaveLength(2); // once in Van, once in Naar
+  });
+
+  it('offers every mountain in both Van and Naar', () => {
+    render(<NavPanel {...base} />);
+    expect(screen.getAllByRole('option', { name: 'Stubnerkogel (Bad Gastein)' }).length).toBeGreaterThanOrEqual(2);
+  });
 });

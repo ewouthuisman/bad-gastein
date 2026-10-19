@@ -29,6 +29,8 @@ export interface GEdge {
   /** Fixed duration, for bus edges (the wait when boarding, the ride, getting off). */
   seconds?: number;
   busRole?: 'board' | 'ride' | 'alight';
+  /** Extra cost in seconds when choosing a route (not shown as travel time): a way we would rather avoid. */
+  penaltyS?: number;
   /** Next departures (minutes after midnight) on a boarding edge. */
   departures?: number[];
 }
