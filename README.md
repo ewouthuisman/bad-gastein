@@ -28,6 +28,8 @@ iemand de app even te openen.
   blokkeer hem, verander de kleur of zet er een notitie bij. Ontbrekende stukjes lopen/schaatsen voeg je
   toe met *Verbinding toevoegen*. Zie [docs/route-check.md](docs/route-check.md) voor routes die nu niet lukken.
 - **Pistekaart:** plak in *Beheer* de PDF-link van de officiële winterkaart zodra Skigastein die publiceert.
+- **Google-scores en recensies:** `GOOGLE_PLACES_API_KEY=… npx tsx scripts/fetch-google-places.ts` (Places API (New)) schrijft
+  `public/data/place-ratings.json`; commit die. Google staat caching maar 30 dagen toe, draai het dus kort voor vertrek (`--refresh` ververst alles).
 - **Admin maken:** in de Supabase SQL-editor: `update profiles set role = 'admin' where display_name = 'Naam';`
 
 ## Ontwikkelen
@@ -48,6 +50,9 @@ npm run dev
 - Tests: `npx vitest run` (app) en `npx supabase test db` (database/RLS).
 - Pistenetwerk opnieuw bouwen: `npx tsx scripts/fetch-osm.ts` (alleen als je verse OSM-data wilt),
   `npx tsx scripts/build-ski-graph.ts`, daarna `npx tsx scripts/check-routes.ts`.
+- Busdienstregeling vervangen: zet het PDF in `data/` en draai `npx tsx scripts/build-bus.ts <pdf>` (vereist `pdftotext`).
+  Nu staat er Postbus lijn 550/553, zomer 2026 (geen skibus). De haltecoördinaten komen uit `scripts/build-bus.ts`:
+  haltes bij een liftstation nemen die positie over, de rest is bij benadering ertussen geplaatst. Controleer ze.
 
 Een push naar `main` deployt automatisch naar GitHub Pages.
 

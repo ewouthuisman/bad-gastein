@@ -1,7 +1,7 @@
 import { renderHook, waitFor } from '@testing-library/react';
 import { describe, expect, it, vi } from 'vitest';
 
-vi.mock('../../src/lib/staticData', () => ({ loadPlaces: () => Promise.resolve([]) }));
+vi.mock('../../src/lib/staticData', () => ({ loadPlaces: () => Promise.resolve([]), loadRatings: () => Promise.resolve({}) }));
 vi.mock('../../src/lib/supabase', () => {
   const channel = { on: () => channel, subscribe: () => channel };
   // Offline: the request fails.

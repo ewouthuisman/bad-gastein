@@ -1,202 +1,115 @@
 # Route-check
 
-Graaf 2026-10-18: 833 knopen, 2184 verbindingen.
-
-## Skigebieden (losse delen van het netwerk)
-
-- 24 liften: 566436432, 566727398, Angertalbahn, Bucheben, Burgstalllift, Förderbänder Angertal, Hohe Scharte, Jungeralmbahn, Kaserebenbahn, Schlossalmbahn I, Schlossalmbahn II, Schlosshochalmlift, Senderbahn I, Senderbahn II, Sendleitenbahn, Stubnerkogelbahn I, Stubnerkogelbahn II, Weitmoser, Übungslift Judau, Übungslift Rossalm (9851463160)
-- 18 liften: 10er Kieserlbahn I, 10er Kieserlbahn II, 4er Sonnenbahn, 6er Harbachbahn, 6er Kreuzkogelbahn, 6er Panoramabahn Großarltal I, 6er Panoramabahn Großarltal II, Brandlalm, Doppelsessellift Kreuzkogel, Gipfelbahn Fulseck I, Gipfelbahn Fulseck II, Gipfelexpress Fulseck, Kühhageralm, Mühlwinkl, Seillift Harbachgraben, Tellerlift Kreuzhöhe, Wengerhochalmbahn, Übungslift Rauchleit'n (11245510577)
-- 12 liften: 268099979, Gipfelbahn, Gratlift, Hochalmbahn, Jackalmlift I, Jackalmlift II, Kreuzboden Tellerlift, Kreuzbodenbahn, Schwazerlift 1, Schwazerlift 2, Waldalmbahn, ÜL Tal (2519246573)
-- 5 liften: Alteck, Eisseebahn, Gletscher Jet, Panoramabahn Klühspies, Sesselbahn 3000 (4380285332)
-- 3 liften: Goldbergbahn I, Goldbergbahn II, Kreuzkogellift (4458350258)
-- 3 liften: Graukogel I, Graukogel II, Reichebenlift (4411337690)
-- 3 liften: Ankogelbahn 1, Ankogelbahn 2, Ankogelschlepplift (1175971438)
-- 3 liften: Alm Express (Förderband Fischbacherwiese), Tellerlift Fischbacherwiese (8480104850)
-- 1 liften: ESL Bellevuealm (4591821600)
+Graaf 2026-10-19: 880 knopen, 2240 verbindingen.
 
 ## Vanaf het huis
 
-- Reichebenlift (dal): 14 min
-- Graukogel II (dal): 5 min
-- Graukogel I (dal): 0 min
+- Reichebenlift (dal): 15 min
+- Graukogel II (dal): 7 min
+- Graukogel I (dal): 1 min
 
-## Lift → plek (rood als maximum): 1330 ok, 175 mislukt
+## Lift/plek → plek (rood als maximum): 4432 ok, 0 mislukt
 
-- Sendleitenbahn (berg) → Hirschenhütte: difficulty
-- Sendleitenbahn (berg) → Waldgasthof Angertal: difficulty
-- Weitmoser (berg) → Hirschenhütte: difficulty
-- Weitmoser (berg) → Waldgasthof Angertal: difficulty
-- Hohe Scharte (berg) → Hirschenhütte: difficulty
-- Hohe Scharte (berg) → Waldgasthof Angertal: difficulty
-- Angertalbahn (berg) → Hirschenhütte: difficulty
-- Angertalbahn (berg) → Waldgasthof Angertal: difficulty
-- Gletscher Jet (berg) → Duisburger Hütte: difficulty
-- Panoramabahn Klühspies (berg) → Duisburger Hütte: difficulty
-- Eisseebahn (berg) → Duisburger Hütte: difficulty
-- Kaserebenbahn (berg) → Hirschenhütte: difficulty
-- Kaserebenbahn (berg) → Waldgasthof Angertal: difficulty
-- Reichebenlift (berg) → Graukogelhütte: difficulty
-- Senderbahn I (berg) → Hirschenhütte: difficulty
-- Senderbahn I (berg) → Waldgasthof Angertal: difficulty
-- Hochalmbahn (berg) → Maislau Alm: no-route
-- Hochalmbahn (berg) → Das Albert: difficulty
-- Hochalmbahn (berg) → Après-Ski Schirm: difficulty
-- Hochalmbahn (berg) → Gasthof Maislau: no-route
-- Hochalmbahn (berg) → Wischtl-Hittn: no-route
-- Jungeralmbahn (berg) → Hirschenhütte: difficulty
-- Jungeralmbahn (berg) → Waldgasthof Angertal: difficulty
-- Schlosshochalmlift (berg) → Hirschenhütte: difficulty
-- Schlosshochalmlift (berg) → Waldgasthof Angertal: difficulty
-- Kreuzbodenbahn (berg) → Maislau Alm: no-route
-- Kreuzbodenbahn (berg) → Das Albert: difficulty
-- Kreuzbodenbahn (berg) → Après-Ski Schirm: difficulty
-- Kreuzbodenbahn (berg) → Gasthof Maislau: no-route
-- Kreuzbodenbahn (berg) → Wischtl-Hittn: no-route
-- ESL Bellevuealm (berg) → Delicious Mom Fastfood: no-route
-- Gipfelbahn (berg) → Maislau Alm: no-route
-- Gipfelbahn (berg) → Das Albert: difficulty
-- Gipfelbahn (berg) → Après-Ski Schirm: difficulty
-- Gipfelbahn (berg) → Gasthof Maislau: no-route
-- Gipfelbahn (berg) → Wischtl-Hittn: no-route
-- Gratlift (berg) → Hochalm: no-route
-- Gratlift (berg) → Kreuzboden-Hütte: no-route
-- Gratlift (berg) → Heimalm: no-route
-- Gratlift (berg) → Maislau Alm: no-route
-- Gratlift (berg) → Waldalm: no-route
-- Gratlift (berg) → Das Albert: no-route
-- Gratlift (berg) → Après-Ski Schirm: no-route
-- Gratlift (berg) → Gasthof Maislau: no-route
-- Gratlift (berg) → Wischtl-Hittn: no-route
-- Burgstalllift (berg) → Hirschenhütte: difficulty
-- Burgstalllift (berg) → Waldgasthof Angertal: difficulty
-- Alteck (berg) → Duisburger Hütte: difficulty
-- Übungslift Judau (berg) → Hirschenhütte: difficulty
-- Übungslift Judau (berg) → Waldgasthof Angertal: difficulty
-- Stubnerkogelbahn I (berg) → Hirschenhütte: difficulty
-- Stubnerkogelbahn I (berg) → Waldgasthof Angertal: difficulty
-- Graukogel II (berg) → Graukogelhütte: difficulty
-- Förderbänder Angertal (berg) → Hirschenhütte: difficulty
-- Förderbänder Angertal (berg) → Waldgasthof Angertal: difficulty
-- Förderbänder Angertal (berg) → Hirschenhütte: difficulty
-- Förderbänder Angertal (berg) → Waldgasthof Angertal: difficulty
-- Förderbänder Angertal (berg) → Hirschenhütte: difficulty
-- Förderbänder Angertal (berg) → Waldgasthof Angertal: difficulty
-- Förderbänder Angertal (berg) → Hirschenhütte: difficulty
-- Förderbänder Angertal (berg) → Waldgasthof Angertal: difficulty
-- Jackalmlift II (berg) → Maislau Alm: no-route
-- Jackalmlift II (berg) → Das Albert: difficulty
-- Jackalmlift II (berg) → Après-Ski Schirm: difficulty
-- Jackalmlift II (berg) → Gasthof Maislau: no-route
-- Jackalmlift II (berg) → Wischtl-Hittn: no-route
-- Jackalmlift I (berg) → Maislau Alm: no-route
-- Jackalmlift I (berg) → Das Albert: difficulty
-- Jackalmlift I (berg) → Après-Ski Schirm: difficulty
-- Jackalmlift I (berg) → Gasthof Maislau: no-route
-- Jackalmlift I (berg) → Wischtl-Hittn: no-route
-- Kreuzboden Tellerlift (berg) → Maislau Alm: no-route
-- Kreuzboden Tellerlift (berg) → Das Albert: difficulty
-- Kreuzboden Tellerlift (berg) → Après-Ski Schirm: difficulty
-- Kreuzboden Tellerlift (berg) → Gasthof Maislau: no-route
-- Kreuzboden Tellerlift (berg) → Wischtl-Hittn: no-route
-- Schwazerlift 1 (berg) → Maislau Alm: no-route
-- Schwazerlift 1 (berg) → Gasthof Maislau: no-route
-- Schwazerlift 1 (berg) → Wischtl-Hittn: no-route
-- Schwazerlift 2 (berg) → Maislau Alm: no-route
-- Schwazerlift 2 (berg) → Gasthof Maislau: no-route
-- Schwazerlift 2 (berg) → Wischtl-Hittn: no-route
-- 268099979 (berg) → Maislau Alm: no-route
-- 268099979 (berg) → Gasthof Maislau: no-route
-- 268099979 (berg) → Wischtl-Hittn: no-route
-- ÜL Tal (berg) → Maislau Alm: no-route
-- ÜL Tal (berg) → Gasthof Maislau: no-route
-- ÜL Tal (berg) → Wischtl-Hittn: no-route
-- Sesselbahn 3000 (berg) → Duisburger Hütte: difficulty
-- Waldalmbahn (berg) → Maislau Alm: no-route
-- Waldalmbahn (berg) → Das Albert: difficulty
-- Waldalmbahn (berg) → Après-Ski Schirm: difficulty
-- Waldalmbahn (berg) → Gasthof Maislau: no-route
-- Waldalmbahn (berg) → Wischtl-Hittn: no-route
-- Graukogel I (berg) → Graukogelhütte: difficulty
-- Senderbahn II (berg) → Hirschenhütte: difficulty
-- Senderbahn II (berg) → Waldgasthof Angertal: difficulty
-- Bucheben (berg) → Hirschenhütte: difficulty
-- Bucheben (berg) → Waldgasthof Angertal: difficulty
-- Stubnerkogelbahn II (berg) → Hirschenhütte: difficulty
-- Stubnerkogelbahn II (berg) → Waldgasthof Angertal: difficulty
-- Übungslift Rossalm (berg) → Hirschenhütte: difficulty
-- Übungslift Rossalm (berg) → Waldgasthof Angertal: difficulty
-- Schlossalmbahn II (berg) → Hirschenhütte: difficulty
-- Schlossalmbahn II (berg) → Waldgasthof Angertal: difficulty
-- Schlossalmbahn I (berg) → Hirschenhütte: difficulty
-- Schlossalmbahn I (berg) → Waldgasthof Angertal: difficulty
-- 566436432 (berg) → Gipfelrestaurant Stubnerkogel: no-route
-- 566436432 (berg) → Restaurant im Skizentrum Angertal: no-route
-- 566436432 (berg) → Landgasthof Klapotetz: no-route
-- 566436432 (berg) → Bergstadl: no-route
-- 566436432 (berg) → Skibar: no-route
-- 566436432 (berg) → Hamburger Schihütte: no-route
-- 566436432 (berg) → Junger Stube: no-route
-- 566436432 (berg) → The Blonde Beans: no-route
-- 566436432 (berg) → Weitmoserin: no-route
-- 566436432 (berg) → Das Goldberg: no-route
-- 566436432 (berg) → Jungeralm - Kresseben: no-route
-- 566436432 (berg) → Silberkrug: no-route
-- 566436432 (berg) → Ahornhütte: no-route
-- 566436432 (berg) → Gastein Alm: no-route
-- 566436432 (berg) → Hamburger Schihütte: no-route
-- 566436432 (berg) → Weitmoser Schlossalm: no-route
-- 566436432 (berg) → Haitzingalm: no-route
-- 566436432 (berg) → Aeroplanstadl: no-route
-- 566436432 (berg) → Bärsteinalm: no-route
-- 566436432 (berg) → Angerblick: no-route
-- 566436432 (berg) → Hirschenhütte: no-route
-- 566436432 (berg) → Waldgasthof Angertal: no-route
-- 566436432 (berg) → Felding Stubn: no-route
-- 566436432 (berg) → Maurachalmhütte: no-route
-- 566436432 (berg) → Stubneralm: no-route
-- 566436432 (berg) → Bellevue Alm: no-route
-- 566436432 (berg) → Rossalm: no-route
-- 566436432 (berg) → Schirmbar: no-route
-- 566436432 (berg) → Jungeralm - Kresseben: no-route
-- 566436432 (berg) → Stubneralm: no-route
-- 566436432 (berg) → Gastein Alm (Fest ALm): no-route
-- 566436432 (berg) → Bergstadl: no-route
-- 566436432 (berg) → Hirsch und Maus: no-route
-- 566727398 (berg) → Gipfelrestaurant Stubnerkogel: no-route
-- 566727398 (berg) → Restaurant im Skizentrum Angertal: no-route
-- 566727398 (berg) → Landgasthof Klapotetz: no-route
-- 566727398 (berg) → Bergstadl: no-route
-- 566727398 (berg) → Skibar: no-route
-- 566727398 (berg) → Hamburger Schihütte: no-route
-- 566727398 (berg) → Junger Stube: no-route
-- 566727398 (berg) → The Blonde Beans: no-route
-- 566727398 (berg) → Weitmoserin: no-route
-- 566727398 (berg) → Das Goldberg: no-route
-- 566727398 (berg) → Jungeralm - Kresseben: no-route
-- 566727398 (berg) → Silberkrug: no-route
-- 566727398 (berg) → Ahornhütte: no-route
-- 566727398 (berg) → Gastein Alm: no-route
-- 566727398 (berg) → Hamburger Schihütte: no-route
-- 566727398 (berg) → Weitmoser Schlossalm: no-route
-- 566727398 (berg) → Haitzingalm: no-route
-- 566727398 (berg) → Aeroplanstadl: no-route
-- 566727398 (berg) → Bärsteinalm: no-route
-- 566727398 (berg) → Angerblick: no-route
-- 566727398 (berg) → Hirschenhütte: no-route
-- 566727398 (berg) → Waldgasthof Angertal: no-route
-- 566727398 (berg) → Felding Stubn: no-route
-- 566727398 (berg) → Maurachalmhütte: no-route
-- 566727398 (berg) → Stubneralm: no-route
-- 566727398 (berg) → Bellevue Alm: no-route
-- 566727398 (berg) → Rossalm: no-route
-- 566727398 (berg) → Schirmbar: no-route
-- 566727398 (berg) → Jungeralm - Kresseben: no-route
-- 566727398 (berg) → Stubneralm: no-route
-- 566727398 (berg) → Gastein Alm (Fest ALm): no-route
-- 566727398 (berg) → Bergstadl: no-route
-- 566727398 (berg) → Hirsch und Maus: no-route
-- Förderbänder Angertal (berg) → Hirschenhütte: difficulty
-- Förderbänder Angertal (berg) → Waldgasthof Angertal: difficulty
 
-## Verdacht: lange loopstukken (0)
+## Lange loopstukken, meer dan 150 m (143)
 
+- Stubnerkogel (Bad Gastein): Sendleitenbahn (dal) → Hirschenhütte: 298 m lopen
+- Stubnerkogel (Bad Gastein): Sendleitenbahn (berg) → Hirschenhütte: 298 m lopen
+- Stubnerkogel (Bad Gastein): Weitmoser (dal) → Hirschenhütte: 298 m lopen
+- Stubnerkogel (Bad Gastein): Weitmoser (berg) → Hirschenhütte: 298 m lopen
+- Stubnerkogel (Bad Gastein): Hohe Scharte (dal) → Hirschenhütte: 298 m lopen
+- Stubnerkogel (Bad Gastein): Hohe Scharte (berg) → Hirschenhütte: 298 m lopen
+- Stubnerkogel (Bad Gastein): Angertalbahn (dal) → Hirschenhütte: 298 m lopen
+- Stubnerkogel (Bad Gastein): Angertalbahn (berg) → Hirschenhütte: 298 m lopen
+- Stubnerkogel (Bad Gastein): Kaserebenbahn (dal) → Hirschenhütte: 298 m lopen
+- Stubnerkogel (Bad Gastein): Kaserebenbahn (berg) → Hirschenhütte: 298 m lopen
+- Stubnerkogel (Bad Gastein): Senderbahn I (dal) → Hirschenhütte: 298 m lopen
+- Stubnerkogel (Bad Gastein): Senderbahn I (berg) → Hirschenhütte: 298 m lopen
+- Stubnerkogel (Bad Gastein): Jungeralmbahn (dal) → Hirschenhütte: 298 m lopen
+- Stubnerkogel (Bad Gastein): Jungeralmbahn (berg) → Hirschenhütte: 298 m lopen
+- Stubnerkogel (Bad Gastein): Schlosshochalmlift (dal) → Hirschenhütte: 298 m lopen
+- Stubnerkogel (Bad Gastein): Schlosshochalmlift (berg) → Hirschenhütte: 298 m lopen
+- Stubnerkogel (Bad Gastein): Burgstalllift (dal) → Hirschenhütte: 298 m lopen
+- Stubnerkogel (Bad Gastein): Burgstalllift (berg) → Hirschenhütte: 298 m lopen
+- Stubnerkogel (Bad Gastein): Übungslift Judau (dal) → Hirschenhütte: 298 m lopen
+- Stubnerkogel (Bad Gastein): Übungslift Judau (berg) → Hirschenhütte: 257 m lopen
+- Stubnerkogel (Bad Gastein): Stubnerkogelbahn I (dal) → Hirschenhütte: 298 m lopen
+- Stubnerkogel (Bad Gastein): Stubnerkogelbahn I (berg) → Hirschenhütte: 298 m lopen
+- Stubnerkogel (Bad Gastein): Bucheben (dal) → Hirschenhütte: 298 m lopen
+- Stubnerkogel (Bad Gastein): Förderbänder Angertal (dal) → Hirschenhütte: 266 m lopen
+- Stubnerkogel (Bad Gastein): Förderbänder Angertal (berg) → Hirschenhütte: 245 m lopen
+- Stubnerkogel (Bad Gastein): Förderbänder Angertal (dal) → Hirschenhütte: 215 m lopen
+- Stubnerkogel (Bad Gastein): Förderbänder Angertal (berg) → Hirschenhütte: 208 m lopen
+- Stubnerkogel (Bad Gastein): Förderbänder Angertal (dal) → Hirschenhütte: 298 m lopen
+- Stubnerkogel (Bad Gastein): Förderbänder Angertal (berg) → Hirschenhütte: 284 m lopen
+- Stubnerkogel (Bad Gastein): Förderbänder Angertal (dal) → Hirschenhütte: 154 m lopen
+- Stubnerkogel (Bad Gastein): Förderbänder Angertal (berg) → Hirschenhütte: 152 m lopen
+- Stubnerkogel (Bad Gastein): Senderbahn II (berg) → Hirschenhütte: 298 m lopen
+- Stubnerkogel (Bad Gastein): Bucheben (berg) → Hirschenhütte: 298 m lopen
+- Stubnerkogel (Bad Gastein): Stubnerkogelbahn II (berg) → Hirschenhütte: 298 m lopen
+- Stubnerkogel (Bad Gastein): Übungslift Rossalm (dal) → Hirschenhütte: 298 m lopen
+- Stubnerkogel (Bad Gastein): Übungslift Rossalm (berg) → Hirschenhütte: 298 m lopen
+- Stubnerkogel (Bad Gastein): Schlossalmbahn II (dal) → Hirschenhütte: 298 m lopen
+- Stubnerkogel (Bad Gastein): Schlossalmbahn II (berg) → Hirschenhütte: 298 m lopen
+- Stubnerkogel (Bad Gastein): Schlossalmbahn I (dal) → Ali In Bar: 182 m lopen
+- Stubnerkogel (Bad Gastein): Schlossalmbahn I (dal) → Hirschenhütte: 298 m lopen
+- Stubnerkogel (Bad Gastein): Förderbänder Angertal (dal) → Hirschenhütte: 298 m lopen
+- Stubnerkogel (Bad Gastein): Förderbänder Angertal (berg) → Hirschenhütte: 215 m lopen
+- Stubnerkogel (Bad Gastein): Gipfelrestaurant Stubnerkogel → Hirschenhütte: 298 m lopen
+- Stubnerkogel (Bad Gastein): Restaurant im Skizentrum Angertal → Hirschenhütte: 298 m lopen
+- Stubnerkogel (Bad Gastein): Landgasthof Klapotetz → Hirschenhütte: 298 m lopen
+- Stubnerkogel (Bad Gastein): Bergstadl → Hirschenhütte: 298 m lopen
+- Stubnerkogel (Bad Gastein): Skibar → Hirschenhütte: 298 m lopen
+- Stubnerkogel (Bad Gastein): Restaurant Berglift → Hirschenhütte: 298 m lopen
+- Stubnerkogel (Bad Gastein): Hamburger Schihütte → Hirschenhütte: 298 m lopen
+- Stubnerkogel (Bad Gastein): Ali In Bar → Gipfelrestaurant Stubnerkogel: 182 m lopen
+- Stubnerkogel (Bad Gastein): Ali In Bar → Restaurant im Skizentrum Angertal: 182 m lopen
+- Stubnerkogel (Bad Gastein): Ali In Bar → Landgasthof Klapotetz: 182 m lopen
+- Stubnerkogel (Bad Gastein): Ali In Bar → Bergstadl: 182 m lopen
+- Stubnerkogel (Bad Gastein): Ali In Bar → Skibar: 182 m lopen
+- Stubnerkogel (Bad Gastein): Ali In Bar → Hamburger Schihütte: 182 m lopen
+- Stubnerkogel (Bad Gastein): Ali In Bar → Junger Stube: 182 m lopen
+- Stubnerkogel (Bad Gastein): Ali In Bar → The Blonde Beans: 182 m lopen
+- Stubnerkogel (Bad Gastein): Ali In Bar → Das Goldberg: 182 m lopen
+- Stubnerkogel (Bad Gastein): Ali In Bar → Jungeralm - Kresseben: 182 m lopen
+- Stubnerkogel (Bad Gastein): Ali In Bar → Silberkrug: 182 m lopen
+- Stubnerkogel (Bad Gastein): Ali In Bar → Ahornhütte: 182 m lopen
+- Stubnerkogel (Bad Gastein): Ali In Bar → Gastein Alm: 182 m lopen
+- Stubnerkogel (Bad Gastein): Ali In Bar → Hamburger Schihütte: 182 m lopen
+- Stubnerkogel (Bad Gastein): Ali In Bar → Weitmoser Schlossalm: 182 m lopen
+- Stubnerkogel (Bad Gastein): Ali In Bar → Haitzingalm: 182 m lopen
+- Stubnerkogel (Bad Gastein): Ali In Bar → Aeroplanstadl: 182 m lopen
+- Stubnerkogel (Bad Gastein): Ali In Bar → Bärsteinalm: 182 m lopen
+- Stubnerkogel (Bad Gastein): Ali In Bar → Angerblick: 182 m lopen
+- Stubnerkogel (Bad Gastein): Ali In Bar → Hirschenhütte: 298 m lopen
+- Stubnerkogel (Bad Gastein): Ali In Bar → Waldgasthof Angertal: 182 m lopen
+- Stubnerkogel (Bad Gastein): Ali In Bar → Felding Stubn: 182 m lopen
+- Stubnerkogel (Bad Gastein): Ali In Bar → Maurachalmhütte: 182 m lopen
+- Stubnerkogel (Bad Gastein): Ali In Bar → Stubneralm: 182 m lopen
+- Stubnerkogel (Bad Gastein): Ali In Bar → Bellevue Alm: 182 m lopen
+- Stubnerkogel (Bad Gastein): Ali In Bar → Rossalm: 182 m lopen
+- Stubnerkogel (Bad Gastein): Ali In Bar → Schirmbar: 182 m lopen
+- Stubnerkogel (Bad Gastein): Ali In Bar → Jungeralm - Kresseben: 182 m lopen
+- Stubnerkogel (Bad Gastein): Ali In Bar → Stubneralm: 182 m lopen
+- Stubnerkogel (Bad Gastein): Ali In Bar → Gastein Alm (Fest ALm): 182 m lopen
+- Stubnerkogel (Bad Gastein): Ali In Bar → Bergstadl: 182 m lopen
+- Stubnerkogel (Bad Gastein): Ali In Bar → Hirsch und Maus: 182 m lopen
+- Stubnerkogel (Bad Gastein): Junger Stube → Hirschenhütte: 298 m lopen
+- Stubnerkogel (Bad Gastein): The Blonde Beans → Hirschenhütte: 298 m lopen
+- Stubnerkogel (Bad Gastein): Weitmoserin → Hirschenhütte: 298 m lopen
+- Stubnerkogel (Bad Gastein): Das Goldberg → Hirschenhütte: 298 m lopen
+- Stubnerkogel (Bad Gastein): Jungeralm - Kresseben → Hirschenhütte: 298 m lopen
+- Stubnerkogel (Bad Gastein): Silberkrug → Hirschenhütte: 298 m lopen
+- Stubnerkogel (Bad Gastein): Ahornhütte → Hirschenhütte: 298 m lopen
+- Stubnerkogel (Bad Gastein): Gastein Alm → Ali In Bar: 182 m lopen
+- Stubnerkogel (Bad Gastein): Gastein Alm → Hirschenhütte: 298 m lopen
+- Stubnerkogel (Bad Gastein): Hamburger Schihütte → Hirschenhütte: 298 m lopen
+- Stubnerkogel (Bad Gastein): Weitmoser Schlossalm → Hirschenhütte: 298 m lopen
+- Stubnerkogel (Bad Gastein): Haitzingalm → Hirschenhütte: 298 m lopen
+- Stubnerkogel (Bad Gastein): Aeroplanstadl → Hirschenhütte: 298 m lopen
+- Stubnerkogel (Bad Gastein): Bärsteinalm → Hirschenhütte: 298 m lopen
+- Stubnerkogel (Bad Gastein): Angerblick → Hirschenhütte: 243 m lopen
+- Stubnerkogel (Bad Gastein): Hirschenhütte → Gipfelrestaurant Stubnerkogel: 173 m lopen
+- Stubnerkogel (Bad Gastein): Hirschenhütte → Restaurant im Skizentrum Angertal: 173 m lopen
+- Stubnerkogel (Bad Gastein): Hirschenhütte → Landgasthof Klapotetz: 173 m lopen
+- Stubnerkogel (Bad Gastein): Hirschenhütte → Bergstadl: 173 m lopen

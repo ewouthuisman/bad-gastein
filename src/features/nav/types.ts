@@ -10,13 +10,14 @@ export interface GNode {
   ele?: number;
   label?: string;
   area?: AreaKey; // ski area (lift network) this point belongs to
+  stop?: boolean; // a bus stop, added at runtime when the bus is switched on
 }
 
 export interface GEdge {
   id: string;
   from: string;
   to: string;
-  kind: 'piste' | 'lift' | 'link';
+  kind: 'piste' | 'lift' | 'link' | 'bus';
   ref?: string;
   name?: string;
   difficulty?: Difficulty;
@@ -25,6 +26,11 @@ export interface GEdge {
   geometry: [number, number][]; // [lat, lng]
   osmId?: string;
   statusId?: string;
+  /** Fixed duration, for bus edges (the wait when boarding, the ride, getting off). */
+  seconds?: number;
+  busRole?: 'board' | 'ride' | 'alight';
+  /** Next departures (minutes after midnight) on a boarding edge. */
+  departures?: number[];
 }
 
 export interface SkiGraph {
@@ -32,6 +38,8 @@ export interface SkiGraph {
   nodes: GNode[];
   edges: GEdge[];
 }
+
+import type { GoogleInfo } from './googleTypes';
 
 export type PlaceKind = 'restaurant' | 'apres' | 'dinner' | 'house' | 'other';
 
@@ -47,4 +55,5 @@ export interface Place {
   osmId?: string;
   website?: string;
   menuUrl?: string;
+  google?: GoogleInfo;
 }

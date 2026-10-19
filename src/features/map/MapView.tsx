@@ -59,7 +59,7 @@ export function MapView({ graph, places, people, route, filters = ALL, onSelectP
       m.addLayer({
         id: 'route', type: 'line', source: 'route',
         layout: { 'line-cap': 'round', 'line-join': 'round' },
-        paint: { 'line-color': '#ffb547', 'line-width': 7, 'line-opacity': 0.9 },
+        paint: { 'line-color': ['match', ['get', 'kind'], 'bus', '#4aa3ff', '#ffb547'], 'line-width': 7, 'line-opacity': 0.9 },
       });
       m.addLayer({
         id: 'places', type: 'circle', source: 'places',

@@ -27,7 +27,7 @@ vi.mock('../../src/lib/supabase', () => {
   const query = { select: () => query, order: () => Promise.resolve({ data: [] }), then: (r: (v: unknown) => void) => r({ data: [] }) };
   return { uniqueChannel: (n: string) => channel(n + Math.random()), supabase: { channel, removeChannel: () => Promise.resolve(), from: () => query } };
 });
-vi.mock('../../src/lib/staticData', () => ({ loadPlaces: () => Promise.resolve([]), loadGraph: () => new Promise(() => {}) }));
+vi.mock('../../src/lib/staticData', () => ({ loadPlaces: () => Promise.resolve([]), loadRatings: () => Promise.resolve({}), loadGraph: () => new Promise(() => {}) }));
 
 import { usePlaces } from '../../src/features/map/places';
 import { usePeople } from '../../src/features/location/usePeople';

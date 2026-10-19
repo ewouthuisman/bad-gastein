@@ -15,9 +15,10 @@ export const edgeRank = (e: GEdge) => (e.kind === 'piste' ? DIFFICULTY_RANK[e.di
 const PISTE_MPS = 25 / 3.6;
 const LIFT_MPS = 5;
 const LIFT_BOARDING_S = 120;
-const WALK_MPS = 4 / 3.6;
+export const WALK_MPS = 4 / 3.6;
 
 export function edgeSeconds(e: GEdge): number {
+  if (e.seconds !== undefined) return e.seconds;
   if (e.kind === 'lift') return e.lengthM / LIFT_MPS + LIFT_BOARDING_S;
   if (e.kind === 'link') return e.lengthM / WALK_MPS;
   return e.lengthM / PISTE_MPS;
