@@ -18,6 +18,7 @@ const LIFT_BOARDING_S = 120;
 export const WALK_MPS = 4 / 3.6;
 
 export function edgeSeconds(e: GEdge): number {
+  if (e.seconds !== undefined) return e.seconds;
   if (e.kind === 'lift') return e.lengthM / LIFT_MPS + LIFT_BOARDING_S;
   if (e.kind === 'link') return e.lengthM / WALK_MPS;
   return e.lengthM / PISTE_MPS;

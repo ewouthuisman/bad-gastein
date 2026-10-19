@@ -7,6 +7,8 @@ import { usePeople } from '../features/location/usePeople';
 import { useMyLocation } from '../features/location/LocationProvider';
 import { NavPanel } from '../features/nav/NavPanel';
 import { useNavData } from '../features/nav/useNavData';
+import { loadBus } from '../lib/busData';
+import type { BusData } from '../features/nav/bus';
 import { LiftStatus } from '../features/berg/LiftStatus';
 import { WeatherCard } from '../features/berg/WeatherCard';
 import { PisteMaps } from '../features/berg/PisteMaps';
@@ -24,6 +26,7 @@ export function BergTab() {
   const todayArea = useDecidedArea();
   const people = usePeople();
   const { graph, notes, status } = useNavData();
+  const [bus, setBus] = useState<BusData | null>(null);
   const [route, setRoute] = useState<GEdge[]>([]);
   const [now, setNow] = useState(() => new Date());
   const [difficulty, setDifficulty] = useState<Profile['max_difficulty']>(profile?.max_difficulty ?? 'intermediate');
@@ -31,6 +34,9 @@ export function BergTab() {
   useEffect(() => {
     if (profile) setDifficulty(profile.max_difficulty);
   }, [profile]);
+  useEffect(() => {
+    void loadBus().then(setBus);
+  }, []);
   useEffect(() => {
     const t = setInterval(() => setNow(new Date()), 60_000);
     return () => clearInterval(t);
@@ -67,6 +73,8 @@ export function BergTab() {
           onRoute={onRoute}
           initialTo={to}
           initialArea={todayArea}
+          bus={bus}
+          now={now}
           statusNote={stale ? 'Liftstatus is verouderd; de route houdt geen rekening met dichte liften.' : undefined}
         />
       ) : (

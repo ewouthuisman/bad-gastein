@@ -1,8 +1,9 @@
 import { render, screen } from '@testing-library/react';
 import userEvent from '@testing-library/user-event';
-import { describe, expect, it, vi } from 'vitest';
+import { afterEach, describe, expect, it, vi } from 'vitest';
 import { NavPanel, type NavPanelProps } from '../../src/features/nav/NavPanel';
 import type { GEdge, SkiGraph } from '../../src/features/nav/types';
+import type { BusData } from '../../src/features/nav/bus';
 
 const e = (id: string, from: string, to: string, extra: Partial<GEdge>): GEdge => ({
   id, from, to, kind: 'piste', lengthM: 500, geometry: [[47.1, 13.1], [47.09, 13.1]], ...extra,
@@ -94,5 +95,48 @@ describe('NavPanel', () => {
   it('asks for a location when "Hier" has no fix', () => {
     render(<NavPanel {...base} position={null} initialTo="hut" />);
     expect(screen.getByText('Je locatie is nog onbekend. Kies een startpunt of deel je locatie.')).toBeInTheDocument();
+  });
+
+  describe('bus switch', () => {
+    const bus: BusData = {
+      version: 't',
+      source: 'Testlijn',
+      stops: [
+        { id: 'dal', name: 'Dorp', lat: 47.1, lng: 13.1004 },
+        { id: 'ver', name: 'Veraf', lat: 47.2, lng: 13.2004 },
+      ],
+      directions: [{ id: 'up', stops: ['dal', 'ver'], ride: [12], trips: [{ line: '550', we: false, t: { 0: 600, 1: 612 } }, { line: '550', we: false, t: { 0: 630, 1: 642 } }] }],
+    };
+    const wednesday = new Date(2027, 1, 17, 9, 0);
+    const props = { ...base, bus, now: wednesday, initialTo: 'far' };
+
+    afterEach(() => localStorage.clear());
+
+    it('hides the switch when there is no bus data', () => {
+      render(<NavPanel {...base} />);
+      expect(screen.queryByLabelText(/Met de bus/)).not.toBeInTheDocument();
+    });
+
+    it('stays on the pistes until the switch is on, then rides the bus', async () => {
+      render(<NavPanel {...props} />);
+      expect(screen.getByText('Geen route over de piste. Misschien is de skibus nodig.')).toBeInTheDocument();
+      await userEvent.click(screen.getByLabelText(/Met de bus/));
+      expect(screen.getByText(/Neem bus 550 van halte Dorp naar halte Veraf \(± 12 min, vertrekt o.a. 10:00, 10:30\)/)).toBeInTheDocument();
+      expect(screen.getByText(/Testlijn/)).toBeInTheDocument();
+      expect(localStorage.getItem('nav-bus')).toBe('1');
+    });
+
+    it('remembers the choice and offers the stops as places to go', () => {
+      localStorage.setItem('nav-bus', '1');
+      render(<NavPanel {...props} />);
+      expect(screen.getByLabelText(/Met de bus/)).toBeChecked();
+      expect(screen.getAllByRole('option', { name: 'Veraf' })).toHaveLength(2); // in both the Van and Naar lists
+    });
+
+    it('says so when not even the bus gets you there', async () => {
+      render(<NavPanel {...props} now={new Date(2027, 1, 17, 18, 0)} />);
+      await userEvent.click(screen.getByLabelText(/Met de bus/));
+      expect(screen.getByText('Geen route over de piste of met de bus.')).toBeInTheDocument();
+    });
   });
 });

@@ -48,6 +48,9 @@ npm run dev
 - Tests: `npx vitest run` (app) en `npx supabase test db` (database/RLS).
 - Pistenetwerk opnieuw bouwen: `npx tsx scripts/fetch-osm.ts` (alleen als je verse OSM-data wilt),
   `npx tsx scripts/build-ski-graph.ts`, daarna `npx tsx scripts/check-routes.ts`.
+- Busdienstregeling vervangen: zet het PDF in `data/` en draai `npx tsx scripts/build-bus.ts <pdf>` (vereist `pdftotext`).
+  Nu staat er Postbus lijn 550/553, zomer 2026 (geen skibus). De haltecoördinaten komen uit `scripts/build-bus.ts`:
+  haltes bij een liftstation nemen die positie over, de rest is bij benadering ertussen geplaatst. Controleer ze.
 
 Een push naar `main` deployt automatisch naar GitHub Pages.
 

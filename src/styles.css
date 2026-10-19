@@ -59,6 +59,7 @@ a { color: var(--accent); }
 .profile-section { margin-top: 20px; padding-top: 4px; border-top: 1px solid #ffffff14; }
 .profile-section h2 { margin-top: 12px; }
 .profile-section .btn + p, .profile-section p + .btn { margin-top: 8px; }
+.switch { display: flex; align-items: center; gap: 8px; margin-bottom: 12px; }
 .field { display: flex; flex-direction: column; gap: 4px; margin-bottom: 12px; }
 .field input, .field select, .field textarea { background: var(--surface-2); color: var(--text);
   border: 1px solid #ffffff22; border-radius: 10px; padding: 10px 12px; }
