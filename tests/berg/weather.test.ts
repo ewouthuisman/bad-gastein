@@ -24,7 +24,7 @@ describe('fetchWeather', () => {
     const url = String(fetchFn.mock.calls[0][0]);
     expect(url).toContain(`latitude=${WEATHER_POINTS.valley.lat},${WEATHER_POINTS.summit.lat}`);
     expect(url).toContain('timezone=Europe%2FVienna');
-    expect(w.valley[0]).toEqual({ date: '2027-03-01', tMin: -6, tMax: 2, snowCm: 4.2, windMaxKmh: 18, cloudPct: 80, code: 73 });
+    expect(w.valley[0]).toEqual({ date: '2027-03-01', tMin: -6, tMax: 2, snowCm: 4.2, windMaxKmh: 18, cloudPct: 80, precipMm: 0, sunHours: 0, code: 73 });
     expect(w.summit[0].tMin).toBe(-14);
   });
 });
@@ -37,7 +37,7 @@ describe('weatherText', () => {
 
 describe('weatherSummary', () => {
   it('summarises today for valley and summit in Dutch', () => {
-    const d = { date: '2027-03-01', tMin: -6, tMax: 2, snowCm: 4, windMaxKmh: 18, cloudPct: 80, code: 73 };
+    const d = { date: '2027-03-01', tMin: -6, tMax: 2, snowCm: 4, windMaxKmh: 18, cloudPct: 80, precipMm: 0, sunHours: 0, code: 73 };
     const s = weatherSummary({ valley: [d], summit: [{ ...d, tMin: -14, tMax: -8 }] });
     expect(s).toContain('Dal (1000 m) 2027-03-01: Sneeuw, -6 tot 2 °C, 4 cm sneeuw, wind tot 18 km/u');
     expect(s).toContain('Top (2246 m)');

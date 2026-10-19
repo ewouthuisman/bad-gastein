@@ -22,6 +22,7 @@ const base: PollCardProps = {
   onVote: vi.fn(),
   onDecide: vi.fn(),
   onUndecide: vi.fn(),
+  onReset: vi.fn(),
   onPropose: vi.fn(),
   onRoute: vi.fn(),
   onRemoveOption: vi.fn(),

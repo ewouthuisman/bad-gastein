@@ -13,6 +13,8 @@ export interface DayForecast {
   snowCm: number;
   windMaxKmh: number;
   cloudPct: number;
+  precipMm: number;
+  sunHours: number;
   code: number;
 }
 
@@ -29,6 +31,8 @@ interface OpenMeteoDaily {
     snowfall_sum: number[];
     wind_speed_10m_max: number[];
     cloud_cover_mean: number[];
+    precipitation_sum?: number[];
+    sunshine_duration?: number[];
     weather_code: number[];
   };
 }
@@ -42,6 +46,8 @@ function parse(r: OpenMeteoDaily): DayForecast[] {
     snowCm: d.snowfall_sum[i],
     windMaxKmh: d.wind_speed_10m_max[i],
     cloudPct: d.cloud_cover_mean[i],
+    precipMm: d.precipitation_sum?.[i] ?? 0,
+    sunHours: (d.sunshine_duration?.[i] ?? 0) / 3600,
     code: d.weather_code[i],
   }));
 }
@@ -49,7 +55,7 @@ function parse(r: OpenMeteoDaily): DayForecast[] {
 export async function fetchWeather(fetchFn: typeof fetch = fetch, days = 5): Promise<Weather> {
   const { valley, summit } = WEATHER_POINTS;
   const params = new URLSearchParams({
-    daily: 'temperature_2m_max,temperature_2m_min,snowfall_sum,wind_speed_10m_max,cloud_cover_mean,weather_code',
+    daily: 'temperature_2m_max,temperature_2m_min,snowfall_sum,wind_speed_10m_max,cloud_cover_mean,precipitation_sum,sunshine_duration,weather_code',
     timezone: 'Europe/Vienna',
     forecast_days: String(days),
   });

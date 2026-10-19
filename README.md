@@ -4,7 +4,7 @@ Groeps-app (PWA) voor de wintersport van zondag 28 februari t/m zaterdag 6 maart
 Panorama Spa Lodges (Das Schiller), Kötschachtaler Straße 5, Bad Gastein.
 
 Vijf tabs: **Kaart** (waar is iedereen, restaurants, après), **Berg** (navigatie over de pistes,
-live liftstatus, weer, pistekaarten), **AI** (Soipen-meter en Soipie), **Huis** (alles over het huis)
+live liftstatus, weer, pistekaarten), **Soipie** (Soipen-meter en chat), **Huis** (alles over het huis)
 en **Planning** (dagplanning met stemmen).
 
 Ontwerp: [docs/superpowers/specs/2026-10-18-bad-gastein-pwa-design.md](docs/superpowers/specs/2026-10-18-bad-gastein-pwa-design.md)

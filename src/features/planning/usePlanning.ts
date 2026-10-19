@@ -59,6 +59,7 @@ export function usePlanning(day: string) {
     run(supabase.from('votes').upsert({ poll_id: pollId, user_id: userId, option_id: optionId, updated_at: new Date().toISOString() }, { onConflict: 'poll_id,user_id' }));
   const decide = (pollId: string, optionId: string) => run(supabase.rpc('decide_poll', { p_poll: pollId, p_option: optionId }));
   const removeOption = (optionId: string) => run(supabase.from('poll_options').delete().eq('id', optionId));
+  const reset = (pollId: string) => run(supabase.rpc('reset_poll', { p_poll: pollId }));
   const undecide = (pollId: string) => run(supabase.rpc('undecide_poll', { p_poll: pollId }));
 
   async function propose(userId: string, poll: Poll, p: Proposal) {
@@ -92,5 +93,5 @@ export function usePlanning(day: string) {
     await run(supabase.from('poll_options').insert({ poll_id: poll.id, label, place_id: placeId ?? null, created_by: userId }));
   }
 
-  return { ...data, error, vote, decide, undecide, propose, removeOption };
+  return { ...data, error, vote, decide, undecide, reset, propose, removeOption };
 }

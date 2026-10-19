@@ -14,7 +14,8 @@ export interface LocationSharing {
   position: MyPosition | null;
   lastSent: Date | null;
   error: string | null;
-  shareNow: () => Promise<void>;
+  /** Resolves true when the position was stored; false on failure (see `error`). */
+  shareNow: () => Promise<boolean>;
 }
 
 const SEND_EVERY_MS = 30_000;
@@ -31,15 +32,16 @@ export function useLocationSharing(): LocationSharing {
   const latest = useRef<MyPosition | null>(null);
 
   const send = useCallback(
-    (pos: MyPosition) => {
-      if (!userId) return;
+    async (pos: MyPosition): Promise<boolean> => {
+      if (!userId) return false;
       const sentAt = Date.now();
       last.current = { pos, sentAt };
       setLastSent(new Date(sentAt));
-      void supabase
+      const { error: err } = await supabase
         .from('locations')
-        .upsert({ user_id: userId, lat: pos.lat, lng: pos.lng, accuracy_m: pos.accuracy, updated_at: new Date(sentAt).toISOString() })
-        .then(({ error: err }) => setError(err ? 'Locatie delen mislukt' : null));
+        .upsert({ user_id: userId, lat: pos.lat, lng: pos.lng, accuracy_m: pos.accuracy, updated_at: new Date(sentAt).toISOString() });
+      setError(err ? 'Locatie delen mislukt' : null);
+      return !err;
     },
     [userId],
   );
@@ -50,7 +52,7 @@ export function useLocationSharing(): LocationSharing {
       latest.current = pos;
       setPosition(pos);
       const prev = last.current;
-      if (!prev || Date.now() - prev.sentAt >= SEND_EVERY_MS || haversineM(prev.pos, pos) >= SEND_AFTER_MOVE_M) send(pos);
+      if (!prev || Date.now() - prev.sentAt >= SEND_EVERY_MS || haversineM(prev.pos, pos) >= SEND_AFTER_MOVE_M) void send(pos);
     },
     [send],
   );
@@ -72,7 +74,7 @@ export function useLocationSharing(): LocationSharing {
     document.addEventListener('visibilitychange', onVisibility);
     const timer = setInterval(() => {
       const prev = last.current;
-      if (watchId !== null && latest.current && prev && Date.now() - prev.sentAt >= SEND_EVERY_MS) send(latest.current);
+      if (watchId !== null && latest.current && prev && Date.now() - prev.sentAt >= SEND_EVERY_MS) void send(latest.current);
     }, 5_000);
     return () => {
       stop();
@@ -81,26 +83,30 @@ export function useLocationSharing(): LocationSharing {
     };
   }, [userId, onFix, send]);
 
-  const shareNow = useCallback(
-    () =>
-      new Promise<void>((resolve) => {
-        navigator.geolocation.getCurrentPosition(
-          (p) => {
-            const pos = { lat: p.coords.latitude, lng: p.coords.longitude, accuracy: p.coords.accuracy, at: new Date() };
-            latest.current = pos;
-            setPosition(pos);
-            send(pos);
-            resolve();
-          },
-          () => {
-            setError('Locatie niet beschikbaar');
-            resolve();
-          },
-          { enableHighAccuracy: true, timeout: 15_000 },
-        );
-      }),
-    [send],
-  );
+  const shareNow = useCallback(async (): Promise<boolean> => {
+    if (!('geolocation' in navigator)) {
+      setError('Locatie niet beschikbaar');
+      return false;
+    }
+    const getFix = (opts: PositionOptions) =>
+      new Promise<GeolocationPosition>((resolve, reject) => navigator.geolocation.getCurrentPosition(resolve, reject, opts));
+    let fix: GeolocationPosition;
+    try {
+      // A cold GPS fix can take long (indoors, in a PWA); fall back to a coarse or cached fix.
+      fix = await getFix({ enableHighAccuracy: true, timeout: 10_000, maximumAge: 30_000 }).catch((e: GeolocationPositionError) => {
+        if (e.code === e.PERMISSION_DENIED) throw e;
+        return getFix({ enableHighAccuracy: false, timeout: 15_000, maximumAge: 5 * 60_000 });
+      });
+    } catch (e) {
+      const err = e as GeolocationPositionError;
+      setError(err.code === err.PERMISSION_DENIED ? 'Geen toestemming voor locatie' : 'Locatie niet beschikbaar');
+      return false;
+    }
+    const pos = { lat: fix.coords.latitude, lng: fix.coords.longitude, accuracy: fix.coords.accuracy, at: new Date() };
+    latest.current = pos;
+    setPosition(pos);
+    return send(pos);
+  }, [send]);
 
   return { position, lastSent, error, shareNow };
 }

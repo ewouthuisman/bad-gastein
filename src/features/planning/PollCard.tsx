@@ -33,6 +33,7 @@ export interface PollCardProps {
   onVote: (optionId: string) => void;
   onDecide: (optionId: string) => void;
   onUndecide: () => void;
+  onReset: () => void;
   onPropose: (p: Proposal) => void;
   onRoute: (placeId: string) => void;
   onRemoveOption: (optionId: string) => void;
@@ -61,6 +62,10 @@ export function PollCard(props: PollCardProps) {
   const [query, setQuery] = useState('');
   const placeKind = PLACE_KIND[poll.kind];
   const rows = tally(options, votes, names);
+  const resetBtn = isAdmin && (
+    <button type="button" className="reset-poll" aria-label="Stemming resetten" title="Stemming resetten"
+      onClick={() => window.confirm('Alle stemmen en het besluit van deze stemming wissen?') && props.onReset()}>↺</button>
+  );
   const mine = votes.find((v) => v.user_id === myUserId)?.option_id;
   const decided = options.find((o) => o.id === poll.decided_option_id);
   const leader = rows[0]?.count ? rows[0].optionId : null;
@@ -78,6 +83,7 @@ export function PollCard(props: PollCardProps) {
     const place = placeOf(decided);
     return (
       <div className="card poll decided">
+        {resetBtn}
         <h3>{POLL_TITLE[poll.kind]}</h3>
         <p><strong>Besloten: {decided.label}</strong></p>
         {place && (place.menuText || place.menuUrl) && (
@@ -97,6 +103,7 @@ export function PollCard(props: PollCardProps) {
 
   return (
     <div className="card poll">
+      {resetBtn}
       <h3>{POLL_TITLE[poll.kind]}</h3>
       <div className="options">
         {rows.map((r) => {

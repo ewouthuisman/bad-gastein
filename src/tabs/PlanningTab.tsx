@@ -44,6 +44,7 @@ export function PlanningTab() {
         onVote={(o) => void planning.vote(userId, poll.id, o)}
         onDecide={(o) => void planning.decide(poll.id, o)}
         onUndecide={() => void planning.undecide(poll.id)}
+        onReset={() => void planning.reset(poll.id)}
         onPropose={(p) => void planning.propose(userId, poll, p)}
         onRemoveOption={(o) => void planning.removeOption(o)}
         onRoute={(placeId) => {

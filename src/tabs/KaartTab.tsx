@@ -21,7 +21,7 @@ const FILTERS: { key: MapFilter; label: string }[] = [
 export function KaartTab() {
   const navigate = useNavigate();
   const { session } = useAuth();
-  const { shareNow, lastSent, error } = useMyLocation();
+  const { shareNow } = useMyLocation();
   const places = usePlaces();
   const people = usePeople();
   const [graph, setGraph] = useState<SkiGraph | null>(null);
@@ -87,10 +87,6 @@ export function KaartTab() {
           })}
         </div>
       </div>
-      <button type="button" className="btn primary share-btn" onClick={() => void shareNow()}>
-        📍 Deel mijn locatie{lastSent ? ` · ${formatAgo(lastSent, now)}` : ''}
-      </button>
-      {error && <p className="error map-error">{error}</p>}
 
       {person && (
         <div className="sheet" role="dialog" aria-label={person.name}>

@@ -5,7 +5,7 @@ import { ChatPanel } from '../features/soipie/ChatPanel';
 export function AiTab() {
   return (
     <section className="page">
-      <h1>AI</h1>
+      <h1>Soipie</h1>
       <SoipenMeter />
       <ChatPanel />
       <div className="card">

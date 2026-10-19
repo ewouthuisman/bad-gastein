@@ -3,7 +3,7 @@ import { NavLink } from 'react-router-dom';
 export const TABS = [
   { path: '/kaart', label: 'Kaart', icon: '🗺️' },
   { path: '/berg', label: 'Berg', icon: '⛷️' },
-  { path: '/ai', label: 'AI', icon: '🍻' },
+  { path: '/ai', label: 'Soipie', icon: '🍻' },
   { path: '/huis', label: 'Huis', icon: '🏠' },
   { path: '/planning', label: 'Planning', icon: '🗳️' },
 ] as const;

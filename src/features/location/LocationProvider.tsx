@@ -5,7 +5,7 @@ const LocationContext = createContext<LocationSharing>({
   position: null,
   lastSent: null,
   error: null,
-  shareNow: async () => {},
+  shareNow: async () => false,
 });
 
 export const useMyLocation = () => useContext(LocationContext);

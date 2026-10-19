@@ -33,7 +33,7 @@ describe('App shell', () => {
     renderAt('/kaart');
     const nav = screen.getByRole('navigation', { name: 'Tabs' });
     const labels = within(nav).getAllByRole('link').map((a) => a.querySelector('.tab-label')?.textContent);
-    expect(labels).toEqual(['Kaart', 'Berg', 'AI', 'Huis', 'Planning']);
+    expect(labels).toEqual(['Kaart', 'Berg', 'Soipie', 'Huis', 'Planning']);
   });
 
   it('defaults to kaart', () => {
