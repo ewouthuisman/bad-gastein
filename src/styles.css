@@ -150,3 +150,6 @@ a { color: var(--accent); }
 .subpoll + .subpoll,
 .card.poll > .subpoll:not(:first-child) { margin-top: 14px; padding-top: 12px; border-top: 1px solid var(--line, rgba(128, 128, 128, 0.3)); }
 .subpoll h4 { margin: 0 0 6px; font-size: 0.95rem; }
+
+.google-info p { margin: 6px 0; }
+.google-info ul { margin: 4px 0; padding-left: 18px; }

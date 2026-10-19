@@ -28,6 +28,8 @@ iemand de app even te openen.
   blokkeer hem, verander de kleur of zet er een notitie bij. Ontbrekende stukjes lopen/schaatsen voeg je
   toe met *Verbinding toevoegen*. Zie [docs/route-check.md](docs/route-check.md) voor routes die nu niet lukken.
 - **Pistekaart:** plak in *Beheer* de PDF-link van de officiële winterkaart zodra Skigastein die publiceert.
+- **Google-scores en recensies:** `GOOGLE_PLACES_API_KEY=… npx tsx scripts/fetch-google-places.ts` (Places API (New)) schrijft
+  `public/data/place-ratings.json`; commit die. Google staat caching maar 30 dagen toe, draai het dus kort voor vertrek (`--refresh` ververst alles).
 - **Admin maken:** in de Supabase SQL-editor: `update profiles set role = 'admin' where display_name = 'Naam';`
 
 ## Ontwikkelen

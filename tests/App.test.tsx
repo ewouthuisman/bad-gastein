@@ -1,7 +1,7 @@
 import { render, screen, within } from '@testing-library/react';
 import { describe, expect, it, vi } from 'vitest';
 
-vi.mock('../src/lib/staticData', () => ({ loadGraph: () => new Promise(() => {}), loadPlaces: () => new Promise(() => {}) }));
+vi.mock('../src/lib/staticData', () => ({ loadGraph: () => new Promise(() => {}), loadPlaces: () => new Promise(() => {}), loadRatings: () => Promise.resolve({}) }));
 vi.mock('../src/lib/supabase', () => {
   const query = { select: () => query, order: () => Promise.resolve({ data: [] }), then: (r: (v: unknown) => void) => r({ data: [] }) };
   const channel = { on: () => channel, subscribe: () => channel };

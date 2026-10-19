@@ -33,6 +33,8 @@ export interface SkiGraph {
   edges: GEdge[];
 }
 
+import type { GoogleInfo } from './googleTypes';
+
 export type PlaceKind = 'restaurant' | 'apres' | 'dinner' | 'house' | 'other';
 
 export interface Place {
@@ -47,4 +49,5 @@ export interface Place {
   osmId?: string;
   website?: string;
   menuUrl?: string;
+  google?: GoogleInfo;
 }
