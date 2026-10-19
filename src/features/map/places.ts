@@ -1,7 +1,8 @@
 import { useEffect, useState } from 'react';
 import { useOnResume } from '../../lib/useOnResume';
 import { supabase, uniqueChannel } from '../../lib/supabase';
-import { loadPlaces } from '../../lib/staticData';
+import { loadPlaces, loadRatings } from '../../lib/staticData';
+import type { GoogleInfo } from '../nav/googleTypes';
 import type { Place, PlaceKind } from '../nav/types';
 
 export interface DbPlace {
@@ -22,13 +23,15 @@ export interface AppPlace extends Place {
 }
 
 /** OSM places from the build, enriched with menus from the database, plus places people added. */
-export function mergePlaces(osm: Place[], db: DbPlace[]): AppPlace[] {
+export function mergePlaces(osm: Place[], db: DbPlace[], ratings: Record<string, GoogleInfo> = {}): AppPlace[] {
   const byOsm = new Map(db.filter((d) => d.osm_id).map((d) => [d.osm_id!, d]));
   const merged: AppPlace[] = osm.map((p) => {
     const d = p.osmId ? byOsm.get(p.osmId) : undefined;
-    if (!d) return p;
+    const google = ratings[p.id];
+    if (!d) return google ? { ...p, google } : p;
     return {
       ...p,
+      google,
       dbId: d.id,
       menuUrl: d.menu_url ?? p.menuUrl,
       menuText: d.menu_text ?? undefined,
@@ -64,7 +67,7 @@ export function usePlaces(): AppPlace[] {
   useEffect(() => {
     let cancelled = false;
     async function load() {
-      const [osm, { data }] = await Promise.all([loadPlaces(), supabase.from('places').select('*')]);
+      const [osm, ratings, { data }] = await Promise.all([loadPlaces(), loadRatings(), supabase.from('places').select('*')]);
       // Keep the last copy so menus and added places still show without signal on the mountain.
       let db = data as DbPlace[] | null;
       try {
@@ -73,7 +76,7 @@ export function usePlaces(): AppPlace[] {
       } catch {
         db ??= [];
       }
-      if (!cancelled) setPlaces(mergePlaces(osm, db ?? []));
+      if (!cancelled) setPlaces(mergePlaces(osm, db ?? [], ratings));
     }
     void load();
     const ch = uniqueChannel('places').on('postgres_changes', { event: '*', schema: 'public', table: 'places' }, () => void load()).subscribe();
