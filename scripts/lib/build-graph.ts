@@ -108,7 +108,7 @@ export function buildGraph(osm: OverpassJson, opts: BuildOpts = {}): SkiGraph {
   }
 
   // Anchors: split pistes where a hut or bar sits beside them, so routes can end there.
-  const anchorM = opts.anchorM ?? 150;
+  const anchorM = opts.anchorM ?? 300;
   for (const a of opts.anchors ?? []) {
     for (const w of ways) {
       if (w.kind !== 'piste') continue;

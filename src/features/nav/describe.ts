@@ -15,6 +15,9 @@ interface DescribeOpts {
   graph?: SkiGraph;
   destination?: Place;
   notes?: Map<string, string>;
+  /** Walk from the start spot onto the first piste point, and from the last one to the destination. */
+  startWalkM?: number;
+  endWalkM?: number;
 }
 
 type Group = { edges: GEdge[]; kind: GEdge['kind']; absorbed: GEdge[] };
@@ -71,6 +74,8 @@ function colour(e: GEdge, absorbed: GEdge[] = []): string {
   const parts = [e.difficulty && COLOUR[e.difficulty], harder && `kort stuk ${COLOUR[harder.difficulty!]}`].filter(Boolean);
   return parts.length ? ` (${parts.join(', ')})` : '';
 }
+const walk = (m: number, target: string) => `Loop ongeveer ${Math.round(m / 10) * 10} m naar ${target}`;
+
 const pisteLabel = (e: GEdge) => (e.ref ? `piste ${e.ref}` : e.name ? `de ${e.name}` : 'de piste');
 
 function nextTarget(groups: Group[], i: number, destination?: Place): string | undefined {
@@ -115,6 +120,10 @@ function side(edge: GEdge, place: Place): string {
 export function describeRoute(edges: GEdge[], opts: DescribeOpts = {}): string[] {
   const groups = group(edges);
   const steps: string[] = [];
+  if ((opts.startWalkM ?? 0) >= LONG_WALK_M) {
+    const first = groups[0]?.edges[0];
+    steps.push(walk(opts.startWalkM!, first?.kind === 'lift' && first.name ? `lift ${first.name}` : 'de piste'));
+  }
   groups.forEach((gr, i) => {
     const first = gr.edges[0];
     let text: string | null = null;
@@ -123,7 +132,7 @@ export function describeRoute(edges: GEdge[], opts: DescribeOpts = {}): string[]
       const m = gr.edges.reduce((s, e) => s + e.lengthM, 0);
       if (m >= LONG_WALK_M) {
         const target = nextTarget(groups, i, opts.destination);
-        text = `Loop ongeveer ${Math.round(m / 10) * 10} m${target ? ` naar ${target}` : ''}`;
+        text = target ? walk(m, target) : `Loop ongeveer ${Math.round(m / 10) * 10} m`;
       }
     } else if (first.ref || first.name) text = `Neem ${pisteLabel(first)}${colour(first, gr.absorbed)}`;
     else {
@@ -137,7 +146,9 @@ export function describeRoute(edges: GEdge[], opts: DescribeOpts = {}): string[]
 
   const dest = opts.destination;
   const lastGroup = groups[groups.length - 1];
-  if (dest && lastGroup?.kind === 'piste') {
+  if (dest && (opts.endWalkM ?? 0) >= LONG_WALK_M) {
+    steps.push(walk(opts.endWalkM!, dest.name));
+  } else if (dest && lastGroup?.kind === 'piste') {
     const f = fractionAlong(lastGroup.edges, opts.graph);
     const where = f < 0.25 ? 'aan het begin van' : f <= 0.75 ? 'halverwege' : 'onderaan';
     const last = lastGroup.edges[lastGroup.edges.length - 1];

@@ -46,6 +46,15 @@ describe('describeRoute', () => {
     ]);
   });
 
+  it('mentions a long walk from the start and to the destination', () => {
+    expect(describeRoute([lift, p5a], { graph, destination: hut, startWalkM: 140, endWalkM: 180 })).toEqual([
+      'Loop ongeveer 140 m naar lift Stubnerkogelbahn I',
+      'Neem lift Stubnerkogelbahn I',
+      'Neem piste 5 (rood)',
+      'Loop ongeveer 180 m naar Jungerstube',
+    ]);
+  });
+
   it('says onderaan when the destination is at the end of the piste', () => {
     const atEnd = { ...hut, nodeId: 'F', lat: 47.01, lng: 12.9995 };
     expect(describeRoute([p5a, p5b], { graph, destination: atEnd }).at(-1)).toBe('Jungerstube ligt onderaan piste 5, rechts');

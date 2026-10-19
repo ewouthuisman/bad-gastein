@@ -1,6 +1,6 @@
 // Builds public/data/ski-graph.json and public/data/places.json from the committed OSM snapshot.
 import { mkdirSync, readFileSync, writeFileSync } from 'node:fs';
-import { assignAreas, filterPlaces } from './lib/areas';
+import { assignAreas, filterPlaces, linkValleyEnds } from './lib/areas';
 import { buildGraph, buildPlaces, type OverpassJson } from './lib/build-graph';
 
 const osm = JSON.parse(readFileSync('data/osm-snapshot.json', 'utf8')) as OverpassJson;
@@ -13,6 +13,7 @@ const anchors = osm.elements.flatMap((el) => {
 });
 const graph = buildGraph(osm, { anchors });
 assignAreas(graph);
+const valleyWalks = linkValleyEnds(graph);
 const places = filterPlaces(buildPlaces(osm, graph), graph);
 
 mkdirSync('public/data', { recursive: true });
@@ -22,6 +23,7 @@ writeFileSync('public/data/places.json', JSON.stringify(places, null, 1));
 const count = (k: string) => graph.edges.filter((e) => e.kind === k).length;
 const lifts = graph.edges.filter((e) => e.kind === 'lift');
 console.log(`nodes ${graph.nodes.length}, piste edges ${count('piste')}, lifts ${lifts.length}, links ${count('link')}`);
+console.log(`valley walks to a lift: ${valleyWalks}`);
 console.log(`unnamed lifts: ${lifts.filter((l) => !l.name).length}`);
 const byKind = places.reduce<Record<string, number>>((acc, p) => ((acc[p.kind] = (acc[p.kind] ?? 0) + 1), acc), {});
 console.log('places', byKind);
