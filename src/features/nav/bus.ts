@@ -41,6 +41,8 @@ export const STOP_WALK_M = 600;
 /** Straight-line distance understates the way along roads. */
 const DETOUR = 1.25;
 const ALIGHT_S = 30;
+/** Getting off in Bad Hofgastein counts as this much extra when picking a route, so other ways win. */
+const HOFGASTEIN_PENALTY_S = 45 * 60;
 /** Expected gap when no later bus tells us the frequency. */
 const DEFAULT_GAP_MIN = 30;
 
@@ -125,7 +127,8 @@ export function withBus(graph: SkiGraph, bus: BusData, now: Date): SkiGraph {
         const lines = [...new Set(next.slice(0, 4).map((d) => d.line))].sort().join('/');
         edges.push({ ...base, id: `board:${dir.id}:${id}`, from: stopNode(id), to: onBus(i), busRole: 'board', ref: lines, seconds: expectedWaitMin(next, nowMin) * 60, departures: next.slice(0, 3).map((d) => d.min) });
       }
-      if (i > 0) edges.push({ ...base, id: `alight:${dir.id}:${id}`, from: onBus(i), to: offNode(id), busRole: 'alight', seconds: ALIGHT_S });
+      // Walking or a local bus to the Stubnerkogelbahn always beats the long ride to Bad Hofgastein.
+      if (i > 0) edges.push({ ...base, id: `alight:${dir.id}:${id}`, from: onBus(i), to: offNode(id), busRole: 'alight', seconds: ALIGHT_S, ...(s.name.startsWith('Bad Hofgastein') && { penaltyS: HOFGASTEIN_PENALTY_S }) });
       if (i < dir.stops.length - 1) {
         const t = stopById.get(dir.stops[i + 1])!;
         edges.push({

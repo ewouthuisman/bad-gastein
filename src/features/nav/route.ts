@@ -106,7 +106,7 @@ function dijkstra(g: SkiGraph, from: Access[], to: Access[], allowed: (e: GEdge)
     }
     for (const e of adj.get(node) ?? []) {
       if (!allowed(e)) continue;
-      const nd = d + edgeSeconds(e);
+      const nd = d + edgeSeconds(e) + (e.penaltyS ?? 0);
       if (nd < (dist.get(e.to) ?? Infinity)) {
         dist.set(e.to, nd);
         via.set(e.to, e);
