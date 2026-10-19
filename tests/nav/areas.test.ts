@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import { assignAreas, filterPlaces } from '../../scripts/lib/areas';
+import { assignAreas, filterPlaces, linkValleyEnds } from '../../scripts/lib/areas';
 import type { Place, SkiGraph } from '../../src/features/nav/types';
 
 const graph: SkiGraph = {
@@ -27,5 +27,38 @@ describe('areas', () => {
     );
     expect(kept.map((x) => x.id)).toEqual(['house', 'hut', 'centrum']);
     expect(kept.find((x) => x.id === 'hut')?.area).toBe('graukogel');
+  });
+});
+
+describe('linkValleyEnds', () => {
+  const valley = (): SkiGraph => ({
+    version: 't',
+    nodes: [
+      { id: 'b', lat: 47.11, lng: 13.15, label: 'Graukogel I (dal)' },
+      { id: 't', lat: 47.12, lng: 13.15 },
+      { id: 'end', lat: 47.112, lng: 13.15 }, // ~220 m from the bottom station
+      { id: 'far', lat: 47.1, lng: 13.2 },
+    ],
+    edges: [
+      { id: 'up', from: 'b', to: 't', kind: 'lift', lengthM: 1000, geometry: [] },
+      { id: 'run', from: 't', to: 'end', kind: 'piste', lengthM: 900, geometry: [] },
+      { id: 'run2', from: 't', to: 'far', kind: 'piste', lengthM: 4000, geometry: [] },
+    ],
+  });
+
+  it('walks from a piste that ends in the valley to the nearest lift, both ways', () => {
+    const g = valley();
+    assignAreas(g);
+    expect(linkValleyEnds(g)).toBe(1);
+    const walks = g.edges.filter((x) => x.id.startsWith('V:'));
+    expect(walks.map((x) => [x.from, x.to])).toEqual([['end', 'b'], ['b', 'end']]);
+    expect(Math.round(walks[0].lengthM)).toBe(222);
+  });
+
+  it('leaves dead ends farther than the walking limit alone', () => {
+    const g = valley();
+    assignAreas(g);
+    linkValleyEnds(g);
+    expect(g.edges.filter((x) => x.from === 'far')).toEqual([]);
   });
 });

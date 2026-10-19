@@ -1,6 +1,6 @@
 import { describe, expect, it } from 'vitest';
 import type { GEdge, SkiGraph } from '../../src/features/nav/types';
-import { findRoute, nearestNode } from '../../src/features/nav/route';
+import { accessPoints, findRoute, nearestNode } from '../../src/features/nav/route';
 import { applyOverrides } from '../../src/features/nav/overrides';
 
 const e = (id: string, from: string, to: string, extra: Partial<GEdge>): GEdge => ({
@@ -35,7 +35,7 @@ describe('findRoute', () => {
   });
 
   it('reports difficulty when only harder pistes lead there', () => {
-    expect(findRoute(graph, 'A', 'D', open)).toEqual({ ok: false, reason: 'difficulty' });
+    expect(findRoute(graph, 'A', 'D', open)).toEqual({ ok: false, reason: 'difficulty', needs: 'advanced' });
   });
 
   it('reports no-route for disconnected parts', () => {
@@ -94,6 +94,44 @@ describe('findRoute to several possible end points', () => {
     expect(r.ok && r.edges.map((x) => x.id)).toEqual(['red']);
   });
   it('reports difficulty only when no target is reachable at this level', () => {
-    expect(findRoute(graph, 'A', ['D'], open)).toEqual({ ok: false, reason: 'difficulty' });
+    expect(findRoute(graph, 'A', ['D'], open)).toEqual({ ok: false, reason: 'difficulty', needs: 'advanced' });
+  });
+});
+
+describe('findRoute from several possible start points', () => {
+  it('starts from whichever point beside the spot leads there at this level', () => {
+    // The nearest point (D) is a dead end; A, a bit farther, has the red run.
+    const r = findRoute(graph, [{ nodeId: 'D', walkM: 10 }, { nodeId: 'A', walkM: 50 }], 'C', open);
+    expect(ids(r)).toEqual(['red']);
+    expect(r.ok && r.startWalkM).toBe(50);
+  });
+
+  it('looks farther than ACCESS_M only when the near points give no route', () => {
+    const r = findRoute(graph, [{ nodeId: 'D', walkM: 10 }, { nodeId: 'A', walkM: 200 }], 'C', open);
+    expect(ids(r)).toEqual(['red']);
+    expect(r.ok && r.startWalkM).toBe(200);
+  });
+
+  it('keeps to the near points when they work, even if a far one is quicker', () => {
+    const r = findRoute(graph, [{ nodeId: 'C', walkM: 100 }, { nodeId: 'A', walkM: 250 }], 'A', open);
+    expect(ids(r)).toEqual(['lift']);
+  });
+
+  it('counts the walks in the time and distance', () => {
+    const r = findRoute(graph, [{ nodeId: 'A', walkM: 100 }], [{ nodeId: 'C', walkM: 100 }], open);
+    expect(r.ok && r.totalM).toBe(800);
+    expect(r.ok && r.endWalkM).toBe(100);
+  });
+});
+
+describe('accessPoints', () => {
+  it('lists the nodes within reach, nearest first, with the walk to each', () => {
+    const pts = accessPoints(graph, 47.0001, 13.0);
+    expect(pts.map((x) => x.nodeId)).toEqual(['C']);
+    expect(Math.round(pts[0].walkM)).toBe(11);
+  });
+
+  it('falls back to the single nearest node when none is within reach', () => {
+    expect(accessPoints(graph, 46.9, 13.0).map((x) => x.nodeId)).toEqual(['C']);
   });
 });

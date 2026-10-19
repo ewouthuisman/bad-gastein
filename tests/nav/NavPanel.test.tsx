@@ -59,9 +59,21 @@ describe('NavPanel', () => {
     expect(onDifficultyChange).toHaveBeenCalledWith('easy');
   });
 
+  it('starts from any piste point beside a hut, not only the nearest one', () => {
+    // K, right beside the hut, only has a black run; H, a few metres farther, has a blue one.
+    const g: SkiGraph = {
+      ...graph,
+      nodes: [...graph.nodes, { id: 'K', lat: 47.11, lng: 13.10008 }],
+      edges: [...graph.edges, e('k-black', 'K', 'B', { ref: '9', difficulty: 'advanced' }), e('h-blue', 'H', 'B', { ref: '28', difficulty: 'easy' })],
+    };
+    render(<NavPanel {...base} graph={g} initialFrom="hut" initialTo="house" maxDifficulty="easy" />);
+    expect(screen.getByText('Neem piste 28 (blauw)')).toBeInTheDocument();
+    expect(screen.queryByText(/Geen route/)).not.toBeInTheDocument();
+  });
+
   it('explains when only harder pistes lead there', () => {
     render(<NavPanel {...base} initialFrom="node:T" initialTo="node:B" maxDifficulty="easy" graph={{ ...graph, edges: graph.edges.filter((x) => x.id !== 'blue') }} />);
-    expect(screen.getByText('Geen route op dit niveau — probeer een hoger niveau of neem een lift naar beneden.')).toBeInTheDocument();
+    expect(screen.getByText('Geen route op dit niveau — wel op zwart. Of neem een lift naar beneden.')).toBeInTheDocument();
   });
 
   it('suggests the ski bus when the area is not connected', () => {

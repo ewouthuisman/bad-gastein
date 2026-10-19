@@ -1,6 +1,6 @@
 import { useEffect, useMemo, useState } from 'react';
 import { describeRoute } from './describe';
-import { findRoute, nearestNode } from './route';
+import { accessPoints, findRoute, type Access } from './route';
 import type { GEdge, SkiGraph } from './types';
 import type { AppPlace } from '../map/places';
 import type { MapPerson } from '../map/layers';
@@ -28,27 +28,28 @@ export interface NavPanelProps {
 
 const FAR_FROM_PISTE_M = 400;
 
-type Resolved = { nodeIds: string[]; note?: string } | { error: string };
+type Resolved = { points: Access[]; note?: string } | { error: string };
 
 /** Endpoint values: 'here', 'node:<id>', 'person:<id>', or a place id. */
 function resolve(value: string, p: NavPanelProps): Resolved {
   if (value === 'here') {
     if (!p.position) return { error: 'Je locatie is nog onbekend. Kies een startpunt of deel je locatie.' };
-    const n = nearestNode(p.graph, p.position.lat, p.position.lng);
-    return n.distM > FAR_FROM_PISTE_M
-      ? { nodeIds: [n.nodeId], note: `Je bent ${Math.round(n.distM)} m van de piste; de route begint bij het dichtstbijzijnde punt.` }
-      : { nodeIds: [n.nodeId] };
+    const points = accessPoints(p.graph, p.position.lat, p.position.lng);
+    return points[0].walkM > FAR_FROM_PISTE_M
+      ? { points, note: `Je bent ${Math.round(points[0].walkM)} m van de piste; de route begint bij het dichtstbijzijnde punt.` }
+      : { points };
   }
-  if (value.startsWith('node:')) return { nodeIds: [value.slice(5)] };
+  if (value.startsWith('node:')) return { points: [{ nodeId: value.slice(5), walkM: 0 }] };
   if (value.startsWith('person:')) {
     const person = p.people.find((x) => x.id === value.slice(7));
     if (!person || person.lat == null || person.lng == null) return { error: 'Van die persoon is geen locatie bekend.' };
-    return { nodeIds: [nearestNode(p.graph, person.lat, person.lng).nodeId] };
+    return { points: accessPoints(p.graph, person.lat, person.lng) };
   }
   const place = p.places.find((x) => x.id === value);
   if (!place) return { error: 'Kies een bestemming.' };
   if (!place.nodeId) return { error: `${place.name} ligt niet aan de piste — loop of neem de bus.` };
-  return { nodeIds: place.nodeIds?.length ? place.nodeIds : [place.nodeId] };
+  // Every piste point beside the place counts: the nearest one may sit on a piste that only goes the wrong way.
+  return { points: accessPoints(p.graph, place.lat, place.lng) };
 }
 
 const REASON: Record<'no-route' | 'difficulty' | 'closed', string> = {
@@ -82,10 +83,13 @@ export function NavPanel(props: NavPanelProps) {
     if ('error' in a) return { error: a.error };
     const b = resolve(to, props);
     if ('error' in b) return { error: b.error };
-    const r = findRoute(graph, a.nodeIds[0], b.nodeIds, { maxDifficulty: props.maxDifficulty, closedStatusIds: props.closedStatusIds });
-    if (!r.ok) return { error: REASON[r.reason] };
+    const r = findRoute(graph, a.points, b.points, { maxDifficulty: props.maxDifficulty, closedStatusIds: props.closedStatusIds });
+    if (!r.ok) {
+      const needs = r.reason === 'difficulty' && r.needs ? DIFFICULTY_LABELS[r.needs as Profile['max_difficulty']] : null;
+      return { error: needs ? `Geen route op dit niveau — wel op ${needs.toLowerCase()}. Of neem een lift naar beneden.` : REASON[r.reason] };
+    }
     const destination = places.find((p) => p.id === to);
-    return { route: r, steps: describeRoute(r.edges, { graph, destination, notes: props.notes }), note: a.note };
+    return { route: r, steps: describeRoute(r.edges, { graph, destination, notes: props.notes, startWalkM: r.startWalkM, endWalkM: r.endWalkM }), note: a.note };
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [from, to, graph, props.maxDifficulty, props.closedStatusIds, props.position, places, people, props.notes]);
 
