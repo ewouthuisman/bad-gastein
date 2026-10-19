@@ -6,7 +6,7 @@ language sql
 immutable
 set search_path = ''
 as $$
-  select * from (values
+  select d.label, d.value from (values
     ('ski_area', 'Stubnerkogel (Bad Gastein)', 'stubnerkogel'),
     ('ski_area', 'Graukogel (Bad Gastein)', 'graukogel'),
     ('ski_area', 'Gibfelbahn (Dorfgastein)', 'gibfelbahn'),
