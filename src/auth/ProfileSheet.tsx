@@ -66,6 +66,7 @@ export function ProfileSheet({ onClose }: { onClose: () => void }) {
         {isAdmin && <Link className="btn" to="/admin" onClick={onClose}>Beheer</Link>}
         <button className="btn" type="button" onClick={() => supabase.auth.signOut()}>Uitloggen</button>
       </div>
+      <p className="muted small-print">Versie {__BUILD__}</p>
     </div>
   );
 }
