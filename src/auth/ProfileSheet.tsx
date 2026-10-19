@@ -4,6 +4,7 @@ import { supabase } from '../lib/supabase';
 import { useAuth } from './AuthProvider';
 import type { Profile } from '../lib/types';
 import { NotificationsCard } from '../features/push/InstallGuide';
+import { screenReport } from '../lib/screenFit';
 import { ShareLocationCard } from '../features/location/ShareLocationCard';
 
 export const PALETTE = ['#ff6b6b', '#4dabf7', '#51cf66', '#fcc419', '#cc5de8', '#ff922b', '#20c997', '#f06595', '#94d82d', '#845ef7'];
@@ -66,7 +67,7 @@ export function ProfileSheet({ onClose }: { onClose: () => void }) {
         {isAdmin && <Link className="btn" to="/admin" onClick={onClose}>Beheer</Link>}
         <button className="btn" type="button" onClick={() => supabase.auth.signOut()}>Uitloggen</button>
       </div>
-      <p className="muted small-print">Versie {__BUILD__}</p>
+      <p className="muted small-print">Versie {__BUILD__}<br />{screenReport()}</p>
     </div>
   );
 }

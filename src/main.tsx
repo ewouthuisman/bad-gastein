@@ -3,8 +3,10 @@ import { createRoot } from 'react-dom/client';
 import { registerSW } from 'virtual:pwa-register';
 import { App } from './App';
 import './styles.css';
+import { fitToScreen } from './lib/screenFit';
 
 registerSW({ immediate: true });
+fitToScreen();
 
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
