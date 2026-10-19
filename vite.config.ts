@@ -15,6 +15,7 @@ export default defineConfig({
       registerType: 'autoUpdate',
       injectManifest: {
         globPatterns: ['**/*.{js,mjs,css,html,png,svg,json,pdf,webp}'],
+        globIgnores: ['splash/**'],
         maximumFileSizeToCacheInBytes: 15 * 1024 * 1024,
       },
       manifest: {
