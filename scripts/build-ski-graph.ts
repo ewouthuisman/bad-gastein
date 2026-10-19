@@ -1,5 +1,6 @@
 // Builds public/data/ski-graph.json and public/data/places.json from the committed OSM snapshot.
 import { mkdirSync, readFileSync, writeFileSync } from 'node:fs';
+import { assignAreas, filterPlaces } from './lib/areas';
 import { buildGraph, buildPlaces, type OverpassJson } from './lib/build-graph';
 
 const osm = JSON.parse(readFileSync('data/osm-snapshot.json', 'utf8')) as OverpassJson;
@@ -11,7 +12,8 @@ const anchors = osm.elements.flatMap((el) => {
   return pos ? [pos] : [];
 });
 const graph = buildGraph(osm, { anchors });
-const places = buildPlaces(osm, graph);
+assignAreas(graph);
+const places = filterPlaces(buildPlaces(osm, graph), graph);
 
 mkdirSync('public/data', { recursive: true });
 writeFileSync('public/data/ski-graph.json', JSON.stringify(graph));

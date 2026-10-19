@@ -4,7 +4,8 @@ import { sendPush } from '../_shared/push.ts';
 import { tripDays } from '../_shared/time.ts';
 
 const KIND_LABEL: Record<string, string> = {
-  early_ski: 'Vroeg skiën',
+  ski_area: 'Skiberg',
+  ski_time: 'Skitijd',
   lunch_place: 'Lunch',
   lunch_time: 'Lunchtijd',
   apres_place: 'Après-ski',
@@ -18,6 +19,8 @@ Deno.serve(async (req) => {
   const db = adminClient();
   const { data: poll } = await db.from('polls').select('id, day, kind, decided_option_id').eq('id', pollId).single();
   if (!poll?.decided_option_id) return json({ skipped: 'not decided' });
+  // Lunch is one decision: the place's notification already carries the time.
+  if (poll.kind === 'lunch_time') return json({ skipped: 'part of lunch' });
   const { data: option } = await db.from('poll_options').select('label').eq('id', poll.decided_option_id).single();
 
   let body = option?.label ?? '';

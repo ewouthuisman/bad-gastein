@@ -15,7 +15,7 @@ export async function loadSoipenRows(db: SupabaseClient, now: Date): Promise<Soi
     db.from('profiles').select('id, display_name'),
     db.from('drinks').select('user_id, kind, created_at').gte('created_at', since),
     db.from('bar_visits').select('user_id, started_at, ended_at, places(name)').gte('started_at', since),
-    db.from('polls').select('id, kind').eq('day', viennaDate(now)).in('kind', ['apres_or_spa', 'early_ski']),
+    db.from('polls').select('id, kind').eq('day', viennaDate(now)).in('kind', ['apres_or_spa', 'ski_time']),
   ]);
   const pollIds = (polls ?? []).map((p) => p.id);
   const [{ data: votes }, { data: options }] = pollIds.length

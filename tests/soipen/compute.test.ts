@@ -38,3 +38,21 @@ describe('computeSnapshot', () => {
     expect(snap.mode.label).toBeTruthy();
   });
 });
+
+describe('computeSnapshot day boundary', () => {
+  it('ignores yesterday\'s drinks and bar visits in today\'s score', () => {
+    const snap = computeSnapshot(
+      {
+        profiles: [{ id: 'a', display_name: 'Anna' }],
+        drinks: Array.from({ length: 6 }, () => ({ user_id: 'a', kind: 'beer_05', created_at: '2027-03-01T21:00:00Z' })),
+        visits: [{ user_id: 'a', started_at: '2027-03-01T19:00:00Z', ended_at: '2027-03-01T22:00:00Z', places: { name: 'Salettl' } }],
+        polls: [],
+        votes: [],
+        options: [],
+      },
+      new Date('2027-03-02T08:00:00Z'),
+    );
+    expect(snap.people[0].score).toBe(0);
+    expect(snap.people[0].lastBar).toBeNull();
+  });
+});

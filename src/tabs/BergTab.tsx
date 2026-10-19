@@ -10,6 +10,7 @@ import { useNavData } from '../features/nav/useNavData';
 import { LiftStatus } from '../features/berg/LiftStatus';
 import { WeatherCard } from '../features/berg/WeatherCard';
 import { PisteMaps } from '../features/berg/PisteMaps';
+import { useDecidedArea } from '../features/planning/useTodayArea';
 import { useAuth } from '../auth/AuthProvider';
 import { supabase } from '../lib/supabase';
 import type { GEdge } from '../features/nav/types';
@@ -20,6 +21,7 @@ export function BergTab() {
   const { profile, refreshProfile } = useAuth();
   const { position } = useMyLocation();
   const places = usePlaces();
+  const todayArea = useDecidedArea();
   const people = usePeople();
   const { graph, notes, status } = useNavData();
   const [route, setRoute] = useState<GEdge[]>([]);
@@ -64,6 +66,7 @@ export function BergTab() {
           onDifficultyChange={(d) => void changeDifficulty(d)}
           onRoute={onRoute}
           initialTo={to}
+          initialArea={todayArea}
           statusNote={stale ? 'Liftstatus is verouderd; de route houdt geen rekening met dichte liften.' : undefined}
         />
       ) : (

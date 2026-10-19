@@ -13,37 +13,8 @@
    "287405067",
    "2398698692"
   ],
-  "osmId": "node/287405207"
- },
- {
-  "id": "osm:node/309593680",
-  "name": "Gasthof Maier",
-  "kind": "dinner",
-  "lat": 47.1941955,
-  "lng": 13.1012727,
-  "nodeId": null,
-  "nodeIds": [],
-  "osmId": "node/309593680"
- },
- {
-  "id": "osm:node/476680904",
-  "name": "Hochalm",
-  "kind": "restaurant",
-  "lat": 47.2202754,
-  "lng": 12.9570983,
-  "nodeId": "9680925526",
-  "nodeIds": [
-   "9680925526",
-   "476680926",
-   "4005965972",
-   "9680925528",
-   "4665353465",
-   "4005971994",
-   "4005965973",
-   "9680925534"
-  ],
-  "osmId": "node/476680904",
-  "website": "https://www.der-baron.at/filialen/hochalm-rauris/"
+  "osmId": "node/287405207",
+  "area": "stubnerkogel"
  },
  {
   "id": "osm:node/667338964",
@@ -62,28 +33,8 @@
    "9851436516",
    "9851463127"
   ],
-  "osmId": "node/667338964"
- },
- {
-  "id": "osm:node/801934572",
-  "name": "Filzenalm",
-  "kind": "dinner",
-  "lat": 47.077307,
-  "lng": 13.0052815,
-  "nodeId": null,
-  "nodeIds": [],
-  "osmId": "node/801934572"
- },
- {
-  "id": "osm:node/801935540",
-  "name": "Bodenhaus",
-  "kind": "dinner",
-  "lat": 47.105593,
-  "lng": 12.9908837,
-  "nodeId": null,
-  "nodeIds": [],
-  "osmId": "node/801935540",
-  "website": "https://www.bodenhaus.at/"
+  "osmId": "node/667338964",
+  "area": "stubnerkogel"
  },
  {
   "id": "osm:node/861750788",
@@ -102,231 +53,8 @@
    "3570691298",
    "365179447"
   ],
-  "osmId": "node/861750788"
- },
- {
-  "id": "osm:node/917753307",
-  "name": "Kreuzboden-Hütte",
-  "kind": "restaurant",
-  "lat": 47.2298796,
-  "lng": 12.9812634,
-  "nodeId": "917729243",
-  "nodeIds": [
-   "917729243",
-   "1654351259",
-   "9680925521",
-   "4005948152",
-   "9680925522",
-   "4395945819",
-   "4005948149",
-   "4005948210"
-  ],
-  "osmId": "node/917753307",
-  "website": "https://www.kreuzbodenhuette.at/"
- },
- {
-  "id": "osm:node/918482352",
-  "name": "Nigglgut",
-  "kind": "dinner",
-  "lat": 47.1569553,
-  "lng": 12.9727165,
-  "nodeId": null,
-  "nodeIds": [],
-  "osmId": "node/918482352",
-  "website": "https://www.reiterhof-nigglgut.com/"
- },
- {
-  "id": "osm:node/919476922",
-  "name": "Gasthof Bräu",
-  "kind": "dinner",
-  "lat": 47.2282858,
-  "lng": 12.994479,
-  "nodeId": null,
-  "nodeIds": [],
-  "osmId": "node/919476922",
-  "website": "https://www.braeu-rauris.at/"
- },
- {
-  "id": "osm:node/1140978354",
-  "name": "Speiswerk",
-  "kind": "dinner",
-  "lat": 47.2374676,
-  "lng": 13.2000237,
-  "nodeId": null,
-  "nodeIds": [],
-  "osmId": "node/1140978354"
- },
- {
-  "id": "osm:node/1140978355",
-  "name": "Hotel Alte Post",
-  "kind": "dinner",
-  "lat": 47.237332,
-  "lng": 13.2015502,
-  "nodeId": null,
-  "nodeIds": [],
-  "osmId": "node/1140978355"
- },
- {
-  "id": "osm:node/1147931044",
-  "name": "Dorfkind Großarl",
-  "kind": "dinner",
-  "lat": 47.2376689,
-  "lng": 13.2011561,
-  "nodeId": null,
-  "nodeIds": [],
-  "osmId": "node/1147931044"
- },
- {
-  "id": "osm:node/1154378824",
-  "name": "Heimalm",
-  "kind": "restaurant",
-  "lat": 47.2227018,
-  "lng": 12.9756538,
-  "nodeId": "1654351377",
-  "nodeIds": [
-   "1654351377",
-   "9680925560",
-   "9680925561",
-   "9680925557",
-   "9680925551",
-   "9680925559",
-   "4588329688",
-   "4588329687"
-  ],
-  "osmId": "node/1154378824",
-  "website": "http://www.heimalm-rauris.at"
- },
- {
-  "id": "osm:node/1168387589",
-  "name": "Dorfkrämerei",
-  "kind": "dinner",
-  "lat": 47.24673,
-  "lng": 13.1093069,
-  "nodeId": null,
-  "nodeIds": [],
-  "osmId": "node/1168387589",
-  "website": "https://www.dorfkraemerei.com"
- },
- {
-  "id": "osm:node/1168398014",
-  "name": "Eggerwirt",
-  "kind": "dinner",
-  "lat": 47.2427514,
-  "lng": 13.1052173,
-  "nodeId": null,
-  "nodeIds": [],
-  "osmId": "node/1168398014"
- },
- {
-  "id": "osm:node/1573837020",
-  "name": "Konditorei Schwaiger",
-  "kind": "dinner",
-  "lat": 47.1706684,
-  "lng": 13.1062612,
-  "nodeId": null,
-  "nodeIds": [],
-  "osmId": "node/1573837020"
- },
- {
-  "id": "osm:node/1650650503",
-  "name": "Jausenstation Rindsleiten",
-  "kind": "dinner",
-  "lat": 47.1994405,
-  "lng": 12.9720349,
-  "nodeId": null,
-  "nodeIds": [],
-  "osmId": "node/1650650503"
- },
- {
-  "id": "osm:node/1650810296",
-  "name": "Cafe Restaurant Pizzeria Sonnblick",
-  "kind": "dinner",
-  "lat": 47.2272812,
-  "lng": 12.9941276,
-  "nodeId": null,
-  "nodeIds": [],
-  "osmId": "node/1650810296",
-  "website": "https://sonnblick.members.cablelink.at"
- },
- {
-  "id": "osm:node/1650810394",
-  "name": "Rock Bar",
-  "kind": "apres",
-  "lat": 47.2281482,
-  "lng": 12.9939924,
-  "nodeId": null,
-  "nodeIds": [],
-  "osmId": "node/1650810394"
- },
- {
-  "id": "osm:node/1650810402",
-  "name": "Gasthof Platzwirt",
-  "kind": "dinner",
-  "lat": 47.2293862,
-  "lng": 12.9941506,
-  "nodeId": null,
-  "nodeIds": [],
-  "osmId": "node/1650810402",
-  "website": "https://www.platzwirt.at/"
- },
- {
-  "id": "osm:node/1650810403",
-  "name": "Stadl.café",
-  "kind": "dinner",
-  "lat": 47.2281354,
-  "lng": 12.994131,
-  "nodeId": null,
-  "nodeIds": [],
-  "osmId": "node/1650810403"
- },
- {
-  "id": "osm:node/1740263928",
-  "name": "Maislau Alm",
-  "kind": "apres",
-  "lat": 47.2237969,
-  "lng": 12.9930872,
-  "nodeId": "2734597965",
-  "nodeIds": [
-   "2734597965",
-   "2734597966",
-   "7125935931",
-   "2734597963",
-   "2519557352",
-   "9680925567",
-   "488156908"
-  ],
-  "osmId": "node/1740263928"
- },
- {
-  "id": "osm:node/1740457029",
-  "name": "Hotelbar Rauriserhof",
-  "kind": "apres",
-  "lat": 47.2327453,
-  "lng": 12.9930977,
-  "nodeId": null,
-  "nodeIds": [],
-  "osmId": "node/1740457029"
- },
- {
-  "id": "osm:node/1804976355",
-  "name": "Schmaranz Bräustüberl",
-  "kind": "dinner",
-  "lat": 47.1835413,
-  "lng": 13.0920577,
-  "nodeId": null,
-  "nodeIds": [],
-  "osmId": "node/1804976355"
- },
- {
-  "id": "osm:node/1818302634",
-  "name": "Gainschniggalm",
-  "kind": "dinner",
-  "lat": 47.0736195,
-  "lng": 12.9931574,
-  "nodeId": null,
-  "nodeIds": [],
-  "osmId": "node/1818302634",
-  "website": "https://www.gainschniggalm.at/"
+  "osmId": "node/861750788",
+  "area": "gibfelbahn"
  },
  {
   "id": "osm:node/1846515591",
@@ -344,38 +72,8 @@
    "4463412774",
    "253396469"
   ],
-  "osmId": "node/1846515591"
- },
- {
-  "id": "osm:node/1848381786",
-  "name": "Café Bar Piccolo",
-  "kind": "apres",
-  "lat": 47.2370099,
-  "lng": 13.2010288,
-  "nodeId": null,
-  "nodeIds": [],
-  "osmId": "node/1848381786"
- },
- {
-  "id": "osm:node/1881051634",
-  "name": "Goldbergstüberl",
-  "kind": "dinner",
-  "lat": 47.1774155,
-  "lng": 13.1030707,
-  "nodeId": null,
-  "nodeIds": [],
-  "osmId": "node/1881051634",
-  "website": "https://www.goldbergstueberl.com/"
- },
- {
-  "id": "osm:node/1883886400",
-  "name": "Bäckerei Bauer",
-  "kind": "dinner",
-  "lat": 47.1702498,
-  "lng": 13.1083332,
-  "nodeId": null,
-  "nodeIds": [],
-  "osmId": "node/1883886400"
+  "osmId": "node/1846515591",
+  "area": "gibfelbahn"
  },
  {
   "id": "osm:node/2053572136",
@@ -391,7 +89,8 @@
    "1684004678",
    "2053572123"
   ],
-  "osmId": "node/2053572136"
+  "osmId": "node/2053572136",
+  "area": "stubnerkogel"
  },
  {
   "id": "osm:node/2073355200",
@@ -406,7 +105,8 @@
    "253403043"
   ],
   "osmId": "node/2073355200",
-  "website": "https://bergstadl-badgastein.at/"
+  "website": "https://bergstadl-badgastein.at/",
+  "area": "stubnerkogel"
  },
  {
   "id": "osm:node/2078675155",
@@ -477,7 +177,8 @@
    "9851463127",
    "9721127710"
   ],
-  "osmId": "node/2146446701"
+  "osmId": "node/2146446701",
+  "area": "stubnerkogel"
  },
  {
   "id": "osm:node/3287306520",
@@ -489,26 +190,6 @@
   "nodeIds": [],
   "osmId": "node/3287306520",
   "website": "http://www.evas-fischerstueberl.at/"
- },
- {
-  "id": "osm:node/3687101834",
-  "name": "Kost Bar",
-  "kind": "apres",
-  "lat": 47.2378681,
-  "lng": 13.2011327,
-  "nodeId": null,
-  "nodeIds": [],
-  "osmId": "node/3687101834"
- },
- {
-  "id": "osm:node/3691745425",
-  "name": "vis-a-vis",
-  "kind": "dinner",
-  "lat": 47.2433585,
-  "lng": 13.1996316,
-  "nodeId": null,
-  "nodeIds": [],
-  "osmId": "node/3691745425"
  },
  {
   "id": "osm:node/3693783125",
@@ -526,80 +207,8 @@
    "4463412774",
    "253396469"
   ],
-  "osmId": "node/3693783125"
- },
- {
-  "id": "osm:node/3720777678",
-  "name": "Bäckerei Cafe Gastun",
-  "kind": "dinner",
-  "lat": 47.2422594,
-  "lng": 13.1064038,
-  "nodeId": null,
-  "nodeIds": [],
-  "osmId": "node/3720777678"
- },
- {
-  "id": "osm:node/3781207318",
-  "name": "Pizzeria Ramazotti",
-  "kind": "dinner",
-  "lat": 47.1510069,
-  "lng": 13.1127403,
-  "nodeId": null,
-  "nodeIds": [],
-  "osmId": "node/3781207318",
-  "website": "http://www.pizzeriaramazotti.at"
- },
- {
-  "id": "osm:node/3866977526",
-  "name": "Gastronomia Pane e Vino",
-  "kind": "dinner",
-  "lat": 47.170728,
-  "lng": 13.1065486,
-  "nodeId": null,
-  "nodeIds": [],
-  "osmId": "node/3866977526",
-  "website": "http://panevino.at/"
- },
- {
-  "id": "osm:node/3866977538",
-  "name": "Gastronomia Pane e Vino",
-  "kind": "dinner",
-  "lat": 47.1707407,
-  "lng": 13.1064964,
-  "nodeId": null,
-  "nodeIds": [],
-  "osmId": "node/3866977538"
- },
- {
-  "id": "osm:node/3866977540",
-  "name": "Cafe Gamskar",
-  "kind": "dinner",
-  "lat": 47.1692786,
-  "lng": 13.1126181,
-  "nodeId": null,
-  "nodeIds": [],
-  "osmId": "node/3866977540"
- },
- {
-  "id": "osm:node/3866977541",
-  "name": "Der Postler",
-  "kind": "dinner",
-  "lat": 47.1708775,
-  "lng": 13.1074499,
-  "nodeId": null,
-  "nodeIds": [],
-  "osmId": "node/3866977541",
-  "website": "http://www.altepost-gastein.at/"
- },
- {
-  "id": "osm:node/3866977548",
-  "name": "Sandwirtstüberl",
-  "kind": "dinner",
-  "lat": 47.1575823,
-  "lng": 13.107983,
-  "nodeId": null,
-  "nodeIds": [],
-  "osmId": "node/3866977548"
+  "osmId": "node/3693783125",
+  "area": "gibfelbahn"
  },
  {
   "id": "osm:node/3866977657",
@@ -617,7 +226,8 @@
    "5455060549",
    "5455060547"
   ],
-  "osmId": "node/3866977657"
+  "osmId": "node/3866977657",
+  "area": "stubnerkogel"
  },
  {
   "id": "osm:node/4239865040",
@@ -631,7 +241,8 @@
    "5743386005",
    "7328312056"
   ],
-  "osmId": "node/4239865040"
+  "osmId": "node/4239865040",
+  "area": "gibfelbahn"
  },
  {
   "id": "osm:node/4346405485",
@@ -643,48 +254,6 @@
   "nodeIds": [],
   "osmId": "node/4346405485",
   "website": "http://www.kraftwerk-badgastein.com/"
- },
- {
-  "id": "osm:node/4448379507",
-  "name": "Römerhof",
-  "kind": "dinner",
-  "lat": 47.2429195,
-  "lng": 13.1048072,
-  "nodeId": null,
-  "nodeIds": [],
-  "osmId": "node/4448379507"
- },
- {
-  "id": "osm:node/4448379994",
-  "name": "il Peperoncino",
-  "kind": "dinner",
-  "lat": 47.2423962,
-  "lng": 13.1052037,
-  "nodeId": null,
-  "nodeIds": [],
-  "osmId": "node/4448379994"
- },
- {
-  "id": "osm:node/4603327389",
-  "name": "Auszeit",
-  "kind": "dinner",
-  "lat": 47.1695895,
-  "lng": 13.1075667,
-  "nodeId": null,
-  "nodeIds": [],
-  "osmId": "node/4603327389",
-  "website": "https://auszeit-dinnerbar.business.site/"
- },
- {
-  "id": "osm:node/4959952689",
-  "name": "Gusto",
-  "kind": "dinner",
-  "lat": 47.1980373,
-  "lng": 12.9753599,
-  "nodeId": null,
-  "nodeIds": [],
-  "osmId": "node/4959952689",
-  "website": "https://www.restaurant-gusto.at/"
  },
  {
   "id": "osm:node/5199731689",
@@ -700,59 +269,8 @@
    "9721127570",
    "9721127572"
   ],
-  "osmId": "node/5199731689"
- },
- {
-  "id": "osm:node/5236925077",
-  "name": "Weitmoser Schlössl",
-  "kind": "apres",
-  "lat": 47.1625501,
-  "lng": 13.0996202,
-  "nodeId": null,
-  "nodeIds": [],
-  "osmId": "node/5236925077",
-  "website": "http://www.weitmoserschloss.at/"
- },
- {
-  "id": "osm:node/5372179479",
-  "name": "Kristallstüberl",
-  "kind": "dinner",
-  "lat": 47.1519493,
-  "lng": 13.108793,
-  "nodeId": null,
-  "nodeIds": [],
-  "osmId": "node/5372179479"
- },
- {
-  "id": "osm:node/5382551870",
-  "name": "Lackenbauer",
-  "kind": "dinner",
-  "lat": 47.1432574,
-  "lng": 13.0902408,
-  "nodeId": null,
-  "nodeIds": [],
-  "osmId": "node/5382551870"
- },
- {
-  "id": "osm:node/5407692067",
-  "name": "Bichlwirt",
-  "kind": "dinner",
-  "lat": 47.1583883,
-  "lng": 13.1005257,
-  "nodeId": null,
-  "nodeIds": [],
-  "osmId": "node/5407692067"
- },
- {
-  "id": "osm:node/5416341235",
-  "name": "Da Dino",
-  "kind": "dinner",
-  "lat": 47.1713737,
-  "lng": 13.098679,
-  "nodeId": null,
-  "nodeIds": [],
-  "osmId": "node/5416341235",
-  "website": "https://www.dadino-pizzeria.at/"
+  "osmId": "node/5199731689",
+  "area": "stubnerkogel"
  },
  {
   "id": "osm:node/5416341245",
@@ -768,142 +286,8 @@
    "5456924367",
    "9721127882"
   ],
-  "osmId": "node/5416341245"
- },
- {
-  "id": "osm:node/5422159881",
-  "name": "Hausebengut",
-  "kind": "dinner",
-  "lat": 47.1361274,
-  "lng": 13.1200911,
-  "nodeId": null,
-  "nodeIds": [],
-  "osmId": "node/5422159881"
- },
- {
-  "id": "osm:node/5440313784",
-  "name": "Gasthof Haitzing",
-  "kind": "dinner",
-  "lat": 47.1776645,
-  "lng": 13.0924362,
-  "nodeId": null,
-  "nodeIds": [],
-  "osmId": "node/5440313784"
- },
- {
-  "id": "osm:node/5440313785",
-  "name": "Rössl Stüberl",
-  "kind": "dinner",
-  "lat": 47.1790328,
-  "lng": 13.0927071,
-  "nodeId": null,
-  "nodeIds": [],
-  "osmId": "node/5440313785"
- },
- {
-  "id": "osm:node/5459740713",
-  "name": "Hotel Austria",
-  "kind": "dinner",
-  "lat": 47.1718361,
-  "lng": 13.1050611,
-  "nodeId": null,
-  "nodeIds": [],
-  "osmId": "node/5459740713",
-  "website": "http://www.restaurant-austria.com/"
- },
- {
-  "id": "osm:node/5467720109",
-  "name": "Gasthof Walcher",
-  "kind": "dinner",
-  "lat": 47.2192917,
-  "lng": 13.1072058,
-  "nodeId": null,
-  "nodeIds": [],
-  "osmId": "node/5467720109"
- },
- {
-  "id": "osm:node/5524757038",
-  "name": "Aiche",
-  "kind": "dinner",
-  "lat": 47.1717311,
-  "lng": 13.1038956,
-  "nodeId": null,
-  "nodeIds": [],
-  "osmId": "node/5524757038",
-  "website": "https://www.aiche.at/"
- },
- {
-  "id": "osm:node/5524983797",
-  "name": "Café Zeit",
-  "kind": "dinner",
-  "lat": 47.1707852,
-  "lng": 13.1066358,
-  "nodeId": null,
-  "nodeIds": [],
-  "osmId": "node/5524983797",
-  "website": "https://www.gasteinertal.com/cafe-zeit/"
- },
- {
-  "id": "osm:node/5525720939",
-  "name": "Annencafe",
-  "kind": "dinner",
-  "lat": 47.1729295,
-  "lng": 13.1154985,
-  "nodeId": null,
-  "nodeIds": [],
-  "osmId": "node/5525720939"
- },
- {
-  "id": "osm:node/5525778383",
-  "name": "Kraut & Rüben",
-  "kind": "dinner",
-  "lat": 47.1708249,
-  "lng": 13.1078837,
-  "nodeId": null,
-  "nodeIds": [],
-  "osmId": "node/5525778383",
-  "website": "https://kraut-und-rüben.at/"
- },
- {
-  "id": "osm:node/5532637815",
-  "name": "Gasthof Sauzipf",
-  "kind": "dinner",
-  "lat": 47.1667002,
-  "lng": 13.1114691,
-  "nodeId": null,
-  "nodeIds": [],
-  "osmId": "node/5532637815"
- },
- {
-  "id": "osm:node/5538201995",
-  "name": "Wiesenhof",
-  "kind": "dinner",
-  "lat": 47.1550886,
-  "lng": 13.1152081,
-  "nodeId": null,
-  "nodeIds": [],
-  "osmId": "node/5538201995"
- },
- {
-  "id": "osm:node/5538273430",
-  "name": "Landgasthaus Ortenstein",
-  "kind": "dinner",
-  "lat": 47.151424,
-  "lng": 13.1222208,
-  "nodeId": null,
-  "nodeIds": [],
-  "osmId": "node/5538273430"
- },
- {
-  "id": "osm:node/5643719069",
-  "name": "Gamskarkogelhütte",
-  "kind": "dinner",
-  "lat": 47.1610163,
-  "lng": 13.1584159,
-  "nodeId": null,
-  "nodeIds": [],
-  "osmId": "node/5643719069",
-  "website": "http://www.gamskarkogelhuette.at/"
+  "osmId": "node/5416341245",
+  "area": "stubnerkogel"
  },
  {
   "id": "osm:node/5646355406",
@@ -933,17 +317,8 @@
    "4663756119"
   ],
   "osmId": "node/5650462056",
-  "website": "https://www.jungerstube.com/"
- },
- {
-  "id": "osm:node/5654093402",
-  "name": "Cafe Piccolo",
-  "kind": "dinner",
-  "lat": 47.1708992,
-  "lng": 13.1043935,
-  "nodeId": null,
-  "nodeIds": [],
-  "osmId": "node/5654093402"
+  "website": "https://www.jungerstube.com/",
+  "area": "stubnerkogel"
  },
  {
   "id": "osm:node/5739058952",
@@ -963,37 +338,8 @@
    "1168457162"
   ],
   "osmId": "node/5739058952",
-  "website": "https://graukogelalm.at/"
- },
- {
-  "id": "osm:node/5831934232",
-  "name": "Das Eisschützenstüberl",
-  "kind": "dinner",
-  "lat": 47.248038,
-  "lng": 13.1989422,
-  "nodeId": null,
-  "nodeIds": [],
-  "osmId": "node/5831934232"
- },
- {
-  "id": "osm:node/5852093793",
-  "name": "Das Eisschützenstüberl",
-  "kind": "apres",
-  "lat": 47.2480441,
-  "lng": 13.1989146,
-  "nodeId": null,
-  "nodeIds": [],
-  "osmId": "node/5852093793"
- },
- {
-  "id": "osm:node/5852120454",
-  "name": "vis-a-vis",
-  "kind": "apres",
-  "lat": 47.2433542,
-  "lng": 13.1996308,
-  "nodeId": null,
-  "nodeIds": [],
-  "osmId": "node/5852120454"
+  "website": "https://graukogelalm.at/",
+  "area": "graukogel"
  },
  {
   "id": "osm:node/5852120455",
@@ -1011,7 +357,8 @@
    "4463412774",
    "253396469"
   ],
-  "osmId": "node/5852120455"
+  "osmId": "node/5852120455",
+  "area": "gibfelbahn"
  },
  {
   "id": "osm:node/5852120456",
@@ -1029,47 +376,8 @@
    "4463412774",
    "253396469"
   ],
-  "osmId": "node/5852120456"
- },
- {
-  "id": "osm:node/5852120780",
-  "name": "Gruberwirt",
-  "kind": "apres",
-  "lat": 47.1686248,
-  "lng": 13.2498129,
-  "nodeId": null,
-  "nodeIds": [],
-  "osmId": "node/5852120780"
- },
- {
-  "id": "osm:node/5852124822",
-  "name": "Hotel Alte Post",
-  "kind": "apres",
-  "lat": 47.2373977,
-  "lng": 13.2012306,
-  "nodeId": null,
-  "nodeIds": [],
-  "osmId": "node/5852124822"
- },
- {
-  "id": "osm:node/5852126628",
-  "name": "Kaminstadl",
-  "kind": "apres",
-  "lat": 47.1781675,
-  "lng": 13.2301081,
-  "nodeId": null,
-  "nodeIds": [],
-  "osmId": "node/5852126628"
- },
- {
-  "id": "osm:node/6061645389",
-  "name": "Stoani",
-  "kind": "dinner",
-  "lat": 47.2439336,
-  "lng": 13.1028418,
-  "nodeId": null,
-  "nodeIds": [],
-  "osmId": "node/6061645389"
+  "osmId": "node/5852120456",
+  "area": "gibfelbahn"
  },
  {
   "id": "osm:node/6088569747",
@@ -1080,37 +388,6 @@
   "nodeId": null,
   "nodeIds": [],
   "osmId": "node/6088569747"
- },
- {
-  "id": "osm:node/6109603481",
-  "name": "Unterbergerwirt",
-  "kind": "dinner",
-  "lat": 47.2558646,
-  "lng": 13.0851882,
-  "nodeId": null,
-  "nodeIds": [],
-  "osmId": "node/6109603481"
- },
- {
-  "id": "osm:node/6110581254",
-  "name": "Schmankerl Hütt'n",
-  "kind": "dinner",
-  "lat": 47.2419898,
-  "lng": 13.1064152,
-  "nodeId": null,
-  "nodeIds": [],
-  "osmId": "node/6110581254",
-  "website": "https://www.schmankerl-huette.com/"
- },
- {
-  "id": "osm:node/6110706497",
-  "name": "Hauserbauer",
-  "kind": "dinner",
-  "lat": 47.2517247,
-  "lng": 13.1176302,
-  "nodeId": null,
-  "nodeIds": [],
-  "osmId": "node/6110706497"
  },
  {
   "id": "osm:node/6110706499",
@@ -1127,7 +404,8 @@
    "9677421047",
    "248450654"
   ],
-  "osmId": "node/6110706499"
+  "osmId": "node/6110706499",
+  "area": "gibfelbahn"
  },
  {
   "id": "osm:node/6110706513",
@@ -1146,7 +424,8 @@
    "9677421053",
    "9677421054"
   ],
-  "osmId": "node/6110706513"
+  "osmId": "node/6110706513",
+  "area": "gibfelbahn"
  },
  {
   "id": "osm:node/6110706514",
@@ -1165,17 +444,8 @@
    "9677421047",
    "253392139"
   ],
-  "osmId": "node/6110706514"
- },
- {
-  "id": "osm:node/6128663226",
-  "name": "Stubnerhof",
-  "kind": "dinner",
-  "lat": 47.1279877,
-  "lng": 13.1574375,
-  "nodeId": null,
-  "nodeIds": [],
-  "osmId": "node/6128663226"
+  "osmId": "node/6110706514",
+  "area": "gibfelbahn"
  },
  {
   "id": "osm:node/6140833204",
@@ -1198,16 +468,6 @@
   "osmId": "node/6183343502"
  },
  {
-  "id": "osm:node/6184446939",
-  "name": "Gasthof zur Post",
-  "kind": "dinner",
-  "lat": 47.0879682,
-  "lng": 13.1198779,
-  "nodeId": null,
-  "nodeIds": [],
-  "osmId": "node/6184446939"
- },
- {
   "id": "osm:node/6184446942",
   "name": "Lederhosenbar",
   "kind": "apres",
@@ -1227,16 +487,6 @@
   "nodeIds": [],
   "osmId": "node/6185501613",
   "website": "https://www.wigrae.at/"
- },
- {
-  "id": "osm:node/6185821768",
-  "name": "Schafflinger Schialm",
-  "kind": "dinner",
-  "lat": 47.1014022,
-  "lng": 13.1287426,
-  "nodeId": null,
-  "nodeIds": [],
-  "osmId": "node/6185821768"
  },
  {
   "id": "osm:node/6185821773",
@@ -1333,7 +583,8 @@
    "1983453314"
   ],
   "osmId": "node/6186274023",
-  "website": "https://www.facebook.com/theblondebeans/"
+  "website": "https://www.facebook.com/theblondebeans/",
+  "area": "stubnerkogel"
  },
  {
   "id": "osm:node/6191886664",
@@ -1397,16 +648,6 @@
   "osmId": "node/6198895466"
  },
  {
-  "id": "osm:node/6452911947",
-  "name": "Berg-Leben",
-  "kind": "dinner",
-  "lat": 47.2379465,
-  "lng": 13.2009564,
-  "nodeId": null,
-  "nodeIds": [],
-  "osmId": "node/6452911947"
- },
- {
   "id": "osm:node/6475109958",
   "name": "Ginger n' Gin",
   "kind": "dinner",
@@ -1416,16 +657,6 @@
   "nodeIds": [],
   "osmId": "node/6475109958",
   "website": "https://www.europe-gastein.at/de/"
- },
- {
-  "id": "osm:node/6634185026",
-  "name": "Laderdingerhof",
-  "kind": "dinner",
-  "lat": 47.199397,
-  "lng": 13.1049085,
-  "nodeId": null,
-  "nodeIds": [],
-  "osmId": "node/6634185026"
  },
  {
   "id": "osm:node/6731730218",
@@ -1461,125 +692,8 @@
    "10147026972",
    "9721127882"
   ],
-  "osmId": "node/6788797963"
- },
- {
-  "id": "osm:node/7528796675",
-  "name": "Seealm",
-  "kind": "dinner",
-  "lat": 47.0940275,
-  "lng": 13.0151458,
-  "nodeId": null,
-  "nodeIds": [],
-  "osmId": "node/7528796675"
- },
- {
-  "id": "osm:node/7727209685",
-  "name": "Bergamo‘s Café & Bistro",
-  "kind": "dinner",
-  "lat": 47.1003272,
-  "lng": 13.1267559,
-  "nodeId": null,
-  "nodeIds": [],
-  "osmId": "node/7727209685"
- },
- {
-  "id": "osm:node/7727955226",
-  "name": "Steinbockalm",
-  "kind": "dinner",
-  "lat": 47.1656448,
-  "lng": 12.9586815,
-  "nodeId": null,
-  "nodeIds": [],
-  "osmId": "node/7727955226"
- },
- {
-  "id": "osm:node/7727955232",
-  "name": "Steinalm",
-  "kind": "dinner",
-  "lat": 47.160011,
-  "lng": 12.9642479,
-  "nodeId": null,
-  "nodeIds": [],
-  "osmId": "node/7727955232"
- },
- {
-  "id": "osm:node/7727968137",
-  "name": "Feldereralm",
-  "kind": "dinner",
-  "lat": 47.1489772,
-  "lng": 12.9547532,
-  "nodeId": null,
-  "nodeIds": [],
-  "osmId": "node/7727968137"
- },
- {
-  "id": "osm:node/7729132992",
-  "name": "Penninghofalm",
-  "kind": "dinner",
-  "lat": 47.2418037,
-  "lng": 12.9708148,
-  "nodeId": null,
-  "nodeIds": [],
-  "osmId": "node/7729132992"
- },
- {
-  "id": "osm:node/7731531071",
-  "name": "Waldalm",
-  "kind": "restaurant",
-  "lat": 47.2281492,
-  "lng": 12.9615646,
-  "nodeId": "4005948199",
-  "nodeIds": [
-   "4005948199",
-   "4005948109",
-   "4005948112",
-   "4005948111",
-   "4005948198"
-  ],
-  "osmId": "node/7731531071",
-  "website": "https://www.waldalm.at/"
- },
- {
-  "id": "osm:node/7817403708",
-  "name": "Summererpark",
-  "kind": "dinner",
-  "lat": 47.2262356,
-  "lng": 12.9897419,
-  "nodeId": null,
-  "nodeIds": [],
-  "osmId": "node/7817403708"
- },
- {
-  "id": "osm:node/9180657461",
-  "name": "Berg-Leben (Außenbereich)",
-  "kind": "dinner",
-  "lat": 47.2378688,
-  "lng": 13.2007603,
-  "nodeId": null,
-  "nodeIds": [],
-  "osmId": "node/9180657461"
- },
- {
-  "id": "osm:node/9180665193",
-  "name": "Schatzerei",
-  "kind": "dinner",
-  "lat": 47.2443555,
-  "lng": 13.1967677,
-  "nodeId": null,
-  "nodeIds": [],
-  "osmId": "node/9180665193",
-  "website": "https://www.tauernhof.com/de/"
- },
- {
-  "id": "osm:node/9180671478",
-  "name": "Bergzeit",
-  "kind": "dinner",
-  "lat": 47.2449192,
-  "lng": 13.1976031,
-  "nodeId": null,
-  "nodeIds": [],
-  "osmId": "node/9180671478"
+  "osmId": "node/6788797963",
+  "area": "stubnerkogel"
  },
  {
   "id": "osm:node/9534809417",
@@ -1593,18 +707,8 @@
    "9721127876",
    "10147026990"
   ],
-  "osmId": "node/9534809417"
- },
- {
-  "id": "osm:node/9547395264",
-  "name": "Da Mille 21",
-  "kind": "dinner",
-  "lat": 47.1687656,
-  "lng": 13.1103758,
-  "nodeId": null,
-  "nodeIds": [],
-  "osmId": "node/9547395264",
-  "website": "https://www.alpenparks.at/de/residence-apartment-bad-hofgastein/ferienapartments/kulinarik/"
+  "osmId": "node/9534809417",
+  "area": "stubnerkogel"
  },
  {
   "id": "osm:node/9705895146",
@@ -1619,143 +723,8 @@
    "1562617098"
   ],
   "osmId": "node/9705895146",
-  "website": "https://www.gasteinertal.com/jungeralm/"
- },
- {
-  "id": "osm:node/9995673031",
-  "name": "Gasteiner Kebap",
-  "kind": "dinner",
-  "lat": 47.1709754,
-  "lng": 13.1061647,
-  "nodeId": null,
-  "nodeIds": [],
-  "osmId": "node/9995673031"
- },
- {
-  "id": "osm:node/9997840162",
-  "name": "Zum Goldenen Adler",
-  "kind": "dinner",
-  "lat": 47.171565,
-  "lng": 13.106155,
-  "nodeId": null,
-  "nodeIds": [],
-  "osmId": "node/9997840162",
-  "website": "https://thermenhotels-gastein.com/de/2/wirtshaus-goldener-adler-gastein",
-  "menuUrl": "https://thermenhotels-gastein.com/de/download/67"
- },
- {
-  "id": "osm:node/10086745842",
-  "name": "Stanzalm",
-  "kind": "dinner",
-  "lat": 47.1334039,
-  "lng": 13.0076598,
-  "nodeId": null,
-  "nodeIds": [],
-  "osmId": "node/10086745842"
- },
- {
-  "id": "osm:node/10142266373",
-  "name": "Das Albert",
-  "kind": "restaurant",
-  "lat": 47.2233815,
-  "lng": 12.9909196,
-  "nodeId": "488156908",
-  "nodeIds": [
-   "488156908",
-   "9680925567",
-   "2734597967",
-   "9680925563",
-   "2734597966",
-   "2734597968",
-   "7125935930",
-   "2734597965"
-  ],
-  "osmId": "node/10142266373",
-  "website": "https://www.das-albert.at/"
- },
- {
-  "id": "osm:node/10170868605",
-  "name": "unGXUND",
-  "kind": "dinner",
-  "lat": 47.170631,
-  "lng": 13.1038389,
-  "nodeId": null,
-  "nodeIds": [],
-  "osmId": "node/10170868605",
-  "website": "https://www.ungxund.at/"
- },
- {
-  "id": "osm:node/10601729431",
-  "name": "Gasthof Neuwirt",
-  "kind": "dinner",
-  "lat": 47.229527,
-  "lng": 12.9948289,
-  "nodeId": null,
-  "nodeIds": [],
-  "osmId": "node/10601729431",
-  "website": "https://www.gasthof-raurisertal.com/"
- },
- {
-  "id": "osm:node/10726120068",
-  "name": "La Piccola Italia",
-  "kind": "dinner",
-  "lat": 47.169682,
-  "lng": 13.1081,
-  "nodeId": null,
-  "nodeIds": [],
-  "osmId": "node/10726120068"
- },
- {
-  "id": "osm:node/10726120074",
-  "name": "Treffpunkt 5630",
-  "kind": "apres",
-  "lat": 47.1713306,
-  "lng": 13.1065485,
-  "nodeId": null,
-  "nodeIds": [],
-  "osmId": "node/10726120074"
- },
- {
-  "id": "osm:node/10727766887",
-  "name": "Varoli",
-  "kind": "dinner",
-  "lat": 47.1725327,
-  "lng": 13.1045758,
-  "nodeId": null,
-  "nodeIds": [],
-  "osmId": "node/10727766887"
- },
- {
-  "id": "osm:node/10727766889",
-  "name": "Krickerl",
-  "kind": "dinner",
-  "lat": 47.1724481,
-  "lng": 13.104624,
-  "nodeId": null,
-  "nodeIds": [],
-  "osmId": "node/10727766889"
- },
- {
-  "id": "osm:node/10727766890",
-  "name": "Alwadi Restaurant",
-  "kind": "dinner",
-  "lat": 47.172106,
-  "lng": 13.105176,
-  "nodeId": null,
-  "nodeIds": [],
-  "osmId": "node/10727766890",
-  "website": "https://www.restaurant-sirtaki.at/"
- },
- {
-  "id": "osm:node/11133358272",
-  "name": "The Irish Coffee",
-  "kind": "dinner",
-  "lat": 47.0867014,
-  "lng": 13.11964,
-  "nodeId": null,
-  "nodeIds": [],
-  "osmId": "node/11133358272",
-  "website": "https://www.irishcoffee.at/"
+  "website": "https://www.gasteinertal.com/jungeralm/",
+  "area": "stubnerkogel"
  },
  {
   "id": "osm:node/11232452209",
@@ -1781,7 +750,8 @@
    "9861894448",
    "1893382034"
   ],
-  "osmId": "node/11247683687"
+  "osmId": "node/11247683687",
+  "area": "gibfelbahn"
  },
  {
   "id": "osm:node/11335557718",
@@ -1794,59 +764,8 @@
    "1983453314"
   ],
   "osmId": "node/11335557718",
-  "website": "https://www.restaurant-silberkrug.at/"
- },
- {
-  "id": "osm:node/11407437669",
-  "name": "Luke's Wohnzimmer",
-  "kind": "dinner",
-  "lat": 47.1679375,
-  "lng": 13.1104055,
-  "nodeId": null,
-  "nodeIds": [],
-  "osmId": "node/11407437669"
- },
- {
-  "id": "osm:node/11407448470",
-  "name": "Dorfstubn",
-  "kind": "dinner",
-  "lat": 47.1719875,
-  "lng": 13.1049609,
-  "nodeId": null,
-  "nodeIds": [],
-  "osmId": "node/11407448470"
- },
- {
-  "id": "osm:node/11407474569",
-  "name": "Blü",
-  "kind": "dinner",
-  "lat": 47.1718752,
-  "lng": 13.1057691,
-  "nodeId": null,
-  "nodeIds": [],
-  "osmId": "node/11407474569",
-  "website": "https://www.hotelblue.at/restaurant/bad-hofgastein-gastein.html"
- },
- {
-  "id": "osm:node/11443126317",
-  "name": "Gasthof Rohrerwirt",
-  "kind": "dinner",
-  "lat": 47.2370583,
-  "lng": 13.2010442,
-  "nodeId": null,
-  "nodeIds": [],
-  "osmId": "node/11443126317"
- },
- {
-  "id": "osm:node/11708775624",
-  "name": "Dorfstub'n",
-  "kind": "dinner",
-  "lat": 47.2415544,
-  "lng": 13.1065351,
-  "nodeId": null,
-  "nodeIds": [],
-  "osmId": "node/11708775624",
-  "website": "https://www.gastein.com/service/gastein-von-a-z/detail/infrastruktur/dorfstubn-dorfgastein-dorfgastein/"
+  "website": "https://www.restaurant-silberkrug.at/",
+  "area": "stubnerkogel"
  },
  {
   "id": "osm:node/11992874493",
@@ -1869,27 +788,6 @@
   "osmId": "node/12031693860"
  },
  {
-  "id": "osm:node/12039353428",
-  "name": "unique",
-  "kind": "dinner",
-  "lat": 47.1715826,
-  "lng": 13.1055762,
-  "nodeId": null,
-  "nodeIds": [],
-  "osmId": "node/12039353428"
- },
- {
-  "id": "osm:node/12128351817",
-  "name": "Strandbar & -imbiss Bad Gasteiner Badesee",
-  "kind": "dinner",
-  "lat": 47.1439212,
-  "lng": 13.1233202,
-  "nodeId": null,
-  "nodeIds": [],
-  "osmId": "node/12128351817",
-  "website": "https://www.gasteiner-badesee.at/"
- },
- {
   "id": "osm:node/12144378199",
   "name": "Wengeralm",
   "kind": "restaurant",
@@ -1905,17 +803,8 @@
    "9677420966",
    "9677420988"
   ],
-  "osmId": "node/12144378199"
- },
- {
-  "id": "osm:node/12554657688",
-  "name": "Ignaz",
-  "kind": "apres",
-  "lat": 47.2242512,
-  "lng": 12.995242,
-  "nodeId": null,
-  "nodeIds": [],
-  "osmId": "node/12554657688"
+  "osmId": "node/12144378199",
+  "area": "gibfelbahn"
  },
  {
   "id": "osm:node/12925327349",
@@ -1927,7 +816,8 @@
   "nodeIds": [
    "9721456582"
   ],
-  "osmId": "node/12925327349"
+  "osmId": "node/12925327349",
+  "area": "stubnerkogel"
  },
  {
   "id": "osm:node/13011517703",
@@ -1957,26 +847,8 @@
    "253396478"
   ],
   "osmId": "node/13674656986",
-  "website": "https://www.infernogrossarl.com/de"
- },
- {
-  "id": "osm:node/13914732702",
-  "name": "Après-Ski Schirm",
-  "kind": "apres",
-  "lat": 47.2235316,
-  "lng": 12.9907125,
-  "nodeId": "488156908",
-  "nodeIds": [
-   "488156908",
-   "2734597967",
-   "9680925563",
-   "9680925567",
-   "7125935930",
-   "2734597968",
-   "2734597966",
-   "7125935929"
-  ],
-  "osmId": "node/13914732702"
+  "website": "https://www.infernogrossarl.com/de",
+  "area": "gibfelbahn"
  },
  {
   "id": "osm:way/30514349",
@@ -1989,7 +861,8 @@
    "4997981865"
   ],
   "osmId": "way/30514349",
-  "website": "https://www.gasteinalm.at/"
+  "website": "https://www.gasteinalm.at/",
+  "area": "stubnerkogel"
  },
  {
   "id": "osm:way/34609773",
@@ -2008,7 +881,8 @@
    "14226661703",
    "4411337690"
   ],
-  "osmId": "way/34609773"
+  "osmId": "way/34609773",
+  "area": "graukogel"
  },
  {
   "id": "osm:way/35336186",
@@ -2025,37 +899,8 @@
    "1566977239",
    "1107617704"
   ],
-  "osmId": "way/35336186"
- },
- {
-  "id": "osm:way/81366091",
-  "name": "Planitzenhütte",
-  "kind": "dinner",
-  "lat": 47.1727212,
-  "lng": 13.1468309,
-  "nodeId": null,
-  "nodeIds": [],
-  "osmId": "way/81366091"
- },
- {
-  "id": "osm:way/81366118",
-  "name": "Grubhofhütte",
-  "kind": "dinner",
-  "lat": 47.1724303,
-  "lng": 13.1473696,
-  "nodeId": null,
-  "nodeIds": [],
-  "osmId": "way/81366118"
- },
- {
-  "id": "osm:way/81366290",
-  "name": "Grußberghütte",
-  "kind": "dinner",
-  "lat": 47.1724442,
-  "lng": 13.1467407,
-  "nodeId": null,
-  "nodeIds": [],
-  "osmId": "way/81366290"
+  "osmId": "way/35336186",
+  "area": "goldbergbahn"
  },
  {
   "id": "osm:way/82169182",
@@ -2073,7 +918,8 @@
    "9721100556"
   ],
   "osmId": "way/82169182",
-  "website": "https://www.hamburger-skihuette.at/"
+  "website": "https://www.hamburger-skihuette.at/",
+  "area": "stubnerkogel"
  },
  {
   "id": "osm:way/82169191",
@@ -2089,7 +935,8 @@
    "9721127603"
   ],
   "osmId": "way/82169191",
-  "website": "http://www.weitmoserschloss.at/de/schlossalm.html"
+  "website": "http://www.weitmoserschloss.at/de/schlossalm.html",
+  "area": "stubnerkogel"
  },
  {
   "id": "osm:way/82169298",
@@ -2101,7 +948,8 @@
   "nodeIds": [
    "9721456421"
   ],
-  "osmId": "way/82169298"
+  "osmId": "way/82169298",
+  "area": "stubnerkogel"
  },
  {
   "id": "osm:way/82169370",
@@ -2119,7 +967,8 @@
    "9721127848"
   ],
   "osmId": "way/82169370",
-  "website": "https://aeroplan.at/"
+  "website": "https://aeroplan.at/",
+  "area": "stubnerkogel"
  },
  {
   "id": "osm:way/82169419",
@@ -2133,7 +982,8 @@
    "9721456444"
   ],
   "osmId": "way/82169419",
-  "website": "https://www.baersteinalm.at/"
+  "website": "https://www.baersteinalm.at/",
+  "area": "stubnerkogel"
  },
  {
   "id": "osm:way/83080023",
@@ -2150,49 +1000,8 @@
    "9721127695"
   ],
   "osmId": "way/83080023",
-  "website": "https://www.angerblick.at/"
- },
- {
-  "id": "osm:way/83896174",
-  "name": "Viehhauseralm",
-  "kind": "dinner",
-  "lat": 47.0605517,
-  "lng": 13.0481059,
-  "nodeId": null,
-  "nodeIds": [],
-  "osmId": "way/83896174"
- },
- {
-  "id": "osm:way/83896183",
-  "name": "Bockhartseehütte",
-  "kind": "dinner",
-  "lat": 47.0696246,
-  "lng": 13.0584629,
-  "nodeId": null,
-  "nodeIds": [],
-  "osmId": "way/83896183"
- },
- {
-  "id": "osm:way/83896191",
-  "name": "Niedersachsenhaus",
-  "kind": "dinner",
-  "lat": 47.060508,
-  "lng": 13.0101624,
-  "nodeId": null,
-  "nodeIds": [],
-  "osmId": "way/83896191",
-  "website": "https://www.niedersachsenhaus.at/"
- },
- {
-  "id": "osm:way/85718959",
-  "name": "Zittelhaus",
-  "kind": "dinner",
-  "lat": 47.0540434,
-  "lng": 12.9573612,
-  "nodeId": null,
-  "nodeIds": [],
-  "osmId": "way/85718959",
-  "website": "https://www.zittelhaus.at"
+  "website": "https://www.angerblick.at/",
+  "area": "stubnerkogel"
  },
  {
   "id": "osm:way/88124316",
@@ -2210,98 +1019,8 @@
    "1566977233",
    "1879655841"
   ],
-  "osmId": "way/88124316"
- },
- {
-  "id": "osm:way/88844742",
-  "name": "Böckfeldalm",
-  "kind": "dinner",
-  "lat": 47.0911174,
-  "lng": 13.1054382,
-  "nodeId": null,
-  "nodeIds": [],
-  "osmId": "way/88844742"
- },
- {
-  "id": "osm:way/89000931",
-  "name": "Restaurant Eissee",
-  "kind": "restaurant",
-  "lat": 47.0312731,
-  "lng": 13.0106933,
-  "nodeId": "11042446851",
-  "nodeIds": [
-   "11042446851",
-   "322571741",
-   "1032842308",
-   "4564235424",
-   "4564235425",
-   "322571739",
-   "2199250741",
-   "4564235472"
-  ],
-  "osmId": "way/89000931"
- },
- {
-  "id": "osm:way/96945733",
-  "name": "Hubalm",
-  "kind": "dinner",
-  "lat": 47.1460134,
-  "lng": 13.242453,
-  "nodeId": null,
-  "nodeIds": [],
-  "osmId": "way/96945733"
- },
- {
-  "id": "osm:way/96945743",
-  "name": "Vorderkaseralm",
-  "kind": "dinner",
-  "lat": 47.1491968,
-  "lng": 13.2297528,
-  "nodeId": null,
-  "nodeIds": [],
-  "osmId": "way/96945743",
-  "website": "https://www.grossarltal.info/de/almen/vorderkaseralm.html"
- },
- {
-  "id": "osm:way/97011839",
-  "name": "Moaralm",
-  "kind": "dinner",
-  "lat": 47.048057,
-  "lng": 13.062035,
-  "nodeId": null,
-  "nodeIds": [],
-  "osmId": "way/97011839"
- },
- {
-  "id": "osm:way/97011843",
-  "name": "Naßfeldalm",
-  "kind": "dinner",
-  "lat": 47.0519602,
-  "lng": 13.0577,
-  "nodeId": null,
-  "nodeIds": [],
-  "osmId": "way/97011843",
-  "website": "https://www.nassfeldalm.com/"
- },
- {
-  "id": "osm:way/97796200",
-  "name": "Saukaralm",
-  "kind": "dinner",
-  "lat": 47.256965,
-  "lng": 13.2284163,
-  "nodeId": null,
-  "nodeIds": [],
-  "osmId": "way/97796200"
- },
- {
-  "id": "osm:way/98181068",
-  "name": "Rockfeldalm",
-  "kind": "dinner",
-  "lat": 47.1390773,
-  "lng": 13.0436886,
-  "nodeId": null,
-  "nodeIds": [],
-  "osmId": "way/98181068"
+  "osmId": "way/88124316",
+  "area": "goldbergbahn"
  },
  {
   "id": "osm:way/98497719",
@@ -2320,17 +1039,8 @@
    "253395923",
    "253395924"
   ],
-  "osmId": "way/98497719"
- },
- {
-  "id": "osm:way/101352796",
-  "name": "Alpengasthof Prossau",
-  "kind": "dinner",
-  "lat": 47.1043021,
-  "lng": 13.2142355,
-  "nodeId": null,
-  "nodeIds": [],
-  "osmId": "way/101352796"
+  "osmId": "way/98497719",
+  "area": "gibfelbahn"
  },
  {
   "id": "osm:way/101525391",
@@ -2344,7 +1054,8 @@
    "9721456678"
   ],
   "osmId": "way/101525391",
-  "website": "https://www.angertal.at/de/hirschenhuette/"
+  "website": "https://www.angertal.at/de/hirschenhuette/",
+  "area": "stubnerkogel"
  },
  {
   "id": "osm:way/101525468",
@@ -2359,7 +1070,8 @@
    "9721456679"
   ],
   "osmId": "way/101525468",
-  "website": "https://www.angertal.at/de/waldgasthof/index.htm"
+  "website": "https://www.angertal.at/de/waldgasthof/index.htm",
+  "area": "stubnerkogel"
  },
  {
   "id": "osm:way/101525471",
@@ -2376,183 +1088,8 @@
    "9721127695"
   ],
   "osmId": "way/101525471",
-  "website": "https://herzwies.at/felding-stubn/"
- },
- {
-  "id": "osm:way/102142343",
-  "name": "Schattbachalm",
-  "kind": "dinner",
-  "lat": 47.1073081,
-  "lng": 13.0718109,
-  "nodeId": null,
-  "nodeIds": [],
-  "osmId": "way/102142343"
- },
- {
-  "id": "osm:way/102437231",
-  "name": "Poserhöhe",
-  "kind": "dinner",
-  "lat": 47.1344143,
-  "lng": 13.1541221,
-  "nodeId": null,
-  "nodeIds": [],
-  "osmId": "way/102437231",
-  "website": "https://www.poserhoehe.at/"
- },
- {
-  "id": "osm:way/102662637",
-  "name": "Gasthof Gamskar",
-  "kind": "dinner",
-  "lat": 47.1343722,
-  "lng": 13.1434291,
-  "nodeId": null,
-  "nodeIds": [],
-  "osmId": "way/102662637",
-  "website": "https://www.fuchsundgal.at/"
- },
- {
-  "id": "osm:way/118913935",
-  "name": "Hüttenwirt",
-  "kind": "dinner",
-  "lat": 47.1757856,
-  "lng": 13.2313436,
-  "nodeId": null,
-  "nodeIds": [],
-  "osmId": "way/118913935"
- },
- {
-  "id": "osm:way/118914045",
-  "name": "Reitalm",
-  "kind": "dinner",
-  "lat": 47.1474975,
-  "lng": 13.2083323,
-  "nodeId": null,
-  "nodeIds": [],
-  "osmId": "way/118914045"
- },
- {
-  "id": "osm:way/118914100",
-  "name": "Hotel Almrösl",
-  "kind": "dinner",
-  "lat": 47.1762983,
-  "lng": 13.230793,
-  "nodeId": null,
-  "nodeIds": [],
-  "osmId": "way/118914100",
-  "website": "https://www.almroesl.at/"
- },
- {
-  "id": "osm:way/118923379",
-  "name": "Gruberwirt",
-  "kind": "dinner",
-  "lat": 47.1686115,
-  "lng": 13.2498087,
-  "nodeId": null,
-  "nodeIds": [],
-  "osmId": "way/118923379"
- },
- {
-  "id": "osm:way/121120110",
-  "name": "Heinreich-Hochalm",
-  "kind": "dinner",
-  "lat": 47.2448867,
-  "lng": 13.0570611,
-  "nodeId": null,
-  "nodeIds": [],
-  "osmId": "way/121120110"
- },
- {
-  "id": "osm:way/121122717",
-  "name": "Strohlehenalm",
-  "kind": "dinner",
-  "lat": 47.2459405,
-  "lng": 13.0870863,
-  "nodeId": null,
-  "nodeIds": [],
-  "osmId": "way/121122717"
- },
- {
-  "id": "osm:way/125738586",
-  "name": "Biberalm",
-  "kind": "dinner",
-  "lat": 47.1910596,
-  "lng": 13.0662645,
-  "nodeId": null,
-  "nodeIds": [],
-  "osmId": "way/125738586"
- },
- {
-  "id": "osm:way/126213398",
-  "name": "Naturfreundehaus Kolm-Saigurn",
-  "kind": "dinner",
-  "lat": 47.067776,
-  "lng": 12.9839993,
-  "nodeId": null,
-  "nodeIds": [],
-  "osmId": "way/126213398",
-  "website": "https://www.sonnblickbasis.at"
- },
- {
-  "id": "osm:way/126213423",
-  "name": "Ammererhof",
-  "kind": "dinner",
-  "lat": 47.0692061,
-  "lng": 12.985479,
-  "nodeId": null,
-  "nodeIds": [],
-  "osmId": "way/126213423",
-  "website": "https://www.ammererhof.at/"
- },
- {
-  "id": "osm:way/126233467",
-  "name": "Naturfreundehaus Neubau",
-  "kind": "dinner",
-  "lat": 47.056159,
-  "lng": 12.9877539,
-  "nodeId": null,
-  "nodeIds": [],
-  "osmId": "way/126233467",
-  "website": "https://www.schutzhaus-neubau.at/"
- },
- {
-  "id": "osm:way/126233479",
-  "name": "Durchgangalm",
-  "kind": "dinner",
-  "lat": 47.0747925,
-  "lng": 12.9980609,
-  "nodeId": null,
-  "nodeIds": [],
-  "osmId": "way/126233479"
- },
- {
-  "id": "osm:way/131399496",
-  "name": "Wiedner Wirt",
-  "kind": "dinner",
-  "lat": 47.1850532,
-  "lng": 13.0915352,
-  "nodeId": null,
-  "nodeIds": [],
-  "osmId": "way/131399496"
- },
- {
-  "id": "osm:way/131671264",
-  "name": "Neudegg Heimalm",
-  "kind": "dinner",
-  "lat": 47.1735262,
-  "lng": 13.065188,
-  "nodeId": null,
-  "nodeIds": [],
-  "osmId": "way/131671264"
- },
- {
-  "id": "osm:way/131671275",
-  "name": "Fundner Heimalm",
-  "kind": "dinner",
-  "lat": 47.1750525,
-  "lng": 13.0695778,
-  "nodeId": null,
-  "nodeIds": [],
-  "osmId": "way/131671275"
+  "website": "https://herzwies.at/felding-stubn/",
+  "area": "stubnerkogel"
  },
  {
   "id": "osm:way/132522841",
@@ -2564,88 +1101,8 @@
   "nodeIds": [
    "9721127832"
   ],
-  "osmId": "way/132522841"
- },
- {
-  "id": "osm:way/132522866",
-  "name": "Brandner Hochalm",
-  "kind": "dinner",
-  "lat": 47.168796,
-  "lng": 13.0494207,
-  "nodeId": null,
-  "nodeIds": [],
-  "osmId": "way/132522866"
- },
- {
-  "id": "osm:way/132691093",
-  "name": "Valeriehaus",
-  "kind": "dinner",
-  "lat": 47.0610717,
-  "lng": 13.0563133,
-  "nodeId": null,
-  "nodeIds": [],
-  "osmId": "way/132691093"
- },
- {
-  "id": "osm:way/132691095",
-  "name": "Pottingeralm",
-  "kind": "dinner",
-  "lat": 47.0548354,
-  "lng": 13.0523865,
-  "nodeId": null,
-  "nodeIds": [],
-  "osmId": "way/132691095"
- },
- {
-  "id": "osm:way/132691098",
-  "name": "Moisesalm",
-  "kind": "dinner",
-  "lat": 47.0554561,
-  "lng": 13.0526104,
-  "nodeId": null,
-  "nodeIds": [],
-  "osmId": "way/132691098"
- },
- {
-  "id": "osm:way/132691102",
-  "name": "Schareckalm",
-  "kind": "dinner",
-  "lat": 47.0576356,
-  "lng": 13.0552813,
-  "nodeId": null,
-  "nodeIds": [],
-  "osmId": "way/132691102"
- },
- {
-  "id": "osm:way/132691318",
-  "name": "Veitbaueralm",
-  "kind": "dinner",
-  "lat": 47.0397698,
-  "lng": 13.0654682,
-  "nodeId": null,
-  "nodeIds": [],
-  "osmId": "way/132691318"
- },
- {
-  "id": "osm:way/133485830",
-  "name": "Gerstreitalm",
-  "kind": "dinner",
-  "lat": 47.2459856,
-  "lng": 13.2261132,
-  "nodeId": null,
-  "nodeIds": [],
-  "osmId": "way/133485830"
- },
- {
-  "id": "osm:way/136579793",
-  "name": "Landgasthof Bertahof",
-  "kind": "dinner",
-  "lat": 47.1428366,
-  "lng": 13.1210701,
-  "nodeId": null,
-  "nodeIds": [],
-  "osmId": "way/136579793",
-  "website": "https://www.bertahof.at/"
+  "osmId": "way/132522841",
+  "area": "stubnerkogel"
  },
  {
   "id": "osm:way/142967094",
@@ -2664,18 +1121,8 @@
    "1684004740",
    "11587641692"
   ],
-  "osmId": "way/142967094"
- },
- {
-  "id": "osm:way/143468610",
-  "name": "Himmelwandhütte",
-  "kind": "dinner",
-  "lat": 47.1238954,
-  "lng": 13.1755261,
-  "nodeId": null,
-  "nodeIds": [],
-  "osmId": "way/143468610",
-  "website": "https://www.gasteinertal.com/himmelwandhuette/"
+  "osmId": "way/142967094",
+  "area": "stubnerkogel"
  },
  {
   "id": "osm:way/143828134",
@@ -2690,79 +1137,8 @@
    "4591821600"
   ],
   "osmId": "way/143828134",
-  "website": "http://www.bellevue-alm.com/"
- },
- {
-  "id": "osm:way/144893290",
-  "name": "Bichlalm",
-  "kind": "dinner",
-  "lat": 47.2120381,
-  "lng": 13.2247608,
-  "nodeId": null,
-  "nodeIds": [],
-  "osmId": "way/144893290",
-  "website": "https://www.grossarltal.info/de/almen/bichlalm.html"
- },
- {
-  "id": "osm:way/151856364",
-  "name": "Andrelwirt",
-  "kind": "dinner",
-  "lat": 47.1969713,
-  "lng": 12.9752032,
-  "nodeId": null,
-  "nodeIds": [],
-  "osmId": "way/151856364",
-  "website": "https://www.hotel-rauris.com/"
- },
- {
-  "id": "osm:way/158100094",
-  "name": "Thaler-Mahder Hütte",
-  "kind": "dinner",
-  "lat": 47.1355878,
-  "lng": 13.0450543,
-  "nodeId": null,
-  "nodeIds": [],
-  "osmId": "way/158100094"
- },
- {
-  "id": "osm:way/158181739",
-  "name": "Riedlalm",
-  "kind": "dinner",
-  "lat": 47.2011818,
-  "lng": 13.0798938,
-  "nodeId": null,
-  "nodeIds": [],
-  "osmId": "way/158181739"
- },
- {
-  "id": "osm:way/162091211",
-  "name": "Gasthof Maislau",
-  "kind": "restaurant",
-  "lat": 47.2235345,
-  "lng": 12.9930041,
-  "nodeId": "2734597965",
-  "nodeIds": [
-   "2734597965",
-   "2734597966",
-   "7125935931",
-   "9680925567",
-   "2734597963",
-   "488156908",
-   "2519557352"
-  ],
-  "osmId": "way/162091211",
-  "website": "https://www.maislau.com/gasthof/"
- },
- {
-  "id": "osm:way/165758926",
-  "name": "Rojacher Hütte",
-  "kind": "dinner",
-  "lat": 47.0481699,
-  "lng": 12.9689015,
-  "nodeId": null,
-  "nodeIds": [],
-  "osmId": "way/165758926",
-  "website": "https://www.alpenverein.at/rojacherhuette/"
+  "website": "http://www.bellevue-alm.com/",
+  "area": "stubnerkogel"
  },
  {
   "id": "osm:way/170929640",
@@ -2776,28 +1152,8 @@
    "401891972"
   ],
   "osmId": "way/170929640",
-  "website": "http://www.hotelschillerhof.com"
- },
- {
-  "id": "osm:way/171801624",
-  "name": "Lechnerhäusl",
-  "kind": "dinner",
-  "lat": 47.1251857,
-  "lng": 12.9778974,
-  "nodeId": null,
-  "nodeIds": [],
-  "osmId": "way/171801624",
-  "website": "https://lechner-haeusl.stadtausstellung.at/"
- },
- {
-  "id": "osm:way/177387830",
-  "name": "Feldinghütte",
-  "kind": "dinner",
-  "lat": 47.1280798,
-  "lng": 13.0444151,
-  "nodeId": null,
-  "nodeIds": [],
-  "osmId": "way/177387830"
+  "website": "http://www.hotelschillerhof.com",
+  "area": "graukogel"
  },
  {
   "id": "osm:way/178987912",
@@ -2816,7 +1172,8 @@
    "863257480",
    "863257212"
   ],
-  "osmId": "way/178987912"
+  "osmId": "way/178987912",
+  "area": "gibfelbahn"
  },
  {
   "id": "osm:way/178987914",
@@ -2835,7 +1192,8 @@
    "365179446",
    "365179445"
   ],
-  "osmId": "way/178987914"
+  "osmId": "way/178987914",
+  "area": "gibfelbahn"
  },
  {
   "id": "osm:way/178987941",
@@ -2854,7 +1212,8 @@
    "1893298285",
    "863257356"
   ],
-  "osmId": "way/178987941"
+  "osmId": "way/178987941",
+  "area": "gibfelbahn"
  },
  {
   "id": "osm:way/178987946",
@@ -2873,7 +1232,8 @@
    "253395040",
    "253395041"
   ],
-  "osmId": "way/178987946"
+  "osmId": "way/178987946",
+  "area": "gibfelbahn"
  },
  {
   "id": "osm:way/178996826",
@@ -2890,7 +1250,8 @@
    "1893380084",
    "9680884007"
   ],
-  "osmId": "way/178996826"
+  "osmId": "way/178996826",
+  "area": "gibfelbahn"
  },
  {
   "id": "osm:way/179396282",
@@ -2902,17 +1263,8 @@
   "nodeIds": [
    "253394015"
   ],
-  "osmId": "way/179396282"
- },
- {
-  "id": "osm:way/180186763",
-  "name": "Sportstüberl",
-  "kind": "apres",
-  "lat": 47.2301545,
-  "lng": 12.9918015,
-  "nodeId": null,
-  "nodeIds": [],
-  "osmId": "way/180186763"
+  "osmId": "way/179396282",
+  "area": "gibfelbahn"
  },
  {
   "id": "osm:way/194848502",
@@ -2932,7 +1284,8 @@
    "6210950997"
   ],
   "osmId": "way/194848502",
-  "website": "http://www.rossalm.cc/"
+  "website": "http://www.rossalm.cc/",
+  "area": "stubnerkogel"
  },
  {
   "id": "osm:way/195158700",
@@ -2946,65 +1299,8 @@
    "9721456629",
    "4591821600"
   ],
-  "osmId": "way/195158700"
- },
- {
-  "id": "osm:way/196838273",
-  "name": "Alpengasthof Hochalmblick",
-  "kind": "restaurant",
-  "lat": 47.0279613,
-  "lng": 13.1948154,
-  "nodeId": "1175971440",
-  "nodeIds": [
-   "1175971440",
-   "1175971449",
-   "1175971438",
-   "1175971377",
-   "372783459",
-   "1175971465",
-   "11272668248"
-  ],
-  "osmId": "way/196838273"
- },
- {
-  "id": "osm:way/198650097",
-  "name": "Schwussnerhütte",
-  "kind": "dinner",
-  "lat": 47.0236327,
-  "lng": 13.2317822,
-  "nodeId": null,
-  "nodeIds": [],
-  "osmId": "way/198650097"
- },
- {
-  "id": "osm:way/207434936",
-  "name": "Kehrerhütte",
-  "kind": "dinner",
-  "lat": 47.1921205,
-  "lng": 13.1259598,
-  "nodeId": null,
-  "nodeIds": [],
-  "osmId": "way/207434936"
- },
- {
-  "id": "osm:way/207446742",
-  "name": "Schockalm",
-  "kind": "dinner",
-  "lat": 47.2099549,
-  "lng": 13.1388425,
-  "nodeId": null,
-  "nodeIds": [],
-  "osmId": "way/207446742"
- },
- {
-  "id": "osm:way/207451046",
-  "name": "Krämeralm",
-  "kind": "dinner",
-  "lat": 47.2166141,
-  "lng": 13.1458586,
-  "nodeId": null,
-  "nodeIds": [],
-  "osmId": "way/207451046"
+  "osmId": "way/195158700",
+  "area": "stubnerkogel"
  },
  {
   "id": "osm:way/207704212",
@@ -3023,41 +1319,8 @@
    "9677420966"
   ],
   "osmId": "way/207704212",
-  "website": "https://www.wengeralm.at/de/bergrestaurant-gastein.html"
- },
- {
-  "id": "osm:way/208708270",
-  "name": "Mindener Hütte",
-  "kind": "dinner",
-  "lat": 47.0236254,
-  "lng": 13.1551111,
-  "nodeId": null,
-  "nodeIds": [],
-  "osmId": "way/208708270",
-  "website": "https://www.dav-minden.de/mindener-huette"
- },
- {
-  "id": "osm:way/209723442",
-  "name": "Hagener Hütte",
-  "kind": "dinner",
-  "lat": 47.0274654,
-  "lng": 13.0895836,
-  "nodeId": null,
-  "nodeIds": [],
-  "osmId": "way/209723442"
- },
- {
-  "id": "osm:way/209732086",
-  "name": "Duisburger Hütte",
-  "kind": "restaurant",
-  "lat": 47.0240805,
-  "lng": 13.0115554,
-  "nodeId": "4564235484",
-  "nodeIds": [
-   "4564235484"
-  ],
-  "osmId": "way/209732086",
-  "website": "https://www.dav-duisburg.de/H%C3%BCtten/Duisburger%20H%C3%BCtte%20%28Tauern%29"
+  "website": "https://www.wengeralm.at/de/bergrestaurant-gastein.html",
+  "area": "gibfelbahn"
  },
  {
   "id": "osm:way/209749219",
@@ -3072,58 +1335,8 @@
    "1562617098"
   ],
   "osmId": "way/209749219",
-  "website": "https://huetten.wanderdoerfer.at/huette/kressebenalm/"
- },
- {
-  "id": "osm:way/210720589",
-  "name": "Präerhütte",
-  "kind": "dinner",
-  "lat": 47.1301773,
-  "lng": 13.0443634,
-  "nodeId": null,
-  "nodeIds": [],
-  "osmId": "way/210720589"
- },
- {
-  "id": "osm:way/210720594",
-  "name": "Tofererhütte",
-  "kind": "dinner",
-  "lat": 47.1275907,
-  "lng": 13.0462115,
-  "nodeId": null,
-  "nodeIds": [],
-  "osmId": "way/210720594"
- },
- {
-  "id": "osm:way/210722240",
-  "name": "Groyerhütte",
-  "kind": "dinner",
-  "lat": 47.1315225,
-  "lng": 13.0375579,
-  "nodeId": null,
-  "nodeIds": [],
-  "osmId": "way/210722240"
- },
- {
-  "id": "osm:way/210729346",
-  "name": "Mitterastenalm",
-  "kind": "dinner",
-  "lat": 47.1114852,
-  "lng": 13.0117577,
-  "nodeId": null,
-  "nodeIds": [],
-  "osmId": "way/210729346",
-  "website": "https://www.mitterastenalm.at/"
- },
- {
-  "id": "osm:way/212677357",
-  "name": "Präaualm",
-  "kind": "dinner",
-  "lat": 47.2277839,
-  "lng": 13.0581624,
-  "nodeId": null,
-  "nodeIds": [],
-  "osmId": "way/212677357"
+  "website": "https://huetten.wanderdoerfer.at/huette/kressebenalm/",
+  "area": "stubnerkogel"
  },
  {
   "id": "osm:way/216710896",
@@ -3135,47 +1348,6 @@
   "nodeIds": [],
   "osmId": "way/216710896",
   "website": "https://www.bäckerwirtsgut.com/"
- },
- {
-  "id": "osm:way/216763753",
-  "name": "Pub Gastein",
-  "kind": "dinner",
-  "lat": 47.1293847,
-  "lng": 13.1337961,
-  "nodeId": null,
-  "nodeIds": [],
-  "osmId": "way/216763753"
- },
- {
-  "id": "osm:way/223169291",
-  "name": "Gasthaus Radhausberg",
-  "kind": "dinner",
-  "lat": 47.0882824,
-  "lng": 13.1130138,
-  "nodeId": null,
-  "nodeIds": [],
-  "osmId": "way/223169291",
-  "website": "https://www.gasteinertal.com/gasthaus-radhausberg/"
- },
- {
-  "id": "osm:way/225586567",
-  "name": "Jausenstation Kohlhub",
-  "kind": "dinner",
-  "lat": 47.2118332,
-  "lng": 12.9881918,
-  "nodeId": null,
-  "nodeIds": [],
-  "osmId": "way/225586567"
- },
- {
-  "id": "osm:way/227906746",
-  "name": "Untere Astenalm",
-  "kind": "dinner",
-  "lat": 47.0800251,
-  "lng": 13.0904041,
-  "nodeId": null,
-  "nodeIds": [],
-  "osmId": "way/227906746"
  },
  {
   "id": "osm:way/231499535",
@@ -3193,39 +1365,8 @@
    "11587641692"
   ],
   "osmId": "way/231499535",
-  "website": "https://www.stubneralm.at/"
- },
- {
-  "id": "osm:way/233911921",
-  "name": "Aigenalm-Paulhütte",
-  "kind": "dinner",
-  "lat": 47.2101608,
-  "lng": 13.1637421,
-  "nodeId": null,
-  "nodeIds": [],
-  "osmId": "way/233911921",
-  "website": "https://www.grossarltal.info/de/almen/aigenalm-paulhuette.html"
- },
- {
-  "id": "osm:way/233913409",
-  "name": "Aigenalm - Mandlhütte",
-  "kind": "dinner",
-  "lat": 47.2052542,
-  "lng": 13.1628175,
-  "nodeId": null,
-  "nodeIds": [],
-  "osmId": "way/233913409",
-  "website": "https://www.grossarltal.info/de/almen/aigenalm-mandlhuette.html"
- },
- {
-  "id": "osm:way/234458339",
-  "name": "Lachkendlalm",
-  "kind": "dinner",
-  "lat": 47.141906,
-  "lng": 13.0053531,
-  "nodeId": null,
-  "nodeIds": [],
-  "osmId": "way/234458339"
+  "website": "https://www.stubneralm.at/",
+  "area": "stubnerkogel"
  },
  {
   "id": "osm:way/235370075",
@@ -3240,7 +1381,8 @@
    "9677420948",
    "9677421037"
   ],
-  "osmId": "way/235370075"
+  "osmId": "way/235370075",
+  "area": "gibfelbahn"
  },
  {
   "id": "osm:way/235370120",
@@ -3253,7 +1395,8 @@
    "1399720649",
    "12261086622"
   ],
-  "osmId": "way/235370120"
+  "osmId": "way/235370120",
+  "area": "gibfelbahn"
  },
  {
   "id": "osm:way/235508790",
@@ -3271,7 +1414,8 @@
    "248452481",
    "9677420999"
   ],
-  "osmId": "way/235508790"
+  "osmId": "way/235508790",
+  "area": "gibfelbahn"
  },
  {
   "id": "osm:way/235508794",
@@ -3284,17 +1428,8 @@
    "9677420913",
    "9677420929"
   ],
-  "osmId": "way/235508794"
- },
- {
-  "id": "osm:way/235508795",
-  "name": "Heumoosalm",
-  "kind": "dinner",
-  "lat": 47.2460976,
-  "lng": 13.1463097,
-  "nodeId": null,
-  "nodeIds": [],
-  "osmId": "way/235508795"
+  "osmId": "way/235508794",
+  "area": "gibfelbahn"
  },
  {
   "id": "osm:way/235508796",
@@ -3313,17 +1448,8 @@
    "9677420973"
   ],
   "osmId": "way/235508796",
-  "website": "https://www.gasteinertal.com/reiterhuette/"
- },
- {
-  "id": "osm:way/237574980",
-  "name": "Die Hirschau",
-  "kind": "dinner",
-  "lat": 47.1016446,
-  "lng": 13.1254996,
-  "nodeId": null,
-  "nodeIds": [],
-  "osmId": "way/237574980"
+  "website": "https://www.gasteinertal.com/reiterhuette/",
+  "area": "gibfelbahn"
  },
  {
   "id": "osm:way/238063649",
@@ -3334,77 +1460,6 @@
   "nodeId": null,
   "nodeIds": [],
   "osmId": "way/238063649"
- },
- {
-  "id": "osm:way/238247715",
-  "name": "Eisschützenstüberl",
-  "kind": "dinner",
-  "lat": 47.0876088,
-  "lng": 13.1179474,
-  "nodeId": null,
-  "nodeIds": [],
-  "osmId": "way/238247715"
- },
- {
-  "id": "osm:way/244614157",
-  "name": "Wischtl-Hittn",
-  "kind": "restaurant",
-  "lat": 47.2239554,
-  "lng": 12.9922865,
-  "nodeId": "2734597965",
-  "nodeIds": [
-   "2734597965",
-   "2734597966",
-   "7125935931",
-   "9680925567",
-   "2734597963",
-   "2519557352",
-   "488156908",
-   "7125935930"
-  ],
-  "osmId": "way/244614157"
- },
- {
-  "id": "osm:way/253632245",
-  "name": "Kaminstadl",
-  "kind": "dinner",
-  "lat": 47.1781914,
-  "lng": 13.2301253,
-  "nodeId": null,
-  "nodeIds": [],
-  "osmId": "way/253632245",
-  "website": "http://www.kaminstadl.at/"
- },
- {
-  "id": "osm:way/253843700",
-  "name": "Oberharbachalm",
-  "kind": "dinner",
-  "lat": 47.1640923,
-  "lng": 13.1825803,
-  "nodeId": null,
-  "nodeIds": [],
-  "osmId": "way/253843700"
- },
- {
-  "id": "osm:way/254024662",
-  "name": "Hühnerkaralm",
-  "kind": "dinner",
-  "lat": 47.1364084,
-  "lng": 13.249866,
-  "nodeId": null,
-  "nodeIds": [],
-  "osmId": "way/254024662"
- },
- {
-  "id": "osm:way/256214938",
-  "name": "Bachalm",
-  "kind": "dinner",
-  "lat": 47.1917323,
-  "lng": 13.1770425,
-  "nodeId": null,
-  "nodeIds": [],
-  "osmId": "way/256214938",
-  "website": "https://www.grossarltal.info/de/almen/bachalm.html"
  },
  {
   "id": "osm:way/256722336",
@@ -3418,7 +1473,8 @@
    "253396466"
   ],
   "osmId": "way/256722336",
-  "website": "https://www.schuetzenhof.at/"
+  "website": "https://www.schuetzenhof.at/",
+  "area": "gibfelbahn"
  },
  {
   "id": "osm:way/256722337",
@@ -3431,29 +1487,8 @@
    "325908195",
    "365179462"
   ],
-  "osmId": "way/256722337"
- },
- {
-  "id": "osm:way/266354640",
-  "name": "Märchenkarhütte",
-  "kind": "dinner",
-  "lat": 47.0709435,
-  "lng": 12.9947067,
-  "nodeId": null,
-  "nodeIds": [],
-  "osmId": "way/266354640",
-  "website": "https://www.naturfreunde-huetten.at/salzburg/maerchenkarhuette/"
- },
- {
-  "id": "osm:way/325025172",
-  "name": "Karalm",
-  "kind": "dinner",
-  "lat": 47.2317907,
-  "lng": 13.0269366,
-  "nodeId": null,
-  "nodeIds": [],
-  "osmId": "way/325025172",
-  "website": "https://www.heustadlhof.at/karalm"
+  "osmId": "way/256722337",
+  "area": "gibfelbahn"
  },
  {
   "id": "osm:way/361066585",
@@ -3472,7 +1507,8 @@
    "863257212",
    "5832937587"
   ],
-  "osmId": "way/361066585"
+  "osmId": "way/361066585",
+  "area": "gibfelbahn"
  },
  {
   "id": "osm:way/367867939",
@@ -3483,41 +1519,6 @@
   "nodeId": null,
   "nodeIds": [],
   "osmId": "way/367867939"
- },
- {
-  "id": "osm:way/437971125",
-  "name": "Zenzi Café Bistro",
-  "kind": "dinner",
-  "lat": 47.2398043,
-  "lng": 12.9842997,
-  "nodeId": null,
-  "nodeIds": [],
-  "osmId": "way/437971125",
-  "website": "https://www.zenzi-cafe.at/"
- },
- {
-  "id": "osm:way/453515563",
-  "name": "Hannoverhaus",
-  "kind": "restaurant",
-  "lat": 47.0406053,
-  "lng": 13.2155358,
-  "nodeId": "1175773587",
-  "nodeIds": [
-   "1175773587",
-   "1175885202"
-  ],
-  "osmId": "way/453515563",
-  "website": "https://www.alpenverein.de/verband/huetten-und-wege/huetten-des-bundesverbands/hannoverhaus"
- },
- {
-  "id": "osm:way/506261333",
-  "name": "Lercheggalm",
-  "kind": "dinner",
-  "lat": 47.1582028,
-  "lng": 13.0012174,
-  "nodeId": null,
-  "nodeIds": [],
-  "osmId": "way/506261333"
  },
  {
   "id": "osm:way/558305895",
@@ -3535,7 +1536,8 @@
    "5455060547",
    "5455060549"
   ],
-  "osmId": "way/558305895"
+  "osmId": "way/558305895",
+  "area": "stubnerkogel"
  },
  {
   "id": "osm:way/561746486",
@@ -3548,17 +1550,8 @@
    "4997981865"
   ],
   "osmId": "way/561746486",
-  "website": "https://www.gasteinalm.at/"
- },
- {
-  "id": "osm:way/569401208",
-  "name": "Schmaranzhütte",
-  "kind": "dinner",
-  "lat": 47.1849773,
-  "lng": 13.0554713,
-  "nodeId": null,
-  "nodeIds": [],
-  "osmId": "way/569401208"
+  "website": "https://www.gasteinalm.at/",
+  "area": "stubnerkogel"
  },
  {
   "id": "osm:way/591630211",
@@ -3583,16 +1576,6 @@
   "website": "https://mamaspapas-cafe.business.site/"
  },
  {
-  "id": "osm:way/660188006",
-  "name": "Obere Astenalm",
-  "kind": "dinner",
-  "lat": 47.0794142,
-  "lng": 13.0911527,
-  "nodeId": null,
-  "nodeIds": [],
-  "osmId": "way/660188006"
- },
- {
   "id": "osm:way/663246774",
   "name": "Bergstadl",
   "kind": "apres",
@@ -3604,29 +1587,8 @@
    "1107473474",
    "253403043"
   ],
-  "osmId": "way/663246774"
- },
- {
-  "id": "osm:way/806962898",
-  "name": "Café Zeit",
-  "kind": "dinner",
-  "lat": 47.1706921,
-  "lng": 13.1068558,
-  "nodeId": null,
-  "nodeIds": [],
-  "osmId": "way/806962898",
-  "website": "https://www.gastein.com/service/gastein-von-a-z/detail/infrastruktur/cafe-zeit-bad-hofgastein/"
- },
- {
-  "id": "osm:way/1030893872",
-  "name": "Hofgasteiner Haus",
-  "kind": "dinner",
-  "lat": 47.151544,
-  "lng": 13.0653481,
-  "nodeId": null,
-  "nodeIds": [],
-  "osmId": "way/1030893872",
-  "website": "https://hofgasteinerhaus.naturfreunde.at/"
+  "osmId": "way/663246774",
+  "area": "stubnerkogel"
  },
  {
   "id": "osm:way/1460786610",
@@ -3643,6 +1605,7 @@
    "9721456503"
   ],
   "osmId": "way/1460786610",
-  "website": "https://hirschundmaus.at/"
+  "website": "https://hirschundmaus.at/",
+  "area": "stubnerkogel"
  }
 ]

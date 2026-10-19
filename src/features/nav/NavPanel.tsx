@@ -7,6 +7,7 @@ import type { MapPerson } from '../map/layers';
 import type { MyPosition } from '../location/useLocationSharing';
 import type { Profile } from '../../lib/types';
 import { DIFFICULTY_LABELS } from '../../auth/ProfileSheet';
+import { AREAS, type AreaKey } from './areas';
 
 export interface NavPanelProps {
   graph: SkiGraph;
@@ -20,6 +21,8 @@ export interface NavPanelProps {
   onRoute: (edges: GEdge[]) => void;
   initialFrom?: string;
   initialTo?: string;
+  /** Ski area to start in (the one the group decided on); the user can still switch. */
+  initialArea?: AreaKey | null;
   statusNote?: string;
 }
 
@@ -61,9 +64,15 @@ export function NavPanel(props: NavPanelProps) {
   useEffect(() => {
     if (props.initialTo) setTo(props.initialTo);
   }, [props.initialTo]);
+  const [area, setArea] = useState<AreaKey | ''>(props.initialArea ?? '');
+  useEffect(() => {
+    setArea(props.initialArea ?? '');
+  }, [props.initialArea]);
 
-  const lifts = useMemo(() => graph.nodes.filter((n) => n.label).sort((a, b) => a.label!.localeCompare(b.label!, 'nl')), [graph]);
-  const mountainPlaces = places.filter((p) => p.kind === 'restaurant' || p.kind === 'apres').sort((a, b) => a.name.localeCompare(b.name, 'nl'));
+  const lifts = useMemo(() => graph.nodes.filter((n) => n.label && (!area || n.area === area)).sort((a, b) => a.label!.localeCompare(b.label!, 'nl')), [graph, area]);
+  const mountainPlaces = places
+    .filter((p) => p.kind === 'restaurant' || p.kind === 'apres')
+    .filter((p) => !area || !p.area || p.area === area || p.id === to).sort((a, b) => a.name.localeCompare(b.name, 'nl'));
   const house = places.find((p) => p.kind === 'house');
   const located = people.filter((p) => p.lat != null);
 
@@ -106,6 +115,13 @@ export function NavPanel(props: NavPanelProps) {
   return (
     <div className="card nav">
       <h2 style={{ marginTop: 0 }}>Navigatie</h2>
+      <label className="field">
+        Berg
+        <select value={area} onChange={(e) => setArea(e.target.value as AreaKey | '')}>
+          <option value="">Alle bergen</option>
+          {AREAS.map((a) => <option key={a.key} value={a.key}>{a.label}</option>)}
+        </select>
+      </label>
       <label className="field">Van<select value={from} onChange={(e) => setFrom(e.target.value)}>{options(true)}</select></label>
       <label className="field">Naar<select value={to} onChange={(e) => setTo(e.target.value)}>{options(false)}</select></label>
       <label className="field">

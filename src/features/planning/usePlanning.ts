@@ -23,7 +23,7 @@ export function usePlanning(day: string) {
     const ids = (polls ?? []).map((p) => p.id);
     const none = ['00000000-0000-0000-0000-000000000000'];
     const [{ data: options }, { data: votes }, { data: profiles }] = await Promise.all([
-      supabase.from('poll_options').select('id, poll_id, label, place_id, created_by').in('poll_id', ids.length ? ids : none).order('created_at'),
+      supabase.from('poll_options').select('id, poll_id, label, value, place_id, created_by').in('poll_id', ids.length ? ids : none).order('created_at'),
       supabase.from('votes').select('poll_id, user_id, option_id').in('poll_id', ids.length ? ids : none),
       supabase.from('profiles').select('id, display_name'),
     ]);
@@ -59,6 +59,12 @@ export function usePlanning(day: string) {
     run(supabase.from('votes').upsert({ poll_id: pollId, user_id: userId, option_id: optionId, updated_at: new Date().toISOString() }, { onConflict: 'poll_id,user_id' }));
   const decide = (pollId: string, optionId: string) => run(supabase.rpc('decide_poll', { p_poll: pollId, p_option: optionId }));
   const removeOption = (optionId: string) => run(supabase.from('poll_options').delete().eq('id', optionId));
+  const addPoll = async (day: string, kind: string) => {
+    const { data: created } = await supabase.from('polls').insert({ day, kind }).select('id').single();
+    // reset_poll fills a fresh poll with its default options.
+    if (created) await supabase.rpc('reset_poll', { p_poll: created.id });
+    await load();
+  };
   const reset = (pollId: string) => run(supabase.rpc('reset_poll', { p_poll: pollId }));
   const undecide = (pollId: string) => run(supabase.rpc('undecide_poll', { p_poll: pollId }));
 
@@ -66,6 +72,10 @@ export function usePlanning(day: string) {
     const kind = PLACE_KIND[poll.kind];
     let placeId: string | undefined;
     let label: string;
+    if ('text' in p) {
+      await run(supabase.from('poll_options').insert({ poll_id: poll.id, label: p.text, value: p.text, created_by: userId }));
+      return;
+    }
     if ('place' in p) {
       label = p.place.name;
       placeId = p.place.dbId;
@@ -93,5 +103,5 @@ export function usePlanning(day: string) {
     await run(supabase.from('poll_options').insert({ poll_id: poll.id, label, place_id: placeId ?? null, created_by: userId }));
   }
 
-  return { ...data, error, vote, decide, undecide, reset, propose, removeOption };
+  return { ...data, error, addPoll, vote, decide, undecide, reset, propose, removeOption };
 }

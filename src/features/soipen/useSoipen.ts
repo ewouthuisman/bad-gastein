@@ -15,7 +15,7 @@ async function loadRows(now: Date): Promise<SoipenRows> {
     supabase.from('profiles').select('id, display_name'),
     supabase.from('drinks').select('user_id, kind, created_at').gte('created_at', since),
     supabase.from('bar_visits').select('user_id, started_at, ended_at, places(name)').gte('started_at', since),
-    supabase.from('polls').select('id, kind').eq('day', viennaDate(now)).in('kind', ['apres_or_spa', 'early_ski']),
+    supabase.from('polls').select('id, kind').eq('day', viennaDate(now)).in('kind', ['apres_or_spa', 'ski_time']),
   ]);
   const ids = (polls ?? []).map((p) => p.id);
   const none = ['00000000-0000-0000-0000-000000000000'];

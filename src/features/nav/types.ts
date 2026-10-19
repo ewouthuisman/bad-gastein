@@ -1,4 +1,5 @@
 import type { Difficulty } from '../../lib/types';
+import type { AreaKey } from './areas';
 
 export type { Difficulty };
 
@@ -8,6 +9,7 @@ export interface GNode {
   lng: number;
   ele?: number;
   label?: string;
+  area?: AreaKey; // ski area (lift network) this point belongs to
 }
 
 export interface GEdge {
@@ -41,6 +43,7 @@ export interface Place {
   lng: number;
   nodeId: string | null; // null when not within reach of the piste network
   nodeIds?: string[]; // every piste point within reach, nearest first
+  area?: AreaKey; // ski area this place can be reached in via the pistes
   osmId?: string;
   website?: string;
   menuUrl?: string;

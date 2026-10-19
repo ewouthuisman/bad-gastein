@@ -145,3 +145,8 @@ a { color: var(--accent); }
 .weather-detail-col dl { display: grid; grid-template-columns: auto 1fr; gap: 2px 8px; margin: 6px 0 0; font-size: 0.85rem; }
 .weather-detail-col dt { color: var(--muted); }
 .weather-detail-col dd { margin: 0; text-align: right; }
+
+/* Poll groups (skiën, lunch): several questions inside one card */
+.subpoll + .subpoll,
+.card.poll > .subpoll:not(:first-child) { margin-top: 14px; padding-top: 12px; border-top: 1px solid var(--line, rgba(128, 128, 128, 0.3)); }
+.subpoll h4 { margin: 0 0 6px; font-size: 0.95rem; }

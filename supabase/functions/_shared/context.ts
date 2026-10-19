@@ -8,8 +8,9 @@ export const MAX_CONTEXT_CHARS = 24_000;
 const MENU_CHARS = 600;
 
 const POLL_TITLE: Record<string, string> = {
-  early_ski: 'Vroeg skiën of uitslapen',
-  lunch_place: 'Lunchplek',
+  ski_area: 'Skiberg',
+  ski_time: 'Skitijd (ieder kiest zelf)',
+  lunch_place: 'Lunchplek (samen met lunchtijd één besluit)',
   lunch_time: 'Lunchtijd',
   apres_place: 'Après-ski plek',
   apres_or_spa: 'Après-ski of spa',

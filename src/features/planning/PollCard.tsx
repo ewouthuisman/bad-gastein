@@ -2,9 +2,10 @@ import { useState } from 'react';
 import { tally, type TallyVote } from './tally';
 import type { AppPlace } from '../map/places';
 import type { PlaceKind } from '../nav/types';
+import { AREA_LABEL, type AreaKey } from '../nav/areas';
 import { safeUrl } from '../../lib/safeUrl';
 
-export type PollKind = 'lunch_place' | 'apres_place' | 'dinner_place' | 'early_ski' | 'lunch_time' | 'apres_or_spa';
+export type PollKind = 'lunch_place' | 'apres_place' | 'dinner_place' | 'ski_area' | 'ski_time' | 'lunch_time' | 'apres_or_spa';
 
 export interface Poll {
   id: string;
@@ -16,11 +17,12 @@ export interface Poll {
 export interface PollOption {
   id: string;
   label: string;
+  value?: string | null;
   place_id: string | null;
   created_by: string | null;
 }
 
-export type Proposal = { place: AppPlace } | { newName: string; link: string };
+export type Proposal = { place: AppPlace } | { newName: string; link: string } | { text: string };
 
 export interface PollCardProps {
   poll: Poll;
@@ -30,6 +32,10 @@ export interface PollCardProps {
   myUserId: string;
   isAdmin: boolean;
   places: AppPlace[];
+  /** Ski area decided for this day; lunch suggestions are limited to what is reachable there. */
+  area?: AreaKey | null;
+  /** Rendered inside a PollGroup: no card, no decide/reset controls. */
+  embedded?: boolean;
   onVote: (optionId: string) => void;
   onDecide: (optionId: string) => void;
   onUndecide: () => void;
@@ -40,7 +46,8 @@ export interface PollCardProps {
 }
 
 export const POLL_TITLE: Record<PollKind, string> = {
-  early_ski: 'Vroeg skiën of uitslapen?',
+  ski_area: 'Welke berg?',
+  ski_time: 'Hoe laat skiën? (ieder kiest zelf)',
   lunch_place: 'Waar lunchen we?',
   lunch_time: 'Hoe laat lunch?',
   apres_place: 'Welke après-ski?',
@@ -55,14 +62,15 @@ const PLACE_KIND: Partial<Record<PollKind, PlaceKind>> = {
 };
 
 export function PollCard(props: PollCardProps) {
-  const { poll, options, votes, names, myUserId, isAdmin, places } = props;
+  const { poll, options, votes, names, myUserId, isAdmin, places, area, embedded } = props;
   const [picking, setPicking] = useState(false);
+  const [text, setText] = useState('');
   const [newName, setNewName] = useState('');
   const [link, setLink] = useState('');
   const [query, setQuery] = useState('');
   const placeKind = PLACE_KIND[poll.kind];
   const rows = tally(options, votes, names);
-  const resetBtn = isAdmin && (
+  const resetBtn = isAdmin && !embedded && (
     <button type="button" className="reset-poll" aria-label="Stemming resetten" title="Stemming resetten"
       onClick={() => window.confirm('Alle stemmen en het besluit van deze stemming wissen?') && props.onReset()}>↺</button>
   );
@@ -73,13 +81,14 @@ export function PollCard(props: PollCardProps) {
   const candidates = placeKind
     ? places
         .filter((p) => p.kind === placeKind || (placeKind === 'dinner' && p.kind === 'restaurant' && !p.nodeId))
+        .filter((p) => poll.kind !== 'lunch_place' || !area || p.area === area)
         .filter((p) => !options.some((o) => o.label === p.name))
         .filter((p) => p.name.toLowerCase().includes(query.toLowerCase()))
         .slice(0, 40)
     : [];
   const placeOf = (o: PollOption) => places.find((p) => p.dbId === o.place_id || p.id === o.place_id);
 
-  if (decided) {
+  if (decided && !embedded) {
     const place = placeOf(decided);
     return (
       <div className="card poll decided">
@@ -102,9 +111,10 @@ export function PollCard(props: PollCardProps) {
   }
 
   return (
-    <div className="card poll">
+    <div className={embedded ? 'subpoll' : 'card poll'}>
       {resetBtn}
-      <h3>{POLL_TITLE[poll.kind]}</h3>
+      {embedded ? <h4>{POLL_TITLE[poll.kind]}</h4> : <h3>{POLL_TITLE[poll.kind]}</h3>}
+      {poll.kind === 'lunch_place' && area && <p className="muted">Plekken die je vanaf {AREA_LABEL[area]} kunt bereiken.</p>}
       <div className="options">
         {rows.map((r) => {
           const o = byId.get(r.optionId)!;
@@ -120,16 +130,35 @@ export function PollCard(props: PollCardProps) {
             </div>
           );
         })}
-        {!options.length && <p className="muted">Nog geen opties. Stel een plek voor!</p>}
+        {!options.length && <p className="muted">Nog geen opties. Stel er een voor!</p>}
       </div>
       <div className="row">
-        {placeKind && <button type="button" className="btn small" onClick={() => setPicking(true)}>Plek voorstellen</button>}
-        {isAdmin && (
+        <button type="button" className="btn small" onClick={() => setPicking(true)}>{placeKind ? 'Plek voorstellen' : 'Optie voorstellen'}</button>
+        {isAdmin && !embedded && poll.kind !== 'ski_time' && (
           <button type="button" className="btn small primary" disabled={!leader} onClick={() => leader && props.onDecide(leader)}>Besluit</button>
         )}
       </div>
 
-      {picking && (
+      {picking && !placeKind && (
+        <div className="overlay" onClick={(e) => e.target === e.currentTarget && setPicking(false)}>
+          <div className="card" role="dialog" aria-label="Optie voorstellen">
+            <h2>Optie voorstellen</h2>
+            <label className="field">
+              {POLL_TITLE[poll.kind]}
+              <input value={text} type={poll.kind === 'ski_time' || poll.kind === 'lunch_time' ? 'time' : 'text'} onChange={(e) => setText(e.target.value)} />
+            </label>
+            <div className="row">
+              <button type="button" className="btn primary" disabled={!text.trim()}
+                onClick={() => { props.onPropose({ text: text.trim() }); setText(''); setPicking(false); }}>
+                Toevoegen
+              </button>
+              <button type="button" className="btn" onClick={() => setPicking(false)}>Annuleren</button>
+            </div>
+          </div>
+        </div>
+      )}
+
+      {picking && placeKind && (
         <div className="overlay" onClick={(e) => e.target === e.currentTarget && setPicking(false)}>
           <div className="card" role="dialog" aria-label="Plek voorstellen">
             <h2>Plek voorstellen</h2>

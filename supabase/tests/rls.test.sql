@@ -42,11 +42,11 @@ insert into public.locations (user_id, lat, lng, accuracy_m, updated_at)
   values ('00000000-0000-0000-0000-0000000000b2', 47.1, 13.1, 10, now());
 
 create temp table ctx as
-  select (select id from public.polls where day = '2027-03-01' and kind = 'early_ski') as poll,
+  select (select id from public.polls where day = '2027-03-01' and kind = 'ski_time') as poll,
          (select o.id from public.poll_options o join public.polls p on p.id = o.poll_id
-           where p.day = '2027-03-01' and p.kind = 'early_ski' and o.label = 'Vroeg mee') as opt_early,
+           where p.day = '2027-03-01' and p.kind = 'ski_time' and o.label = '09:00') as opt_early,
          (select o.id from public.poll_options o join public.polls p on p.id = o.poll_id
-           where p.day = '2027-03-01' and p.kind = 'early_ski' and o.label = 'Uitslapen') as opt_late;
+           where p.day = '2027-03-01' and p.kind = 'ski_time' and o.label = '10:00') as opt_late;
 grant select on ctx to authenticated, anon;
 
 -- As Anna (member) ----------------------------------------------------------------
