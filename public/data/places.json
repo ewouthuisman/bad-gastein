@@ -482,13 +482,14 @@
  {
   "id": "osm:node/6185501613",
   "name": "Windischgrätzhöhe",
-  "kind": "dinner",
+  "kind": "restaurant",
   "lat": 47.110555,
   "lng": 13.1400977,
   "nodeId": null,
   "nodeIds": [],
   "osmId": "node/6185501613",
-  "website": "https://www.wigrae.at/"
+  "website": "https://www.wigrae.at/",
+  "area": "graukogel"
  },
  {
   "id": "osm:node/6185821773",

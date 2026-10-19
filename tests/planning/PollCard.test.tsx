@@ -16,7 +16,7 @@ const base: PollCardProps = {
   places: [
     { id: 'pl1', dbId: 'pl1', name: 'Wengeralm', kind: 'restaurant', lat: 0, lng: 0, nodeId: 'n' },
     { id: 'pl2', dbId: 'pl2', name: 'Bergstadl', kind: 'restaurant', lat: 0, lng: 0, nodeId: 'n' },
-    { id: 'osm:node/9', name: 'Jungerstube', kind: 'restaurant', lat: 0, lng: 0, nodeId: 'n' },
+    { id: 'osm:node/9', name: 'Jungerstube', kind: 'restaurant', lat: 0, lng: 0, nodeId: 'n', area: 'stubnerkogel' },
     { id: 'osm:node/8', name: 'Silver Bullet', kind: 'apres', lat: 0, lng: 0, nodeId: null },
   ],
   onVote: vi.fn(),
@@ -62,7 +62,7 @@ describe('PollCard', () => {
 
   it('proposes a place from the restaurant list for lunch', async () => {
     const onPropose = vi.fn();
-    render(<PollCard {...base} onPropose={onPropose} />);
+    render(<PollCard {...base} area="stubnerkogel" onPropose={onPropose} />);
     await userEvent.click(screen.getByRole('button', { name: 'Plek voorstellen' }));
     const picker = screen.getByRole('dialog', { name: 'Plek voorstellen' });
     expect(within(picker).queryByText('Silver Bullet')).not.toBeInTheDocument();

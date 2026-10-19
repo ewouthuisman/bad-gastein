@@ -6,6 +6,7 @@ import { usePlanning } from '../features/planning/usePlanning';
 import { PollCard, type Poll, type PollKind } from '../features/planning/PollCard';
 import { PollGroup } from '../features/planning/PollGroup';
 import { isAreaKey } from '../features/nav/areas';
+import { tally } from '../features/planning/tally';
 import { usePlaces } from '../features/map/places';
 
 interface Block {
@@ -47,7 +48,10 @@ export function PlanningTab() {
   const byKind = new Map(planning.polls.map((p) => [p.kind, p]));
 
   const areaPoll = byKind.get('ski_area');
-  const areaValue = planning.options.find((o) => o.id === areaPoll?.decided_option_id)?.value;
+  // The decided mountain, or while undecided the one with the most votes.
+  const areaOptions = planning.options.filter((o) => (o as { poll_id?: string }).poll_id === areaPoll?.id);
+  const areaLeader = tally(areaOptions, planning.votes.filter((v) => v.poll_id === areaPoll?.id), planning.names)[0];
+  const areaValue = areaOptions.find((o) => o.id === (areaPoll?.decided_option_id ?? (areaLeader?.count ? areaLeader.optionId : null)))?.value;
   const area = isAreaKey(areaValue) ? areaValue : null;
 
   const allowed = (b: Block) => current.isSkiDay || (QUIET_BLOCKS[day] ?? []).includes(b.key);
