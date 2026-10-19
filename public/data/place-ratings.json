@@ -1,0 +1,1154 @@
+{
+ "osm:node/667338964": {
+  "placeId": "ChIJk6tBbPU6d0cRM5Ubfa0GgiQ",
+  "rating": 3,
+  "ratingCount": 102,
+  "priceLevel": 2,
+  "mapsUri": "https://maps.google.com/?cid=2630672474535859507&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+  "phone": "+43 6432 21180",
+  "tags": [
+   "Terras",
+   "Bier",
+   "Goed voor groepen",
+   "Reserveren kan",
+   "Kindermenu",
+   "Honden welkom"
+  ],
+  "fetchedAt": "2026-10-19T14:51:38.449Z"
+ },
+ "osm:node/861750788": {
+  "placeId": "ChIJNQ_PAQMmd0cRBY_8RUkG4sk",
+  "rating": 4.3,
+  "ratingCount": 280,
+  "priceLevel": 2,
+  "mapsUri": "https://maps.google.com/?cid=14547196658136682245&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+  "phone": "+43 6414 502",
+  "hours": [
+   "maandag: Gesloten",
+   "dinsdag: 09:00–16:30",
+   "woensdag: 09:00–16:30",
+   "donderdag: 09:00–16:30",
+   "vrijdag: 09:00–16:30",
+   "zaterdag: 09:00–16:30",
+   "zondag: 09:00–16:30"
+  ],
+  "tags": [
+   "Terras",
+   "Bier",
+   "Vegetarisch",
+   "Goed voor groepen",
+   "Honden welkom"
+  ],
+  "fetchedAt": "2026-10-19T14:51:38.786Z"
+ },
+ "osm:node/1846515591": {
+  "placeId": "ChIJN-QoQMwod0cRhTOnWHAnX60",
+  "rating": 4.6,
+  "ratingCount": 657,
+  "priceLevel": 2,
+  "mapsUri": "https://maps.google.com/?cid=12492747254826218373&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+  "phone": "+43 6414 8570",
+  "tags": [
+   "Terras",
+   "Cocktails",
+   "Bier",
+   "Vegetarisch",
+   "Goed voor groepen",
+   "Reserveren kan",
+   "Kindermenu",
+   "Honden welkom"
+  ],
+  "fetchedAt": "2026-10-19T14:51:39.167Z"
+ },
+ "osm:node/2080070509": {
+  "placeId": "ChIJ5xWRx-0wd0cRGq-TPPJt8bA",
+  "rating": 4.2,
+  "ratingCount": 43,
+  "priceLevel": 2,
+  "mapsUri": "https://maps.google.com/?cid=12750092907228409626&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+  "phone": "+43 6434 20760",
+  "hours": [
+   "maandag: Gesloten",
+   "dinsdag: Gesloten",
+   "woensdag: 18:00–01:00",
+   "donderdag: 18:00–01:00",
+   "vrijdag: 18:00–01:00",
+   "zaterdag: 18:00–01:00",
+   "zondag: 18:00–01:00"
+  ],
+  "tags": [
+   "Cocktails",
+   "Bier",
+   "Goed voor groepen",
+   "Honden welkom"
+  ],
+  "fetchedAt": "2026-10-19T14:51:41.394Z"
+ },
+ "osm:node/4346405485": {
+  "placeId": "ChIJq_IOJO4wd0cRB0R1iYYKVy8",
+  "rating": 3.9,
+  "ratingCount": 1136,
+  "priceLevel": 2,
+  "mapsUri": "https://maps.google.com/?cid=3411206815704499207&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+  "phone": "+43 6434 5101",
+  "hours": [
+   "maandag: 11:00–18:00",
+   "dinsdag: Gesloten",
+   "woensdag: Gesloten",
+   "donderdag: 11:00–18:00",
+   "vrijdag: 11:00–18:00",
+   "zaterdag: 11:00–18:00",
+   "zondag: 11:00–18:00"
+  ],
+  "tags": [
+   "Terras",
+   "Cocktails",
+   "Bier",
+   "Vegetarisch",
+   "Goed voor groepen",
+   "Reserveren kan",
+   "Honden welkom"
+  ],
+  "fetchedAt": "2026-10-19T14:51:43.891Z"
+ },
+ "osm:node/5199731689": {
+  "placeId": "ChIJ3Tn5wgU7d0cRGmeifETISqM",
+  "rating": 4.4,
+  "ratingCount": 21,
+  "priceLevel": 2,
+  "mapsUri": "https://maps.google.com/?cid=11766437172933191450&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+  "phone": "+43 664 2204876",
+  "hours": [
+   "maandag: 09:00–16:00",
+   "dinsdag: 09:00–16:00",
+   "woensdag: 09:00–16:00",
+   "donderdag: 09:00–16:00",
+   "vrijdag: 09:00–16:00",
+   "zaterdag: 09:00–16:00",
+   "zondag: 09:00–16:00"
+  ],
+  "tags": [
+   "Goed voor groepen"
+  ],
+  "fetchedAt": "2026-10-19T14:51:44.334Z"
+ },
+ "osm:node/5416341245": {
+  "placeId": "ChIJw_j1MTUld0cRiad0kbeQvks",
+  "rating": 4.5,
+  "ratingCount": 90,
+  "mapsUri": "https://maps.google.com/?cid=5457958916513376137&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+  "phone": "+43 6432 27001",
+  "permanentlyClosed": true,
+  "tags": [
+   "Terras",
+   "Cocktails",
+   "Bier",
+   "Goed voor groepen",
+   "Reserveren kan",
+   "Honden welkom"
+  ],
+  "fetchedAt": "2026-10-19T14:51:44.685Z"
+ },
+ "osm:node/5646355406": {
+  "placeId": "ChIJOajgKvcwd0cRzDQ8uyWB9CQ",
+  "rating": 4.6,
+  "ratingCount": 85,
+  "priceLevel": 2,
+  "mapsUri": "https://maps.google.com/?cid=2662895278737863884&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+  "phone": "+43 6434 30020",
+  "hours": [
+   "maandag: 12:30–23:00",
+   "dinsdag: Gesloten",
+   "woensdag: 12:30–23:00",
+   "donderdag: 12:30–23:00",
+   "vrijdag: 12:30–23:00",
+   "zaterdag: 12:30–23:00",
+   "zondag: 12:30–23:00"
+  ],
+  "tags": [
+   "Terras",
+   "Cocktails",
+   "Bier",
+   "Vegetarisch",
+   "Goed voor groepen",
+   "Reserveren kan",
+   "Kindermenu",
+   "Honden welkom"
+  ],
+  "fetchedAt": "2026-10-19T14:51:45.033Z"
+ },
+ "osm:node/5650462056": {
+  "placeId": "ChIJbUcOS2k6d0cR5W4M0k5FZmw",
+  "rating": 4.3,
+  "ratingCount": 490,
+  "priceLevel": 2,
+  "mapsUri": "https://maps.google.com/?cid=7811006808554499813&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+  "phone": "+43 664 3812588",
+  "hours": [
+   "maandag: 09:00–16:00",
+   "dinsdag: 09:00–16:00",
+   "woensdag: 09:00–16:00",
+   "donderdag: 09:00–16:00",
+   "vrijdag: 09:00–16:00",
+   "zaterdag: 09:00–16:00",
+   "zondag: 09:00–16:00"
+  ],
+  "tags": [
+   "Terras",
+   "Bier",
+   "Goed voor groepen",
+   "Kindermenu"
+  ],
+  "fetchedAt": "2026-10-19T14:51:45.385Z"
+ },
+ "osm:node/5739058952": {
+  "placeId": "ChIJxSub9uIwd0cR_37C4HYHkU4",
+  "rating": 4.7,
+  "ratingCount": 270,
+  "priceLevel": 2,
+  "mapsUri": "https://maps.google.com/?cid=5661314413739802367&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+  "phone": "+43 664 9930712",
+  "hours": [
+   "maandag: 10:00–16:30",
+   "dinsdag: 10:00–16:30",
+   "woensdag: Gesloten",
+   "donderdag: 10:00–16:30",
+   "vrijdag: 10:00–16:30",
+   "zaterdag: 10:00–16:30",
+   "zondag: 10:00–16:30"
+  ],
+  "tags": [
+   "Terras",
+   "Bier",
+   "Vegetarisch",
+   "Goed voor groepen",
+   "Reserveren kan",
+   "Kindermenu",
+   "Honden welkom"
+  ],
+  "fetchedAt": "2026-10-19T14:51:45.738Z"
+ },
+ "osm:node/6088569747": {
+  "placeId": "ChIJYTxrsfMwd0cRPnZpc_ewTNE",
+  "rating": 4.8,
+  "ratingCount": 43,
+  "mapsUri": "https://maps.google.com/?cid=15081623828996650558&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+  "phone": "+43 6434 21358",
+  "hours": [
+   "maandag: 09:00–18:00",
+   "dinsdag: 09:00–18:00",
+   "woensdag: 09:00–18:00",
+   "donderdag: 09:00–18:00",
+   "vrijdag: 09:00–18:00",
+   "zaterdag: 09:00–14:00",
+   "zondag: Gesloten"
+  ],
+  "tags": [],
+  "fetchedAt": "2026-10-19T14:51:46.707Z"
+ },
+ "osm:node/6110706499": {
+  "placeId": "ChIJJRHAiPQld0cR75tjMsjH7bk",
+  "rating": 4.8,
+  "ratingCount": 97,
+  "priceLevel": 2,
+  "mapsUri": "https://maps.google.com/?cid=13397584129149869039&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+  "phone": "+43 664 1217497",
+  "hours": [
+   "maandag: Gesloten",
+   "dinsdag: 12:00–21:00",
+   "woensdag: 12:00–21:00",
+   "donderdag: 12:00–21:00",
+   "vrijdag: 12:00–21:00",
+   "zaterdag: 12:00–21:00",
+   "zondag: 11:00–21:00"
+  ],
+  "tags": [
+   "Bier",
+   "Vegetarisch",
+   "Goed voor groepen",
+   "Reserveren kan",
+   "Kindermenu",
+   "Honden welkom"
+  ],
+  "fetchedAt": "2026-10-19T14:51:47.030Z"
+ },
+ "osm:node/6110706513": {
+  "placeId": "ChIJH5QTK9Uld0cRD_rCCTX9fjY",
+  "rating": 3.7,
+  "ratingCount": 362,
+  "priceLevel": 2,
+  "mapsUri": "https://maps.google.com/?cid=3926854329352518159&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+  "phone": "+43 664 4319457",
+  "hours": [
+   "maandag: Gesloten",
+   "dinsdag: 11:00–17:00",
+   "woensdag: Gesloten",
+   "donderdag: Gesloten",
+   "vrijdag: 11:00–17:00",
+   "zaterdag: 11:00–17:00",
+   "zondag: 11:00–17:00"
+  ],
+  "tags": [
+   "Terras",
+   "Livemuziek",
+   "Cocktails",
+   "Bier",
+   "Goed voor groepen",
+   "Reserveren kan",
+   "Honden welkom"
+  ],
+  "fetchedAt": "2026-10-19T14:51:47.389Z"
+ },
+ "osm:node/6110706514": {
+  "placeId": "ChIJ18tlztQld0cRToAk6pI7roM",
+  "rating": 4.8,
+  "ratingCount": 275,
+  "mapsUri": "https://maps.google.com/?cid=9488586967095738446&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+  "summary": "Unfussy rooms in a casual, ski-area hotel offering free breakfast & dinner, plus a spa area.",
+  "phone": "+43 6433 7248",
+  "tags": [],
+  "fetchedAt": "2026-10-19T14:51:47.769Z"
+ },
+ "osm:node/6140833204": {
+  "placeId": "ChIJ39wnw-0wd0cRnl5XkY1nA-I",
+  "rating": 4.4,
+  "ratingCount": 1853,
+  "priceLevel": 2,
+  "mapsUri": "https://maps.google.com/?cid=16285974535228317342&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+  "phone": "+43 664 4265386",
+  "hours": [
+   "maandag: Gesloten",
+   "dinsdag: Gesloten",
+   "woensdag: 16:00–00:30",
+   "donderdag: 16:00–00:30",
+   "vrijdag: 16:00–00:30",
+   "zaterdag: 16:00–00:30",
+   "zondag: 16:00–00:30"
+  ],
+  "tags": [
+   "Terras",
+   "Livemuziek",
+   "Cocktails",
+   "Bier",
+   "Vegetarisch",
+   "Goed voor groepen",
+   "Reserveren kan",
+   "Kindermenu",
+   "Honden welkom"
+  ],
+  "fetchedAt": "2026-10-19T14:51:48.120Z"
+ },
+ "osm:node/6183343502": {
+  "placeId": "ChIJ3WZSIlkwd0cRI9ka7dMonXE",
+  "rating": 4.6,
+  "ratingCount": 161,
+  "mapsUri": "https://maps.google.com/?cid=8186744588310599971&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+  "phone": "+43 664 2856799",
+  "tags": [
+   "Bier",
+   "Vegetarisch",
+   "Reserveren kan",
+   "Kindermenu",
+   "Honden welkom"
+  ],
+  "fetchedAt": "2026-10-19T14:51:48.542Z"
+ },
+ "osm:node/6184446942": {
+  "placeId": "ChIJR7BiS-wwd0cR2TINQm7fV8I",
+  "rating": 4.3,
+  "ratingCount": 152,
+  "priceLevel": 1,
+  "mapsUri": "https://maps.google.com/?cid=14003907230979404505&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+  "hours": [
+   "maandag: 15:30–19:00, 22:00–02:00",
+   "dinsdag: 15:30–19:00, 22:00–02:00",
+   "woensdag: 15:30–19:00, 22:00–02:00",
+   "donderdag: 15:30–19:00, 22:00–02:00",
+   "vrijdag: 15:30–19:00, 22:00–02:00",
+   "zaterdag: 15:30–19:00, 22:00–02:00",
+   "zondag: 15:30–19:00, 22:00–02:00"
+  ],
+  "tags": [
+   "Livemuziek",
+   "Cocktails",
+   "Bier",
+   "Goed voor groepen"
+  ],
+  "fetchedAt": "2026-10-19T14:51:48.849Z"
+ },
+ "osm:node/6185501613": {
+  "placeId": "ChIJq2a_5OUwd0cRKCi-o0TD2V4",
+  "rating": 4.7,
+  "ratingCount": 577,
+  "mapsUri": "https://maps.google.com/?cid=6834708609083779112&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+  "phone": "+43 6434 40108",
+  "hours": [
+   "maandag: Gesloten",
+   "dinsdag: Gesloten",
+   "woensdag: 14:00–21:00",
+   "donderdag: 14:00–21:00",
+   "vrijdag: 14:00–21:00",
+   "zaterdag: 12:00–21:00",
+   "zondag: 12:00–21:00"
+  ],
+  "tags": [
+   "Terras",
+   "Bier",
+   "Vegetarisch",
+   "Goed voor groepen",
+   "Reserveren kan",
+   "Kindermenu",
+   "Honden welkom"
+  ],
+  "fetchedAt": "2026-10-19T14:51:49.311Z"
+ },
+ "osm:node/6185821773": {
+  "placeId": "ChIJc7-sGewwd0cR5xZbQSDaltc",
+  "rating": 4.4,
+  "ratingCount": 618,
+  "priceLevel": 2,
+  "mapsUri": "https://maps.google.com/?cid=15534843796731401959&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+  "phone": "+43 6434 30059110",
+  "hours": [
+   "maandag: 12:00–22:00",
+   "dinsdag: 12:00–22:00",
+   "woensdag: 12:00–22:00",
+   "donderdag: 12:00–22:00",
+   "vrijdag: 12:00–22:00",
+   "zaterdag: 12:00–22:00",
+   "zondag: 12:00–22:00"
+  ],
+  "tags": [
+   "Terras",
+   "Bier",
+   "Goed voor groepen",
+   "Reserveren kan",
+   "Kindermenu",
+   "Honden welkom"
+  ],
+  "fetchedAt": "2026-10-19T14:51:49.661Z"
+ },
+ "osm:node/6186091163": {
+  "placeId": "ChIJi-PO88Ewd0cRvOmlZfbPPVI",
+  "rating": 4.8,
+  "ratingCount": 122,
+  "priceLevel": 2,
+  "mapsUri": "https://maps.google.com/?cid=5926121341863717308&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+  "phone": "+43 664 3997131",
+  "hours": [
+   "maandag: 15:00–22:00",
+   "dinsdag: 15:00–22:00",
+   "woensdag: Gesloten",
+   "donderdag: 15:00–22:00",
+   "vrijdag: 16:00–23:00",
+   "zaterdag: 15:00–22:00",
+   "zondag: Gesloten"
+  ],
+  "tags": [
+   "Terras",
+   "Bier",
+   "Goed voor groepen",
+   "Reserveren kan",
+   "Honden welkom"
+  ],
+  "fetchedAt": "2026-10-19T14:51:49.995Z"
+ },
+ "osm:node/6191886664": {
+  "placeId": "ChIJu61Sle0wd0cRfsO3qujvzhg",
+  "rating": 4.6,
+  "ratingCount": 8,
+  "mapsUri": "https://maps.google.com/?cid=1787629884688286590&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+  "phone": "+43 6434 6006680",
+  "hours": [
+   "maandag: 18:00–21:00",
+   "dinsdag: 18:00–21:00",
+   "woensdag: 18:00–21:00",
+   "donderdag: 18:00–21:00",
+   "vrijdag: 18:00–21:00",
+   "zaterdag: 18:00–21:00",
+   "zondag: 18:00–21:00"
+  ],
+  "tags": [
+   "Cocktails",
+   "Bier",
+   "Goed voor groepen",
+   "Reserveren kan"
+  ],
+  "fetchedAt": "2026-10-19T14:51:52.801Z"
+ },
+ "osm:node/6191886665": {
+  "placeId": "ChIJ4XVXJewwd0cRqA7XR-J7XT4",
+  "rating": 4.5,
+  "ratingCount": 11,
+  "mapsUri": "https://maps.google.com/?cid=4493884214983724712&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+  "phone": "+43 676 3106113",
+  "permanentlyClosed": true,
+  "tags": [
+   "Bier"
+  ],
+  "fetchedAt": "2026-10-19T14:51:53.143Z"
+ },
+ "osm:node/6192063572": {
+  "placeId": "ChIJHe7hBvIwd0cR6JVDI2HoJl8",
+  "rating": 4,
+  "ratingCount": 230,
+  "priceLevel": 2,
+  "mapsUri": "https://maps.google.com/?cid=6856422986619262440&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+  "phone": "+43 6434 5101",
+  "hours": [
+   "maandag: Gesloten",
+   "dinsdag: 12:00–16:00, 18:00–22:00",
+   "woensdag: 12:00–16:00, 18:00–22:00",
+   "donderdag: 12:00–16:00, 18:00–22:00",
+   "vrijdag: 12:00–16:00, 18:00–22:00",
+   "zaterdag: 12:00–16:00, 18:00–22:00",
+   "zondag: Gesloten"
+  ],
+  "tags": [
+   "Terras",
+   "Cocktails",
+   "Bier",
+   "Vegetarisch",
+   "Goed voor groepen",
+   "Reserveren kan",
+   "Honden welkom"
+  ],
+  "fetchedAt": "2026-10-19T14:51:53.480Z"
+ },
+ "osm:node/6198895466": {
+  "placeId": "ChIJVVWFc-4wd0cRAqfxxmNFUuI",
+  "rating": 3.9,
+  "ratingCount": 51,
+  "priceLevel": 2,
+  "mapsUri": "https://maps.google.com/?cid=16308173495503791874&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+  "tags": [
+   "Terras",
+   "Bier",
+   "Goed voor groepen",
+   "Reserveren kan"
+  ],
+  "fetchedAt": "2026-10-19T14:51:54.495Z"
+ },
+ "osm:node/6475109958": {
+  "placeId": "ChIJixrK--0wd0cReUmCs0WQ0Gk",
+  "rating": 4.2,
+  "ratingCount": 155,
+  "mapsUri": "https://maps.google.com/?cid=7624752798177053049&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+  "phone": "+43 650 5235557",
+  "permanentlyClosed": true,
+  "tags": [
+   "Livemuziek",
+   "Cocktails",
+   "Bier",
+   "Vegetarisch",
+   "Reserveren kan",
+   "Kindermenu"
+  ],
+  "fetchedAt": "2026-10-19T14:51:54.824Z"
+ },
+ "osm:node/6779341100": {
+  "placeId": "ChIJ19359-4wd0cRzYBinfE0Fxo",
+  "rating": 4.7,
+  "ratingCount": 489,
+  "priceLevel": 2,
+  "mapsUri": "https://maps.google.com/?cid=1880029581782712525&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+  "phone": "+43 664 5808746",
+  "hours": [
+   "maandag: Gesloten",
+   "dinsdag: 17:00–20:30",
+   "woensdag: 17:00–20:30",
+   "donderdag: 17:00–20:30",
+   "vrijdag: 17:00–20:30",
+   "zaterdag: 12:00–14:30, 17:00–20:30",
+   "zondag: 12:00–14:30"
+  ],
+  "tags": [
+   "Terras",
+   "Bier",
+   "Vegetarisch",
+   "Goed voor groepen",
+   "Reserveren kan",
+   "Honden welkom"
+  ],
+  "fetchedAt": "2026-10-19T14:51:55.526Z"
+ },
+ "osm:node/9534809417": {
+  "placeId": "ChIJg7yvfMs6d0cRrCEyewfZix8",
+  "rating": 4.7,
+  "ratingCount": 1162,
+  "mapsUri": "https://maps.google.com/?cid=2273149063093428652&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+  "summary": "Contemporary alpine-style hotel with a restaurant & a bar, plus a spa, a lake & an outdoor pool.",
+  "phone": "+43 6432 6444",
+  "tags": [],
+  "fetchedAt": "2026-10-19T14:51:56.182Z"
+ },
+ "osm:node/11232452209": {
+  "placeId": "ChIJ0SsvcuMxd0cRk-_gzIDPcig",
+  "rating": 4.5,
+  "ratingCount": 1583,
+  "priceLevel": 2,
+  "mapsUri": "https://maps.google.com/?cid=2914620060962189203&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+  "phone": "+43 664 93286724",
+  "hours": [
+   "maandag: 12:00–22:00",
+   "dinsdag: 12:00–22:00",
+   "woensdag: 12:00–22:00",
+   "donderdag: 12:00–22:00",
+   "vrijdag: 12:00–22:00",
+   "zaterdag: 12:00–22:00",
+   "zondag: 12:00–22:00"
+  ],
+  "tags": [
+   "Terras",
+   "Livemuziek",
+   "Cocktails",
+   "Bier",
+   "Vegetarisch",
+   "Goed voor groepen",
+   "Reserveren kan",
+   "Honden welkom"
+  ],
+  "fetchedAt": "2026-10-19T14:51:56.884Z"
+ },
+ "osm:node/11247683687": {
+  "placeId": "ChIJ0R-4gA0vd0cRFHePzlDXp8w",
+  "rating": 4.4,
+  "ratingCount": 361,
+  "priceLevel": 2,
+  "mapsUri": "https://maps.google.com/?cid=14746992246910842644&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+  "phone": "+43 6414 94100",
+  "hours": [
+   "maandag: Gesloten",
+   "dinsdag: 08:30–16:00",
+   "woensdag: 08:30–16:00",
+   "donderdag: 08:30–16:00",
+   "vrijdag: 08:30–16:00",
+   "zaterdag: 08:30–16:00",
+   "zondag: 08:30–16:00"
+  ],
+  "tags": [
+   "Terras",
+   "Livemuziek",
+   "Cocktails",
+   "Bier",
+   "Goed voor groepen",
+   "Reserveren kan",
+   "Kindermenu",
+   "Honden welkom"
+  ],
+  "fetchedAt": "2026-10-19T14:51:57.224Z"
+ },
+ "osm:node/11335557718": {
+  "placeId": "ChIJqR2qru4wd0cRQIcoNeXSTZ4",
+  "rating": 4.3,
+  "ratingCount": 686,
+  "priceLevel": 2,
+  "mapsUri": "https://maps.google.com/?cid=11407005313080526656&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+  "phone": "+43 6434 2223400",
+  "hours": [
+   "maandag: 10:00–21:00",
+   "dinsdag: 10:00–21:00",
+   "woensdag: 10:00–21:00",
+   "donderdag: 10:00–21:00",
+   "vrijdag: 10:00–21:00",
+   "zaterdag: 10:00–21:00",
+   "zondag: 10:00–21:00"
+  ],
+  "tags": [
+   "Terras",
+   "Cocktails",
+   "Bier",
+   "Goed voor groepen",
+   "Reserveren kan",
+   "Kindermenu",
+   "Honden welkom"
+  ],
+  "fetchedAt": "2026-10-19T14:51:57.607Z"
+ },
+ "osm:node/11992874493": {
+  "placeId": "ChIJldV9dO4wd0cRqpI2wP_xPiU",
+  "rating": 3.4,
+  "ratingCount": 291,
+  "priceLevel": 1,
+  "mapsUri": "https://maps.google.com/?cid=2683848508703150762&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+  "phone": "+43 664 1702774",
+  "hours": [
+   "maandag: 14:00–23:00",
+   "dinsdag: 14:00–23:00",
+   "woensdag: 14:00–23:00",
+   "donderdag: 14:00–23:00",
+   "vrijdag: 14:00–23:00",
+   "zaterdag: 14:00–23:00",
+   "zondag: 14:00–23:00"
+  ],
+  "tags": [
+   "Terras",
+   "Cocktails",
+   "Bier",
+   "Goed voor groepen",
+   "Reserveren kan",
+   "Honden welkom"
+  ],
+  "fetchedAt": "2026-10-19T14:51:57.938Z"
+ },
+ "osm:node/13674656986": {
+  "placeId": "ChIJs-X7IAApd0cRJ3pFaZL3bkk",
+  "rating": 4.6,
+  "ratingCount": 170,
+  "priceLevel": 2,
+  "mapsUri": "https://maps.google.com/?cid=5291438820410358311&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+  "phone": "+43 6414 94101",
+  "hours": [
+   "maandag: 11:00–22:00",
+   "dinsdag: 11:00–22:00",
+   "woensdag: Gesloten",
+   "donderdag: Gesloten",
+   "vrijdag: 11:00–22:00",
+   "zaterdag: 11:00–22:00",
+   "zondag: 11:00–22:00"
+  ],
+  "tags": [
+   "Terras",
+   "Bier",
+   "Goed voor groepen",
+   "Reserveren kan"
+  ],
+  "fetchedAt": "2026-10-19T14:52:02.966Z"
+ },
+ "osm:way/34609773": {
+  "placeId": "ChIJaURfMRcxd0cR7I_IllhB56M",
+  "rating": 4.5,
+  "ratingCount": 623,
+  "priceLevel": 2,
+  "mapsUri": "https://maps.google.com/?cid=11810480396545069036&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+  "phone": "+43 664 5250059",
+  "hours": [
+   "maandag: 09:00–01:00",
+   "dinsdag: 09:00–17:30",
+   "woensdag: 09:00–01:30",
+   "donderdag: 09:00–17:30",
+   "vrijdag: 09:00–01:00",
+   "zaterdag: 09:00–17:30",
+   "zondag: 09:00–17:30"
+  ],
+  "tags": [
+   "Terras",
+   "Bier",
+   "Vegetarisch",
+   "Goed voor groepen",
+   "Reserveren kan",
+   "Honden welkom"
+  ],
+  "fetchedAt": "2026-10-19T14:52:03.662Z"
+ },
+ "osm:way/35336186": {
+  "placeId": "ChIJMzj_wc45d0cRqMJuEcgUVeQ",
+  "rating": 3.6,
+  "ratingCount": 48,
+  "priceLevel": 2,
+  "mapsUri": "https://maps.google.com/?cid=16453079663186461352&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+  "tags": [
+   "Bier",
+   "Goed voor groepen",
+   "Honden welkom"
+  ],
+  "fetchedAt": "2026-10-19T14:52:04.064Z"
+ },
+ "osm:way/82169182": {
+  "placeId": "ChIJ3Tn5wgU7d0cRGmeifETISqM",
+  "rating": 4.4,
+  "ratingCount": 21,
+  "priceLevel": 2,
+  "mapsUri": "https://maps.google.com/?cid=11766437172933191450&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+  "phone": "+43 664 2204876",
+  "hours": [
+   "maandag: 09:00–16:00",
+   "dinsdag: 09:00–16:00",
+   "woensdag: 09:00–16:00",
+   "donderdag: 09:00–16:00",
+   "vrijdag: 09:00–16:00",
+   "zaterdag: 09:00–16:00",
+   "zondag: 09:00–16:00"
+  ],
+  "tags": [
+   "Goed voor groepen"
+  ],
+  "fetchedAt": "2026-10-19T14:52:04.407Z"
+ },
+ "osm:way/82169419": {
+  "placeId": "ChIJKesK7c86d0cRTLXYKBZo6CA",
+  "rating": 4.8,
+  "ratingCount": 482,
+  "mapsUri": "https://maps.google.com/?cid=2371259648194426188&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+  "phone": "+43 664 5872051",
+  "hours": [
+   "maandag: 09:00–17:00",
+   "dinsdag: 09:00–17:00",
+   "woensdag: Gesloten",
+   "donderdag: 09:00–17:00",
+   "vrijdag: 09:00–17:00",
+   "zaterdag: 09:00–17:00",
+   "zondag: 09:00–17:00"
+  ],
+  "tags": [
+   "Terras",
+   "Bier",
+   "Goed voor groepen",
+   "Reserveren kan",
+   "Kindermenu",
+   "Honden welkom"
+  ],
+  "fetchedAt": "2026-10-19T14:52:05.735Z"
+ },
+ "osm:way/88124316": {
+  "placeId": "ChIJD7rbW9E5d0cRrD_O3G0BnMQ",
+  "rating": 4,
+  "ratingCount": 366,
+  "priceLevel": 2,
+  "mapsUri": "https://maps.google.com/?cid=14167200099168305068&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+  "phone": "+43 664 8347477",
+  "hours": [
+   "maandag: 08:00–16:00",
+   "dinsdag: 08:00–16:00",
+   "woensdag: 08:00–16:00",
+   "donderdag: 08:00–16:00",
+   "vrijdag: 08:00–16:00",
+   "zaterdag: 08:00–16:00",
+   "zondag: 08:00–16:00"
+  ],
+  "tags": [
+   "Terras",
+   "Bier",
+   "Goed voor groepen",
+   "Reserveren kan"
+  ],
+  "fetchedAt": "2026-10-19T14:52:06.376Z"
+ },
+ "osm:way/101525471": {
+  "placeId": "ChIJafckvPU6d0cRq1GqPVx5L1M",
+  "rating": 4.7,
+  "ratingCount": 116,
+  "mapsUri": "https://maps.google.com/?cid=5994143066131943851&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+  "phone": "+43 6432 7598",
+  "tags": [],
+  "fetchedAt": "2026-10-19T14:52:07.760Z"
+ },
+ "osm:way/132522841": {
+  "placeId": "ChIJqRSzoi47d0cR1zVqiZ3ljAg",
+  "rating": 4.2,
+  "ratingCount": 35,
+  "mapsUri": "https://maps.google.com/?cid=616119713820980695&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+  "tags": [],
+  "fetchedAt": "2026-10-19T14:52:08.065Z"
+ },
+ "osm:way/142967094": {
+  "placeId": "ChIJAfMRRHk6d0cRYZnW-Er-MFQ",
+  "rating": 4.2,
+  "ratingCount": 269,
+  "priceLevel": 2,
+  "mapsUri": "https://maps.google.com/?cid=6066628296023906657&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+  "phone": "+43 650 9300200",
+  "tags": [
+   "Terras",
+   "Bier",
+   "Goed voor groepen",
+   "Kindermenu",
+   "Honden welkom"
+  ],
+  "fetchedAt": "2026-10-19T14:52:08.382Z"
+ },
+ "osm:way/178987941": {
+  "placeId": "ChIJec-e1Fkvd0cRs7Xp7E9aKDA",
+  "rating": 4.6,
+  "ratingCount": 829,
+  "mapsUri": "https://maps.google.com/?cid=3470122812212622771&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+  "summary": "Relaxed 250-year-old ski-in hotel with free breakfast at a farm restaurant, a spa & a playground.",
+  "phone": "+43 6414 8646",
+  "tags": [],
+  "fetchedAt": "2026-10-19T14:52:09.739Z"
+ },
+ "osm:way/178996826": {
+  "placeId": "ChIJd0XWX_old0cRelXJ3CXdiH0",
+  "rating": 4.4,
+  "ratingCount": 847,
+  "priceLevel": 2,
+  "mapsUri": "https://maps.google.com/?cid=9045723006261351802&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+  "phone": "+43 6433 7339",
+  "hours": [
+   "maandag: Gesloten",
+   "dinsdag: 09:00–17:00",
+   "woensdag: 09:00–17:00",
+   "donderdag: 09:00–17:00",
+   "vrijdag: 09:00–17:00",
+   "zaterdag: 09:00–17:00",
+   "zondag: 09:00–17:00"
+  ],
+  "tags": [
+   "Terras",
+   "Bier",
+   "Goed voor groepen",
+   "Kindermenu",
+   "Honden welkom"
+  ],
+  "fetchedAt": "2026-10-19T14:52:10.490Z"
+ },
+ "osm:way/216710896": {
+  "placeId": "ChIJm_lK2lgwd0cRNWHHQcd_cFM",
+  "rating": 4.4,
+  "ratingCount": 638,
+  "priceLevel": 2,
+  "mapsUri": "https://maps.google.com/?cid=6012445996318417205&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+  "phone": "+43 6434 2134",
+  "hours": [
+   "maandag: Gesloten",
+   "dinsdag: Gesloten",
+   "woensdag: 17:00–21:00",
+   "donderdag: 10:30–21:00",
+   "vrijdag: 10:30–21:00",
+   "zaterdag: 10:30–21:00",
+   "zondag: 10:30–21:00"
+  ],
+  "tags": [
+   "Terras",
+   "Bier",
+   "Vegetarisch",
+   "Goed voor groepen",
+   "Reserveren kan",
+   "Kindermenu",
+   "Honden welkom"
+  ],
+  "fetchedAt": "2026-10-19T14:52:12.580Z"
+ },
+ "osm:way/231499535": {
+  "placeId": "ChIJAfMRRHk6d0cRYZnW-Er-MFQ",
+  "rating": 4.2,
+  "ratingCount": 269,
+  "priceLevel": 2,
+  "mapsUri": "https://maps.google.com/?cid=6066628296023906657&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+  "phone": "+43 650 9300200",
+  "tags": [
+   "Terras",
+   "Bier",
+   "Goed voor groepen",
+   "Kindermenu",
+   "Honden welkom"
+  ],
+  "fetchedAt": "2026-10-19T14:52:12.870Z"
+ },
+ "osm:way/235370075": {
+  "placeId": "ChIJLTPxEHcmd0cR-Kxqz1RoL0U",
+  "rating": 4.7,
+  "ratingCount": 317,
+  "priceLevel": 2,
+  "mapsUri": "https://maps.google.com/?cid=4985318025988844792&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+  "phone": "+43 660 3229809",
+  "hours": [
+   "maandag: 10:00–19:00",
+   "dinsdag: 10:00–19:00",
+   "woensdag: 10:00–19:00",
+   "donderdag: 10:00–19:00",
+   "vrijdag: 10:00–19:00",
+   "zaterdag: 10:00–19:00",
+   "zondag: 10:00–19:00"
+  ],
+  "tags": [
+   "Terras",
+   "Bier",
+   "Goed voor groepen",
+   "Reserveren kan",
+   "Kindermenu",
+   "Honden welkom"
+  ],
+  "fetchedAt": "2026-10-19T14:52:13.221Z"
+ },
+ "osm:way/235508790": {
+  "placeId": "ChIJ20_KnJAld0cR5w1xW-dY_Bo",
+  "rating": 5,
+  "ratingCount": 11,
+  "mapsUri": "https://maps.google.com/?cid=1944526889812037095&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+  "phone": "+43 660 2833603",
+  "tags": [],
+  "fetchedAt": "2026-10-19T14:52:13.916Z"
+ },
+ "osm:way/235508794": {
+  "placeId": "ChIJ-yacTuIld0cRJCdb3iObeac",
+  "rating": 4.6,
+  "ratingCount": 451,
+  "priceLevel": 2,
+  "mapsUri": "https://maps.google.com/?cid=12067847254872631076&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+  "phone": "+43 664 2820717",
+  "hours": [
+   "maandag: Gesloten",
+   "dinsdag: 09:00–17:00",
+   "woensdag: 09:00–17:00",
+   "donderdag: 09:00–17:00",
+   "vrijdag: 09:00–17:00",
+   "zaterdag: 09:00–17:00",
+   "zondag: 09:00–17:00"
+  ],
+  "tags": [
+   "Terras",
+   "Bier",
+   "Goed voor groepen",
+   "Kindermenu",
+   "Honden welkom"
+  ],
+  "fetchedAt": "2026-10-19T14:52:14.259Z"
+ },
+ "osm:way/235508796": {
+  "placeId": "ChIJSSqcQNkld0cRCqXE7dXuYEA",
+  "rating": 4.4,
+  "ratingCount": 214,
+  "priceLevel": 2,
+  "mapsUri": "https://maps.google.com/?cid=4638970218776143114&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+  "phone": "+43 664 2428144",
+  "hours": [
+   "maandag: 09:30–16:00",
+   "dinsdag: 09:30–16:00",
+   "woensdag: 09:30–16:00",
+   "donderdag: 09:30–16:00",
+   "vrijdag: 09:30–16:00",
+   "zaterdag: 09:30–16:00",
+   "zondag: 09:30–16:00"
+  ],
+  "tags": [
+   "Terras",
+   "Bier",
+   "Goed voor groepen",
+   "Reserveren kan",
+   "Kindermenu",
+   "Honden welkom"
+  ],
+  "fetchedAt": "2026-10-19T14:52:14.615Z"
+ },
+ "osm:way/238063649": {
+  "placeId": "ChIJHxXcH_Ewd0cRKWvcxgnRtBw",
+  "rating": 4.2,
+  "ratingCount": 442,
+  "priceLevel": 2,
+  "mapsUri": "https://maps.google.com/?cid=2068507968791145257&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+  "phone": "+43 6434 6269",
+  "hours": [
+   "maandag: 10:00–18:30",
+   "dinsdag: 10:00–18:30",
+   "woensdag: Gesloten",
+   "donderdag: 10:00–18:30",
+   "vrijdag: 10:00–18:30",
+   "zaterdag: 10:00–18:30",
+   "zondag: 10:00–18:30"
+  ],
+  "tags": [
+   "Terras",
+   "Bier",
+   "Goed voor groepen",
+   "Reserveren kan",
+   "Honden welkom"
+  ],
+  "fetchedAt": "2026-10-19T14:52:14.973Z"
+ },
+ "osm:way/256722336": {
+  "placeId": "ChIJX4Ker8wod0cRjS9WH72K2qg",
+  "rating": 4.7,
+  "ratingCount": 319,
+  "mapsUri": "https://maps.google.com/?cid=12167189888174010253&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+  "summary": "Secluded retreat offering mountain lodging, plus fireplace dining, a sun terrace & a spa area.",
+  "phone": "+43 6414 571",
+  "hours": [
+   "maandag: 11:00–21:00",
+   "dinsdag: 11:00–21:00",
+   "woensdag: 11:00–21:00",
+   "donderdag: 11:00–21:00",
+   "vrijdag: 11:00–21:00",
+   "zaterdag: 11:00–21:00",
+   "zondag: 11:00–21:00"
+  ],
+  "tags": [
+   "Terras",
+   "Bier",
+   "Vegetarisch",
+   "Goed voor groepen",
+   "Reserveren kan",
+   "Kindermenu",
+   "Honden welkom"
+  ],
+  "fetchedAt": "2026-10-19T14:52:15.334Z"
+ },
+ "osm:way/367867939": {
+  "placeId": "ChIJRWj8rfMwd0cRXYAOftra8Js",
+  "rating": 4.7,
+  "ratingCount": 387,
+  "priceLevel": 2,
+  "mapsUri": "https://maps.google.com/?cid=11236721702241992797&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+  "phone": "+43 664 3571850",
+  "hours": [
+   "maandag: Gesloten",
+   "dinsdag: Gesloten",
+   "woensdag: 17:00–02:00",
+   "donderdag: 17:00–02:00",
+   "vrijdag: 17:00–02:00",
+   "zaterdag: 17:00–02:00",
+   "zondag: Gesloten"
+  ],
+  "tags": [
+   "Terras",
+   "Livemuziek",
+   "Bier",
+   "Goed voor groepen",
+   "Reserveren kan",
+   "Honden welkom"
+  ],
+  "fetchedAt": "2026-10-19T14:52:16.361Z"
+ },
+ "osm:way/591630211": {
+  "placeId": "ChIJOajgKvcwd0cRzDQ8uyWB9CQ",
+  "rating": 4.6,
+  "ratingCount": 85,
+  "priceLevel": 2,
+  "mapsUri": "https://maps.google.com/?cid=2662895278737863884&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+  "phone": "+43 6434 30020",
+  "hours": [
+   "maandag: 12:30–23:00",
+   "dinsdag: Gesloten",
+   "woensdag: 12:30–23:00",
+   "donderdag: 12:30–23:00",
+   "vrijdag: 12:30–23:00",
+   "zaterdag: 12:30–23:00",
+   "zondag: 12:30–23:00"
+  ],
+  "tags": [
+   "Terras",
+   "Cocktails",
+   "Bier",
+   "Vegetarisch",
+   "Goed voor groepen",
+   "Reserveren kan",
+   "Kindermenu",
+   "Honden welkom"
+  ],
+  "fetchedAt": "2026-10-19T14:52:17.400Z"
+ },
+ "osm:way/1460786610": {
+  "placeId": "ChIJ6yCIBAA7d0cRZGrKEKJ9FWM",
+  "rating": 4.5,
+  "ratingCount": 208,
+  "priceLevel": 2,
+  "mapsUri": "https://maps.google.com/?cid=7139750919285664356&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+  "phone": "+43 660 5011290",
+  "hours": [
+   "maandag: 09:00–16:00",
+   "dinsdag: 09:00–16:00",
+   "woensdag: 09:00–16:00",
+   "donderdag: 09:00–16:00",
+   "vrijdag: 09:00–16:00",
+   "zaterdag: 09:00–16:00",
+   "zondag: 09:00–16:00"
+  ],
+  "tags": [
+   "Terras",
+   "Bier",
+   "Goed voor groepen",
+   "Reserveren kan"
+  ],
+  "fetchedAt": "2026-10-19T14:52:18.297Z"
+ }
+}
