@@ -81,7 +81,7 @@ export function PollCard(props: PollCardProps) {
   const candidates = placeKind
     ? places
         .filter((p) => p.kind === placeKind || (placeKind === 'dinner' && p.kind === 'restaurant' && !p.nodeId))
-        .filter((p) => poll.kind !== 'lunch_place' || !area || p.area === area)
+        .filter((p) => poll.kind !== 'lunch_place' || (!!area && p.area === area))
         .filter((p) => !options.some((o) => o.label === p.name))
         .filter((p) => p.name.toLowerCase().includes(query.toLowerCase()))
         .slice(0, 40)
@@ -114,7 +114,9 @@ export function PollCard(props: PollCardProps) {
     <div className={embedded ? 'subpoll' : 'card poll'}>
       {resetBtn}
       {embedded ? <h4>{POLL_TITLE[poll.kind]}</h4> : <h3>{POLL_TITLE[poll.kind]}</h3>}
-      {poll.kind === 'lunch_place' && area && <p className="muted">Plekken die je vanaf {AREA_LABEL[area]} kunt bereiken.</p>}
+      {poll.kind === 'lunch_place' && (area
+        ? <p className="muted">Alleen plekken die je op de piste bereikt vanaf {AREA_LABEL[area]}.</p>
+        : <p className="muted">Kies eerst bij Skiën welke berg, dan zie je welke lunchplekken daar bereikbaar zijn.</p>)}
       <div className="options">
         {rows.map((r) => {
           const o = byId.get(r.optionId)!;

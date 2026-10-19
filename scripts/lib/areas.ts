@@ -24,13 +24,20 @@ export function assignAreas(graph: SkiGraph): void {
   }
 }
 
+/** Mountain lodges OSM maps as town restaurants (no piste node within reach) but that belong to a ski area. */
+const AREA_OVERRIDES: Record<string, AreaKey> = { 'Windischgrätzhöhe': 'graukogel' };
+
 /** Keep the house, places on the piste network of the four areas, and anything within walking distance of the house. */
 export function filterPlaces(places: Place[], graph: SkiGraph): Place[] {
   const areaOf = new Map(graph.nodes.map((n) => [n.id, n.area]));
   const house = places.find((p) => p.kind === 'house');
   const out: Place[] = [];
   for (const p of places) {
-    const area: AreaKey | undefined = p.nodeId ? areaOf.get(p.nodeId) : undefined;
+    let area: AreaKey | undefined = p.nodeId ? areaOf.get(p.nodeId) : undefined;
+    if (!area && AREA_OVERRIDES[p.name]) {
+      area = AREA_OVERRIDES[p.name];
+      p.kind = 'restaurant';
+    }
     if (area) p.area = area;
     const walkable = !!house && haversineM(p, house) <= WALKING_M;
     if (p.kind === 'house' || p.kind === 'other' || area || walkable) out.push(p);
