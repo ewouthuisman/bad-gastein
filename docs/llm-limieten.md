@@ -19,7 +19,7 @@
 | Max. aantal Gemini-modellen per aanroep | 6 | `_shared/llm.ts` |
 
 ## Belasting op de quota
-- Cron: ongeveer 16 aanroepen per dag (8 uur actief, 2 per uur), plus aanroepen vanuit de app.
+- Cron: ongeveer 32 aanroepen per dag (16 uur actief, 2 per uur), plus aanroepen vanuit de app.
 - Chat: maximaal 150 aanroepen per dag. Elk daarvan kan tot 6 Gemini-pogingen kosten als de modellen vol zitten.
 
 ## Als alles op is
