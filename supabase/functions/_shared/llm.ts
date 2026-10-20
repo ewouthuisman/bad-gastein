@@ -1,6 +1,6 @@
 // Free-tier LLM access: Google Gemini first, an OpenRouter ":free" model as fallback.
 import { setting } from './supabase.ts';
-import { chooseFlashModel } from './models.ts';
+import { rankFlashModels } from './models.ts';
 
 export interface ChatMessage {
   role: 'system' | 'user' | 'assistant';
@@ -8,33 +8,39 @@ export interface ChatMessage {
 }
 
 const GEMINI = 'https://generativelanguage.googleapis.com/v1beta';
-let resolvedModel: string | null = null;
+let candidates: string[] | null = null;
 
-/** Asks Google which models this key can use and picks the newest stable Flash. */
-async function discoverModel(key: string): Promise<string> {
+/** Asks Google which models this key can use, best Flash first. */
+async function discoverModels(key: string): Promise<string[]> {
   const res = await fetch(`${GEMINI}/models?pageSize=200`, { headers: { 'x-goog-api-key': key } });
   if (!res.ok) throw new Error(`gemini models ${res.status}`);
   const data = await res.json();
   const names = (data?.models ?? [])
     .filter((m: { supportedGenerationMethods?: string[] }) => m.supportedGenerationMethods?.includes('generateContent'))
     .map((m: { name: string }) => m.name.replace(/^models\//, ''));
-  return chooseFlashModel(names);
+  return rankFlashModels(names);
 }
 
+/** Tries each model in turn: a 429 (quota) or 404/5xx on one model must not take the chatbot down. */
 async function gemini(messages: ChatMessage[], maxTokens: number): Promise<string> {
   const key = await setting('GEMINI_API_KEY');
   if (!key) throw new Error('no gemini key');
   const configured = await setting('GEMINI_MODEL');
-  let res = await geminiCall(key, configured ?? resolvedModel ?? 'gemini-flash-latest', messages, maxTokens);
-  if (res.status === 404 && !configured) {
-    resolvedModel = await discoverModel(key);
-    res = await geminiCall(key, resolvedModel, messages, maxTokens);
+  const models = [...(configured ? [configured] : []), ...(candidates ??= await discoverModels(key).catch(() => ['gemini-flash-latest', 'gemini-flash-lite-latest']))];
+  const errors: string[] = [];
+  for (const model of [...new Set(models)].slice(0, 6)) {
+    const res = await geminiCall(key, model, messages, maxTokens);
+    if (!res.ok) {
+      errors.push(`${model} ${res.status} ${(await res.text()).slice(0, 160).replace(/\s+/g, ' ')}`);
+      if (res.status === 404) candidates = null;
+      continue;
+    }
+    const data = await res.json();
+    const text = data?.candidates?.[0]?.content?.parts?.map((p: { text?: string }) => p.text ?? '').join('') ?? '';
+    if (text.trim()) return text.trim();
+    errors.push(`${model} empty`);
   }
-  if (!res.ok) throw new Error(`gemini ${res.status}`);
-  const data = await res.json();
-  const text = data?.candidates?.[0]?.content?.parts?.map((p: { text?: string }) => p.text ?? '').join('') ?? '';
-  if (!text.trim()) throw new Error('gemini empty');
-  return text.trim();
+  throw new Error(`gemini: ${errors.join(' | ')}`);
 }
 
 function geminiCall(key: string, model: string, messages: ChatMessage[], maxTokens: number): Promise<Response> {
